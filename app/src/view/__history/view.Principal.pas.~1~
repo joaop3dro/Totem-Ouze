@@ -1,0 +1,298 @@
+unit view.Principal;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
+  FMX.Layouts, FMX.Skia, System.JSON, System.DateUtils, ACBrUtil, uGosBase,  System.Net.HttpClientComponent,
+  uGosStandard, System.Skia, uFancyDialog,REST.Response.Adapter, Datasnap.DBClient,System.Net.URLClient,
+  System.Net.HttpClient,REST.Types, REST.Client,  System.NetEncoding, controller.tempo, System.IniFiles
+  {$IFDEF MSWINDOWS}
+  ,windows, FMX.TabControl
+  {$ENDIF}
+  ;
+
+type
+  TfrmPrincipal = class(TForm)
+    Layout1: TLayout;
+    Image1: TImage;
+    SkLabel1: TSkLabel;
+    Layout2: TLayout;
+    SkLabel2: TSkLabel;
+    lblVerificar: TSkLabel;
+    lblConsultar: TSkLabel;
+    lblConsultar2: TSkLabel;
+    lblImprimir: TSkLabel;
+    lblRealizar: TSkLabel;
+    SkLabel3: TSkLabel;
+    Layout3: TLayout;
+    SkLabel4: TSkLabel;
+    SkSvg1: TSkSvg;
+    ALRectangle1: TRectangle;
+    SkLabel5: TSkLabel;
+    Layout4: TLayout;
+    TmrVerifica: TTimer;
+    tcScreenImage: TTabControl;
+    tmrSlide: TTimer;
+    Layout5: TLayout;
+    procedure ALRectangle1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure TmrVerificaTimer(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
+    procedure tmrSlideTimer(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+  private
+    FJsonImagem: TJSONArray;
+    function GetScreenImagem: TJSONArray;
+    procedure ListaImagem;
+    function Consultaimagem(URL: string): string;
+    function GetVersaoArq: string;
+    procedure AbrirIni;
+    { Private declarations }
+  public
+    FPausa: Boolean;
+    FTempo : TTempo;
+    FTempo_INI: Integer;
+    FMSG : TFancyDialog;
+    FVersion: String;
+
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.fmx}
+
+uses view.CPF, uToken, Loading, Notificacao, uConnection, view.menu,
+  controller.imagens, uAguarde, LogSQLite, model.fatura,
+  controller.impressao, FMX.BitmapHelper, controller.log;
+
+procedure TfrmPrincipal.ALRectangle1Click(Sender: TObject);
+begin
+  TThread.CreateAnonymousThread(
+  procedure
+  begin
+
+    TThread.Synchronize(nil,
+    procedure
+    begin
+      if not Assigned(frmCPF) then
+        Application.CreateForm(TfrmCPF, frmCPF);
+    end);
+
+    TThread.Synchronize(nil,
+    procedure
+    begin
+      frmCPF.edtCPF.text := '';
+      frmCPF.Show;
+      TmrVerifica.Enabled := true;
+    end);
+  end).Start;
+end;
+
+procedure TfrmPrincipal.ListaImagem;
+var
+  LJson : TJSONValue;
+  Ltab : TTabItem;
+  Limagem : TRectangle;
+  Lcount : Integer;
+  LStream: TBytesStream;
+begin
+  try
+    if not ConsultaToken(FURL+'/v1/authentication', FToken) then
+    begin
+      exit;
+    end;
+
+    GetScreenImagem;
+    Lcount := 0;
+    log('Montando o tabcontrol com as imagens');
+    for LJson in FJsonImagem do
+    begin
+
+      Ltab := TTabItem.create(self);
+      Ltab.parent := tcScreenImage;
+      Ltab.Tag := Lcount;
+      Ltab.TagString := Ljson.GetValue<string>('time');
+      Ltab.Hittest := false;
+
+      Limagem := TRectangle.Create(Self);
+      Limagem.Parent := Ltab;
+      Limagem.Align := TAlignLayout.Client;
+      Limagem.HitTest := true;
+      Limagem.OnClick := ALRectangle1Click;
+      Limagem.Fill.Kind := TBrushKind.Bitmap;
+      Limagem.Fill.Bitmap.Bitmap := BitmapFromBase64(Consultaimagem(Ljson.GetValue<string>('imageUrl')));
+      Limagem.Fill.Bitmap.WrapMode := TWrapMode.TileStretch;
+
+      Ltab.AddObject(Limagem);
+
+      tcScreenImage.AddObject(Ltab);
+
+      Lcount := Lcount+1;
+    end;
+
+    tcScreenImage.TabIndex := FJsonImagem.Count - 1;
+
+  except on ex: exception do
+    begin
+      log('Erro: '+ ex.Message);
+    end;
+
+  end;
+end;
+
+function TfrmPrincipal.Consultaimagem(URL: string): string;
+var
+  FRESTClient: TRESTClient;
+  FRESTRequest: TRESTRequest;
+  FRESTResponse: TRESTResponse;
+  LArq: TArray<Byte>;
+  Lbase64: string;
+begin
+  FRESTClient:= TRESTClient.Create(nil);
+  FRESTRequest:= TRESTRequest.Create(nil);
+  FRESTResponse:= TRESTResponse.Create(nil);
+  FRESTClient.SecureProtocols:= [THTTPSecureProtocol.TLS12];
+  try
+    FRESTRequest.Client:= FRESTClient;
+    FRESTRequest.Response:= FRESTResponse;
+
+    FRESTClient.ContentType := 'image/png';
+    FRESTClient.AcceptEncoding := 'gzip, deflate, br';
+
+    FRESTClient.BaseURL := URL;
+    FRESTRequest.Method := rmGET;
+    FRESTRequest.Execute;
+
+    LArq:= FRESTResponse.RawBytes;
+    Lbase64 := TNetEncoding.Base64.EncodeBytesToString(LArq);
+
+    result := Lbase64;
+  finally
+    FreeAndNil(FRESTClient);
+    FreeAndNil(FRESTRequest);
+    FreeAndNil(FRESTResponse);
+  end;
+end;
+
+procedure TfrmPrincipal.FormCreate(Sender: TObject);
+begin
+  FMSG := TFancyDialog.Create(self);
+  FVersion := GetVersaoArq;
+  SkLabel5.text := 'Sistema de Teste - Versão '+FVersion;
+  FTempo := TTempo.Create;
+  AbrirIni;
+end;
+
+procedure TfrmPrincipal.FormDestroy(Sender: TObject);
+begin
+  FreeAndNil(FMSG);
+  FreeAndNil(FTempo);
+end;
+
+procedure TfrmPrincipal.FormShow(Sender: TObject);
+begin
+  ListaImagem;
+end;
+
+function TfrmPrincipal.GetScreenImagem: TJSONArray;
+var
+  LConnection: TConnection;
+  LResult: string;
+begin
+  LConnection:= TConnection.Create;
+  try
+    try
+      if LConnection.get(FURL+'/v1/screensaver/image',[],LResult, FToken) then
+      begin
+        FJsonImagem := TJSONArray.ParseJSONValue(TEncoding.ASCII.GetBytes(LResult), 0) as TJSONArray;
+        log('Requisicao realizada');
+      end;
+
+    except on ex: exception do
+    begin
+      log('Erro: '+ ex.Message);
+    end;
+
+    end;
+  finally
+    FreeAndNil(LConnection);
+  end;
+end;
+
+procedure TfrmPrincipal.TmrVerificaTimer(Sender: TObject);
+begin
+//  TThread.CreateAnonymousThread(
+//  procedure
+//  begin
+//  end).Start;
+  FTempo.VerificaInatividade(FTempo_INI);
+end;
+
+
+procedure TfrmPrincipal.tmrSlideTimer(Sender: TObject);
+begin
+  if tcScreenImage.ActiveTab.Tag = 0 then
+  begin
+    tcScreenImage.TabIndex := tcScreenImage.ActiveTab.Tag+1;
+    tmrSlide.Interval := strtoint(tcScreenImage.ActiveTab.TagString) * 1000;
+  end
+  else
+  begin
+    tcScreenImage.TabIndex := 0;
+    tmrSlide.Interval := strtoint(tcScreenImage.ActiveTab.TagString) * 1000;
+  end;
+end;
+
+function TfrmPrincipal.GetVersaoArq: string;
+var
+  VerInfoSize: DWORD;
+  VerInfo: Pointer;
+  VerValueSize: DWORD;
+  VerValue: PVSFixedFileInfo;
+  Dummy: DWORD;
+begin
+  VerInfoSize := GetFileVersionInfoSize(PChar(
+    ParamStr(0)), Dummy);
+  GetMem(VerInfo, VerInfoSize);
+  GetFileVersionInfo(PChar(ParamStr(0)), 0,
+    VerInfoSize, VerInfo);
+  VerQueryValue(VerInfo, '\', Pointer(VerValue),
+    VerValueSize);
+  with VerValue^ do
+  begin
+    Result := IntToStr(dwFileVersionMS shr 16);
+    Result := Result + '.' + IntToStr(
+      dwFileVersionMS and $FFFF);
+    Result := Result + '.' + IntToStr(
+      dwFileVersionLS shr 16);
+    Result := Result + '.' + IntToStr(
+      dwFileVersionLS and $FFFF);
+  end;
+  FreeMem(VerInfo, VerInfoSize);
+end;
+
+procedure TfrmPrincipal.AbrirIni;
+var
+  LArquivoINI: TIniFile;
+  LArqIni: string;
+begin
+   LArqIni := ExtractFilePath(Application.name) + 'config.ini';
+
+  if not(FileExists(LArqIni)) then
+    raise Exception.Create('Arquivo não localizado: ' + LArqIni);
+
+  LArquivoINI := TIniFile.Create(ExtractFilePath(ParamStr(0)) + 'config.ini');
+  try
+    FTempo_INI := strtoint(LArquivoINI.ReadString('PARAMETRO','TEMPO_INATIVIDADE', ''));
+  finally
+    LArquivoINI.Free;
+  end;
+end;
+
+end.

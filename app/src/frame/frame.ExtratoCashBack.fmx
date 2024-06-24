@@ -1,0 +1,99 @@
+object frameCashBack: TframeCashBack
+  Size.Width = 869.000000000000000000
+  Size.Height = 43.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 869.000000000000000000
+    Size.Height = 43.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lblData: TSkLabel
+      Align = Left
+      Margins.Right = 5.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 43.000000000000000000
+      Size.PlatformDefault = False
+      AutoSize = False
+      StyledSettings = [Style, FontColor]
+      TextSettings.Font.Families = 'Roboto'
+      TextSettings.Font.Size = 18.000000000000000000
+      Words = <
+        item
+          Text = '18/01'
+        end>
+    end
+    object lblDescricao: TSkLabel
+      Align = Left
+      Margins.Left = 17.000000000000000000
+      Position.X = 422.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 43.000000000000000000
+      Size.PlatformDefault = False
+      AutoSize = False
+      StyledSettings = [Style, FontColor]
+      TextSettings.Font.Families = 'Roboto'
+      TextSettings.Font.Size = 18.000000000000000000
+      Words = <
+        item
+          Text = '01/02'
+        end>
+    end
+    object Rectangle2: TRectangle
+      Align = Left
+      Fill.Color = claWhite
+      Margins.Top = -2.000000000000000000
+      Margins.Bottom = -2.000000000000000000
+      Position.X = 105.000000000000000000
+      Position.Y = -2.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 47.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object lblMovimento: TSkLabel
+        Align = Client
+        Margins.Left = 17.000000000000000000
+        Margins.Right = 17.000000000000000000
+        Size.Width = 266.000000000000000000
+        Size.Height = 47.000000000000000000
+        Size.PlatformDefault = False
+        AutoSize = False
+        StyledSettings = [Style, FontColor]
+        TextSettings.Font.Families = 'Roboto'
+        TextSettings.Font.Size = 18.000000000000000000
+        Words = <
+          item
+            Text = 'Studio Z'
+          end>
+      end
+    end
+    object Rectangle3: TRectangle
+      Align = Right
+      Fill.Color = claWhite
+      Margins.Top = -2.000000000000000000
+      Margins.Bottom = -2.000000000000000000
+      Position.X = 699.000000000000000000
+      Position.Y = -2.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 47.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object lblValor: TSkLabel
+        Align = Client
+        Margins.Left = 17.000000000000000000
+        Margins.Right = 17.000000000000000000
+        Size.Width = 136.000000000000000000
+        Size.Height = 47.000000000000000000
+        Size.PlatformDefault = False
+        AutoSize = False
+        StyledSettings = [Style, FontColor]
+        TextSettings.Font.Families = 'Roboto'
+        TextSettings.Font.Size = 18.000000000000000000
+        Words = <
+          item
+            Text = 'R$ 100,99'
+          end>
+      end
+    end
+  end
+end

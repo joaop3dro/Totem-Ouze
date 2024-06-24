@@ -1,0 +1,225 @@
+object frameSeguros: TframeSeguros
+  Size.Width = 198.000000000000000000
+  Size.Height = 203.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle2: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    HitTest = False
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 188.000000000000000000
+    Size.Height = 193.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Visible = False
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+    object Layout1: TLayout
+      Align = Client
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Margins.Bottom = 16.000000000000000000
+      Size.Width = 156.000000000000000000
+      Size.Height = 161.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object recAtivo: TRectangle
+        Align = Bottom
+        Fill.Color = xFFE400E4
+        HitTest = False
+        Margins.Left = 15.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 71.000000000000000000
+        Size.Width = 126.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 15.000000000000000000
+        YRadius = 15.000000000000000000
+        object lblContratado: TSkLabel
+          Align = Client
+          Size.Width = 126.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+          TextSettings.Font.Families = 'Poppins'
+          TextSettings.Font.Size = 12.000000000000000000
+          TextSettings.Font.Weight = Bold
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Words = <
+            item
+              Text = 'CONTRATADO'
+            end>
+        end
+      end
+      object svgIcon: TSkSvg
+        Align = Center
+        Size.Width = 58.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        Svg.Source = 
+          '<svg width="58" height="55" viewBox="0 0 58 55" fill="none" xmln' +
+          's="http://www.w3.org/2000/svg">'#13#10'<g id="Group 378">'#13#10'<path id="V' +
+          'ector" d="M42.1011 43.0991C42.5234 43.0991 42.8657 42.7568 42.86' +
+          '57 42.3345C42.8657 41.9122 42.5234 41.5698 42.1011 41.5698C41.67' +
+          '88 41.5698 41.3364 41.9122 41.3364 42.3345C41.3364 42.7568 41.67' +
+          '88 43.0991 42.1011 43.0991Z" fill="black"/>'#13#10'<path id="Vector_2"' +
+          ' d="M49.4416 27.5171V53.77H8.47339V26.9224" stroke="black" strok' +
+          'e-width="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<p' +
+          'ath id="Vector_3" d="M25.2788 31.1194H13.4182V44.4583H25.2788V31' +
+          '.1194Z" stroke="black" stroke-width="2" stroke-linecap="round" s' +
+          'troke-linejoin="round"/>'#13#10'<path id="Vector_4" d="M32.0927 53.566' +
+          '1V31.1194H44.8878V53.5661" stroke="black" stroke-width="2" strok' +
+          'e-linecap="round" stroke-linejoin="round"/>'#13#10'<path id="Vector_5"' +
+          ' d="M28.2524 8.43487L8.30352 26.6505C7.35196 27.5171 5.87363 27.' +
+          '4491 5.00703 26.4976C4.14043 25.546 4.2084 24.0677 5.15996 23.20' +
+          '11L25.1088 5.00244" stroke="black" stroke-width="2" stroke-miter' +
+          'limit="10"/>'#13#10'<path id="Vector_6" d="M26.0263 5.66529L28.1673 7.' +
+          '61939L48.9997 26.6507C49.9513 27.5173 51.4296 27.4493 52.2962 26' +
+          '.4977C53.1628 25.5462 53.0949 24.0678 52.1433 23.2012L29.1699 2.' +
+          '23286C28.2183 1.36626 26.74 1.43423 25.8734 2.38579C25.0068 3.33' +
+          '735 25.0747 4.81568 26.0263 5.68228V5.66529Z" stroke="black" str' +
+          'oke-width="2" stroke-miterlimit="10"/>'#13#10'<path id="Vector_7" d="M' +
+          '19.3485 30.3889V45.1891" stroke="black" stroke-width="2" stroke-' +
+          'miterlimit="10"/>'#13#10'<path id="Vector_8" d="M25.2787 37.7805H12.51' +
+          '76" stroke="black" stroke-width="2" stroke-miterlimit="10"/>'#13#10'<p' +
+          'ath id="Vector_9" d="M4.8541 47.7039C3.17188 47.7039 1.8125 49.0' +
+          '632 1.8125 50.7455C1.8125 52.4277 3.17188 53.7871 4.8541 53.7871' +
+          'H8.96622" stroke="black" stroke-width="2" stroke-linecap="round"' +
+          ' stroke-linejoin="round"/>'#13#10'<path id="Vector_10" d="M6.17954 48.' +
+          '0437C5.05806 48.0437 4.15747 47.1431 4.15747 46.0216C4.15747 44.' +
+          '9001 5.05806 43.9995 6.17954 43.9995H8.32056" stroke="black" str' +
+          'oke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10 +
+          '<path id="Vector_11" d="M53.1459 47.7039C54.8281 47.7039 56.1875' +
+          ' 49.0632 56.1875 50.7455C56.1875 52.4277 54.8281 53.7871 53.1459' +
+          ' 53.7871H49.0338" stroke="black" stroke-width="2" stroke-linecap' +
+          '="round" stroke-linejoin="round"/>'#13#10'<path id="Vector_12" d="M51.' +
+          '8205 48.0437C52.9419 48.0437 53.8425 47.1431 53.8425 46.0216C53.' +
+          '8425 44.9001 52.9419 43.9995 51.8205 43.9995H49.6794" stroke="bl' +
+          'ack" stroke-width="2" stroke-linecap="round" stroke-linejoin="ro' +
+          'und"/>'#13#10'</g>'#13#10'</svg>'
+      end
+      object Layout3: TLayout
+        Align = Bottom
+        Position.Y = 111.000000000000000000
+        Size.Width = 156.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblNameProduct: TSkLabel
+          Align = Client
+          Size.Width = 156.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [FontColor]
+          TextSettings.Font.Families = 'Poppins'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.Weight = Medium
+          TextSettings.HorzAlign = Center
+          Words = <
+            item
+              Text = 'Assist'#234'ncia por lar 24 horas'
+            end>
+        end
+      end
+    end
+  end
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFF069999
+    HitTest = False
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 188.000000000000000000
+    Size.Height = 193.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+    object Layout2: TLayout
+      Align = Center
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Margins.Bottom = 16.000000000000000000
+      Size.Width = 141.000000000000000000
+      Size.Height = 83.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object SkSvg2: TSkSvg
+        Align = Top
+        Size.Width = 141.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        Svg.Source = 
+          '<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmln' +
+          's="http://www.w3.org/2000/svg">'#13#10'<g id="Group 66">'#13#10'<path id="Ve' +
+          'ctor" d="M29 1.8125C44.0211 1.8125 56.1875 13.9789 56.1875 29C56' +
+          '.1875 44.0211 44.0211 56.1875 29 56.1875C13.9789 56.1875 1.8125 ' +
+          '44.0211 1.8125 29C1.8125 13.9789 13.9789 1.8125 29 1.8125Z" stro' +
+          'ke="white" stroke-width="2"/>'#13#10'<path id="Vector_2" d="M15.7115 2' +
+          '9H42.2873" stroke="white" stroke-width="2" stroke-linecap="round' +
+          '"/>'#13#10'<path id="Vector_3" d="M29 15.7122V42.2879" stroke="white" ' +
+          'stroke-width="2" stroke-linecap="round"/>'#13#10'</g>'#13#10'</svg>'
+      end
+      object SkLabel1: TSkLabel
+        Align = Top
+        Margins.Top = 10.000000000000000000
+        Position.Y = 68.000000000000000000
+        Size.Width = 141.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = []
+        TextSettings.Font.Families = 'Poppins'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.Weight = Medium
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Words = <
+          item
+            Text = 'Mais Seguros'
+          end>
+      end
+    end
+    object Layout45: TLayout
+      Align = Bottom
+      Margins.Left = 23.000000000000000000
+      Margins.Right = 23.000000000000000000
+      Margins.Bottom = 14.000000000000000000
+      Position.X = 23.000000000000000000
+      Position.Y = 152.000000000000000000
+      Size.Width = 142.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object SkSvg15: TSkSvg
+        Align = MostRight
+        Position.X = 115.000000000000000000
+        Size.Width = 27.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        Svg.OverrideColor = claWhite
+        Svg.Source = 
+          '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmln' +
+          's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.1064 15.9995L20.88' +
+          '46 15.9995" stroke="black" stroke-width="2" stroke-linecap="roun' +
+          'd" stroke-linejoin="round"/>'#13#10'<path d="M17.2753 19.6084L20.894 1' +
+          '5.999L17.2753 12.3896" stroke="black" stroke-width="2" stroke-li' +
+          'necap="round" stroke-linejoin="round"/>'#13#10'<path d="M16 0.999999C2' +
+          '4.2875 0.999999 31 7.7125 31 16C31 24.2875 24.2875 31 16 31C7.71' +
+          '25 31 1 24.2875 0.999999 16C0.999999 7.7125 7.7125 1 16 0.999999' +
+          'Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke' +
+          '-linejoin="round"/>'#13#10'</svg>'
+      end
+    end
+  end
+end

@@ -1,0 +1,244 @@
+object frameFatura: TframeFatura
+  Align = Left
+  HitTest = False
+  Margins.Top = 5.000000000000000000
+  Position.Y = 5.000000000000000000
+  Size.Width = 298.000000000000000000
+  Size.Height = 299.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    HitTest = False
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 288.000000000000000000
+    Size.Height = 289.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+    object Layout1: TLayout
+      Align = Top
+      Margins.Left = 25.000000000000000000
+      Margins.Top = 18.500000000000000000
+      Margins.Right = 22.250000000000000000
+      Position.X = 25.000000000000000000
+      Position.Y = 18.500000000000000000
+      Size.Width = 240.750000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object Layout2: TLayout
+        Align = Left
+        Size.Width = 153.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lbltitulo: TSkLabel
+          Align = Top
+          Size.Width = 153.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Style, FontColor]
+          TextSettings.Font.Families = 'Poppins'
+          TextSettings.Font.Size = 16.000000000000000000
+          Words = <
+            item
+              Text = 'Fatura Paga'
+            end>
+        end
+        object lblValor: TSkLabel
+          Align = Top
+          Position.Y = 24.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [FontColor]
+          TextSettings.Font.Families = 'Poppins'
+          TextSettings.Font.Size = 21.000000000000000000
+          TextSettings.Font.Weight = Bold
+          Words = <
+            item
+              Text = 'R$ 295,99'
+            end>
+        end
+      end
+      object recMes: TRectangle
+        Align = MostRight
+        Fill.Color = xFF38C31B
+        HitTest = False
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 157.750000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 15.000000000000000000
+        YRadius = 15.000000000000000000
+        object lblmes: TSkLabel
+          Align = Center
+          Size.Width = 36.560001373291020000
+          Size.Height = 72.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+          TextSettings.Font.Families = 'Poppins'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.Weight = Bold
+          TextSettings.FontColor = claWhite
+          Words = <
+            item
+              Text = 'AGO'
+            end>
+        end
+      end
+    end
+    object Layout5: TLayout
+      Align = Top
+      Margins.Left = 25.000000000000000000
+      Margins.Top = 18.500000000000000000
+      Margins.Right = 22.250000000000000000
+      Position.X = 25.000000000000000000
+      Position.Y = 102.000000000000000000
+      Size.Width = 240.750000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object SkLabel5: TSkLabel
+        Align = Left
+        Size.Width = 109.489997863769500000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Style, FontColor]
+        TextSettings.Font.Families = 'Poppins'
+        TextSettings.Font.Size = 18.000000000000000000
+        Words = <
+          item
+            Text = 'Vencimento'
+          end>
+      end
+      object lblDataVencimento: TSkLabel
+        Align = Left
+        Margins.Left = 10.000000000000000000
+        Position.X = 119.489997863769500000
+        Size.Width = 49.459999084472660000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [FontColor]
+        TextSettings.Font.Families = 'Poppins'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.Weight = Bold
+        Words = <
+          item
+            Text = '10/09'
+          end>
+      end
+    end
+    object GosLine1: TGosLine
+      Align = Top
+      HitTest = False
+      LineType = Bottom
+      Margins.Left = 25.000000000000000000
+      Margins.Top = 12.000000000000000000
+      Margins.Right = 22.250000000000000000
+      Position.X = 25.000000000000000000
+      Position.Y = 80.500000000000000000
+      Size.Width = 240.750000000000000000
+      Size.Height = 3.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF38C31B
+    end
+    object Layout3: TLayout
+      Align = Top
+      Margins.Left = 25.000000000000000000
+      Margins.Top = 18.500000000000000000
+      Margins.Right = 22.250000000000000000
+      Margins.Bottom = 30.000000000000000000
+      Position.X = 25.000000000000000000
+      Position.Y = 170.500000000000000000
+      Size.Width = 240.750000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object SkLabel2: TSkLabel
+        Align = Top
+        Size.Width = 240.750000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Style, FontColor]
+        TextSettings.Font.Families = 'Poppins'
+        TextSettings.Font.Size = 18.000000000000000000
+        Words = <
+          item
+            Text = 'Pagamento Realizado'
+          end>
+      end
+      object lbldataPagamento: TSkLabel
+        Align = Top
+        Position.Y = 27.000000000000000000
+        Size.Width = 240.750000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [FontColor]
+        TextSettings.Font.Families = 'Poppins'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.Weight = Bold
+        Words = <
+          item
+            Text = '09/09'
+          end>
+      end
+    end
+    object Layout45: TLayout
+      Align = Bottom
+      Margins.Left = 22.250000000000000000
+      Margins.Top = 30.000000000000000000
+      Margins.Right = 25.000000000000000000
+      Margins.Bottom = 21.000000000000000000
+      Position.X = 22.250000000000000000
+      Position.Y = 238.000000000000000000
+      Size.Width = 240.750000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object SkSvg15: TSkSvg
+        Align = MostRight
+        Position.X = 210.750000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        Svg.OverrideColor = xFFE400E4
+        Svg.Source = 
+          '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmln' +
+          's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.1064 15.9995L20.88' +
+          '46 15.9995" stroke="black" stroke-width="2" stroke-linecap="roun' +
+          'd" stroke-linejoin="round"/>'#13#10'<path d="M17.2753 19.6084L20.894 1' +
+          '5.999L17.2753 12.3896" stroke="black" stroke-width="2" stroke-li' +
+          'necap="round" stroke-linejoin="round"/>'#13#10'<path d="M16 0.999999C2' +
+          '4.2875 0.999999 31 7.7125 31 16C31 24.2875 24.2875 31 16 31C7.71' +
+          '25 31 1 24.2875 0.999999 16C0.999999 7.7125 7.7125 1 16 0.999999' +
+          'Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke' +
+          '-linejoin="round"/>'#13#10'</svg>'
+      end
+      object SkLabel41: TSkLabel
+        Align = Top
+        Size.Width = 210.750000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Style, FontColor]
+        TextSettings.Font.Families = 'Poppins'
+        TextSettings.Font.Size = 18.000000000000000000
+        Words = <
+          item
+            Text = 'Realizar pagamento'
+          end>
+      end
+    end
+  end
+end

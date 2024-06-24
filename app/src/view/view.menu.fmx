@@ -1,0 +1,1692 @@
+object frmMenu: TfrmMenu
+  Left = 0
+  Top = 0
+  ActiveControl = btnSair
+  BorderStyle = None
+  Caption = 'Form1'
+  ClientHeight = 766
+  ClientWidth = 1370
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object ALRectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFF333075
+    Size.Width = 1370.000000000000000000
+    Size.Height = 766.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Layout1: TLayout
+      Align = Left
+      Size.Width = 124.000000000000000000
+      Size.Height = 766.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object btnSair: TGosButtonView
+        Align = Bottom
+        Background.XRadius = 10.000000000000000000
+        Background.YRadius = 10.000000000000000000
+        Background.ItemDefault.Color = claNull
+        Background.ItemPressed.Color = xFFDDDCE1
+        Background.Border.Color.Default = xAFFFFFFF
+        Background.Border.Color.Pressed = claNull
+        Background.Border.Color.Focused = claNull
+        Background.Border.Color.Selected = claNull
+        Background.Border.Color.Checked = claNull
+        Background.Border.Color.Enabled = claNull
+        Background.Border.Width = 3.000000000000000000
+        Margins.Left = -10.000000000000000000
+        Margins.Bottom = 40.000000000000000000
+        Size.Width = 134.000000000000000000
+        Size.Height = 104.000000000000000000
+        Size.PlatformDefault = False
+        Position.X = -10.000000000000000000
+        Position.Y = 622.000000000000000000
+        TabOrder = 31
+        OnClick = btnSairClick
+        TextSettings.Color.Default = claWhite
+        TextSettings.Color.Focused = claNull
+        TextSettings.Color.Selected = claNull
+        TextSettings.Color.Enabled = claNull
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.Size = 32.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.Gravity = Center
+        object SkSvg3: TSkSvg
+          Align = Client
+          Margins.Left = 16.000000000000000000
+          Margins.Top = 16.000000000000000000
+          Margins.Right = 16.000000000000000000
+          Margins.Bottom = 16.000000000000000000
+          Size.Width = 94.000000000000000000
+          Size.Height = 64.000000000000000000
+          Size.PlatformDefault = False
+          Svg.Source = 
+            '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+            's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_10' +
+            '0)">'#13#10'<path d="M43.605 26.605C37.7449 32.465 28.2469 32.465 22.3' +
+            '868 26.605C16.5268 20.7449 16.5268 11.2469 22.3868 5.38684C28.24' +
+            '69 -0.463844 37.7543 -0.463843 43.605 5.39622C49.465 11.2469 49.' +
+            '465 20.7543 43.605 26.605Z" stroke="white" stroke-width="2"/>'#13#10'<' +
+            'path d="M38.1855 10.8157L27.8156 21.1856" stroke="white" stroke-' +
+            'width="2" stroke-linecap="round"/>'#13#10'<path d="M38.1855 21.1856L27' +
+            '.8156 10.8157" stroke="white" stroke-width="2" stroke-linecap="r' +
+            'ound"/>'#13#10'</g>'#13#10'<path d="M19.4987 63.147C18.5327 63.147 17.6647 6' +
+            '2.979 16.8947 62.643C16.1387 62.293 15.5437 61.817 15.1097 61.21' +
+            '5C14.6757 60.599 14.4517 59.892 14.4377 59.094H16.4747C16.5447 5' +
+            '9.78 16.8247 60.361 17.3147 60.837C17.8187 61.299 18.5467 61.53 ' +
+            '19.4987 61.53C20.4087 61.53 21.1227 61.306 21.6407 60.858C22.172' +
+            '7 60.396 22.4387 59.808 22.4387 59.094C22.4387 58.534 22.2847 58' +
+            '.079 21.9767 57.729C21.6687 57.379 21.2837 57.113 20.8217 56.931' +
+            'C20.3597 56.749 19.7367 56.553 18.9527 56.343C17.9867 56.091 17.' +
+            '2097 55.839 16.6217 55.587C16.0477 55.335 15.5507 54.943 15.1307' +
+            ' 54.411C14.7247 53.865 14.5217 53.137 14.5217 52.227C14.5217 51.' +
+            '429 14.7247 50.722 15.1307 50.106C15.5367 49.49 16.1037 49.014 1' +
+            '6.8317 48.678C17.5737 48.342 18.4207 48.174 19.3727 48.174C20.74' +
+            '47 48.174 21.8647 48.517 22.7327 49.203C23.6147 49.889 24.1117 5' +
+            '0.799 24.2237 51.933H22.1237C22.0537 51.373 21.7597 50.883 21.24' +
+            '17 50.463C20.7237 50.029 20.0377 49.812 19.1837 49.812C18.3857 4' +
+            '9.812 17.7347 50.022 17.2307 50.442C16.7267 50.848 16.4747 51.42' +
+            '2 16.4747 52.164C16.4747 52.696 16.6217 53.13 16.9157 53.466C17.' +
+            '2237 53.802 17.5947 54.061 18.0287 54.243C18.4767 54.411 19.0997' +
+            ' 54.607 19.8977 54.831C20.8637 55.097 21.6407 55.363 22.2287 55.' +
+            '629C22.8167 55.881 23.3207 56.28 23.7407 56.826C24.1607 57.358 2' +
+            '4.3707 58.086 24.3707 59.01C24.3707 59.724 24.1817 60.396 23.803' +
+            '7 61.026C23.4257 61.656 22.8657 62.167 22.1237 62.559C21.3817 62' +
+            '.951 20.5067 63.147 19.4987 63.147ZM26.4689 57.204C26.4689 56.02' +
+            '8 26.7069 54.999 27.1829 54.117C27.6589 53.221 28.3099 52.528 29' +
+            '.1359 52.038C29.9759 51.548 30.9069 51.303 31.9289 51.303C32.936' +
+            '9 51.303 33.8119 51.52 34.5539 51.954C35.2959 52.388 35.8489 52.' +
+            '934 36.2129 53.592V51.492H38.1449V63H36.2129V60.858C35.8349 61.5' +
+            '3 35.2679 62.09 34.5119 62.538C33.7699 62.972 32.9019 63.189 31.' +
+            '9079 63.189C30.8859 63.189 29.9619 62.937 29.1359 62.433C28.3099' +
+            ' 61.929 27.6589 61.222 27.1829 60.312C26.7069 59.402 26.4689 58.' +
+            '366 26.4689 57.204ZM36.2129 57.225C36.2129 56.357 36.0379 55.601' +
+            ' 35.6879 54.957C35.3379 54.313 34.8619 53.823 34.2599 53.487C33.' +
+            '6719 53.137 33.0209 52.962 32.3069 52.962C31.5929 52.962 30.9419' +
+            ' 53.13 30.3539 53.466C29.7659 53.802 29.2969 54.292 28.9469 54.9' +
+            '36C28.5969 55.58 28.4219 56.336 28.4219 57.204C28.4219 58.086 28' +
+            '.5969 58.856 28.9469 59.514C29.2969 60.158 29.7659 60.655 30.353' +
+            '9 61.005C30.9419 61.341 31.5929 61.509 32.3069 61.509C33.0209 61' +
+            '.509 33.6719 61.341 34.2599 61.005C34.8619 60.655 35.3379 60.158' +
+            ' 35.6879 59.514C36.0379 58.856 36.2129 58.093 36.2129 57.225ZM42' +
+            '.3613 49.623C41.9973 49.623 41.6893 49.497 41.4373 49.245C41.185' +
+            '3 48.993 41.0593 48.685 41.0593 48.321C41.0593 47.957 41.1853 47' +
+            '.649 41.4373 47.397C41.6893 47.145 41.9973 47.019 42.3613 47.019' +
+            'C42.7113 47.019 43.0053 47.145 43.2433 47.397C43.4953 47.649 43.' +
+            '6213 47.957 43.6213 48.321C43.6213 48.685 43.4953 48.993 43.2433' +
+            ' 49.245C43.0053 49.497 42.7113 49.623 42.3613 49.623ZM43.2853 51' +
+            '.492V63H41.3743V51.492H43.2853ZM48.4533 53.361C48.7893 52.703 49' +
+            '.2653 52.192 49.8813 51.828C50.5113 51.464 51.2743 51.282 52.170' +
+            '3 51.282V53.256H51.6663C49.5243 53.256 48.4533 54.418 48.4533 56' +
+            '.742V63H46.5423V51.492H48.4533V53.361Z" fill="white"/>'#13#10'<defs>'#13#10 +
+            '<clipPath id="clip0_226_100">'#13#10'<rect width="32" height="32" fill' +
+            '="white" transform="translate(49) rotate(90)"/>'#13#10'</clipPath>'#13#10'</' +
+            'defs>'#13#10'</svg>'
+        end
+      end
+      object btnVoltar: TGosButtonView
+        Align = Bottom
+        Background.XRadius = 10.000000000000000000
+        Background.YRadius = 10.000000000000000000
+        Background.ItemDefault.Color = claNull
+        Background.ItemDefault.SVGImage.Color = xFF333075
+        Background.ItemPressed.Color = xFFDDDCE1
+        Background.ItemPressed.Accessory.Color = xFF333075
+        Background.ItemPressed.SVGImage.Color = xFF333075
+        Background.ItemSelected.SVGImage.Color = xFF333075
+        Background.ItemChecked.SVGImage.Color = xFF333075
+        Background.ItemActivated.SVGImage.Color = xFF333075
+        Background.Border.Color.Default = xAFFFFFFF
+        Background.Border.Color.Pressed = claNull
+        Background.Border.Color.Focused = claNull
+        Background.Border.Color.Selected = claNull
+        Background.Border.Color.Checked = claNull
+        Background.Border.Color.Enabled = claNull
+        Background.Border.Width = 3.000000000000000000
+        Margins.Left = -10.000000000000000000
+        Margins.Bottom = 40.000000000000000000
+        Size.Width = 134.000000000000000000
+        Size.Height = 104.000000000000000000
+        Size.PlatformDefault = False
+        Position.X = -10.000000000000000000
+        Position.Y = 478.000000000000000000
+        TabOrder = 32
+        OnClick = btnVoltarClick
+        TextSettings.Color.Default = claWhite
+        TextSettings.Color.Focused = claNull
+        TextSettings.Color.Selected = claNull
+        TextSettings.Color.Enabled = claNull
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.Size = 21.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.Gravity = Center
+        object SkSvg4: TSkSvg
+          Align = Client
+          Margins.Left = 16.000000000000000000
+          Margins.Top = 16.000000000000000000
+          Margins.Right = 16.000000000000000000
+          Margins.Bottom = 16.000000000000000000
+          Size.Width = 94.000000000000000000
+          Size.Height = 64.000000000000000000
+          Size.PlatformDefault = False
+          Svg.Source = 
+            '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+            's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_71' +
+            ')">'#13#10'<path d="M37.8936 16.0005L28.1154 16.0005" stroke="white" s' +
+            'troke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+            #13#10'<path d="M31.7247 12.3916L28.106 16.001L31.7247 19.6104" strok' +
+            'e="white" stroke-width="2" stroke-linecap="round" stroke-linejoi' +
+            'n="round"/>'#13#10'<path d="M33 31C24.7125 31 18 24.2875 18 16C18 7.71' +
+            '25 24.7125 0.999999 33 0.999999C41.2875 1 48 7.7125 48 16C48 24.' +
+            '2875 41.2875 31 33 31Z" stroke="white" stroke-width="2" stroke-l' +
+            'inecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'<path d="M15.479' +
+            '6 48.363L9.9566 63H7.7516L2.2286 48.363H4.2656L8.8646 60.984L13.' +
+            '4636 48.363H15.4796ZM22.594 63.189C21.516 63.189 20.536 62.944 1' +
+            '9.654 62.454C18.786 61.964 18.1 61.271 17.596 60.375C17.106 59.4' +
+            '65 16.861 58.415 16.861 57.225C16.861 56.049 17.113 55.013 17.61' +
+            '7 54.117C18.135 53.207 18.835 52.514 19.717 52.038C20.599 51.548' +
+            ' 21.586 51.303 22.678 51.303C23.77 51.303 24.757 51.548 25.639 5' +
+            '2.038C26.521 52.514 27.214 53.2 27.718 54.096C28.236 54.992 28.4' +
+            '95 56.035 28.495 57.225C28.495 58.415 28.229 59.465 27.697 60.37' +
+            '5C27.179 61.271 26.472 61.964 25.576 62.454C24.68 62.944 23.686 ' +
+            '63.189 22.594 63.189ZM22.594 61.509C23.28 61.509 23.924 61.348 2' +
+            '4.526 61.026C25.128 60.704 25.611 60.221 25.975 59.577C26.353 58' +
+            '.933 26.542 58.149 26.542 57.225C26.542 56.301 26.36 55.517 25.9' +
+            '96 54.873C25.632 54.229 25.156 53.753 24.568 53.445C23.98 53.123' +
+            ' 23.343 52.962 22.657 52.962C21.957 52.962 21.313 53.123 20.725 ' +
+            '53.445C20.151 53.753 19.689 54.229 19.339 54.873C18.989 55.517 1' +
+            '8.814 56.301 18.814 57.225C18.814 58.163 18.982 58.954 19.318 59' +
+            '.598C19.668 60.242 20.13 60.725 20.704 61.047C21.278 61.355 21.9' +
+            '08 61.509 22.594 61.509ZM32.9186 47.46V63H31.0076V47.46H32.9186Z' +
+            'M38.5066 53.067V59.85C38.5066 60.41 38.6256 60.809 38.8636 61.04' +
+            '7C39.1016 61.271 39.5146 61.383 40.1026 61.383H41.5096V63H39.787' +
+            '6C38.7236 63 37.9256 62.755 37.3936 62.265C36.8616 61.775 36.595' +
+            '6 60.97 36.5956 59.85V53.067H35.1046V51.492H36.5956V48.594H38.50' +
+            '66V51.492H41.5096V53.067H38.5066ZM43.111 57.204C43.111 56.028 43' +
+            '.349 54.999 43.825 54.117C44.301 53.221 44.952 52.528 45.778 52.' +
+            '038C46.618 51.548 47.549 51.303 48.571 51.303C49.579 51.303 50.4' +
+            '54 51.52 51.196 51.954C51.938 52.388 52.491 52.934 52.855 53.592' +
+            'V51.492H54.787V63H52.855V60.858C52.477 61.53 51.91 62.09 51.154 ' +
+            '62.538C50.412 62.972 49.544 63.189 48.55 63.189C47.528 63.189 46' +
+            '.604 62.937 45.778 62.433C44.952 61.929 44.301 61.222 43.825 60.' +
+            '312C43.349 59.402 43.111 58.366 43.111 57.204ZM52.855 57.225C52.' +
+            '855 56.357 52.68 55.601 52.33 54.957C51.98 54.313 51.504 53.823 ' +
+            '50.902 53.487C50.314 53.137 49.663 52.962 48.949 52.962C48.235 5' +
+            '2.962 47.584 53.13 46.996 53.466C46.408 53.802 45.939 54.292 45.' +
+            '589 54.936C45.239 55.58 45.064 56.336 45.064 57.204C45.064 58.08' +
+            '6 45.239 58.856 45.589 59.514C45.939 60.158 46.408 60.655 46.996' +
+            ' 61.005C47.584 61.341 48.235 61.509 48.949 61.509C49.663 61.509 ' +
+            '50.314 61.341 50.902 61.005C51.504 60.655 51.98 60.158 52.33 59.' +
+            '514C52.68 58.856 52.855 58.093 52.855 57.225ZM59.9274 53.361C60.' +
+            '2634 52.703 60.7394 52.192 61.3554 51.828C61.9854 51.464 62.7484' +
+            ' 51.282 63.6444 51.282V53.256H63.1404C60.9984 53.256 59.9274 54.' +
+            '418 59.9274 56.742V63H58.0164V51.492H59.9274V53.361Z" fill="whit' +
+            'e"/>'#13#10'<defs>'#13#10'<clipPath id="clip0_226_71">'#13#10'<rect width="32" hei' +
+            'ght="32" fill="white" transform="translate(49) rotate(90)"/>'#13#10'</' +
+            'clipPath>'#13#10'</defs>'#13#10'</svg>'
+        end
+      end
+    end
+    object Layout3: TLayout
+      Align = Contents
+      Size.Width = 1370.000000000000000000
+      Size.Height = 766.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Layout2: TLayout
+        Align = Center
+        Size.Width = 794.000000000000000000
+        Size.Height = 647.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object lblTitutlo: TSkLabel
+          Align = Top
+          Margins.Bottom = 8.000000000000000000
+          Size.Width = 794.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+          TextSettings.Font.Families = 'Poppins'
+          TextSettings.Font.Size = 32.000000000000000000
+          TextSettings.Font.Weight = Medium
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Words = <
+            item
+              Text = 'Ol'#225
+            end>
+        end
+        object lblSubtitulo: TSkLabel
+          Align = Top
+          Margins.Bottom = 10.000000000000000000
+          Position.Y = 56.000000000000000000
+          Size.Width = 794.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Style]
+          TextSettings.Font.Families = 'Poppins'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Words = <
+            item
+              Text = 'Selecione o que gostaria de fazer:'
+            end>
+        end
+        object Layout4: TLayout
+          Align = Center
+          Size.Width = 797.000000000000000000
+          Size.Height = 530.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 27
+          object lbMenu: TListBox
+            Align = Top
+            HitTest = False
+            Size.Width = 797.000000000000000000
+            Size.Height = 254.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'transparentlistboxstyle'
+            TabOrder = 28
+            Visible = False
+            ShowScrollBars = False
+            Columns = 3
+            DisableFocusEffect = True
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            Viewport.Width = 797.000000000000000000
+            Viewport.Height = 254.000000000000000000
+          end
+          object ItemBoleto: TListBoxItem
+            Size.Width = 265.000000000000000000
+            Size.Height = 254.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Visible = False
+            object recImprimirBoleto: TRectangle
+              Align = Client
+              Fill.Color = claWhite
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 10.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Margins.Bottom = 10.000000000000000000
+              Size.Width = 245.000000000000000000
+              Size.Height = 234.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              XRadius = 10.000000000000000000
+              YRadius = 10.000000000000000000
+              OnClick = recImprimirBoletoClick
+              object SkSvg1: TSkSvg
+                Align = Top
+                Margins.Left = 86.000000000000000000
+                Margins.Top = 35.000000000000000000
+                Margins.Right = 86.000000000000000000
+                Position.X = 86.000000000000000000
+                Position.Y = 35.000000000000000000
+                Size.Width = 73.000000000000000000
+                Size.Height = 72.000000000000000000
+                Size.PlatformDefault = False
+                Svg.Source = 
+                  '<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmln' +
+                  's="http://www.w3.org/2000/svg">'#13#10'<g id="Group 498">'#13#10'<path id="V' +
+                  'ector" d="M54.3008 29.6V10.9742C54.3008 10.0039 53.9422 9.07578 ' +
+                  '53.3305 8.40078L47.7617 2.32578C47.1289 1.65078 46.2852 1.25 45.' +
+                  '3992 1.25H18.4836C16.9438 1.25 15.6992 2.62109 15.6992 4.30859V2' +
+                  '9.6" stroke="black" stroke-width="2" stroke-linecap="round"/>'#13#10'<' +
+                  'path id="Vector_2" d="M53.6891 12.1133H47.1711C46.2852 12.1133 4' +
+                  '5.5891 11.2273 45.5891 10.1304V1.75623" stroke="black" stroke-wi' +
+                  'dth="2" stroke-linecap="round"/>'#13#10'<path id="Vector_3" d="M12.978' +
+                  '1 58.1612H3.95C2.45234 58.1612 1.25 56.9588 1.25 55.4612V38.0377' +
+                  'C1.25 33.5659 4.87813 29.9377 9.35 29.9377H60.65C65.1219 29.9377' +
+                  ' 68.75 33.5659 68.75 38.0377V55.4612C68.75 56.9588 67.5477 58.16' +
+                  '12 66.05 58.1612H57.1273" stroke="black" stroke-width="2" stroke' +
+                  '-linecap="round"/>'#13#10'<path id="Vector_4" d="M10.911 51.8747C9.961' +
+                  '74 51.8747 9.18127 51.0943 9.18127 50.145V46.5169C9.18127 45.567' +
+                  '7 9.96174 44.7872 10.911 44.7872H59.1102C60.0594 44.7872 60.8399' +
+                  ' 45.5677 60.8399 46.5169V50.145C60.8399 51.0943 60.0594 51.8747 ' +
+                  '59.1102 51.8747" stroke="black" stroke-width="2" stroke-linecap=' +
+                  '"round"/>'#13#10'<path id="Vector_5" d="M55.1445 45.0618L58.182 65.100' +
+                  '8C58.4352 66.8094 57.1063 68.3493 55.3766 68.3493H14.6234C12.872' +
+                  '7 68.3493 11.5438 66.7672 11.8391 65.0586L15.193 45.0618" stroke' +
+                  '="black" stroke-width="2" stroke-linecap="round"/>'#13#10'<path id="Ve' +
+                  'ctor_6" d="M58.2031 38.6493C59.473 38.6493 60.5024 37.6199 60.50' +
+                  '24 36.3501C60.5024 35.0803 59.473 34.0509 58.2031 34.0509C56.933' +
+                  '3 34.0509 55.9039 35.0803 55.9039 36.3501C55.9039 37.6199 56.933' +
+                  '3 38.6493 58.2031 38.6493Z" stroke="black" stroke-width="2" stro' +
+                  'ke-linecap="round"/>'#13#10'</g>'#13#10'</svg>'
+              end
+              object SkLabel1: TSkLabel
+                Align = Client
+                Size.Width = 245.000000000000000000
+                Size.Height = 83.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [FontColor]
+                TextSettings.Font.Families = 'Poppins'
+                TextSettings.Font.Size = 21.000000000000000000
+                TextSettings.Font.Weight = Medium
+                TextSettings.HorzAlign = Center
+                Words = <
+                  item
+                    Text = 'Imprimir boleto'
+                  end>
+              end
+              object Layout45: TLayout
+                Align = Bottom
+                Margins.Left = 23.000000000000000000
+                Margins.Right = 23.000000000000000000
+                Margins.Bottom = 14.000000000000000000
+                Position.X = 23.000000000000000000
+                Position.Y = 190.000000000000000000
+                Size.Width = 199.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                object SkSvg15: TSkSvg
+                  Align = MostRight
+                  Position.X = 169.000000000000000000
+                  Size.Width = 30.000000000000000000
+                  Size.Height = 30.000000000000000000
+                  Size.PlatformDefault = False
+                  Svg.OverrideColor = claBlack
+                  Svg.Source = 
+                    '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmln' +
+                    's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.1064 15.9995L20.88' +
+                    '46 15.9995" stroke="black" stroke-width="2" stroke-linecap="roun' +
+                    'd" stroke-linejoin="round"/>'#13#10'<path d="M17.2753 19.6084L20.894 1' +
+                    '5.999L17.2753 12.3896" stroke="black" stroke-width="2" stroke-li' +
+                    'necap="round" stroke-linejoin="round"/>'#13#10'<path d="M16 0.999999C2' +
+                    '4.2875 0.999999 31 7.7125 31 16C31 24.2875 24.2875 31 16 31C7.71' +
+                    '25 31 1 24.2875 0.999999 16C0.999999 7.7125 7.7125 1 16 0.999999' +
+                    'Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke' +
+                    '-linejoin="round"/>'#13#10'</svg>'
+                end
+              end
+            end
+          end
+          object ItemEmprestimo: TListBoxItem
+            Position.X = 265.000000000000000000
+            Position.Y = 254.000000000000000000
+            Size.Width = 265.000000000000000000
+            Size.Height = 254.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            Visible = False
+            object recEmprestimo: TRectangle
+              Align = Client
+              Fill.Color = claWhite
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 10.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Margins.Bottom = 10.000000000000000000
+              Size.Width = 245.000000000000000000
+              Size.Height = 234.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              XRadius = 10.000000000000000000
+              YRadius = 10.000000000000000000
+              OnClick = recEmprestimoClick
+              object SkSvg7: TSkSvg
+                Align = Top
+                Margins.Left = 86.000000000000000000
+                Margins.Top = 35.000000000000000000
+                Margins.Right = 86.000000000000000000
+                Position.X = 86.000000000000000000
+                Position.Y = 35.000000000000000000
+                Size.Width = 73.000000000000000000
+                Size.Height = 72.000000000000000000
+                Size.PlatformDefault = False
+                Svg.Source = 
+                  '<svg width="69" height="70" viewBox="0 0 69 70" fill="none" xmln' +
+                  's="http://www.w3.org/2000/svg">'#13#10'<g id="Group 458">'#13#10'<g id="Grou' +
+                  'p">'#13#10'<path id="Vector" d="M55.9439 10.0026H11.7081C11.056 10.002' +
+                  '6 10.5273 10.5312 10.5273 11.1833V32.1205C10.5273 32.7726 11.056' +
+                  ' 33.3012 11.7081 33.3012H55.9439C56.596 33.3012 57.1247 32.7726 ' +
+                  '57.1247 32.1205V11.1833C57.1247 10.5312 56.596 10.0026 55.9439 1' +
+                  '0.0026Z" stroke="black" stroke-width="2" stroke-linecap="round" ' +
+                  'stroke-linejoin="round"/>'#13#10'<path id="Vector_2" d="M31.5278 33.47' +
+                  'L19.7414 37.1387C19.636 37.1809 19.5095 37.1176 19.4884 37.0122L' +
+                  '18.3499 33.3224" stroke="black" stroke-width="2" stroke-linecap=' +
+                  '"round" stroke-linejoin="round"/>'#13#10'<path id="Vector_3" d="M28.70' +
+                  '24 9.93951L56.5975 1.27368C56.8716 1.18934 57.1668 1.33693 57.25' +
+                  '12 1.61103L63.8507 22.8645C63.935 23.1386 63.7874 23.4338 63.513' +
+                  '3 23.5181L57.1036 25.5001" stroke="black" stroke-width="2" strok' +
+                  'e-linecap="round" stroke-linejoin="round"/>'#13#10'<g id="Group_2">'#13#10'<' +
+                  'path id="Vector_4" d="M34.3319 18.3101C35.1542 18.5421 35.6814 1' +
+                  '9.0692 35.9766 19.8282C36.1241 20.2288 36.0398 20.524 35.7235 20' +
+                  '.6295C35.4283 20.7349 35.1753 20.6084 35.0277 20.2078C34.6482 19' +
+                  '.1114 33.4464 19.1114 32.9403 19.6596C32.8138 19.8071 32.6873 19' +
+                  '.9969 32.6241 20.1867C32.4554 20.7349 32.6241 20.9879 33.1512 21' +
+                  '.0933C33.6361 21.1987 34.1422 21.2198 34.6482 21.3253C35.9133 21' +
+                  '.5783 36.4615 22.5903 35.9555 23.8133C35.7024 24.4247 35.2386 24' +
+                  '.8675 34.606 25.0783C34.4163 25.1416 34.3319 25.2259 34.353 25.4' +
+                  '368C34.353 25.8585 34.1633 26.0904 33.847 26.0904C33.5307 26.090' +
+                  '4 33.3199 25.8585 33.341 25.4368C33.341 25.2259 33.2777 25.1416 ' +
+                  '33.0879 25.0783C32.3711 24.8253 31.9283 24.2771 31.6753 23.5813C' +
+                  '31.5488 23.2229 31.6753 22.9488 31.9704 22.8434C32.2656 22.7379 ' +
+                  '32.4976 22.8434 32.6452 23.2229C32.9614 24.003 33.5096 24.3193 3' +
+                  '4.1843 24.1506C34.5428 24.0663 34.8169 23.8554 34.9645 23.5392C3' +
+                  '5.2175 22.9909 35.2597 22.4849 34.4374 22.3584C33.9524 22.2952 3' +
+                  '3.4675 22.253 32.9825 22.1476C31.7807 21.8945 31.2746 20.9457 31' +
+                  '.7174 19.765C31.9704 19.0903 32.4343 18.6264 33.1301 18.3945C33.' +
+                  '3199 18.3312 33.3831 18.2469 33.362 18.0571C33.362 17.9517 33.36' +
+                  '2 17.8463 33.362 17.7408C33.4042 17.4667 33.5729 17.2981 33.847 ' +
+                  '17.277C34.1211 17.277 34.353 17.4457 34.3741 17.7408C34.3741 17.' +
+                  '9306 34.3741 18.1204 34.3741 18.3523L34.3319 18.3101Z" fill="bla' +
+                  'ck"/>'#13#10'<path id="Vector_5" d="M40.7839 21.6629C40.7839 25.5214 3' +
+                  '7.6634 28.6419 33.8049 28.6419C29.9463 28.6419 26.8258 25.5214 2' +
+                  '6.8258 21.6629C26.8258 17.8044 29.9463 14.6838 33.8049 14.6838C3' +
+                  '7.6634 14.6838 40.7839 17.8044 40.7839 21.6629Z" stroke="black" ' +
+                  'stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/' +
+                  '>'#13#10'</g>'#13#10'<path id="Vector_6" d="M52.1698 10.0026C52.1698 12.7436' +
+                  ' 54.3837 14.9575 57.1247 14.9575" stroke="black" stroke-width="2' +
+                  '" stroke-miterlimit="10"/>'#13#10'<path id="Vector_7" d="M57.1247 28.3' +
+                  '678C54.3837 28.3678 52.1698 30.5817 52.1698 33.3227" stroke="bla' +
+                  'ck" stroke-width="2" stroke-miterlimit="10"/>'#13#10'<path id="Vector_' +
+                  '8" d="M15.4823 33.3016C15.4823 30.5606 13.2684 28.3467 10.5273 2' +
+                  '8.3467" stroke="black" stroke-width="2" stroke-miterlimit="10"/>' +
+                  #13#10'<path id="Vector_9" d="M10.5273 14.9575C13.2684 14.9575 15.482' +
+                  '3 12.7436 15.4823 10.0026" stroke="black" stroke-width="2" strok' +
+                  'e-miterlimit="10"/>'#13#10'<g id="Group_3">'#13#10'<path id="Vector_10" d="M' +
+                  '16.4099 21.6624H21.3648" stroke="black" stroke-width="2" stroke-' +
+                  'linecap="round" stroke-linejoin="round"/>'#13#10'<path id="Vector_11" ' +
+                  'd="M46.287 21.6624H51.2419" stroke="black" stroke-width="2" stro' +
+                  'ke-linecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'</g>'#13#10'<g id=' +
+                  '"Group_4">'#13#10'<path id="Vector_12" d="M1.25 50.9281L8.5875 48.2714' +
+                  'C9.36763 47.9973 10.1267 47.6389 10.8225 47.1961C13.1207 45.7623' +
+                  ' 19.9944 42.3888 27.6059 47.2383L29.6512 48.3136C30.6422 48.8196' +
+                  ' 31.6964 49.1991 32.7928 49.3889L41.4797 50.9492C43.1032 51.2444' +
+                  ' 44.6635 51.9823 45.8021 53.1842C46.772 54.1962 47.5732 55.6089 ' +
+                  '47.4889 57.5276C47.4889 57.9282 46.8985 58.5397 46.4979 58.4764C' +
+                  '43.6304 58.0126 33.2356 56.0517 33.2356 56.0517" stroke="black" ' +
+                  'stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>' +
+                  #13#10'<path id="Vector_13" d="M41.058 50.7597C41.058 50.7597 48.6907' +
+                  ' 44.9403 52.8865 51.076" stroke="black" stroke-width="2" stroke-' +
+                  'miterlimit="10" stroke-linecap="round"/>'#13#10'<path id="Vector_14" d' +
+                  '="M45.9918 53.3949L54.6577 50.5063C55.4378 50.2532 56.2812 50.16' +
+                  '89 57.0613 50.3798C58.0312 50.6328 59.1487 51.3075 59.8023 52.97' +
+                  '32" stroke="black" stroke-width="2" stroke-miterlimit="10" strok' +
+                  'e-linecap="round"/>'#13#10'<path id="Vector_15" d="M47.5099 57.3592L61' +
+                  '.2993 52.573C61.6578 52.4465 62.0373 52.3621 62.4168 52.341C63.7' +
+                  '03 52.2778 66.444 52.5308 67.6669 55.7146C67.7513 55.9465 67.645' +
+                  '9 56.1996 67.435 56.305L43.061 67.754L41.4586 68.26C39.3712 68.9' +
+                  '137 37.1151 68.9137 35.0277 68.26L19.91 63.5371C18.3497 63.0521 ' +
+                  '16.6629 63.0943 15.1237 63.6636L7.15369 66.5733" stroke="black" ' +
+                  'stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>' +
+                  #13#10'</g>'#13#10'</g>'#13#10'</svg>'
+              end
+              object SkLabel5: TSkLabel
+                Align = Client
+                Size.Width = 245.000000000000000000
+                Size.Height = 83.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [FontColor]
+                TextSettings.Font.Families = 'Poppins'
+                TextSettings.Font.Size = 21.000000000000000000
+                TextSettings.Font.Weight = Medium
+                TextSettings.HorzAlign = Center
+                Words = <
+                  item
+                    Text = 'Empr'#233'stimo pessoal'
+                  end>
+              end
+              object Layout10: TLayout
+                Align = Bottom
+                Margins.Left = 23.000000000000000000
+                Margins.Right = 23.000000000000000000
+                Margins.Bottom = 14.000000000000000000
+                Position.X = 23.000000000000000000
+                Position.Y = 190.000000000000000000
+                Size.Width = 199.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                object SkSvg11: TSkSvg
+                  Align = MostRight
+                  Position.X = 169.000000000000000000
+                  Size.Width = 30.000000000000000000
+                  Size.Height = 30.000000000000000000
+                  Size.PlatformDefault = False
+                  Svg.OverrideColor = claBlack
+                  Svg.Source = 
+                    '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmln' +
+                    's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.1064 15.9995L20.88' +
+                    '46 15.9995" stroke="black" stroke-width="2" stroke-linecap="roun' +
+                    'd" stroke-linejoin="round"/>'#13#10'<path d="M17.2753 19.6084L20.894 1' +
+                    '5.999L17.2753 12.3896" stroke="black" stroke-width="2" stroke-li' +
+                    'necap="round" stroke-linejoin="round"/>'#13#10'<path d="M16 0.999999C2' +
+                    '4.2875 0.999999 31 7.7125 31 16C31 24.2875 24.2875 31 16 31C7.71' +
+                    '25 31 1 24.2875 0.999999 16C0.999999 7.7125 7.7125 1 16 0.999999' +
+                    'Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke' +
+                    '-linejoin="round"/>'#13#10'</svg>'
+                end
+              end
+            end
+          end
+          object ItemExtrato: TListBoxItem
+            Position.X = 265.000000000000000000
+            Size.Width = 265.000000000000000000
+            Size.Height = 254.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Visible = False
+            object recExtratoFatura: TRectangle
+              Align = Client
+              Fill.Color = claWhite
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 10.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Margins.Bottom = 10.000000000000000000
+              Size.Width = 245.000000000000000000
+              Size.Height = 234.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              XRadius = 10.000000000000000000
+              YRadius = 10.000000000000000000
+              OnClick = recExtratoFaturaClick
+              object SkSvg2: TSkSvg
+                Align = Top
+                Margins.Left = 86.000000000000000000
+                Margins.Top = 35.000000000000000000
+                Margins.Right = 86.000000000000000000
+                Position.X = 86.000000000000000000
+                Position.Y = 35.000000000000000000
+                Size.Width = 73.000000000000000000
+                Size.Height = 72.000000000000000000
+                Size.PlatformDefault = False
+                Svg.Source = 
+                  '<svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmln' +
+                  's="http://www.w3.org/2000/svg">'#13#10'<g id="Group 410">'#13#10'<path id="V' +
+                  'ector" d="M53.2038 16.1846L14.228 37.4967C13.1719 38.0742 12.783' +
+                  '8 39.3986 13.3614 40.4547L24.9038 61.5636C25.4813 62.6198 26.805' +
+                  '6 63.0078 27.8618 62.4303L66.8376 41.1181C67.8938 40.5406 68.281' +
+                  '8 39.2163 67.7043 38.1601L56.1619 17.0512C55.5844 15.9951 54.26 ' +
+                  '15.607 53.2038 16.1846Z" stroke="black" stroke-width="2" stroke-' +
+                  'miterlimit="10"/>'#13#10'<path id="Vector_2" d="M26.5333 56.9439L32.09' +
+                  '65 53.9132" stroke="black" stroke-width="2" stroke-miterlimit="1' +
+                  '0" stroke-linecap="round"/>'#13#10'<path id="Vector_3" d="M35.9573 51.' +
+                  '7954L41.5204 48.744" stroke="black" stroke-width="2" stroke-mite' +
+                  'rlimit="10" stroke-linecap="round"/>'#13#10'<path id="Vector_4" d="M15' +
+                  '.5939 44.489L58.4798 21.0325" stroke="black" stroke-width="2" st' +
+                  'roke-miterlimit="10"/>'#13#10'<path id="Vector_5" d="M46.0457 53.913V6' +
+                  '7.4264H1.25V1.25H46.0457V20.119" stroke="black" stroke-width="2"' +
+                  ' stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path id="Vec' +
+                  'tor_6" d="M2.55774 55.3246H20.3681" stroke="black" stroke-width=' +
+                  '"2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path id="' +
+                  'Vector_7" d="M27.1144 10.8197H37.8047" stroke="black" stroke-wid' +
+                  'th="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path i' +
+                  'd="Vector_8" d="M27.1144 17.566H37.8047" stroke="black" stroke-w' +
+                  'idth="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path' +
+                  ' id="Vector_9" d="M14.5144 8.28684C16.2581 8.78503 17.379 9.8644' +
+                  '4 17.981 11.5043C18.3131 12.3762 18.1263 12.9574 17.4413 13.2272' +
+                  'C16.7978 13.4763 16.2788 13.1857 15.9675 12.3346C15.1371 10.0098' +
+                  ' 12.6047 9.98899 11.5253 11.1722C11.2346 11.4836 10.9856 11.878 ' +
+                  '10.8818 12.2724C10.5289 13.4141 10.8402 13.9745 12.0027 14.2029C' +
+                  '13.0406 14.4104 14.12 14.4727 15.1579 14.6803C17.8564 15.1992 18' +
+                  '.9774 17.3788 17.898 19.9321C17.3583 21.2398 16.3826 22.1532 15.' +
+                  '0541 22.6098C14.639 22.7551 14.4936 22.9212 14.4936 23.3571C14.4' +
+                  '936 24.2497 14.12 24.7272 13.4142 24.7272C12.7292 24.7272 12.314' +
+                  '1 24.2497 12.3348 23.3571C12.3348 22.9212 12.2103 22.7344 11.795' +
+                  '1 22.5683C10.2798 22.0286 9.34567 20.8869 8.80596 19.3924C8.5361' +
+                  '1 18.6243 8.78521 18.0431 9.4287 17.8147C10.0514 17.5864 10.5289' +
+                  ' 17.8563 10.8402 18.6035C11.5253 20.2434 12.6669 20.9492 14.0992' +
+                  ' 20.5963C14.8465 20.4095 15.4278 19.9943 15.7599 19.2886C16.2996' +
+                  ' 18.1469 16.3826 17.0467 14.639 16.7976C13.6011 16.6523 12.5632 ' +
+                  '16.5693 11.546 16.3409C9.01354 15.8012 7.95489 13.7669 8.84748 1' +
+                  '1.3175C9.38719 9.8852 10.3836 8.90958 11.8159 8.43214C12.231 8.2' +
+                  '8684 12.3556 8.10002 12.3141 7.70561C12.2933 7.47728 12.2933 7.2' +
+                  '4894 12.3141 7.0206C12.3971 6.41862 12.75 6.06573 13.352 6.02422' +
+                  'C13.9332 5.9827 14.4106 6.39786 14.4521 6.99984C14.4936 7.415 14' +
+                  '.4521 7.8094 14.4521 8.28684H14.5144Z" fill="black"/>'#13#10'</g>'#13#10'</s' +
+                  'vg>'
+              end
+              object SkLabel2: TSkLabel
+                Align = Client
+                Size.Width = 245.000000000000000000
+                Size.Height = 83.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [FontColor]
+                TextSettings.Font.Families = 'Poppins'
+                TextSettings.Font.Size = 21.000000000000000000
+                TextSettings.Font.Weight = Medium
+                TextSettings.HorzAlign = Center
+                Words = <
+                  item
+                    Text = 'Extrato da fatura'
+                  end>
+              end
+              object Layout9: TLayout
+                Align = Bottom
+                Margins.Left = 23.000000000000000000
+                Margins.Right = 23.000000000000000000
+                Margins.Bottom = 14.000000000000000000
+                Position.X = 23.000000000000000000
+                Position.Y = 190.000000000000000000
+                Size.Width = 199.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                object SkSvg10: TSkSvg
+                  Align = MostRight
+                  Position.X = 169.000000000000000000
+                  Size.Width = 30.000000000000000000
+                  Size.Height = 30.000000000000000000
+                  Size.PlatformDefault = False
+                  Svg.OverrideColor = claBlack
+                  Svg.Source = 
+                    '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmln' +
+                    's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.1064 15.9995L20.88' +
+                    '46 15.9995" stroke="black" stroke-width="2" stroke-linecap="roun' +
+                    'd" stroke-linejoin="round"/>'#13#10'<path d="M17.2753 19.6084L20.894 1' +
+                    '5.999L17.2753 12.3896" stroke="black" stroke-width="2" stroke-li' +
+                    'necap="round" stroke-linejoin="round"/>'#13#10'<path d="M16 0.999999C2' +
+                    '4.2875 0.999999 31 7.7125 31 16C31 24.2875 24.2875 31 16 31C7.71' +
+                    '25 31 1 24.2875 0.999999 16C0.999999 7.7125 7.7125 1 16 0.999999' +
+                    'Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke' +
+                    '-linejoin="round"/>'#13#10'</svg>'
+                end
+              end
+            end
+          end
+          object ItemFatura: TListBoxItem
+            Size.Width = 265.000000000000000000
+            Size.Height = 254.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Visible = False
+            object recPagarFatura: TRectangle
+              Align = Client
+              Fill.Color = claWhite
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 10.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Margins.Bottom = 10.000000000000000000
+              Size.Width = 245.000000000000000000
+              Size.Height = 234.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              XRadius = 10.000000000000000000
+              YRadius = 10.000000000000000000
+              OnClick = recPagarFaturaClick
+              object SkSvg5: TSkSvg
+                Align = Top
+                Margins.Left = 86.000000000000000000
+                Margins.Top = 35.000000000000000000
+                Margins.Right = 86.000000000000000000
+                Position.X = 86.000000000000000000
+                Position.Y = 35.000000000000000000
+                Size.Width = 73.000000000000000000
+                Size.Height = 72.000000000000000000
+                Size.PlatformDefault = False
+                Svg.Source = 
+                  '<svg width="62" height="70" viewBox="0 0 62 70" fill="none" xmln' +
+                  's="http://www.w3.org/2000/svg">'#13#10'<g id="Group 438">'#13#10'<path id="V' +
+                  'ector" d="M1.78894 15.4855V66.071C1.78894 67.5476 2.99135 68.75 ' +
+                  '4.46799 68.75H46.932C48.4086 68.75 49.611 67.5476 49.611 66.071V' +
+                  '57.8651" stroke="black" stroke-width="2" stroke-linecap="round" ' +
+                  'stroke-linejoin="round"/>'#13#10'<path id="Vector_2" d="M13.0957 9.368' +
+                  '17L44.9279 1.33102C46.3623 0.97241 47.8179 1.8373 48.1765 3.2717' +
+                  '5L60.5592 52.3173C60.9178 53.7518 60.0529 55.2073 58.6184 55.566' +
+                  'L17.4623 65.9657C16.0279 66.3243 14.5723 65.4595 14.2137 64.025L' +
+                  '1.83102 14.9583C1.47241 13.5239 2.3373 12.0683 3.77175 11.7097L6' +
+                  '.61956 10.9925" stroke="black" stroke-width="2" stroke-linecap="' +
+                  'round" stroke-linejoin="round"/>'#13#10'<path id="Vector_3" d="M27.419' +
+                  '1 15.5908C28.7269 15.633 29.6762 16.2025 30.3934 17.2151C30.7731' +
+                  ' 17.7635 30.7521 18.2065 30.3091 18.5019C29.9083 18.7761 29.4864' +
+                  ' 18.6706 29.1277 18.1433C28.1574 16.6666 26.3854 17.1096 25.8369' +
+                  ' 18.1222C25.6893 18.3964 25.5838 18.7128 25.5838 19.0081C25.5416' +
+                  ' 19.873 25.858 20.1895 26.7018 20.1473C27.4613 20.1051 28.2207 1' +
+                  '9.9785 28.9801 19.9363C30.9419 19.8308 32.1021 21.1387 31.8068 2' +
+                  '3.1005C31.6591 24.1131 31.1318 24.9147 30.3091 25.4632C30.0559 2' +
+                  '5.6319 29.9715 25.7796 30.0559 26.096C30.2247 26.7078 30.0348 27' +
+                  '.1086 29.5496 27.2351C29.0645 27.3617 28.7059 27.0875 28.5582 26' +
+                  '.4757C28.4949 26.1804 28.3683 26.0538 28.0519 26.0327C26.9128 25' +
+                  '.9273 26.0479 25.2944 25.4151 24.3451C25.0986 23.86 25.1619 23.4' +
+                  '17 25.5627 23.1427C25.9635 22.8685 26.3432 22.974 26.6807 23.438' +
+                  '1C27.4402 24.4717 28.3683 24.7459 29.2965 24.2397C29.7817 23.986' +
+                  '5 30.1192 23.5857 30.2247 23.0373C30.3934 22.1513 30.2669 21.370' +
+                  '8 29.0012 21.4973C28.2629 21.5817 27.5245 21.7083 26.7651 21.729' +
+                  '4C24.9088 21.7927 23.8118 20.5692 24.0017 18.7128C24.1072 17.615' +
+                  '9 24.6556 16.7721 25.5627 16.1814C25.8369 16.0127 25.8791 15.865' +
+                  ' 25.7737 15.5908C25.7104 15.4431 25.6682 15.2744 25.6682 15.1056' +
+                  'C25.626 14.6626 25.7948 14.3673 26.2167 14.2407C26.6175 14.1141 ' +
+                  '27.0183 14.304 27.1659 14.7259C27.2714 15.0001 27.3136 15.2954 2' +
+                  '7.398 15.6119L27.4191 15.5908Z" fill="black"/>'#13#10'<path id="Vector' +
+                  '_4" d="M14.5303 38.6264L48.2188 30.1251" stroke="black" stroke-w' +
+                  'idth="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path' +
+                  ' id="Vector_5" d="M16.3444 45.799L50.0329 37.2977" stroke="black' +
+                  '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round' +
+                  '"/>'#13#10'<path id="Vector_6" d="M18.1586 52.9921L51.8471 44.4697" st' +
+                  'roke="black" stroke-width="2" stroke-linecap="round" stroke-line' +
+                  'join="round"/>'#13#10'<path id="Vector_7" d="M9.80477 13.6291V7.57486C' +
+                  '9.80477 6.85764 10.3743 5.99275 11.4291 5.99275C12.4838 5.99275 ' +
+                  '12.8846 6.87873 12.8846 7.57486V16.055C12.8846 17.7215 11.5345 1' +
+                  '9.0505 9.88915 19.0505C8.22265 19.0505 6.89368 17.7004 6.89368 1' +
+                  '6.055V7.4061C6.89368 4.89581 8.93988 2.84961 11.4502 2.84961C13.' +
+                  '9605 2.84961 16.0067 4.89581 16.0067 7.4061" stroke="black" stro' +
+                  'ke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<' +
+                  '/g>'#13#10'</svg>'
+              end
+              object SkLabel3: TSkLabel
+                Align = Client
+                Size.Width = 245.000000000000000000
+                Size.Height = 83.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [FontColor]
+                TextSettings.Font.Families = 'Poppins'
+                TextSettings.Font.Size = 21.000000000000000000
+                TextSettings.Font.Weight = Medium
+                TextSettings.HorzAlign = Center
+                Words = <
+                  item
+                    Text = 'Pagar fatura'
+                  end>
+              end
+              object Layout8: TLayout
+                Align = Bottom
+                Margins.Left = 23.000000000000000000
+                Margins.Right = 23.000000000000000000
+                Margins.Bottom = 14.000000000000000000
+                Position.X = 23.000000000000000000
+                Position.Y = 190.000000000000000000
+                Size.Width = 199.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                object SkSvg9: TSkSvg
+                  Align = MostRight
+                  Position.X = 169.000000000000000000
+                  Size.Width = 30.000000000000000000
+                  Size.Height = 30.000000000000000000
+                  Size.PlatformDefault = False
+                  Svg.OverrideColor = claBlack
+                  Svg.Source = 
+                    '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmln' +
+                    's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.1064 15.9995L20.88' +
+                    '46 15.9995" stroke="black" stroke-width="2" stroke-linecap="roun' +
+                    'd" stroke-linejoin="round"/>'#13#10'<path d="M17.2753 19.6084L20.894 1' +
+                    '5.999L17.2753 12.3896" stroke="black" stroke-width="2" stroke-li' +
+                    'necap="round" stroke-linejoin="round"/>'#13#10'<path d="M16 0.999999C2' +
+                    '4.2875 0.999999 31 7.7125 31 16C31 24.2875 24.2875 31 16 31C7.71' +
+                    '25 31 1 24.2875 0.999999 16C0.999999 7.7125 7.7125 1 16 0.999999' +
+                    'Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke' +
+                    '-linejoin="round"/>'#13#10'</svg>'
+                end
+              end
+            end
+          end
+          object ItemLimite: TListBoxItem
+            Size.Width = 265.000000000000000000
+            Size.Height = 254.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Visible = False
+            object recLimite: TRectangle
+              Align = Client
+              Fill.Color = claWhite
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 10.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Margins.Bottom = 10.000000000000000000
+              Size.Width = 245.000000000000000000
+              Size.Height = 234.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              XRadius = 10.000000000000000000
+              YRadius = 10.000000000000000000
+              OnClick = recLimiteClick
+              object SVGLimite: TSkSvg
+                Align = Top
+                Margins.Left = 86.000000000000000000
+                Margins.Top = 35.000000000000000000
+                Margins.Right = 86.000000000000000000
+                Position.X = 86.000000000000000000
+                Position.Y = 35.000000000000000000
+                Size.Width = 73.000000000000000000
+                Size.Height = 72.000000000000000000
+                Size.PlatformDefault = False
+                Svg.Source = 
+                  '<svg width="70" height="62" viewBox="0 0 70 62" fill="none" xmln' +
+                  's="http://www.w3.org/2000/svg">'#13#10'<g id="Group 98">'#13#10'<path id="Ve' +
+                  'ctor" d="M6.54453 1.75H58.8359V12.318H6.54453C3.63359 12.318 1.2' +
+                  '5 9.95547 1.25 7.02344C1.25 4.1125 3.6125 1.75 6.54453 1.75Z" st' +
+                  'roke="#1B1B1B" stroke-width="2" stroke-miterlimit="10"/>'#13#10'<path ' +
+                  'id="Vector_2" d="M1.25 6.55945V55.0962C1.25 58.0915 3.67578 60.4' +
+                  '962 6.65 60.4962H63.35C66.3453 60.4962 68.75 58.0704 68.75 55.09' +
+                  '62V17.718C68.75 14.7227 66.3242 12.318 63.35 12.318H51.2211" str' +
+                  'oke="#1B1B1B" stroke-width="2" stroke-miterlimit="10"/>'#13#10'<path i' +
+                  'd="Vector_3" d="M49.8918 26.5985H68.7496V46.6798H49.8918C44.3442' +
+                  ' 46.6798 39.8512 42.1868 39.8512 36.6391C39.8512 31.0915 44.3442' +
+                  ' 26.5985 49.8918 26.5985Z" stroke="#1B1B1B" stroke-width="2" str' +
+                  'oke-miterlimit="10"/>'#13#10'<path id="Vector_4" d="M49.2374 40.2884C5' +
+                  '1.2528 40.2884 52.8866 38.6546 52.8866 36.6392C52.8866 34.6238 5' +
+                  '1.2528 32.99 49.2374 32.99C47.2219 32.99 45.5881 34.6238 45.5881' +
+                  ' 36.6392C45.5881 38.6546 47.2219 40.2884 49.2374 40.2884Z" fill=' +
+                  '"#1B1B1B"/>'#13#10'</g>'#13#10'</svg>'
+              end
+              object SkLabel4: TSkLabel
+                Align = Client
+                Size.Width = 245.000000000000000000
+                Size.Height = 83.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [FontColor]
+                TextSettings.Font.Families = 'Poppins'
+                TextSettings.Font.Size = 21.000000000000000000
+                TextSettings.Font.Weight = Medium
+                TextSettings.HorzAlign = Center
+                Words = <
+                  item
+                    Text = 'Limite'
+                  end>
+              end
+              object Layout12: TLayout
+                Align = Bottom
+                Margins.Left = 23.000000000000000000
+                Margins.Right = 23.000000000000000000
+                Margins.Bottom = 14.000000000000000000
+                Position.X = 23.000000000000000000
+                Position.Y = 190.000000000000000000
+                Size.Width = 199.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                object SkSvg13: TSkSvg
+                  Align = MostRight
+                  Position.X = 169.000000000000000000
+                  Size.Width = 30.000000000000000000
+                  Size.Height = 30.000000000000000000
+                  Size.PlatformDefault = False
+                  Svg.OverrideColor = claBlack
+                  Svg.Source = 
+                    '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmln' +
+                    's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.1064 15.9995L20.88' +
+                    '46 15.9995" stroke="black" stroke-width="2" stroke-linecap="roun' +
+                    'd" stroke-linejoin="round"/>'#13#10'<path d="M17.2753 19.6084L20.894 1' +
+                    '5.999L17.2753 12.3896" stroke="black" stroke-width="2" stroke-li' +
+                    'necap="round" stroke-linejoin="round"/>'#13#10'<path d="M16 0.999999C2' +
+                    '4.2875 0.999999 31 7.7125 31 16C31 24.2875 24.2875 31 16 31C7.71' +
+                    '25 31 1 24.2875 0.999999 16C0.999999 7.7125 7.7125 1 16 0.999999' +
+                    'Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke' +
+                    '-linejoin="round"/>'#13#10'</svg>'
+                end
+              end
+            end
+          end
+          object ItemSeguro: TListBoxItem
+            Size.Width = 265.000000000000000000
+            Size.Height = 254.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Visible = False
+            object recSeguro: TRectangle
+              Align = Client
+              Fill.Color = claWhite
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 10.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Margins.Bottom = 10.000000000000000000
+              Size.Width = 245.000000000000000000
+              Size.Height = 234.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              XRadius = 10.000000000000000000
+              YRadius = 10.000000000000000000
+              OnClick = recSeguroClick
+              object SkSvg8: TSkSvg
+                Align = Top
+                Margins.Left = 86.000000000000000000
+                Margins.Top = 35.000000000000000000
+                Margins.Right = 86.000000000000000000
+                Position.X = 86.000000000000000000
+                Position.Y = 35.000000000000000000
+                Size.Width = 73.000000000000000000
+                Size.Height = 72.000000000000000000
+                Size.PlatformDefault = False
+                Svg.Source = 
+                  '<svg width="69" height="70" viewBox="0 0 69 70" fill="none" xmln' +
+                  's="http://www.w3.org/2000/svg">'#13#10'<g id="Group 193">'#13#10'<path id="V' +
+                  'ector" d="M36.498 68.2438C67.9228 51.9831 68.3025 27.9611 67.353' +
+                  '4 19.546C67.1425 17.7322 65.8138 16.277 64.0633 15.7497C51.9152 ' +
+                  '12.1432 41.6652 5.43646 37.0464 2.10416C35.4857 0.965279 33.3767' +
+                  ' 0.965279 31.7949 2.10416C27.1761 5.43646 16.9261 12.1432 4.778 ' +
+                  '15.7497C3.02749 16.277 1.6777 17.7322 1.48789 19.546C0.538817 27' +
+                  '.9611 0.939535 51.9831 32.3432 68.2438C33.6297 68.9187 35.2115 6' +
+                  '8.9187 36.477 68.2438H36.498Z" stroke="black" stroke-width="2" s' +
+                  'troke-linecap="round" stroke-linejoin="round"/>'#13#10'<path id="Vecto' +
+                  'r_2" d="M20.8068 33.761L30.7193 43.6735L48.0557 26.3372" stroke=' +
+                  '"black" stroke-width="2" stroke-linecap="round" stroke-linejoin=' +
+                  '"round"/>'#13#10'</g>'#13#10'</svg>'
+              end
+              object SkLabel7: TSkLabel
+                Align = Client
+                Size.Width = 245.000000000000000000
+                Size.Height = 83.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [FontColor]
+                TextSettings.Font.Families = 'Poppins'
+                TextSettings.Font.Size = 21.000000000000000000
+                TextSettings.Font.Weight = Medium
+                TextSettings.HorzAlign = Center
+                Words = <
+                  item
+                    Text = 'Seguros'
+                  end>
+              end
+              object Layout11: TLayout
+                Align = Bottom
+                Margins.Left = 23.000000000000000000
+                Margins.Right = 23.000000000000000000
+                Margins.Bottom = 14.000000000000000000
+                Position.X = 23.000000000000000000
+                Position.Y = 190.000000000000000000
+                Size.Width = 199.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                object SkSvg12: TSkSvg
+                  Align = MostRight
+                  Position.X = 169.000000000000000000
+                  Size.Width = 30.000000000000000000
+                  Size.Height = 30.000000000000000000
+                  Size.PlatformDefault = False
+                  Svg.OverrideColor = claBlack
+                  Svg.Source = 
+                    '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmln' +
+                    's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.1064 15.9995L20.88' +
+                    '46 15.9995" stroke="black" stroke-width="2" stroke-linecap="roun' +
+                    'd" stroke-linejoin="round"/>'#13#10'<path d="M17.2753 19.6084L20.894 1' +
+                    '5.999L17.2753 12.3896" stroke="black" stroke-width="2" stroke-li' +
+                    'necap="round" stroke-linejoin="round"/>'#13#10'<path d="M16 0.999999C2' +
+                    '4.2875 0.999999 31 7.7125 31 16C31 24.2875 24.2875 31 16 31C7.71' +
+                    '25 31 1 24.2875 0.999999 16C0.999999 7.7125 7.7125 1 16 0.999999' +
+                    'Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke' +
+                    '-linejoin="round"/>'#13#10'</svg>'
+                end
+              end
+            end
+          end
+          object lbMenu2: TListBox
+            Align = Top
+            HitTest = False
+            Size.Width = 797.000000000000000000
+            Size.Height = 254.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'transparentlistboxstyle'
+            TabOrder = 27
+            Visible = False
+            ShowScrollBars = False
+            Columns = 3
+            DisableFocusEffect = True
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            Viewport.Width = 797.000000000000000000
+            Viewport.Height = 254.000000000000000000
+          end
+        end
+        object skloading: TSkAnimatedImage
+          Align = Contents
+          Size.Width = 144.000000000000000000
+          Size.Height = 72.000000000000000000
+          Size.PlatformDefault = False
+          Visible = False
+          Data = {
+            7B2276223A22352E352E37222C226D657461223A7B2267223A224C6F74746965
+            46696C657320414520302E312E3230222C2261223A22222C226B223A22222C22
+            64223A22222C227463223A22227D2C226672223A36302C226970223A302C226F
+            70223A37392C2277223A35302C2268223A35302C226E6D223A227370696E6E65
+            72222C22646464223A302C22617373657473223A5B5D2C226C6179657273223A
+            5B7B22646464223A302C22696E64223A312C227479223A342C226E6D223A2253
+            68617065204C617965722031222C227372223A312C226B73223A7B226F223A7B
+            2261223A312C226B223A5B7B2269223A7B2278223A5B302E3833335D2C227922
+            3A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B
+            302E3136375D7D2C2274223A302C2273223A5B305D7D2C7B2269223A7B227822
+            3A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B
+            302E3136375D2C2279223A5B302E3136375D7D2C2274223A31302C2273223A5B
+            37305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E3833
+            335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E3136375D
+            7D2C2274223A32302C2273223A5B36305D7D2C7B2269223A7B2278223A5B302E
+            3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136
+            375D2C2279223A5B302E3136375D7D2C2274223A33302C2273223A5B35305D7D
+            2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C
+            226F223A7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274
+            223A34302C2273223A5B34305D7D2C7B2269223A7B2278223A5B302E3833335D
+            2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C22
+            79223A5B302E3136375D7D2C2274223A35302C2273223A5B33305D7D2C7B2269
+            223A7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A
+            7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A3630
+            2C2273223A5B32305D7D2C7B2269223A7B2278223A5B302E3833335D2C227922
+            3A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B
+            302E3136375D7D2C2274223A37302C2273223A5B31305D7D2C7B2274223A3830
+            2C2273223A5B305D7D5D2C226978223A31317D2C2272223A7B2261223A302C22
+            6B223A3336302C226978223A31307D2C2270223A7B2261223A302C226B223A5B
+            32342E3638382C32342E3933382C305D2C226978223A327D2C2261223A7B2261
+            223A302C226B223A5B302C302C305D2C226978223A317D2C2273223A7B226122
+            3A302C226B223A5B3130302C3130302C3130305D2C226978223A367D7D2C2261
+            6F223A302C22736861706573223A5B7B227479223A226772222C226974223A5B
+            7B227479223A227263222C2264223A312C2273223A7B2261223A302C226B223A
+            5B342C31325D2C226978223A327D2C2270223A7B2261223A302C226B223A5B30
+            2C2D345D2C226978223A337D2C2272223A7B2261223A302C226B223A31352C22
+            6978223A347D2C226E6D223A2252656374616E676C6520506174682031222C22
+            6D6E223A224144424520566563746F72205368617065202D2052656374222C22
+            6864223A66616C73657D2C7B227479223A22666C222C2263223A7B2261223A30
+            2C226B223A5B302E32383632373435303938303339323135352C302E33313337
+            3235343930313936303738342C302E333431313736343730353838323335332C
+            315D2C226978223A347D2C226F223A7B2261223A302C226B223A3130302C2269
+            78223A357D2C2272223A312C22626D223A302C226E6D223A2246696C6C203122
+            2C226D6E223A224144424520566563746F722047726170686963202D2046696C
+            6C222C226864223A66616C73657D2C7B227479223A227472222C2270223A7B22
+            61223A302C226B223A5B302E3234382C2D31322E3636345D2C226978223A327D
+            2C2261223A7B2261223A302C226B223A5B302C305D2C226978223A317D2C2273
+            223A7B2261223A302C226B223A5B3130302C3130305D2C226978223A337D2C22
+            72223A7B2261223A302C226B223A302C226978223A367D2C226F223A7B226122
+            3A302C226B223A3130302C226978223A377D2C22736B223A7B2261223A302C22
+            6B223A302C226978223A347D2C227361223A7B2261223A302C226B223A302C22
+            6978223A357D2C226E6D223A225472616E73666F726D227D5D2C226E6D223A22
+            52656374616E676C652031222C226E70223A332C22636978223A322C22626D22
+            3A302C226978223A312C226D6E223A224144424520566563746F722047726F75
+            70222C226864223A66616C73657D5D2C226970223A302C226F70223A3132302C
+            227374223A302C22626D223A307D2C7B22646464223A302C22696E64223A322C
+            227479223A342C226E6D223A225368617065204C617965722032222C22737222
+            3A312C226B73223A7B226F223A7B2261223A312C226B223A5B7B2269223A7B22
+            78223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B227822
+            3A5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A302C2273223A
+            5B31305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E38
+            33335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E313637
+            5D7D2C2274223A31302C2273223A5B305D7D2C7B2269223A7B2278223A5B302E
+            3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136
+            375D2C2279223A5B302E3136375D7D2C2274223A32302C2273223A5B37305D7D
+            2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C
+            226F223A7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274
+            223A33302C2273223A5B36305D7D2C7B2269223A7B2278223A5B302E3833335D
+            2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C22
+            79223A5B302E3136375D7D2C2274223A34302C2273223A5B35305D7D2C7B2269
+            223A7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A
+            7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A3530
+            2C2273223A5B34305D7D2C7B2269223A7B2278223A5B302E3833335D2C227922
+            3A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B
+            302E3136375D7D2C2274223A36302C2273223A5B33305D7D2C7B2269223A7B22
+            78223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B227822
+            3A5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A37302C227322
+            3A5B32305D7D2C7B2274223A38302C2273223A5B31305D7D5D2C226978223A31
+            317D2C2272223A7B2261223A302C226B223A3430352C226978223A31307D2C22
+            70223A7B2261223A302C226B223A5B32342E3638382C32342E3933382C305D2C
+            226978223A327D2C2261223A7B2261223A302C226B223A5B302C302C305D2C22
+            6978223A317D2C2273223A7B2261223A302C226B223A5B3130302C3130302C31
+            30305D2C226978223A367D7D2C22616F223A302C22736861706573223A5B7B22
+            7479223A226772222C226974223A5B7B227479223A227263222C2264223A312C
+            2273223A7B2261223A302C226B223A5B342C31325D2C226978223A327D2C2270
+            223A7B2261223A302C226B223A5B302C2D345D2C226978223A337D2C2272223A
+            7B2261223A302C226B223A31352C226978223A347D2C226E6D223A2252656374
+            616E676C6520506174682031222C226D6E223A224144424520566563746F7220
+            5368617065202D2052656374222C226864223A66616C73657D2C7B227479223A
+            22666C222C2263223A7B2261223A302C226B223A5B302E323836323734353039
+            38303339323135352C302E333133373235343930313936303738342C302E3334
+            31313736343730353838323335332C315D2C226978223A347D2C226F223A7B22
+            61223A302C226B223A3130302C226978223A357D2C2272223A312C22626D223A
+            302C226E6D223A2246696C6C2031222C226D6E223A224144424520566563746F
+            722047726170686963202D2046696C6C222C226864223A66616C73657D2C7B22
+            7479223A227472222C2270223A7B2261223A302C226B223A5B302E3234382C2D
+            31322E3636345D2C226978223A327D2C2261223A7B2261223A302C226B223A5B
+            302C305D2C226978223A317D2C2273223A7B2261223A302C226B223A5B313030
+            2C3130305D2C226978223A337D2C2272223A7B2261223A302C226B223A302C22
+            6978223A367D2C226F223A7B2261223A302C226B223A3130302C226978223A37
+            7D2C22736B223A7B2261223A302C226B223A302C226978223A347D2C22736122
+            3A7B2261223A302C226B223A302C226978223A357D2C226E6D223A225472616E
+            73666F726D227D5D2C226E6D223A2252656374616E676C652031222C226E7022
+            3A332C22636978223A322C22626D223A302C226978223A312C226D6E223A2241
+            44424520566563746F722047726F7570222C226864223A66616C73657D5D2C22
+            6970223A302C226F70223A3132302C227374223A302C22626D223A307D2C7B22
+            646464223A302C22696E64223A332C227479223A342C226E6D223A2253686170
+            65204C617965722033222C227372223A312C226B73223A7B226F223A7B226122
+            3A312C226B223A5B7B2269223A7B2278223A5B302E3833335D2C2279223A5B30
+            2E3833335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E31
+            36375D7D2C2274223A302C2273223A5B32305D7D2C7B2269223A7B2278223A5B
+            302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E
+            3136375D2C2279223A5B302E3136375D7D2C2274223A31302C2273223A5B3130
+            5D7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E3833335D
+            7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C
+            2274223A32302C2273223A5B305D7D2C7B2269223A7B2278223A5B302E383333
+            5D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C
+            2279223A5B302E3136375D7D2C2274223A33302C2273223A5B37305D7D2C7B22
+            69223A7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F22
+            3A7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A34
+            302C2273223A5B36305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279
+            223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A
+            5B302E3136375D7D2C2274223A35302C2273223A5B35305D7D2C7B2269223A7B
+            2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278
+            223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A36302C2273
+            223A5B34305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B30
+            2E3833335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E31
+            36375D7D2C2274223A37302C2273223A5B33305D7D2C7B2274223A38302C2273
+            223A5B32305D7D5D2C226978223A31317D2C2272223A7B2261223A302C226B22
+            3A3435302C226978223A31307D2C2270223A7B2261223A302C226B223A5B3234
+            2E3638382C32342E3933382C305D2C226978223A327D2C2261223A7B2261223A
+            302C226B223A5B302C302C305D2C226978223A317D2C2273223A7B2261223A30
+            2C226B223A5B3130302C3130302C3130305D2C226978223A367D7D2C22616F22
+            3A302C22736861706573223A5B7B227479223A226772222C226974223A5B7B22
+            7479223A227263222C2264223A312C2273223A7B2261223A302C226B223A5B34
+            2C31325D2C226978223A327D2C2270223A7B2261223A302C226B223A5B302C2D
+            345D2C226978223A337D2C2272223A7B2261223A302C226B223A31352C226978
+            223A347D2C226E6D223A2252656374616E676C6520506174682031222C226D6E
+            223A224144424520566563746F72205368617065202D2052656374222C226864
+            223A66616C73657D2C7B227479223A22666C222C2263223A7B2261223A302C22
+            6B223A5B302E32383632373435303938303339323135352C302E333133373235
+            343930313936303738342C302E333431313736343730353838323335332C315D
+            2C226978223A347D2C226F223A7B2261223A302C226B223A3130302C22697822
+            3A357D2C2272223A312C22626D223A302C226E6D223A2246696C6C2031222C22
+            6D6E223A224144424520566563746F722047726170686963202D2046696C6C22
+            2C226864223A66616C73657D2C7B227479223A227472222C2270223A7B226122
+            3A302C226B223A5B302E3234382C2D31322E3636345D2C226978223A327D2C22
+            61223A7B2261223A302C226B223A5B302C305D2C226978223A317D2C2273223A
+            7B2261223A302C226B223A5B3130302C3130305D2C226978223A337D2C227222
+            3A7B2261223A302C226B223A302C226978223A367D2C226F223A7B2261223A30
+            2C226B223A3130302C226978223A377D2C22736B223A7B2261223A302C226B22
+            3A302C226978223A347D2C227361223A7B2261223A302C226B223A302C226978
+            223A357D2C226E6D223A225472616E73666F726D227D5D2C226E6D223A225265
+            6374616E676C652031222C226E70223A332C22636978223A322C22626D223A30
+            2C226978223A312C226D6E223A224144424520566563746F722047726F757022
+            2C226864223A66616C73657D5D2C226970223A302C226F70223A3132302C2273
+            74223A302C22626D223A307D2C7B22646464223A302C22696E64223A342C2274
+            79223A342C226E6D223A225368617065204C617965722034222C227372223A31
+            2C226B73223A7B226F223A7B2261223A312C226B223A5B7B2269223A7B227822
+            3A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B
+            302E3136375D2C2279223A5B302E3136375D7D2C2274223A302C2273223A5B33
+            305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E383333
+            5D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D
+            2C2274223A31302C2273223A5B32305D7D2C7B2269223A7B2278223A5B302E38
+            33335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E313637
+            5D2C2279223A5B302E3136375D7D2C2274223A32302C2273223A5B31305D7D2C
+            7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C22
+            6F223A7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C227422
+            3A33302C2273223A5B305D7D2C7B2269223A7B2278223A5B302E3833335D2C22
+            79223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C227922
+            3A5B302E3136375D7D2C2274223A34302C2273223A5B37305D7D2C7B2269223A
+            7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B22
+            78223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A35302C22
+            73223A5B36305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B
+            302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E
+            3136375D7D2C2274223A36302C2273223A5B35305D7D2C7B2269223A7B227822
+            3A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B
+            302E3136375D2C2279223A5B302E3136375D7D2C2274223A37302C2273223A5B
+            34305D7D2C7B2274223A38302C2273223A5B33305D7D5D2C226978223A31317D
+            2C2272223A7B2261223A302C226B223A3439352C226978223A31307D2C227022
+            3A7B2261223A302C226B223A5B32342E3638382C32342E3933382C305D2C2269
+            78223A327D2C2261223A7B2261223A302C226B223A5B302C302C305D2C226978
+            223A317D2C2273223A7B2261223A302C226B223A5B3130302C3130302C313030
+            5D2C226978223A367D7D2C22616F223A302C22736861706573223A5B7B227479
+            223A226772222C226974223A5B7B227479223A227263222C2264223A312C2273
+            223A7B2261223A302C226B223A5B342C31325D2C226978223A327D2C2270223A
+            7B2261223A302C226B223A5B302C2D345D2C226978223A337D2C2272223A7B22
+            61223A302C226B223A31352C226978223A347D2C226E6D223A2252656374616E
+            676C6520506174682031222C226D6E223A224144424520566563746F72205368
+            617065202D2052656374222C226864223A66616C73657D2C7B227479223A2266
+            6C222C2263223A7B2261223A302C226B223A5B302E3238363237343530393830
+            3339323135352C302E333133373235343930313936303738342C302E33343131
+            3736343730353838323335332C315D2C226978223A347D2C226F223A7B226122
+            3A302C226B223A3130302C226978223A357D2C2272223A312C22626D223A302C
+            226E6D223A2246696C6C2031222C226D6E223A224144424520566563746F7220
+            47726170686963202D2046696C6C222C226864223A66616C73657D2C7B227479
+            223A227472222C2270223A7B2261223A302C226B223A5B302E3234382C2D3132
+            2E3636345D2C226978223A327D2C2261223A7B2261223A302C226B223A5B302C
+            305D2C226978223A317D2C2273223A7B2261223A302C226B223A5B3130302C31
+            30305D2C226978223A337D2C2272223A7B2261223A302C226B223A302C226978
+            223A367D2C226F223A7B2261223A302C226B223A3130302C226978223A377D2C
+            22736B223A7B2261223A302C226B223A302C226978223A347D2C227361223A7B
+            2261223A302C226B223A302C226978223A357D2C226E6D223A225472616E7366
+            6F726D227D5D2C226E6D223A2252656374616E676C652031222C226E70223A33
+            2C22636978223A322C22626D223A302C226978223A312C226D6E223A22414442
+            4520566563746F722047726F7570222C226864223A66616C73657D5D2C226970
+            223A302C226F70223A3132302C227374223A302C22626D223A307D2C7B226464
+            64223A302C22696E64223A352C227479223A342C226E6D223A22536861706520
+            4C617965722035222C227372223A312C226B73223A7B226F223A7B2261223A31
+            2C226B223A5B7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E38
+            33335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E313637
+            5D7D2C2274223A302C2273223A5B34305D7D2C7B2269223A7B2278223A5B302E
+            3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136
+            375D2C2279223A5B302E3136375D7D2C2274223A31302C2273223A5B33305D7D
+            2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C
+            226F223A7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274
+            223A32302C2273223A5B32305D7D2C7B2269223A7B2278223A5B302E3833335D
+            2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C22
+            79223A5B302E3136375D7D2C2274223A33302C2273223A5B31305D7D2C7B2269
+            223A7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A
+            7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A3430
+            2C2273223A5B305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A
+            5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B30
+            2E3136375D7D2C2274223A35302C2273223A5B37305D7D2C7B2269223A7B2278
+            223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A
+            5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A36302C2273223A
+            5B36305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E38
+            33335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E313637
+            5D7D2C2274223A37302C2273223A5B35305D7D2C7B2274223A38302C2273223A
+            5B34305D7D5D2C226978223A31317D2C2272223A7B2261223A302C226B223A35
+            34302C226978223A31307D2C2270223A7B2261223A302C226B223A5B32342E36
+            38382C32342E3933382C305D2C226978223A327D2C2261223A7B2261223A302C
+            226B223A5B302C302C305D2C226978223A317D2C2273223A7B2261223A302C22
+            6B223A5B3130302C3130302C3130305D2C226978223A367D7D2C22616F223A30
+            2C22736861706573223A5B7B227479223A226772222C226974223A5B7B227479
+            223A227263222C2264223A312C2273223A7B2261223A302C226B223A5B342C31
+            325D2C226978223A327D2C2270223A7B2261223A302C226B223A5B302C2D345D
+            2C226978223A337D2C2272223A7B2261223A302C226B223A31352C226978223A
+            347D2C226E6D223A2252656374616E676C6520506174682031222C226D6E223A
+            224144424520566563746F72205368617065202D2052656374222C226864223A
+            66616C73657D2C7B227479223A22666C222C2263223A7B2261223A302C226B22
+            3A5B302E32383632373435303938303339323135352C302E3331333732353439
+            30313936303738342C302E333431313736343730353838323335332C315D2C22
+            6978223A347D2C226F223A7B2261223A302C226B223A3130302C226978223A35
+            7D2C2272223A312C22626D223A302C226E6D223A2246696C6C2031222C226D6E
+            223A224144424520566563746F722047726170686963202D2046696C6C222C22
+            6864223A66616C73657D2C7B227479223A227472222C2270223A7B2261223A30
+            2C226B223A5B302E3234382C2D31322E3636345D2C226978223A327D2C226122
+            3A7B2261223A302C226B223A5B302C305D2C226978223A317D2C2273223A7B22
+            61223A302C226B223A5B3130302C3130305D2C226978223A337D2C2272223A7B
+            2261223A302C226B223A302C226978223A367D2C226F223A7B2261223A302C22
+            6B223A3130302C226978223A377D2C22736B223A7B2261223A302C226B223A30
+            2C226978223A347D2C227361223A7B2261223A302C226B223A302C226978223A
+            357D2C226E6D223A225472616E73666F726D227D5D2C226E6D223A2252656374
+            616E676C652031222C226E70223A332C22636978223A322C22626D223A302C22
+            6978223A312C226D6E223A224144424520566563746F722047726F7570222C22
+            6864223A66616C73657D5D2C226970223A302C226F70223A3132302C22737422
+            3A302C22626D223A307D2C7B22646464223A302C22696E64223A362C22747922
+            3A342C226E6D223A225368617065204C617965722036222C227372223A312C22
+            6B73223A7B226F223A7B2261223A312C226B223A5B7B2269223A7B2278223A5B
+            302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E
+            3136375D2C2279223A5B302E3136375D7D2C2274223A302C2273223A5B35305D
+            7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D
+            2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C22
+            74223A31302C2273223A5B34305D7D2C7B2269223A7B2278223A5B302E383333
+            5D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C
+            2279223A5B302E3136375D7D2C2274223A32302C2273223A5B33305D7D2C7B22
+            69223A7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F22
+            3A7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A33
+            302C2273223A5B32305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279
+            223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A
+            5B302E3136375D7D2C2274223A34302C2273223A5B31305D7D2C7B2269223A7B
+            2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278
+            223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A35302C2273
+            223A5B305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E
+            3833335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E3136
+            375D7D2C2274223A36302C2273223A5B37305D7D2C7B2269223A7B2278223A5B
+            302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E
+            3136375D2C2279223A5B302E3136375D7D2C2274223A37302C2273223A5B3630
+            5D7D2C7B2274223A38302C2273223A5B35305D7D5D2C226978223A31317D2C22
+            72223A7B2261223A302C226B223A3538352C226978223A31307D2C2270223A7B
+            2261223A302C226B223A5B32342E3638382C32342E3933382C305D2C22697822
+            3A327D2C2261223A7B2261223A302C226B223A5B302C302C305D2C226978223A
+            317D2C2273223A7B2261223A302C226B223A5B3130302C3130302C3130305D2C
+            226978223A367D7D2C22616F223A302C22736861706573223A5B7B227479223A
+            226772222C226974223A5B7B227479223A227263222C2264223A312C2273223A
+            7B2261223A302C226B223A5B342C31325D2C226978223A327D2C2270223A7B22
+            61223A302C226B223A5B302C2D345D2C226978223A337D2C2272223A7B226122
+            3A302C226B223A31352C226978223A347D2C226E6D223A2252656374616E676C
+            6520506174682031222C226D6E223A224144424520566563746F722053686170
+            65202D2052656374222C226864223A66616C73657D2C7B227479223A22666C22
+            2C2263223A7B2261223A302C226B223A5B302E32383632373435303938303339
+            323135352C302E333133373235343930313936303738342C302E333431313736
+            343730353838323335332C315D2C226978223A347D2C226F223A7B2261223A30
+            2C226B223A3130302C226978223A357D2C2272223A312C22626D223A302C226E
+            6D223A2246696C6C2031222C226D6E223A224144424520566563746F72204772
+            6170686963202D2046696C6C222C226864223A66616C73657D2C7B227479223A
+            227472222C2270223A7B2261223A302C226B223A5B302E3234382C2D31322E36
+            36345D2C226978223A327D2C2261223A7B2261223A302C226B223A5B302C305D
+            2C226978223A317D2C2273223A7B2261223A302C226B223A5B3130302C313030
+            5D2C226978223A337D2C2272223A7B2261223A302C226B223A302C226978223A
+            367D2C226F223A7B2261223A302C226B223A3130302C226978223A377D2C2273
+            6B223A7B2261223A302C226B223A302C226978223A347D2C227361223A7B2261
+            223A302C226B223A302C226978223A357D2C226E6D223A225472616E73666F72
+            6D227D5D2C226E6D223A2252656374616E676C652031222C226E70223A332C22
+            636978223A322C22626D223A302C226978223A312C226D6E223A224144424520
+            566563746F722047726F7570222C226864223A66616C73657D5D2C226970223A
+            302C226F70223A3132302C227374223A302C22626D223A307D2C7B2264646422
+            3A302C22696E64223A372C227479223A342C226E6D223A225368617065204C61
+            7965722037222C227372223A312C226B73223A7B226F223A7B2261223A312C22
+            6B223A5B7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E383333
+            5D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D
+            2C2274223A302C2273223A5B36305D7D2C7B2269223A7B2278223A5B302E3833
+            335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D
+            2C2279223A5B302E3136375D7D2C2274223A31302C2273223A5B35305D7D2C7B
+            2269223A7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F
+            223A7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A
+            32302C2273223A5B34305D7D2C7B2269223A7B2278223A5B302E3833335D2C22
+            79223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C227922
+            3A5B302E3136375D7D2C2274223A33302C2273223A5B33305D7D2C7B2269223A
+            7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B22
+            78223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A34302C22
+            73223A5B32305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B
+            302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E
+            3136375D7D2C2274223A35302C2273223A5B31305D7D2C7B2269223A7B227822
+            3A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B
+            302E3136375D2C2279223A5B302E3136375D7D2C2274223A36302C2273223A5B
+            305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E383333
+            5D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D
+            2C2274223A37302C2273223A5B37305D7D2C7B2274223A38302C2273223A5B36
+            305D7D5D2C226978223A31317D2C2272223A7B2261223A302C226B223A363330
+            2C226978223A31307D2C2270223A7B2261223A302C226B223A5B32342E363838
+            2C32342E3933382C305D2C226978223A327D2C2261223A7B2261223A302C226B
+            223A5B302C302C305D2C226978223A317D2C2273223A7B2261223A302C226B22
+            3A5B3130302C3130302C3130305D2C226978223A367D7D2C22616F223A302C22
+            736861706573223A5B7B227479223A226772222C226974223A5B7B227479223A
+            227263222C2264223A312C2273223A7B2261223A302C226B223A5B342C31325D
+            2C226978223A327D2C2270223A7B2261223A302C226B223A5B302C2D345D2C22
+            6978223A337D2C2272223A7B2261223A302C226B223A31352C226978223A347D
+            2C226E6D223A2252656374616E676C6520506174682031222C226D6E223A2241
+            44424520566563746F72205368617065202D2052656374222C226864223A6661
+            6C73657D2C7B227479223A22666C222C2263223A7B2261223A302C226B223A5B
+            302E32383632373435303938303339323135352C302E33313337323534393031
+            3936303738342C302E333431313736343730353838323335332C315D2C226978
+            223A347D2C226F223A7B2261223A302C226B223A3130302C226978223A357D2C
+            2272223A312C22626D223A302C226E6D223A2246696C6C2031222C226D6E223A
+            224144424520566563746F722047726170686963202D2046696C6C222C226864
+            223A66616C73657D2C7B227479223A227472222C2270223A7B2261223A302C22
+            6B223A5B302E3234382C2D31322E3636345D2C226978223A327D2C2261223A7B
+            2261223A302C226B223A5B302C305D2C226978223A317D2C2273223A7B226122
+            3A302C226B223A5B3130302C3130305D2C226978223A337D2C2272223A7B2261
+            223A302C226B223A302C226978223A367D2C226F223A7B2261223A302C226B22
+            3A3130302C226978223A377D2C22736B223A7B2261223A302C226B223A302C22
+            6978223A347D2C227361223A7B2261223A302C226B223A302C226978223A357D
+            2C226E6D223A225472616E73666F726D227D5D2C226E6D223A2252656374616E
+            676C652031222C226E70223A332C22636978223A322C22626D223A302C226978
+            223A312C226D6E223A224144424520566563746F722047726F7570222C226864
+            223A66616C73657D5D2C226970223A302C226F70223A3132302C227374223A30
+            2C22626D223A307D2C7B22646464223A302C22696E64223A382C227479223A34
+            2C226E6D223A225368617065204C617965722038222C227372223A312C226B73
+            223A7B226F223A7B2261223A312C226B223A5B7B2269223A7B2278223A5B302E
+            3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136
+            375D2C2279223A5B302E3136375D7D2C2274223A302C2273223A5B37305D7D2C
+            7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C22
+            6F223A7B2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C227422
+            3A31302C2273223A5B36305D7D2C7B2269223A7B2278223A5B302E3833335D2C
+            2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C2279
+            223A5B302E3136375D7D2C2274223A32302C2273223A5B35305D7D2C7B226922
+            3A7B2278223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B
+            2278223A5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A33302C
+            2273223A5B34305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A
+            5B302E3833335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B30
+            2E3136375D7D2C2274223A34302C2273223A5B33305D7D2C7B2269223A7B2278
+            223A5B302E3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A
+            5B302E3136375D2C2279223A5B302E3136375D7D2C2274223A35302C2273223A
+            5B32305D7D2C7B2269223A7B2278223A5B302E3833335D2C2279223A5B302E38
+            33335D7D2C226F223A7B2278223A5B302E3136375D2C2279223A5B302E313637
+            5D7D2C2274223A36302C2273223A5B31305D7D2C7B2269223A7B2278223A5B30
+            2E3833335D2C2279223A5B302E3833335D7D2C226F223A7B2278223A5B302E31
+            36375D2C2279223A5B302E3136375D7D2C2274223A37302C2273223A5B305D7D
+            2C7B2274223A38302C2273223A5B37305D7D5D2C226978223A31317D2C227222
+            3A7B2261223A302C226B223A3637352C226978223A31307D2C2270223A7B2261
+            223A302C226B223A5B32342E3638382C32342E3933382C305D2C226978223A32
+            7D2C2261223A7B2261223A302C226B223A5B302C302C305D2C226978223A317D
+            2C2273223A7B2261223A302C226B223A5B3130302C3130302C3130305D2C2269
+            78223A367D7D2C22616F223A302C22736861706573223A5B7B227479223A2267
+            72222C226974223A5B7B227479223A227263222C2264223A312C2273223A7B22
+            61223A302C226B223A5B342C31325D2C226978223A327D2C2270223A7B226122
+            3A302C226B223A5B302C2D345D2C226978223A337D2C2272223A7B2261223A30
+            2C226B223A31352C226978223A347D2C226E6D223A2252656374616E676C6520
+            506174682031222C226D6E223A224144424520566563746F7220536861706520
+            2D2052656374222C226864223A66616C73657D2C7B227479223A22666C222C22
+            63223A7B2261223A302C226B223A5B302E323836323734353039383033393231
+            35352C302E333133373235343930313936303738342C302E3334313137363437
+            30353838323335332C315D2C226978223A347D2C226F223A7B2261223A302C22
+            6B223A3130302C226978223A357D2C2272223A312C22626D223A302C226E6D22
+            3A2246696C6C2031222C226D6E223A224144424520566563746F722047726170
+            686963202D2046696C6C222C226864223A66616C73657D2C7B227479223A2274
+            72222C2270223A7B2261223A302C226B223A5B302E3234382C2D31322E363634
+            5D2C226978223A327D2C2261223A7B2261223A302C226B223A5B302C305D2C22
+            6978223A317D2C2273223A7B2261223A302C226B223A5B3130302C3130305D2C
+            226978223A337D2C2272223A7B2261223A302C226B223A302C226978223A367D
+            2C226F223A7B2261223A302C226B223A3130302C226978223A377D2C22736B22
+            3A7B2261223A302C226B223A302C226978223A347D2C227361223A7B2261223A
+            302C226B223A302C226978223A357D2C226E6D223A225472616E73666F726D22
+            7D5D2C226E6D223A2252656374616E676C652031222C226E70223A332C226369
+            78223A322C22626D223A302C226978223A312C226D6E223A2241444245205665
+            63746F722047726F7570222C226864223A66616C73657D5D2C226970223A302C
+            226F70223A3132302C227374223A302C22626D223A307D5D2C226D61726B6572
+            73223A5B5D7D}
+        end
+      end
+    end
+  end
+  object Layout7: TLayout
+    Align = Contents
+    Locked = True
+    Size.Width = 1370.000000000000000000
+    Size.Height = 766.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 3
+    object SkLabel6: TSkLabel
+      Align = Top
+      Margins.Right = 20.000000000000000000
+      Size.Width = 1350.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = []
+      TextSettings.Font.Families = 'Poppins'
+      TextSettings.Font.Size = 30.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Trailing
+      Words = <
+        item
+          Text = 'Sistema de Teste'
+        end>
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Lines.Strings = (
+        'Testando    :='
+        'Impressao   :=')
+      StyledSettings = [FontColor]
+      TextSettings.Font.Family = 'Courier New'
+      TextSettings.Font.Size = 22.000000000000000000
+      Align = Center
+      Size.Width = 795.000000000000000000
+      Size.Height = 511.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'memostyle'
+      TabOrder = 0
+      Visible = False
+      Viewport.Width = 791.000000000000000000
+      Viewport.Height = 507.000000000000000000
+    end
+  end
+  object recLoading: TRectangle
+    Align = Contents
+    Fill.Color = claBlack
+    Opacity = 0.899999976158142100
+    Size.Width = 1370.000000000000000000
+    Size.Height = 766.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Visible = False
+  end
+  object lylLoading: TLayout
+    Align = Contents
+    Size.Width = 1370.000000000000000000
+    Size.Height = 766.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 2
+    object Layout13: TLayout
+      Align = Center
+      Size.Width = 480.000000000000000000
+      Size.Height = 576.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object lblTituloLoading: TSkLabel
+        Align = Top
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = []
+        TextSettings.Font.Families = 'Poppins'
+        TextSettings.Font.Size = 32.000000000000000000
+        TextSettings.Font.Weight = Medium
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Words = <
+          item
+            Text = 'Aguarde'
+          end>
+      end
+      object lblSubtituloLoading: TSkLabel
+        Align = Top
+        Margins.Top = 22.000000000000000000
+        Margins.Bottom = 40.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 480.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Style]
+        TextSettings.Font.Families = 'Poppins'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Words = <
+          item
+            Text = 'Estamos processando as informa'#231#245'es'
+          end>
+      end
+      object SkAnimatedImage1: TSkAnimatedImage
+        Align = Center
+        Size.Width = 481.000000000000000000
+        Size.Height = 365.000000000000000000
+        Size.PlatformDefault = False
+        Data = {
+          7B226E6D223A22436F6D702031222C22646464223A302C2268223A323030302C
+          2277223A323030302C226D657461223A7B2267223A22406C6F7474696566696C
+          65732F746F6F6C6B69742D6A7320302E33332E32227D2C226C6179657273223A
+          5B7B227479223A342C226E6D223A225368617065204C617965722034222C2273
+          72223A312C227374223A302C226F70223A3930302E3030303033363635373735
+          312C226970223A302C226864223A66616C73652C22646464223A302C22626D22
+          3A302C226861734D61736B223A66616C73652C22616F223A302C226B73223A7B
+          2261223A7B2261223A302C226B223A5B2D32342C2D32302C305D2C226978223A
+          317D2C2273223A7B2261223A302C226B223A5B3230382C3230382C3130305D2C
+          226978223A367D2C22736B223A7B2261223A302C226B223A307D2C2270223A7B
+          2261223A302C226B223A5B313030302C3938302C305D2C226978223A327D2C22
+          72223A7B2261223A312C226B223A5B7B226F223A7B2278223A302E3136372C22
+          79223A302E3136377D2C2269223A7B2278223A302E3833332C2279223A302E38
+          33337D2C2273223A5B2D31312E3038335D2C2274223A307D2C7B2273223A5B33
+          31362E3931375D2C2274223A34322E303030303031373130363935317D5D2C22
+          6978223A31307D2C227361223A7B2261223A302C226B223A307D2C226F223A7B
+          2261223A302C226B223A3130302C226978223A31317D7D2C226566223A5B5D2C
+          22736861706573223A5B7B227479223A226772222C22626D223A302C22686422
+          3A66616C73652C226D6E223A224144424520566563746F722047726F7570222C
+          226E6D223A22456C6C697073652031222C226978223A312C22636978223A322C
+          226E70223A332C226974223A5B7B227479223A227368222C22626D223A302C22
+          6864223A66616C73652C226D6E223A224144424520566563746F722053686170
+          65202D2047726F7570222C226E6D223A22506174682031222C226978223A312C
+          2264223A312C226B73223A7B2261223A302C226B223A7B2263223A747275652C
+          2269223A5B5B3137352E3632372C305D2C5B302C2D3137352E3632375D2C5B2D
+          3137352E3632372C305D2C5B302C3137352E3632375D5D2C226F223A5B5B2D31
+          37352E3632372C305D2C5B302C3137352E3632375D2C5B3137352E3632372C30
+          5D2C5B302C2D3137352E3632375D5D2C2276223A5B5B3330302C2D325D2C5B2D
+          31382C3331365D2C5B3330302C3633345D2C5B3631382C3331365D5D7D2C2269
+          78223A327D7D2C7B227479223A226773222C22626D223A302C226864223A6661
+          6C73652C226D6E223A224144424520566563746F722047726170686963202D20
+          472D5374726F6B65222C226E6D223A224772616469656E74205374726F6B6520
+          31222C2265223A7B2261223A302C226B223A5B3437392C305D2C226978223A35
+          7D2C2267223A7B2270223A332C226B223A7B2261223A302C226B223A5B302C30
+          2E322C302E31383832333532393431313736343730362C302E34353838323335
+          3239343131373634372C302E352C302E322C302E313838323335323934313137
+          36343730362C302E343538383233353239343131373634372C312C302E383934
+          313137363437303538383233362C302C302E3839343131373634373035383832
+          33365D2C226978223A387D7D2C2274223A312C2261223A7B2261223A302C226B
+          223A307D2C2268223A7B2261223A302C226B223A307D2C2273223A7B2261223A
+          302C226B223A5B302C305D2C226978223A347D2C226C63223A322C226C6A223A
+          312C226D6C223A342C226F223A7B2261223A302C226B223A3130302C22697822
+          3A397D2C2277223A7B2261223A302C226B223A38312C226978223A31307D7D2C
+          7B227479223A227472222C2261223A7B2261223A302C226B223A5B302C305D2C
+          226978223A317D2C2273223A7B2261223A302C226B223A5B3130302C3130305D
+          2C226978223A337D2C22736B223A7B2261223A302C226B223A302C226978223A
+          347D2C2270223A7B2261223A302C226B223A5B2D3333302C2D3333345D2C2269
+          78223A327D2C2272223A7B2261223A302C226B223A302C226978223A367D2C22
+          7361223A7B2261223A302C226B223A302C226978223A357D2C226F223A7B2261
+          223A302C226B223A3130302C226978223A377D7D5D7D2C7B227479223A22746D
+          222C22626D223A302C226864223A66616C73652C226D6E223A22414442452056
+          6563746F722046696C746572202D205472696D222C226E6D223A225472696D20
+          50617468732031222C226978223A322C2265223A7B2261223A302C226B223A30
+          2C226978223A327D2C226F223A7B2261223A302C226B223A302C226978223A33
+          7D2C2273223A7B2261223A302C226B223A3130302C226978223A317D2C226D22
+          3A317D5D2C22696E64223A317D2C7B227479223A342C226E6D223A2253686170
+          65204C617965722032222C227372223A312C227374223A302C226F70223A3930
+          302E3030303033363635373735312C226970223A302C226864223A66616C7365
+          2C22646464223A302C22626D223A302C226861734D61736B223A66616C73652C
+          22616F223A302C226B73223A7B2261223A7B2261223A302C226B223A5B2D3234
+          2C2D32302C305D2C226978223A317D2C2273223A7B2261223A302C226B223A5B
+          3230382C3230382C3130305D2C226978223A367D2C22736B223A7B2261223A30
+          2C226B223A307D2C2270223A7B2261223A302C226B223A5B313030302C393830
+          2C305D2C226978223A327D2C2272223A7B2261223A312C226B223A5B7B226F22
+          3A7B2278223A302E3136372C2279223A302E3136377D2C2269223A7B2278223A
+          302E3833332C2279223A302E3833337D2C2273223A5B2D31312E3038335D2C22
+          74223A307D2C7B2273223A5B3331362E3931375D2C2274223A34322E30303030
+          3031373130363935317D5D2C226978223A31307D2C227361223A7B2261223A30
+          2C226B223A307D2C226F223A7B2261223A302C226B223A3130302C226978223A
+          31317D7D2C226566223A5B5D2C22736861706573223A5B7B227479223A226772
+          222C22626D223A302C226864223A66616C73652C226D6E223A22414442452056
+          6563746F722047726F7570222C226E6D223A22456C6C697073652031222C2269
+          78223A312C22636978223A322C226E70223A332C226974223A5B7B227479223A
+          227368222C22626D223A302C226864223A66616C73652C226D6E223A22414442
+          4520566563746F72205368617065202D2047726F7570222C226E6D223A225061
+          74682031222C226978223A312C2264223A312C226B73223A7B2261223A302C22
+          6B223A7B2263223A747275652C2269223A5B5B3137352E3632372C305D2C5B30
+          2C2D3137352E3632375D2C5B2D3137352E3632372C305D2C5B302C3137352E36
+          32375D5D2C226F223A5B5B2D3137352E3632372C305D2C5B302C3137352E3632
+          375D2C5B3137352E3632372C305D2C5B302C2D3137352E3632375D5D2C227622
+          3A5B5B3330302C2D325D2C5B2D31382C3331365D2C5B3330302C3633345D2C5B
+          3631382C3331365D5D7D2C226978223A327D7D2C7B227479223A226773222C22
+          626D223A302C226864223A66616C73652C226D6E223A22414442452056656374
+          6F722047726170686963202D20472D5374726F6B65222C226E6D223A22477261
+          6469656E74205374726F6B652031222C2265223A7B2261223A302C226B223A5B
+          3437392C305D2C226978223A357D2C2267223A7B2270223A332C226B223A7B22
+          61223A302C226B223A5B302C302E322C302E3138383233353239343131373634
+          3730362C302E343538383233353239343131373634372C302E352C302E353031
+          393630373834333133373235352C302E38373035383832333532393431313737
+          2C302E393137363437303538383233353239342C312C312C312C315D2C226978
+          223A387D7D2C2274223A312C2261223A7B2261223A302C226B223A307D2C2268
+          223A7B2261223A302C226B223A307D2C2273223A7B2261223A302C226B223A5B
+          302C305D2C226978223A347D2C226C63223A322C226C6A223A312C226D6C223A
+          342C226F223A7B2261223A302C226B223A3130302C226978223A397D2C227722
+          3A7B2261223A302C226B223A38312C226978223A31307D7D2C7B227479223A22
+          7472222C2261223A7B2261223A302C226B223A5B302C305D2C226978223A317D
+          2C2273223A7B2261223A302C226B223A5B3130302C3130305D2C226978223A33
+          7D2C22736B223A7B2261223A302C226B223A302C226978223A347D2C2270223A
+          7B2261223A302C226B223A5B2D3333302C2D3333345D2C226978223A327D2C22
+          72223A7B2261223A302C226B223A302C226978223A367D2C227361223A7B2261
+          223A302C226B223A302C226978223A357D2C226F223A7B2261223A302C226B22
+          3A3130302C226978223A377D7D5D7D2C7B227479223A22746D222C22626D223A
+          302C226864223A66616C73652C226D6E223A224144424520566563746F722046
+          696C746572202D205472696D222C226E6D223A225472696D2050617468732031
+          222C226978223A322C2265223A7B2261223A302C226B223A302C226978223A32
+          7D2C226F223A7B2261223A302C226B223A302C226978223A337D2C2273223A7B
+          2261223A302C226B223A3130302C226978223A317D2C226D223A317D5D2C2269
+          6E64223A327D5D2C2276223A22352E342E34222C226672223A32392E39373030
+          3031323230373033312C226F70223A34332E303030303031373531343235392C
+          226970223A302C22617373657473223A5B5D7D}
+      end
+    end
+  end
+  object ACBrBoleto1: TACBrBoleto
+    Banco.TamanhoMaximoNossoNum = 10
+    Banco.TipoCobranca = cobNenhum
+    Banco.LayoutVersaoArquivo = 0
+    Banco.LayoutVersaoLote = 0
+    Banco.CasasDecimaisMoraJuros = 2
+    Cedente.TipoInscricao = pJuridica
+    Cedente.PIX.TipoChavePIX = tchNenhuma
+    NumeroArquivo = 0
+    Configuracoes.Arquivos.LogRegistro = False
+    Configuracoes.WebService.SSLHttpLib = httpOpenSSL
+    Configuracoes.WebService.StoreName = 'My'
+    Configuracoes.WebService.Ambiente = taHomologacao
+    Configuracoes.WebService.Operacao = tpInclui
+    Configuracoes.WebService.VersaoDF = '1.2'
+    Left = 560
+    Top = 752
+  end
+end

@@ -1,0 +1,90 @@
+unit controller.impressao;
+
+interface
+
+uses System.Classes,FMX.Types, FMX.Memo, System.StrUtils, ACBrPosPrinter,
+System.SysUtils, ACBrUtil.Strings;
+
+type
+  TInformacoesImpressao = record
+    RazaoSocial:string;
+    Endereco:string;
+    CNPJ:string;
+    MensagemFinal:string;
+  end;
+
+  TImprimir = class
+  private
+    FACBrPosPrinter: TACBrPosPrinter;
+    FImp:TStringList;
+    FInformacoesImpressao: TInformacoesImpressao;
+    FColunas: integer;
+    procedure ConfigurarComponente;
+    function PedirPermissoes: Boolean;
+  public
+    property InformacoesImpressao: TInformacoesImpressao read FInformacoesImpressao write FInformacoesImpressao;
+    property Colunas: integer read FColunas write FColunas;
+
+    procedure Imprimir(AStrinList: TStringList);
+    constructor Create;
+    destructor Destoy;
+  end;
+
+implementation
+
+uses view.Principal, Notificacao, controller.log;
+
+constructor TImprimir.Create;
+begin
+  FACBrPosPrinter:= TACBrPosPrinter.Create(nil);
+  ConfigurarComponente;
+end;
+
+destructor TImprimir.Destoy;
+begin
+  FreeAndNil(FACBrPosPrinter);
+end;
+
+function TImprimir.PedirPermissoes: Boolean;
+begin
+  Result := FACBrPosPrinter.Device.PedirPermissoes;
+end;
+
+procedure TImprimir.ConfigurarComponente;
+begin
+  FACBrPosPrinter.Modelo := TACBrPosPrinterModelo(frmPrincipal.FModeloImpressora);
+  if frmPrincipal.FPortaImpressora = 'Nenhuma Impressora Detectada' then
+  begin
+    log('Impressora padrão não definida');
+  end
+  else
+    FACBrPosPrinter.Porta :='RAW:'+frmPrincipal.FPortaImpressora;
+  FACBrPosPrinter.PaginaDeCodigo := TACBrPosPaginaCodigo.pc850;
+  FACBrPosPrinter.ColunasFonteNormal := 48;
+  FACBrPosPrinter.Device.Baud := 115200;
+  FACBrPosPrinter.CortaPapel := true;
+  FACBrPosPrinter.EspacoEntreLinhas := 0;
+  FACBrPosPrinter.LinhasEntreCupons := 10;
+  FACBrPosPrinter.ConfigBarras.Altura:= 150;
+  FACBrPosPrinter.ConfigLogo.KeyCode1 := 1;
+  FACBrPosPrinter.ConfigLogo.KeyCode2 := 0;
+  FACBrPosPrinter.ControlePorta := true;
+  FACBrPosPrinter.Device.SendBytesCount := 512;
+  FACBrPosPrinter.Device.SendBytesInterval:= 20;
+  FACBrPosPrinter.ConfigurarRegiaoModoPagina(0,0,0,112,dirEsquerdaParaDireita);
+  FACBrPosPrinter.LinhasBuffer := 5;
+end;
+
+procedure TImprimir.Imprimir(AStrinList: TStringList);
+var
+  LLinha:string;
+begin
+
+  FACBrPosPrinter.Buffer.Text := AStrinList.Text;
+  FACBrPosPrinter.Imprimir;
+  log('imprmiu');
+end;
+
+
+
+end.

@@ -1,0 +1,2603 @@
+object frmSeguros: TfrmSeguros
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  Caption = 'Form1'
+  ClientHeight = 803
+  ClientWidth = 1269
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 3
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 1269.000000000000000000
+    Size.Height = 803.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      1269s
+      754s
+      1269s
+      754s
+      1269s
+      754s)
+    object tabSegurosContratados: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 423.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabSegurosContratados'
+      ExplicitSize.cx = 685.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object ALRectangle1: TRectangle
+        Align = Client
+        Fill.Color = xFF333075
+        Size.Width = 1269.000000000000000000
+        Size.Height = 754.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Layout1: TLayout
+          Align = Left
+          Size.Width = 124.000000000000000000
+          Size.Height = 754.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btnSair: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 610.000000000000000000
+            TabOrder = 31
+            OnClick = btnSair2Click
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 32.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg3: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_10' +
+                '0)">'#13#10'<path d="M43.605 26.605C37.7449 32.465 28.2469 32.465 22.3' +
+                '868 26.605C16.5268 20.7449 16.5268 11.2469 22.3868 5.38684C28.24' +
+                '69 -0.463844 37.7543 -0.463843 43.605 5.39622C49.465 11.2469 49.' +
+                '465 20.7543 43.605 26.605Z" stroke="white" stroke-width="2"/>'#13#10'<' +
+                'path d="M38.1855 10.8157L27.8156 21.1856" stroke="white" stroke-' +
+                'width="2" stroke-linecap="round"/>'#13#10'<path d="M38.1855 21.1856L27' +
+                '.8156 10.8157" stroke="white" stroke-width="2" stroke-linecap="r' +
+                'ound"/>'#13#10'</g>'#13#10'<path d="M19.4987 63.147C18.5327 63.147 17.6647 6' +
+                '2.979 16.8947 62.643C16.1387 62.293 15.5437 61.817 15.1097 61.21' +
+                '5C14.6757 60.599 14.4517 59.892 14.4377 59.094H16.4747C16.5447 5' +
+                '9.78 16.8247 60.361 17.3147 60.837C17.8187 61.299 18.5467 61.53 ' +
+                '19.4987 61.53C20.4087 61.53 21.1227 61.306 21.6407 60.858C22.172' +
+                '7 60.396 22.4387 59.808 22.4387 59.094C22.4387 58.534 22.2847 58' +
+                '.079 21.9767 57.729C21.6687 57.379 21.2837 57.113 20.8217 56.931' +
+                'C20.3597 56.749 19.7367 56.553 18.9527 56.343C17.9867 56.091 17.' +
+                '2097 55.839 16.6217 55.587C16.0477 55.335 15.5507 54.943 15.1307' +
+                ' 54.411C14.7247 53.865 14.5217 53.137 14.5217 52.227C14.5217 51.' +
+                '429 14.7247 50.722 15.1307 50.106C15.5367 49.49 16.1037 49.014 1' +
+                '6.8317 48.678C17.5737 48.342 18.4207 48.174 19.3727 48.174C20.74' +
+                '47 48.174 21.8647 48.517 22.7327 49.203C23.6147 49.889 24.1117 5' +
+                '0.799 24.2237 51.933H22.1237C22.0537 51.373 21.7597 50.883 21.24' +
+                '17 50.463C20.7237 50.029 20.0377 49.812 19.1837 49.812C18.3857 4' +
+                '9.812 17.7347 50.022 17.2307 50.442C16.7267 50.848 16.4747 51.42' +
+                '2 16.4747 52.164C16.4747 52.696 16.6217 53.13 16.9157 53.466C17.' +
+                '2237 53.802 17.5947 54.061 18.0287 54.243C18.4767 54.411 19.0997' +
+                ' 54.607 19.8977 54.831C20.8637 55.097 21.6407 55.363 22.2287 55.' +
+                '629C22.8167 55.881 23.3207 56.28 23.7407 56.826C24.1607 57.358 2' +
+                '4.3707 58.086 24.3707 59.01C24.3707 59.724 24.1817 60.396 23.803' +
+                '7 61.026C23.4257 61.656 22.8657 62.167 22.1237 62.559C21.3817 62' +
+                '.951 20.5067 63.147 19.4987 63.147ZM26.4689 57.204C26.4689 56.02' +
+                '8 26.7069 54.999 27.1829 54.117C27.6589 53.221 28.3099 52.528 29' +
+                '.1359 52.038C29.9759 51.548 30.9069 51.303 31.9289 51.303C32.936' +
+                '9 51.303 33.8119 51.52 34.5539 51.954C35.2959 52.388 35.8489 52.' +
+                '934 36.2129 53.592V51.492H38.1449V63H36.2129V60.858C35.8349 61.5' +
+                '3 35.2679 62.09 34.5119 62.538C33.7699 62.972 32.9019 63.189 31.' +
+                '9079 63.189C30.8859 63.189 29.9619 62.937 29.1359 62.433C28.3099' +
+                ' 61.929 27.6589 61.222 27.1829 60.312C26.7069 59.402 26.4689 58.' +
+                '366 26.4689 57.204ZM36.2129 57.225C36.2129 56.357 36.0379 55.601' +
+                ' 35.6879 54.957C35.3379 54.313 34.8619 53.823 34.2599 53.487C33.' +
+                '6719 53.137 33.0209 52.962 32.3069 52.962C31.5929 52.962 30.9419' +
+                ' 53.13 30.3539 53.466C29.7659 53.802 29.2969 54.292 28.9469 54.9' +
+                '36C28.5969 55.58 28.4219 56.336 28.4219 57.204C28.4219 58.086 28' +
+                '.5969 58.856 28.9469 59.514C29.2969 60.158 29.7659 60.655 30.353' +
+                '9 61.005C30.9419 61.341 31.5929 61.509 32.3069 61.509C33.0209 61' +
+                '.509 33.6719 61.341 34.2599 61.005C34.8619 60.655 35.3379 60.158' +
+                ' 35.6879 59.514C36.0379 58.856 36.2129 58.093 36.2129 57.225ZM42' +
+                '.3613 49.623C41.9973 49.623 41.6893 49.497 41.4373 49.245C41.185' +
+                '3 48.993 41.0593 48.685 41.0593 48.321C41.0593 47.957 41.1853 47' +
+                '.649 41.4373 47.397C41.6893 47.145 41.9973 47.019 42.3613 47.019' +
+                'C42.7113 47.019 43.0053 47.145 43.2433 47.397C43.4953 47.649 43.' +
+                '6213 47.957 43.6213 48.321C43.6213 48.685 43.4953 48.993 43.2433' +
+                ' 49.245C43.0053 49.497 42.7113 49.623 42.3613 49.623ZM43.2853 51' +
+                '.492V63H41.3743V51.492H43.2853ZM48.4533 53.361C48.7893 52.703 49' +
+                '.2653 52.192 49.8813 51.828C50.5113 51.464 51.2743 51.282 52.170' +
+                '3 51.282V53.256H51.6663C49.5243 53.256 48.4533 54.418 48.4533 56' +
+                '.742V63H46.5423V51.492H48.4533V53.361Z" fill="white"/>'#13#10'<defs>'#13#10 +
+                '<clipPath id="clip0_226_100">'#13#10'<rect width="32" height="32" fill' +
+                '="white" transform="translate(49) rotate(90)"/>'#13#10'</clipPath>'#13#10'</' +
+                'defs>'#13#10'</svg>'
+            end
+          end
+          object btnVoltar: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemDefault.SVGImage.Color = xFF333075
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.ItemPressed.Accessory.Color = xFF333075
+            Background.ItemPressed.SVGImage.Color = xFF333075
+            Background.ItemSelected.SVGImage.Color = xFF333075
+            Background.ItemChecked.SVGImage.Color = xFF333075
+            Background.ItemActivated.SVGImage.Color = xFF333075
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 466.000000000000000000
+            TabOrder = 32
+            OnClick = btnVoltarClick
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 21.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg4: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_71' +
+                ')">'#13#10'<path d="M37.8936 16.0005L28.1154 16.0005" stroke="white" s' +
+                'troke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+                #13#10'<path d="M31.7247 12.3916L28.106 16.001L31.7247 19.6104" strok' +
+                'e="white" stroke-width="2" stroke-linecap="round" stroke-linejoi' +
+                'n="round"/>'#13#10'<path d="M33 31C24.7125 31 18 24.2875 18 16C18 7.71' +
+                '25 24.7125 0.999999 33 0.999999C41.2875 1 48 7.7125 48 16C48 24.' +
+                '2875 41.2875 31 33 31Z" stroke="white" stroke-width="2" stroke-l' +
+                'inecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'<path d="M15.479' +
+                '6 48.363L9.9566 63H7.7516L2.2286 48.363H4.2656L8.8646 60.984L13.' +
+                '4636 48.363H15.4796ZM22.594 63.189C21.516 63.189 20.536 62.944 1' +
+                '9.654 62.454C18.786 61.964 18.1 61.271 17.596 60.375C17.106 59.4' +
+                '65 16.861 58.415 16.861 57.225C16.861 56.049 17.113 55.013 17.61' +
+                '7 54.117C18.135 53.207 18.835 52.514 19.717 52.038C20.599 51.548' +
+                ' 21.586 51.303 22.678 51.303C23.77 51.303 24.757 51.548 25.639 5' +
+                '2.038C26.521 52.514 27.214 53.2 27.718 54.096C28.236 54.992 28.4' +
+                '95 56.035 28.495 57.225C28.495 58.415 28.229 59.465 27.697 60.37' +
+                '5C27.179 61.271 26.472 61.964 25.576 62.454C24.68 62.944 23.686 ' +
+                '63.189 22.594 63.189ZM22.594 61.509C23.28 61.509 23.924 61.348 2' +
+                '4.526 61.026C25.128 60.704 25.611 60.221 25.975 59.577C26.353 58' +
+                '.933 26.542 58.149 26.542 57.225C26.542 56.301 26.36 55.517 25.9' +
+                '96 54.873C25.632 54.229 25.156 53.753 24.568 53.445C23.98 53.123' +
+                ' 23.343 52.962 22.657 52.962C21.957 52.962 21.313 53.123 20.725 ' +
+                '53.445C20.151 53.753 19.689 54.229 19.339 54.873C18.989 55.517 1' +
+                '8.814 56.301 18.814 57.225C18.814 58.163 18.982 58.954 19.318 59' +
+                '.598C19.668 60.242 20.13 60.725 20.704 61.047C21.278 61.355 21.9' +
+                '08 61.509 22.594 61.509ZM32.9186 47.46V63H31.0076V47.46H32.9186Z' +
+                'M38.5066 53.067V59.85C38.5066 60.41 38.6256 60.809 38.8636 61.04' +
+                '7C39.1016 61.271 39.5146 61.383 40.1026 61.383H41.5096V63H39.787' +
+                '6C38.7236 63 37.9256 62.755 37.3936 62.265C36.8616 61.775 36.595' +
+                '6 60.97 36.5956 59.85V53.067H35.1046V51.492H36.5956V48.594H38.50' +
+                '66V51.492H41.5096V53.067H38.5066ZM43.111 57.204C43.111 56.028 43' +
+                '.349 54.999 43.825 54.117C44.301 53.221 44.952 52.528 45.778 52.' +
+                '038C46.618 51.548 47.549 51.303 48.571 51.303C49.579 51.303 50.4' +
+                '54 51.52 51.196 51.954C51.938 52.388 52.491 52.934 52.855 53.592' +
+                'V51.492H54.787V63H52.855V60.858C52.477 61.53 51.91 62.09 51.154 ' +
+                '62.538C50.412 62.972 49.544 63.189 48.55 63.189C47.528 63.189 46' +
+                '.604 62.937 45.778 62.433C44.952 61.929 44.301 61.222 43.825 60.' +
+                '312C43.349 59.402 43.111 58.366 43.111 57.204ZM52.855 57.225C52.' +
+                '855 56.357 52.68 55.601 52.33 54.957C51.98 54.313 51.504 53.823 ' +
+                '50.902 53.487C50.314 53.137 49.663 52.962 48.949 52.962C48.235 5' +
+                '2.962 47.584 53.13 46.996 53.466C46.408 53.802 45.939 54.292 45.' +
+                '589 54.936C45.239 55.58 45.064 56.336 45.064 57.204C45.064 58.08' +
+                '6 45.239 58.856 45.589 59.514C45.939 60.158 46.408 60.655 46.996' +
+                ' 61.005C47.584 61.341 48.235 61.509 48.949 61.509C49.663 61.509 ' +
+                '50.314 61.341 50.902 61.005C51.504 60.655 51.98 60.158 52.33 59.' +
+                '514C52.68 58.856 52.855 58.093 52.855 57.225ZM59.9274 53.361C60.' +
+                '2634 52.703 60.7394 52.192 61.3554 51.828C61.9854 51.464 62.7484' +
+                ' 51.282 63.6444 51.282V53.256H63.1404C60.9984 53.256 59.9274 54.' +
+                '418 59.9274 56.742V63H58.0164V51.492H59.9274V53.361Z" fill="whit' +
+                'e"/>'#13#10'<defs>'#13#10'<clipPath id="clip0_226_71">'#13#10'<rect width="32" hei' +
+                'ght="32" fill="white" transform="translate(49) rotate(90)"/>'#13#10'</' +
+                'clipPath>'#13#10'</defs>'#13#10'</svg>'
+            end
+          end
+        end
+        object Layout3: TLayout
+          Align = Contents
+          Size.Width = 1269.000000000000000000
+          Size.Height = 754.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Layout2: TLayout
+            Align = Center
+            Size.Width = 710.000000000000000000
+            Size.Height = 576.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object SkLabel1: TSkLabel
+              Align = Top
+              Margins.Bottom = 8.000000000000000000
+              Size.Width = 710.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = []
+              TextSettings.Font.Families = 'poppins'
+              TextSettings.Font.Size = 32.000000000000000000
+              TextSettings.Font.Weight = Medium
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Seguros'
+                end>
+            end
+            object SkLabel2: TSkLabel
+              Align = Top
+              Margins.Bottom = 47.000000000000000000
+              Position.Y = 56.000000000000000000
+              Size.Width = 710.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Style]
+              TextSettings.Font.Families = 'poppins'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Contratos ativos'
+                end>
+            end
+            object Layout6: TLayout
+              Align = Client
+              Size.Width = 710.000000000000000000
+              Size.Height = 443.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 27
+            end
+            object lbContratos: TListBox
+              Touch.InteractiveGestures = [LongTap]
+              Align = Client
+              ClipParent = True
+              HitTest = False
+              Size.Width = 660.000000000000000000
+              Size.Height = 443.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'transparentlistboxstyle'
+              TabOrder = 3
+              Visible = False
+              ShowScrollBars = False
+              DisableFocusEffect = True
+              DefaultItemStyles.ItemStyle = ''
+              DefaultItemStyles.GroupHeaderStyle = ''
+              DefaultItemStyles.GroupFooterStyle = ''
+              Viewport.Width = 660.000000000000000000
+              Viewport.Height = 443.000000000000000000
+              object Memo1: TMemo
+                Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+                DataDetectorTypes = []
+                Position.X = 853.000000000000000000
+                Position.Y = 368.000000000000000000
+                Size.Width = 97.000000000000000000
+                Size.Height = 89.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Visible = False
+                Viewport.Width = 89.000000000000000000
+                Viewport.Height = 81.000000000000000000
+              end
+            end
+          end
+        end
+      end
+    end
+    object tabDetalheSeguro: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 423.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabDetalheSeguro'
+      ExplicitSize.cx = 685.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Rectangle7: TRectangle
+        Align = Client
+        Fill.Color = xFF333075
+        Size.Width = 1269.000000000000000000
+        Size.Height = 754.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Layout19: TLayout
+          Align = Left
+          Size.Width = 124.000000000000000000
+          Size.Height = 754.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btnSair2: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 610.000000000000000000
+            TabOrder = 31
+            OnClick = btnSair2Click
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 32.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg17: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_10' +
+                '0)">'#13#10'<path d="M43.605 26.605C37.7449 32.465 28.2469 32.465 22.3' +
+                '868 26.605C16.5268 20.7449 16.5268 11.2469 22.3868 5.38684C28.24' +
+                '69 -0.463844 37.7543 -0.463843 43.605 5.39622C49.465 11.2469 49.' +
+                '465 20.7543 43.605 26.605Z" stroke="white" stroke-width="2"/>'#13#10'<' +
+                'path d="M38.1855 10.8157L27.8156 21.1856" stroke="white" stroke-' +
+                'width="2" stroke-linecap="round"/>'#13#10'<path d="M38.1855 21.1856L27' +
+                '.8156 10.8157" stroke="white" stroke-width="2" stroke-linecap="r' +
+                'ound"/>'#13#10'</g>'#13#10'<path d="M19.4987 63.147C18.5327 63.147 17.6647 6' +
+                '2.979 16.8947 62.643C16.1387 62.293 15.5437 61.817 15.1097 61.21' +
+                '5C14.6757 60.599 14.4517 59.892 14.4377 59.094H16.4747C16.5447 5' +
+                '9.78 16.8247 60.361 17.3147 60.837C17.8187 61.299 18.5467 61.53 ' +
+                '19.4987 61.53C20.4087 61.53 21.1227 61.306 21.6407 60.858C22.172' +
+                '7 60.396 22.4387 59.808 22.4387 59.094C22.4387 58.534 22.2847 58' +
+                '.079 21.9767 57.729C21.6687 57.379 21.2837 57.113 20.8217 56.931' +
+                'C20.3597 56.749 19.7367 56.553 18.9527 56.343C17.9867 56.091 17.' +
+                '2097 55.839 16.6217 55.587C16.0477 55.335 15.5507 54.943 15.1307' +
+                ' 54.411C14.7247 53.865 14.5217 53.137 14.5217 52.227C14.5217 51.' +
+                '429 14.7247 50.722 15.1307 50.106C15.5367 49.49 16.1037 49.014 1' +
+                '6.8317 48.678C17.5737 48.342 18.4207 48.174 19.3727 48.174C20.74' +
+                '47 48.174 21.8647 48.517 22.7327 49.203C23.6147 49.889 24.1117 5' +
+                '0.799 24.2237 51.933H22.1237C22.0537 51.373 21.7597 50.883 21.24' +
+                '17 50.463C20.7237 50.029 20.0377 49.812 19.1837 49.812C18.3857 4' +
+                '9.812 17.7347 50.022 17.2307 50.442C16.7267 50.848 16.4747 51.42' +
+                '2 16.4747 52.164C16.4747 52.696 16.6217 53.13 16.9157 53.466C17.' +
+                '2237 53.802 17.5947 54.061 18.0287 54.243C18.4767 54.411 19.0997' +
+                ' 54.607 19.8977 54.831C20.8637 55.097 21.6407 55.363 22.2287 55.' +
+                '629C22.8167 55.881 23.3207 56.28 23.7407 56.826C24.1607 57.358 2' +
+                '4.3707 58.086 24.3707 59.01C24.3707 59.724 24.1817 60.396 23.803' +
+                '7 61.026C23.4257 61.656 22.8657 62.167 22.1237 62.559C21.3817 62' +
+                '.951 20.5067 63.147 19.4987 63.147ZM26.4689 57.204C26.4689 56.02' +
+                '8 26.7069 54.999 27.1829 54.117C27.6589 53.221 28.3099 52.528 29' +
+                '.1359 52.038C29.9759 51.548 30.9069 51.303 31.9289 51.303C32.936' +
+                '9 51.303 33.8119 51.52 34.5539 51.954C35.2959 52.388 35.8489 52.' +
+                '934 36.2129 53.592V51.492H38.1449V63H36.2129V60.858C35.8349 61.5' +
+                '3 35.2679 62.09 34.5119 62.538C33.7699 62.972 32.9019 63.189 31.' +
+                '9079 63.189C30.8859 63.189 29.9619 62.937 29.1359 62.433C28.3099' +
+                ' 61.929 27.6589 61.222 27.1829 60.312C26.7069 59.402 26.4689 58.' +
+                '366 26.4689 57.204ZM36.2129 57.225C36.2129 56.357 36.0379 55.601' +
+                ' 35.6879 54.957C35.3379 54.313 34.8619 53.823 34.2599 53.487C33.' +
+                '6719 53.137 33.0209 52.962 32.3069 52.962C31.5929 52.962 30.9419' +
+                ' 53.13 30.3539 53.466C29.7659 53.802 29.2969 54.292 28.9469 54.9' +
+                '36C28.5969 55.58 28.4219 56.336 28.4219 57.204C28.4219 58.086 28' +
+                '.5969 58.856 28.9469 59.514C29.2969 60.158 29.7659 60.655 30.353' +
+                '9 61.005C30.9419 61.341 31.5929 61.509 32.3069 61.509C33.0209 61' +
+                '.509 33.6719 61.341 34.2599 61.005C34.8619 60.655 35.3379 60.158' +
+                ' 35.6879 59.514C36.0379 58.856 36.2129 58.093 36.2129 57.225ZM42' +
+                '.3613 49.623C41.9973 49.623 41.6893 49.497 41.4373 49.245C41.185' +
+                '3 48.993 41.0593 48.685 41.0593 48.321C41.0593 47.957 41.1853 47' +
+                '.649 41.4373 47.397C41.6893 47.145 41.9973 47.019 42.3613 47.019' +
+                'C42.7113 47.019 43.0053 47.145 43.2433 47.397C43.4953 47.649 43.' +
+                '6213 47.957 43.6213 48.321C43.6213 48.685 43.4953 48.993 43.2433' +
+                ' 49.245C43.0053 49.497 42.7113 49.623 42.3613 49.623ZM43.2853 51' +
+                '.492V63H41.3743V51.492H43.2853ZM48.4533 53.361C48.7893 52.703 49' +
+                '.2653 52.192 49.8813 51.828C50.5113 51.464 51.2743 51.282 52.170' +
+                '3 51.282V53.256H51.6663C49.5243 53.256 48.4533 54.418 48.4533 56' +
+                '.742V63H46.5423V51.492H48.4533V53.361Z" fill="white"/>'#13#10'<defs>'#13#10 +
+                '<clipPath id="clip0_226_100">'#13#10'<rect width="32" height="32" fill' +
+                '="white" transform="translate(49) rotate(90)"/>'#13#10'</clipPath>'#13#10'</' +
+                'defs>'#13#10'</svg>'
+            end
+          end
+          object btnVoltar2: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemDefault.SVGImage.Color = xFF333075
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.ItemPressed.Accessory.Color = xFF333075
+            Background.ItemPressed.SVGImage.Color = xFF333075
+            Background.ItemSelected.SVGImage.Color = xFF333075
+            Background.ItemChecked.SVGImage.Color = xFF333075
+            Background.ItemActivated.SVGImage.Color = xFF333075
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 466.000000000000000000
+            TabOrder = 32
+            OnClick = btnVoltar2Click
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 21.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg18: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_71' +
+                ')">'#13#10'<path d="M37.8936 16.0005L28.1154 16.0005" stroke="white" s' +
+                'troke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+                #13#10'<path d="M31.7247 12.3916L28.106 16.001L31.7247 19.6104" strok' +
+                'e="white" stroke-width="2" stroke-linecap="round" stroke-linejoi' +
+                'n="round"/>'#13#10'<path d="M33 31C24.7125 31 18 24.2875 18 16C18 7.71' +
+                '25 24.7125 0.999999 33 0.999999C41.2875 1 48 7.7125 48 16C48 24.' +
+                '2875 41.2875 31 33 31Z" stroke="white" stroke-width="2" stroke-l' +
+                'inecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'<path d="M15.479' +
+                '6 48.363L9.9566 63H7.7516L2.2286 48.363H4.2656L8.8646 60.984L13.' +
+                '4636 48.363H15.4796ZM22.594 63.189C21.516 63.189 20.536 62.944 1' +
+                '9.654 62.454C18.786 61.964 18.1 61.271 17.596 60.375C17.106 59.4' +
+                '65 16.861 58.415 16.861 57.225C16.861 56.049 17.113 55.013 17.61' +
+                '7 54.117C18.135 53.207 18.835 52.514 19.717 52.038C20.599 51.548' +
+                ' 21.586 51.303 22.678 51.303C23.77 51.303 24.757 51.548 25.639 5' +
+                '2.038C26.521 52.514 27.214 53.2 27.718 54.096C28.236 54.992 28.4' +
+                '95 56.035 28.495 57.225C28.495 58.415 28.229 59.465 27.697 60.37' +
+                '5C27.179 61.271 26.472 61.964 25.576 62.454C24.68 62.944 23.686 ' +
+                '63.189 22.594 63.189ZM22.594 61.509C23.28 61.509 23.924 61.348 2' +
+                '4.526 61.026C25.128 60.704 25.611 60.221 25.975 59.577C26.353 58' +
+                '.933 26.542 58.149 26.542 57.225C26.542 56.301 26.36 55.517 25.9' +
+                '96 54.873C25.632 54.229 25.156 53.753 24.568 53.445C23.98 53.123' +
+                ' 23.343 52.962 22.657 52.962C21.957 52.962 21.313 53.123 20.725 ' +
+                '53.445C20.151 53.753 19.689 54.229 19.339 54.873C18.989 55.517 1' +
+                '8.814 56.301 18.814 57.225C18.814 58.163 18.982 58.954 19.318 59' +
+                '.598C19.668 60.242 20.13 60.725 20.704 61.047C21.278 61.355 21.9' +
+                '08 61.509 22.594 61.509ZM32.9186 47.46V63H31.0076V47.46H32.9186Z' +
+                'M38.5066 53.067V59.85C38.5066 60.41 38.6256 60.809 38.8636 61.04' +
+                '7C39.1016 61.271 39.5146 61.383 40.1026 61.383H41.5096V63H39.787' +
+                '6C38.7236 63 37.9256 62.755 37.3936 62.265C36.8616 61.775 36.595' +
+                '6 60.97 36.5956 59.85V53.067H35.1046V51.492H36.5956V48.594H38.50' +
+                '66V51.492H41.5096V53.067H38.5066ZM43.111 57.204C43.111 56.028 43' +
+                '.349 54.999 43.825 54.117C44.301 53.221 44.952 52.528 45.778 52.' +
+                '038C46.618 51.548 47.549 51.303 48.571 51.303C49.579 51.303 50.4' +
+                '54 51.52 51.196 51.954C51.938 52.388 52.491 52.934 52.855 53.592' +
+                'V51.492H54.787V63H52.855V60.858C52.477 61.53 51.91 62.09 51.154 ' +
+                '62.538C50.412 62.972 49.544 63.189 48.55 63.189C47.528 63.189 46' +
+                '.604 62.937 45.778 62.433C44.952 61.929 44.301 61.222 43.825 60.' +
+                '312C43.349 59.402 43.111 58.366 43.111 57.204ZM52.855 57.225C52.' +
+                '855 56.357 52.68 55.601 52.33 54.957C51.98 54.313 51.504 53.823 ' +
+                '50.902 53.487C50.314 53.137 49.663 52.962 48.949 52.962C48.235 5' +
+                '2.962 47.584 53.13 46.996 53.466C46.408 53.802 45.939 54.292 45.' +
+                '589 54.936C45.239 55.58 45.064 56.336 45.064 57.204C45.064 58.08' +
+                '6 45.239 58.856 45.589 59.514C45.939 60.158 46.408 60.655 46.996' +
+                ' 61.005C47.584 61.341 48.235 61.509 48.949 61.509C49.663 61.509 ' +
+                '50.314 61.341 50.902 61.005C51.504 60.655 51.98 60.158 52.33 59.' +
+                '514C52.68 58.856 52.855 58.093 52.855 57.225ZM59.9274 53.361C60.' +
+                '2634 52.703 60.7394 52.192 61.3554 51.828C61.9854 51.464 62.7484' +
+                ' 51.282 63.6444 51.282V53.256H63.1404C60.9984 53.256 59.9274 54.' +
+                '418 59.9274 56.742V63H58.0164V51.492H59.9274V53.361Z" fill="whit' +
+                'e"/>'#13#10'<defs>'#13#10'<clipPath id="clip0_226_71">'#13#10'<rect width="32" hei' +
+                'ght="32" fill="white" transform="translate(49) rotate(90)"/>'#13#10'</' +
+                'clipPath>'#13#10'</defs>'#13#10'</svg>'
+            end
+          end
+        end
+        object Layout20: TLayout
+          Align = Contents
+          Size.Width = 1269.000000000000000000
+          Size.Height = 754.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Layout21: TLayout
+            Align = Center
+            Size.Width = 950.000000000000000000
+            Size.Height = 724.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object SkLabel21: TSkLabel
+              Align = Top
+              Margins.Bottom = 8.000000000000000000
+              Size.Width = 950.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = []
+              TextSettings.Font.Families = 'poppins'
+              TextSettings.Font.Size = 32.000000000000000000
+              TextSettings.Font.Weight = Medium
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Seguros'
+                end>
+            end
+            object SkLabel22: TSkLabel
+              Align = Top
+              Margins.Bottom = 10.000000000000000000
+              Position.Y = 56.000000000000000000
+              Size.Width = 950.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Style]
+              TextSettings.Font.Families = 'poppins'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Consulte os seguros Ouze:'
+                end>
+            end
+            object Rectangle17: TRectangle
+              Align = Client
+              Fill.Color = claWhite
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Size.Width = 940.000000000000000000
+              Size.Height = 618.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              XRadius = 10.000000000000000000
+              YRadius = 10.000000000000000000
+              object Layout39: TLayout
+                Align = Top
+                Margins.Left = 70.000000000000000000
+                Margins.Top = 18.500000000000000000
+                Margins.Right = 70.000000000000000000
+                Position.X = 70.000000000000000000
+                Position.Y = 75.500000000000000000
+                Size.Width = 800.000000000000000000
+                Size.Height = 140.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object lblDescricao: TSkLabel
+                  Align = Client
+                  Margins.Left = 30.000000000000000000
+                  Size.Width = 676.000000000000000000
+                  Size.Height = 140.000000000000000000
+                  Size.PlatformDefault = False
+                  StyledSettings = [Style, FontColor]
+                  TextSettings.Font.Families = 'Poppins'
+                  TextSettings.Font.Size = 18.000000000000000000
+                  TextSettings.VertAlign = Leading
+                  Words = <
+                    item
+                      Text = 
+                        'Mantenha sua casa sempre segura com Ouze. Tenha uma cobertura co' +
+                        'mpleta para imprevistos.'
+                    end>
+                end
+                object Image1: TImage
+                  MultiResBitmap = <
+                    item
+                      Width = 94
+                      Height = 94
+                      PNG = {
+                        89504E470D0A1A0A0000000D494844520000005E0000005E0806000000AAD2A3
+                        6E0000000473424954080808087C0864880000200049444154789CCCBC79905C
+                        D775E6F9BBF7BE2DF7ACBD0A28140A0B0110044180A42852942CD0B436CBB628
+                        6F234F4FB4356DB797E9095B764CCC74744C84E8E83F667A3A3A644F47C78CD5
+                        8EB6E4996ED963BB2559B6B5B829521225EE04080224486CB500B52FB967BEE5
+                        DE3B7FBC975955A4DCB6DAB2DD2F2223B3B2DE7B99F9DD73CFF9CE77CEBD82FF
+                        0A8FF3E7CF57BD426116ADCFB841704FB952995542CE7ABE57B55A57DB9D4EB5
+                        D5EDD0E985AC2FDDE6D9AFFC69EDFDFFDDCFD590720E414D0AE61263E6B5B517
+                        9224B9F0C8D9B3B5BFEFDFF4D6C3F9FBFE0200376FDEAC6AC539857CAF31F69C
+                        B1E68C310623208E12B6363601F07D1FCFF728168A94CB65A23042855D7239BF
+                        EABBAA9A58330B12ACC5110A8945B9926F5FBA7CC1622F1823BFA875F8D47F0D
+                        03F1F706FCF99B37AB65293FEEBAEA235A9B73C2180C168B0504524A84100861
+                        B1D662805E14D28D7AB4DB6DFC20204E12FC5C8E42E0333D35451C27345A4DC2
+                        28C2188B068C050D67B0E28C55F6E34ABA7CF3D26B4F69633F8B8EBEF0F73508
+                        E2EFFA03AF5EBD7A0EC7F908D88F0355200358A4001B0380B51621C4E0B53502
+                        2B4887C6A68FC468C27A8D6F7CF18FF8E97FF2EB0C5587904292E8846EBB45AD
+                        D5A21727E8EC1E1A8BB1166DB39F6D2D52F09938369F7DE4ECDD4FFD5DE2F077
+                        06FCD59B37CF394A7D521B7DCE5A0B300099CCCAFB40C3DB81DFFD6C006B416B
+                        CD8B4F3FC59BCF7D8B9FFCB57F86EB3814F379F2B93CB920C0930E6114D2EA76
+                        69341B74134D622D068BB6E93DFAF735D8A78C159F7DF4F45D9FF93B80E36F1F
+                        F89B8B8BE7B0F693C69A736011420E2CD618833186BE012A21F77E39B1030EEC
+                        02DE82B1966EBBC5D7FEDFDF61EDF6020FFCF04F70D7030F6149074C2945A558
+                        C65A433E9723F05CDA9D1EED5E8F66A743378E53F0B118035658B4B558CB5C82
+                        F9B50F9C3EFD85BF4D5CE45F7DCA7FD971737979F6D6F2F2934AC9278514E7A4
+                        94C00EE84290012491481C997E95BEDB49CF1783BF77DEDB39C27693388A9052
+                        B2F8FA45E2381A9C9B24095BF56DB6EB75D6B7B6585EDF4000E3C3C31C9ADECF
+                        ECD83823F9004F09944C2D504A899462D615F2F34F5CBAF4BB5F3E7F7EF66F0B
+                        9FBF15E05737373F9973D47921382785442985940AA5E400989D002AB3F7E51E
+                        60ED6E537FCB7B227B148A65F2BE87B596388AD146EF19A4CC85D08D229ABD1E
+                        4BDB9BCCAFACB0BEB945270E991C1FE3E4CC410E8E8E315E2C51745C94902804
+                        12F171DFF16E3EF1EAAB9FFCDBC0E8FBCA6A1EFFC42FCDFEF0CF7CFCF35A2767
+                        00A4102953B1293B31662F987B82E7777129FDD7FDC0DB8F05609102E230441B
+                        8BB102DF711189665798400A91BA92EC4AAD0D5A8774C31E00DD28A498CBE329
+                        876AA9C8D850955EAF47ABDBA5DE0BE92609DA8AC79FB878F1E391D68F7CE8EC
+                        D9B9EF1756DF378BFFA9779FF9D50FFFC4C7CE8F8E8F9FD15AA3B5469B3EA076
+                        00E08EC5EF1C3BA06616BD67402CDA9894165A81B160115804F3D7AF2185A0D6
+                        6C608520EC75514221FBE3D6B77E0458F67EBE856E37627DABC6F2E6068BEBAB
+                        D45A2D1CD765B85AE1F0D40407862A543C0F57CAD94039E79F78E5954F7CBFF0
+                        FABE58FC3B8F4E7DEA873FF2D14F94C6C62994CA243A416B3D0874BB2D788736
+                        5A527E921E6F3D67CF61C160335BCFEC5E08A26E835614137543565697499238
+                        754352EEA29DFD7B66D7F66750FF6690065729D86AD4D96A365152502D142997
+                        8A0C57AA4451C876AB55DD6EB53FF5E4C58B071F397DFAD7FEA698FD8D2CFE53
+                        9FFA54F5C6954B4F4EED9BF844DB3A2CCD5F43C89451B88E83AB14528A5DBE7D
+                        D707670992B516AD75CA70B2046A377DDCE382B0180BCB376F72F985675978FD
+                        755657D73872F810B6DB6665EE26F483360239B07250021C012A435B4A815402
+                        21D32F258D4020B116626D58ABD7B97E7B89B99515DA514CB558E6E4C1839CDC
+                        3FF589CB376F9C7FF2FCF9EADF04BBFF628BFFA5C7CECDE6099F7CEED96767E3
+                        C872F1FCF324F5754EDDFF706AB183299D262DB0430DA594298DB4FD0148ADCE
+                        1803826C36D8D44C451A238CD6F4C2908B4FFD279EFABD7F43D06B33F3833F8A
+                        E3BA0C8D4FA1C4329B2B4B882C0C0821105282357B669D900261459621671F21
+                        77D856FF7D48696B338A686C6CA1A4C0F75CC6AB154AC5D299A991D1F3DBDDEE
+                        2343B9DCDCDF19F0DBDBDBB37FF6EF7FF7C95EBB31FBC41F7C9AD989310AAE47
+                        7E788AB9F99BE4F379AAD52A9B9B5B0861191919CB5806589B02DEA793292002
+                        290123B1D6A40331F011D069B5F9DAEFFC6BD6AEBF46B2B18CECB6E9F422AE2D
+                        DCE2CC7DF7932F95889A359ADB5B24498CEBF9E900A777465B03D96709040AD0
+                        BB5DA0B0BBBDDE5B18954120888D21EC6A5A610F630D63C5F2EC70A9FCE4F2F6
+                        F62353434373DF2B86DF33F00F9E989DFD959FFB874F562AA5D9B85367BC5A66
+                        79B38D17E419F55DA6A626F9FD7FF3AF3878E234D79F7F9A1FFAF19F418C8C41
+                        C6D9FB969D329DBDF79612AC4D03A7B082B5F9059EFFB32FB0F0CA77706AEB54
+                        03975BBD2EAD5E84A88E72707696E1F1090C501A19636B6B8B38D1781E033A69
+                        0161539FAF8DD9715F7D6C6D3F734D8FDDF2453A503BA722401B0B46B0DA68B0
+                        52AFCF2AA59EFCF2F9F3DF33E3F99E32D773B3D56A37A89EB798D9074E9EE0EA
+                        C20D86CA454E4C1FE2C77EEE7F64B3D5C420B8F8C49F70EDEA0D3EFA531FE39E
+                        F7FF180891A5F936037D87E5007BDEC35A2E3DF71C4BD7DEE0E6D35F45AF2FA2
+                        13434F5B5A081C9D9048456FFA4E3EFC911FC3CF15D85C5B26707DD617AE73EF
+                        0F7F94A3C74E2233714D0F00B624D6A4E01BD0D9AF37294D4263DFFE83337DC7
+                        1A4162D30CDB189B056933903C0C76AE63EDD98F7E0F82DBF764F1B9B1A9272B
+                        7E61D68B9AD436D7E9753B78C3557253335CBAF822575E7D9597CFBFC4D4E830
+                        DB5BDBBC76F50691FF240F3CF2284A80356007669EDA921002C771897A5D16E7
+                        6F72F5D96FF3DC1F7E163FE930940BD80A631A1A8A8147DC0B1189A611143875
+                        FC3885628576ABC9F927BEC2BB7FEC27A9542B2C5DBFCE1DC74F61498335B0CB
+                        7FF73FDA2211698CC9B8BEA4EFDED29928499D8CB4800461045AD834E620D2FF
+                        65B10ACB6C4E88CF038F7CDF81FFF8071EFAD4C1E3779D79F1DB4F639204EB68
+                        3EF2E11FA73854E53F7DE54B9C39FB0E8A4A727CE610872646B8F31F7D80E3F7
+                        BE136D2D42A854DE95D90F34267333020434EA35FEE36FFD1F6CBDFA0279056E
+                        D8A01519729E4BC7F529E7148D7A9382276974134A274E70F2EED348CFE5D66B
+                        AFD05ABD4D7D758542A9CCD6AD9B345B750A8522D632D083D2D9B59327080B60
+                        B019B51426737D3613880403C3E84B1CCA02484C3688FD819442A0B1E7BE72FE
+                        954F7DF0EC3D7F2DAAA9FE3A27FDAF3FF1CE5F3D7AF6E1C72F5FBAC48F7EE4C7
+                        10443CFA919F42E83ABD568F6EA469765B584F619C2207A626A8C59AD30FBD87
+                        A05880EC4BF603A69092248958BC768DDFFBE7FF946F7CF6FF425FBB48D869B3
+                        194634C38499B12AB195AC6DD6F03A4DCA814BD80B4986A7B9FF07DFC7D4C119
+                        E24E87F35FFD02C26A1C2599387C9CA4BE8D0D8A8C4C4D91188DD6998BE8F395
+                        4C184B314EC50761E52E43E8276F3B86214867457A1F10422210E9D808910D82
+                        C5C283FFE0177EB1FEEF3FFDDBCFFE5598FE953CFEDC89C9D9A5AEF778C73A04
+                        C53CD2CF337DC75DFCE1EF7D9AEAF8111EFAC063DC79F719DC5EC28993F7F1E8
+                        0F3DCAFD1FFE28A25163FED22BE9D7EBFFC0CC7A2E3DFF0C9FFE9FFF097FFCF8
+                        AFD25EB88E9F84B40C14CA65E238C69782ADAD06ADA5DB4C3B098985AD5E825F
+                        A83076FA3E0E1F3B8EE3E5B8FAC237493A4D02CFA3B5BD4ED40BC99587B8F6DA
+                        2BA95FA39F34F55F30A08BBB73652BD2E02A32B16C90DDF665FB5DFE7F101477
+                        B92E21C4E03AA4F8E4E7FF1AE2DA5FE96A1A917EF28DEB37AA6FDEBA45CECFB1
+                        B9F1478C4D4DB17F669624317485E22B7FF6053EF1BF3CCEFFFDA9FF8D7FF1EF
+                        7E9FF5955BFCC4AFFFB3DD692656C1573FF77BCC5F7891C61B2F22B5A1596BF4
+                        2B75EC1F1DE6E6FA367114315D0C48BA5D1A08620D4547E0BA92E6C40CA7EF39
+                        43BE5C25EA7658BE7C1ECFF57094838D225AEB4B54A60E10DD78937AAD49B952
+                        48154795FA624116248DDDB17A76F4FDEFA2CBB18BD30C40B6963D99AF803466
+                        A47F543D2B3E0F9CFDCFE1FA9F7535BFF0C1777F726AB8FA582957C024095525
+                        585BBE4D6DBB4EA7DDA63C32CE1F7DFA5F233D17EBF81C2A1779E1E96FE00233
+                        77DE83725CB6B7B779F6892FF3C4FFF33B5CF8A37F87535F26319A46A8991D1B
+                        A61D47686B887A5D7C1333E639747B11B13578AE4BC14634B5605D044CDDFF1E
+                        EE7FF82194E372ED5B5FA3BE7013A524CAF5705C87280E193F7C1C9B84F412CD
+                        CCA1C3788ECA326985920AAD2D264BAA4406DB401B62AFEFDE03367DCB173B4C
+                        F42D9CD0F487C132F9B15FF845F1B94FFFF6537F19B67FA9C59F999D9CBD5D6B
+                        3CDE6E6E13C7118726F7B17FB842A3DBA6AD5C86472718CEE7A954CB3CF633FF
+                        8827BFF487FCCA3FFF97AC2FCCB1B230C7E77EF371C6F71D62E1D5F35C7FE919
+                        2A3644471191F6E91AC178A5CCD2DA2AA1B64C0D9568AC6F60A2885858AAAEA2
+                        87A21E5B8CF2F01D45F5D83D9C7EE0015C3F477B639DE5579FC7F33C341699C9
+                        CA61B3416B7B032F28B07EE31AB9F77D30CB1D0C3A49886D32C86A072CA79FE9
+                        CA94C1F4DFEFCF82FE91B21F91257F3BA5C3C1E00CE68FC85890FDD5CF3FF3CC
+                        673EFAD04373DF13F01363C39FDCD8DA200A7B04AECFDAD606EBF51A63FB0F61
+                        D7D7D9DE5863F2F0519C979F637DEB1643433972C3A354ACE4EAEBAFF2EA137F
+                        C1902BE81A818D2244DE6176DF04B576977AAD8953AF116983572EB3786B8592
+                        89192EE5A937DB348522B216CF77513AC194C73870F73DEC9B99464A875BE7BF
+                        83A36384522829314221A4C25AC3F6ED05A68EDF45B4B6C6FACA3287EF38864E
+                        12741223E398C476317D953375CC83DF6C07F2C64E7267ED8E522A769D874D03
+                        A4DE413EFDDB5A840589A8BA41F0BBFC2514F3BB02FFD87D773EB6DD6A7C3C8E
+                        238A9ECBB14333DC5E5A4005798A8580DA66C448DEE52BBFFFDB2CCC5F6765FE
+                        32D592C3D35FF87DBEF5C5FF88DA5AA268A1136BBA28A6472AF8C2B2B8BC82D7
+                        6D3321044DAB0895876C37717D9F38322CF7349E9F634C25AC8A80388AB0E50A
+                        72F64E4E9DBD1FD72FD0DB5AA579FD128EE320A54293026F84C0751C1AAB4BEC
+                        3B7E37AEEF72E9A5E73974F4D880521AAD07CE3CB5DED481ECD672649FC1B077
+                        4060AF0BB22215ECFA87C974FF3DE54ACBB92FBD70FEDC8FBEE3EC537F2DE047
+                        C6AA9F7AE7E17770F9CA25462A630423237CE8FDEF67FEFA6B743B9A6D25192B
+                        8ED2EAF6D83F32CDF1FDE32CDFBCC6E7FFCFC719918A6668F1CB25AAC52251BD
+                        45637D15DB0DA908681B4B2404E3A35556BA118DAEC6538ACAF0286E12E1390A
+                        9DF4385E2DD18D12560B13CC3CF03063FBA6904A32FFCC53F8AE22560E3A2DD5
+                        619068245608E25E9BE6D63A855285F59B5769351A389E3368F940A8D4AA85ED
+                        13C29DAC39B3DCBE8C300050A4966C768B6BA99689C912302C3BCE66B72B12F6
+                        93C0DB807F1B9D7CE64FFEF8E3BFFC4F1F9F7DF4C77F8687DFFD089688CD1B97
+                        993D7D3FA5FD93FCDC6FFC4BDE79FC303FF93FFC3AA25C6622103CFBD2336CB6
+                        B618530E23D56126A72619CA1769D4EA149B1BB85184550A1C41D5579494A1B1
+                        BD8DEBBA542B558AC522F4423C4751266134E7D2E8846CB522ECCC498E1D3B86
+                        E3BA84B56DE2AD258AE532413187E3A8ACCC97CACF524894E3B2B5388713E470
+                        85E4CAA58B681D0302632D891E38879D8CF62D74E66DE4C6A640EFCAC106E003
+                        4821D9C5ECB3324D5FF9E4DC975E78E1DC5F097C303CF2B37EB14A50AA303A32
+                        C6E9FB1F249F573CFBE5DFE33B4F7E99E79FFD26B30FBC8BAFFDE1FF47B9BE41
+                        21EC30ECE429CB8003070E52AA9489930449CCB863F03C0F212CA323151C045D
+                        E1522815991CAE90EFB6C01A02473056CE5114828E91F4944FA910D01E9AE4F8
+                        99FBA88E8C00B07AE9794626A7F1F215F2F9028EE3E0BA1E8EA39042210478AE
+                        43736D19B4C1097CAEBEF2323A812849E8C611DAE8017ABB2B523BCC264DF0E4
+                        5BEB079076A6C95D162DFA0A28990188F43A6B91D8546E1080509F7C2BCE7BE8
+                        E4FFF4B11F39B7B6B2F4F8C8FE83741A5B78159FEBCF7F8389B112D7E657D95E
+                        AFF3D2537F46EBD645F45A1D136BACE330363C8A4E34DA5ACAB90057296A9BDB
+                        C4B54D02A189FC3C2F6C86F82EDC7B789ACBDD985B9D0E0F9C38068E8B832589
+                        628449F0D0144B25B6DA31B9FBCFF1CE87DF8D9B2FD2DBDE64FDCDCB74B6D6A9
+                        8C8CA2A4228A7AA93B902ACD7E646A6BC618A4EF521A19A7BE729BFD274FE3BA
+                        2E6657C3543F23DD4998323E2E4406661FF89D0C7560E77B68A41864B6ECBA9F
+                        B5366BC00260F6BFFDC73FFF8DCFFDDB7F3BF75D2D7EBDD1FAD956BBC5537FFC
+                        396E5E7C99B8DD6372BC4A71F428551202C7E140799CF5B590D00A8CE350C8E5
+                        58DFDEA4522D33522EB1BEB9C1ED85390ADD3ACAF5E85A8913F538E269F2A3FB
+                        99BEEB2EEE1C1AE1E143336CB63B10860C09CD78A05026264E0CB13174260E33
+                        73F2347EA988D531D1F61AA5E1119C6299CD8D0D824A152FF077B5FAA519B294
+                        0AD775D8BA3D8FE379148B255E79E6E93DE7F545B0D42AB307A084A0EF34FAB4
+                        538A1D57D21F14955DDB0FCC2990A9A50F8623CB13641A4E40C8C7F60E5776CC
+                        56ABD5D191DCF654B9C4C9BBEF667965995B4B4B8C0D098E17ABB46DC8B5DBEB
+                        8CB93EFB27F6B1B2556322E7E049307E806E37711A9BF41C87ADD0B2D2B19CD8
+                        378A0EDB1045148B5546472B2CDE5EE3D2EA26A7272B4C9472A8204FBBDD66EE
+                        F606A3BE60626A92855011BCE74779F4FDEFC32D960837D7E9AEDE22E9B4D8BC
+                        BD88E73B88B047D46D53DB5A27D110198BB60663253AD174C390A3EF79146904
+                        DDB0CB87FEE13F263686244906B463B770B68359FA9E25958077D54706B56243
+                        AA3B19B2809B55AE4C464777C78E7EA5CD585B8B1C79A82F1D0F2CDE0DD4639E
+                        1F70E2EE533CF3E28BD4EB350EE6158BB79A6CB76236B723A68A25A647861061
+                        8B3B72097905F54693B0D321A8ADD243B1167B4C147C0E8D0F736D65932B1B6D
+                        5EDE88E81AF8C397DE607C7C88078FCF7273B3C3D27A8DF5B54DC26E48B55A44
+                        060157B79A6C8F1EE4C45D77E1E60B9828A2BE78936E631B21242333B3B87E11
+                        2D24A5EA087E90472927ADEB4A39E82640C0FAF5EBB8C512360C99BBFA269E54
+                        F88E9BF5F9C81D47D1EF60DB9D5159DEE6FFFBB3AAEF79DE9206BCCD9CFBC5FE
+                        ECB2AA9B241FEF9F32A09352E99F5D5A59E1AB5FFF268909696C6FB1E17A8C56
+                        2AACB47A6CB47BDC3114409220E3906ED4C1B11DA4557852E18CEDA7222471AD
+                        CE4624D9BF7F94E96A814427B442C3E9BBEF646CB44AAFDDC25570CFEC248112
+                        B4BA1191D1E495C048975628993DFB4EF61D38004250BB3DCFEDEB6F32323686
+                        D109F95215AF54C2E81081255F2C13C65B48639042824A6568CF7569AE2F61CD
+                        691CCF6165EE3A474F9C440881B6662F37377DD17D9782DA672899AF4E4F163B
+                        8241E64284483B77B2261276D39EBEEFEFD79E11E223C06F0E2C7EB65AAD86BD
+                        F05CC97329133352C83354C873707292F556935E7D8B7BF20939A3A9C73D6E6E
+                        6DE3745BB43B1D86CB791C25A8E3F1F2F226B5D0D2110ECFDE5AE085A5754227
+                        8F7215730BB7E8341B943C89EFE5F1038F6E1CE14A4375A88A88428C9004874F
+                        72F2CE13B84140DCED72F5B96FF2CAB79EE4F6B53758BC719DE6F626B9621163
+                        259D6E87427504DF0F50AE83EB3AB8AE8BE3281CA5B04944736D19BF50617DFE
+                        26AD5613B3ABBF67E03EB018016660A9E96B9BF9F9B7AA67829D98224863C3CE
+                        2CD8C58EF6CC16C072EEF359778204F0943E678D61AA52C257129D18AABEC71B
+                        B76E315DCA3153C9B318697A49CC888DB915BA140F1CE2D09143F88E43677D8D
+                        E19C434B27BCBAD926972B32243C2E2C6EF1D4E56BF8F93C8BEB1B8842974877
+                        91498792E73239364A374E68343BD8D208ADA0CA8153F733B97F1F20B8FADCB7
+                        B8FCADAFD36B6D73FDD22BBCF29D6FB1726B91A8DD66686A3F463AB8B91C41A1
+                        88E3B848A5B2760D9B524229D95C9CC7C917903A6161FEC68E94CB2E2A4966BD
+                        03DFBF03729FAB48449A746501B61F6CFB2D7F4AD85D81370DCA7D77C3E01EE0
+                        47FADC00F86E1C7E24EF7BDCACD7D86877C8D984C55617EB28C224A1502E31D7
+                        6A73B91DF246CF32592E921F9FE242AD8EAE180E1C9CC42A8783A3A3CCEC1FE5
+                        E2C2229ED1CC0C97F185E6FCB505DE5CAF7163A34D31C8E3EB84859535D69757
+                        3838398E5F2AB1D9EC200F9EE0EE7BEE427A3E8D95DBBCF9F52F219208251CBA
+                        AD26C411D72E5DA051DF423A0E2A2812C59A5CB184A35C944CF9BC940E524A1C
+                        C7A5BDBD860E23827289375F7C7E873E4AB197E9601058A4B0884C6F117687A3
+                        A73DFAEC04661874ACF5BBD5FABD3B9E1078422205D9A064AC28654BE7063EBE
+                        5C289C192F06AC757AB4628BE8256827D5376E6C465CBCBD4531EF32EA5A6CE2
+                        303D5E662BD104A51CDF7C7399664F73FFA13BB86366067F7D0B155A367A6D86
+                        6442CF1A0E9773B429D16A36690D495C21982928547998F566877AABCBBAF179
+                        F0AE330C8F8E03B079E30AB6D5C0957DBB49C16A6C6C327FED2AC5F210959151
+                        6A2BB7C817CAB8B93A49C7A054AA202A6B701C834C146BF36F32317B075BF373
+                        74BB5D825C2E6DCB4E76B2D8B7F6E20B4B5F5FDF29CCBFA5C16AF7B57DE16C30
+                        28802B44EAC2B26290901261EC7B01D4E38F9DABFAC6FCE676A747CE95444982
+                        E378C4D6A263C348218F1086779F3C8C552DEE3E7A18EBBA5C9CBBC956ABC5CC
+                        C834B2DBE53BD716E8F69A1495CF882F69C4F00347271926A618B8586DF05D87
+                        42214FBCB1CA7A68E9269AA152917A2251773FCC830FBF8B5CB1446B7599F6FA
+                        128E5234D796314623B3FC5B08417D6B8BB1A969AAE3FBA86FACE02A0558E238
+                        1E7401606D5A4F35A9D63F76E828B6DBA11D27CC1C3ADC67EBE97DB1BB2A65A9
+                        AF495F665299B0FD22DA2E4166C720760DC19E414C2FED5758068FC91FFFE55F
+                        FE2D756D63E54113C71F5F6DF568872161A429E47C46F3393E7C72964D9B2649
+                        A3C51281505C5E9C67DA0F387FFD16818085DB9BC4D2E5607584A5AD06441107
+                        F68D716ABCC8CA568389C9515C4731E24329E7D1A86DA0CAC3785E40D957CC6F
+                        77984F5C1EF8F063CC1E3E829582D7BEF81F98FBD657E935EBE830C25A9982A1
+                        240889D11AE5FB4C1CD84FBE54412889E7B924BDEE9E42B435699F4118F6C895
+                        86707379DADB5B1CB9E7DE015C29F8691F8ECA5AC59510A8ACC36DC04AD8C574
+                        76D1CA5D3ADA2EFA982555590395DD153BACB5A0F51FC851579D39399AC71516
+                        2105913174BA1DBA718F501BEE3FBA8F82E7D0686E90339AD14299E5ED26C3C5
+                        0ACBDB09DA0DA87A8289B2CF8F9F39C650C52767231C613976680A6B0CBD461D
+                        137671C3167EBE4AA3D1A2BBB5C5566858CD8D70F2DCFB393A3B83745CBA9B6B
+                        B4E65EC757127A6D1C094E8A3742481C09AEA3C8E7F378F91241A94CB7DD421B
+                        81F202D23EFBB47F53B94EFA2C25B5D525FC6289A4D762FEDA9BA9FF15320578
+                        9795EE480882DD3DFBFD857032C35C668C4789B42F33BD9F1800DD6F92B27D69
+                        62AFEE7346BAF9F2EC37176AE4F379727EC0F44805ABA1D68D7973BD8ED10DE2
+                        B04E2C5C5EDDEA90E48658AA37E9C409F538C6979687C7CB04CAE18937173975
+                        709A308AD9AED5E9B43AE4A5657FD92346B19E08B6BB3D3C6171AA25F4D451DE
+                        FBD8C7F881F77D80E2F008525AB6DEBC842324AEEFE1380E9EA3701D99062E09
+                        52493CDFC72F57585D9C238A429230A4D3D8225F2CA39433602C4AF6CB7E2E9D
+                        CD35C022A5C3C6E25CCA31FA943003D7B25381DAAD58CA8C210D163D58D12F76
+                        A48327C4CE43A60DB3FDC3BEE5391BDC33AA94737E11A54E243A21EE44243AA1
+                        87214A348D2866AB11116A83AB24B1F558585E61BBD9A658F609FC80AAEBA255
+                        8E62CE23128AC5AD06F54E8777DD7D27524AD656D7E874429663414FE529780E
+                        3D1CC43D8F70FF077E9403C78EE1962A38AE477D7589FAB54B848D4D845069F2
+                        92598B19F85589319A95B91B2847B1EFC8715C3FA0B1BE4A717898240A772D6A
+                        DBD1D5E328C22F95F10B156AEBABECBFE34E5CCF1DA4F41A3348F9D37EFCB7CB
+                        C503778119C40029064396BA9B2CC68AACC2D54FD3F674401BB3AA3CA97F496B
+                        3D3B1104B8BEA216C674428D230C3A1174BA3DC238C6751CF29E4B31F0982EE7
+                        8874CC3D63639472056E47114EAECC7031CFCAC62AFBAB153A8D6DDAAB6B0441
+                        6AEDA090C262466798FDD04FF28E1F384775720A375F200A7B5C7BF69B249D36
+                        9DCD0D1C6BB2D63A03880193B0A47E5E0A81B58246ABC1C113A7290E55E9349A
+                        04F91CD61A74146133BF6D8D497B6BACA1D7E930327398D6FA0A6E6588B189C9
+                        5DBA0A59FB077BDCC5DE8718940677AB9483D9901547FA6CA8BF14252D1B66EE
+                        27AD37F69CBC54B35343256686CB481CD6EA0B28298834388E218E35C3AE4FCE
+                        C0F2DA069323552EAF6C313554E0A5C565C6AA430C7B92ED8D65163A2193791F
+                        DB6DA1848B532CD24C34A632CED0E1E30CCD1C41F9390E9C3A8B5F2A8354D437
+                        D6B8F2E457397CEA1E8CE3F0FADA3A33D532499260B5C620D2D57852A42D7C16
+                        901289C1C6319BAB4B14CB1586A7A7E96D6D10E40A849D76AABB5B8BF25C5C63
+                        D03AA1D7ACA1C32E6E90677DEE1A47EFBC0BA5D44E70CC3AC82C6FB7F41D57D4
+                        77173B2DDD3B8B1DECCECCEC6B3DFDAE34DBCF742D20AA4E6444552A979B9B2D
+                        F60FFB0861287A12A50D759D50F07D4AB93C2BDD98586BB65A5D025F716A7686
+                        6BD7AE43B7C146CFE5D4FE110E4C2B6ED63A2C6EB7199F9E44CDDCC1E1C3C7C8
+                        0F8F922B5791B91241A1805B2AA3C3985BAFBD4CA55AE1D47BCE219547B7D3C6
+                        16AA446872C50A2449DA21A0130C16D7D1D84467CD4792446B1A1BABD8E37762
+                        8522EC7629542A047E01A30D719CA4AE4325B89E4794246C2D2D529AD8C7CADC
+                        755ACD3A434323837E4E2925C6EED223DF2217A492C05E6FBDB366375B064AD6
+                        D86A4835A1BE7B6157A3AEB555E529FEF7234587B39315AEADB7182F15F07D8F
+                        9EB18CE43C260B058ABE4F12F5982C7ACC1415B75A211E9AC3230133D561CECC
+                        8C61134DCB097871B54E75FF414E3CF46E0E1C3DCEE5575EE2C0D98728EF3F88
+                        13E4717C9FDACA32CF7DF13FE0445D1CCF432A07375F4008CB81D943B8B922BA
+                        D726897A681D628CC668831092589B94E26401D4C9E5D97FC79D789E47AFD346
+                        392E8EA748A278609969A13B6D0D8FBA6D86F71FC2443D8CE72850CF92000020
+                        004944415433357D608FD50A996AF24AA4A54421536A2965BA2454CA7E06D01F
+                        8CD4ED0C68ACB5D90064D2B21D741493F4E3073650C3F9E0714F29AE6F368994
+                        204A2216371B1CD93F49BDDBA1E0C17ABB49908762C1A76635B3C512A3AEE4D2
+                        728BE14A812D3C46EF3ACBA62C327DE00053C315EE3D7618D76A72D347193D70
+                        884427AC5D7B8D2BDF7A92379EFB0693878FD3ECB4F15D97D6D20285D1717ABD
+                        882BE75FE2E273CF323D99AA91264E01D4496ABD89C934EF4CD892CAE5F0E97B
+                        51AE4BA7D5405883EBE7D071942E8230FD80970E40D8EDE2952B385EC0C6CA12
+                        77DEFBCE3D41742080D12F8464E53C183C0F648401F0647DFD9986BF6B52ECDC
+                        BB1FA8D281705A61CC4D6B8993685061C9070E630550DB9A4ABEC2723B266C26
+                        D49A35A686CA1C3DB49F7618716AFF113ADD90B55E0C5DCB1D77DEC9D7FFE44F
+                        F89177BF83F995754CA1C2566D8D5EBBC9AD375EC3DD5E61797181CAC1A36CAE
+                        2CB1B6BA82359A6377DE859492F91BD778E9C597B13A26B602379727E975D15A
+                        23948BD016C7B1243AC466FE5227E9BE0585CA105E2E4F676B932008F0F3794C
+                        12A38DC131062F6BEF8842457B6395D1C3C7E92D6DB2B4748BA9A97D7B98501F
+                        F4EFB6204E646299249D0D5AEB3DE00AB14B6ED8E394B292A248DD99E34843AC
+                        131C953631FA8E0342F2CC1B4B941534DBDD542C921E81039D4E42CFB5ACC63E
+                        D313D38C97CBD45F7A112F57E0F803EFC6CD97B97EE33A07C62ABCF2ED6FB06F
+                        7C9CE72EBCC85D470FE38D8C10F73AECBFF314265F61F6D0215AAD065E210DB4
+                        B95C0EACC51841B717532D14099B4DAC5428DF47C731D27110B14158CDE1D3F7
+                        32367318BF50CA3255F07C0FAD4D2A2BF77AD9327981B102CF42CE0AA2760389
+                        C50D026EBCFA2A5353FB4897FA9BB7819535D1A7AE282B940CE47900291106AC
+                        340893F5DAA7CDF6E8B70C602A3FA4AB5D9494E2138E92812B2C8E23898D254C
+                        3458308E4F68123C47A2228DCC1778EF7B1FE5E03B7E8043274E71C7E9FB2856
+                        47B9EBDE7B79F26B5F66B25A61F98D4B7CF3C9BFA0A47BB4DA5DE697562817F2
+                        5446C6181B1F235FAEE08D4DF2E6DC2D9EF8FA531C9C99251FF8E44A154CAFCB
+                        A17D130C554A049E4BE007849D368EE3D0EAF4328E9DFE88D818DAF56DA60E1D
+                        A55019C6C9A5561E47615A4395192DCC6282741CAC0415E4701D87288EF10A15
+                        96AF5E64F4F0098A593BB9B0FD55B43B2D1AFD6CB5DF61B0BB67BE5F9FA52F1B
+                        F787A4FF7AA05FF463405ADF91BE1235A30DA18138316863F19422F015E88492
+                        9F433A058AC3C3BCEBC1B3B823C354A766189B99C50B3CB66ECF71E5C56798F1
+                        62DEF88B2FE0466D0E4D4DE0BA2E48876668B8B1BCC5CDEBD7F04A65825291A1
+                        7D07B1D225B116E92AA238C448C1CBAFBCC2F94BAF130341BE8055123797A3D6
+                        4BB838BF4AA80D488150693F4D1CC65CBF7481240C4108A4E3519D3C40717C1F
+                        4EAE98B9881474E138282F408711EBEB6BDC7EF355DC5C40AE50E2992FFD3161
+                        AF97C903BB9D841DFC2DDF52E3DB11C2521D5E6699B25472B0D43333F0415C90
+                        362BB25B517304AA1699045780725CD09A384EA8F879DA3A228C2DB32339EE3D
+                        7B8A97AF5EE3B4B34A726D8B9BED21E6DF78838DD55594843B67F693C43181EB
+                        32BB6F12C7CFE3BB3D2C122B05B56E88E7F8F4C29056A3CEF3CF7C1BAD0DB716
+                        163874F40E8485ABF3B7D858BA8D7EA1CB830FDCCBDD771CC1C917B9B9FC26EB
+                        ED2E8E23981D29228DC5755D7A61C4F6D272BAE4C60A6EBF76115709F2A52A41
+                        2987540A83214E127A9D360BF373B49B7556976E512816B9F5DA45664EDDCBD2
+                        1BAF70E1B96778F0DC0FBE4D1EEEBFEEAF4EDC53DADB756EE65D3277949EDAEF
+                        A54458A4145893B12C6BE6A495CC799E0742618422D216DF7749944737B1B852
+                        70EFB143DCB870816AAF85AC4BE62EBFC4D35FFE22AFBFFE3A2B1B9BD49B6D3C
+                        4751C80704F91C7E10E0B92E8EEB604D8CD531470F1DC41B1AC52F54D8BABD40
+                        DE73093C87C51B3748A21021A05CCCD3E985E4CB451412C7F3D11A5A5184958A
+                        5B9B0D2C0AE1487CCF4B59871258A311480A6363343B1D3617AEB172E5355AED
+                        36A1865C7598DB8B0BDCB87299B8D56464648442BEC0EAF52BB46A1B5426A6B9
+                        FADC53ACAC2EEFD48B44563CDFA307B3EB7907FC34099303E12D5538D5A022A5
+                        B2C02A459A7F08415D55F3DE4371923C688C26701D464647A9379A80E140B9C8
+                        FEA929E65717D8EA2574938495CD2651AC69F6D2FE9752E093F35C868A392AE5
+                        324EBE84A2479468BA9D1AED568B92EF3055D50CEF3B86E3FBB8A52A0AC3D850
+                        8524EC11765A4C1F3BC9DC1B57903A218E42F64FEF63FFE414711CA2E20E05C7
+                        414A28E75C844D3942A2639244930F0286676659BF7D8B3FFFDC67993E728CE9
+                        13A770FC1C4B733798BFF22AAB0BF3049E43B954C275DCB4090A41636B93FDC7
+                        EF26EC3458995F60E6CEBB914EFABF4148DC555FFDCB8F6C46ECAE5AF5CB7F69
+                        E92AA3B7066BC557A5C45E182E14A8E672186B89C390523E20AF24B55E8FCBD7
+                        AE323B5221D186BB8E555969D63872B04ACE0948B4A692CB51F63DDC20472E9F
+                        A7DBE9B2BE7E8D5EF33AE5A0C1C3678FF281F73D42A3D3E3B5979FA2D3DD40D2
+                        E1C8990778FF4FFF03DEF3C10F3336358DEB79EC1B1F232F6286733E42C78451
+                        4812C72C6FD468757B149C5479440AA228A2DDEDB255AFE3E68241FAEE388A6E
+                        2F42053ED2F7F1733EABD75E43245D7CDFC758904AA5851021E8D56B2CBCFE2A
+                        C313D3B4D76E73E1D9A7C1EE92764D1F2CBB6BD548A652EE6992DA612FD6660B
+                        EC760DC2AE398210764E46B1BE1067772CBA0EBD4E8BD8688C92848925D186DB
+                        EB2177EF1F27D215700AFCF9F34B8C544B8CE472C85CC0D8C438C3E39358A1B8
+                        72E575B495DCBABDC6E8D82C3ECBDC5A3CCF8923A758BC7C915EA78593AB20BD
+                        1C6114D3D5867D478E2095CB7D8F7E88777DE8313EF8D31FC3CF1779F5E2055E
+                        7AF965E22441382EF55E488C4466BB3C25618C3516A1DC74520B41BE54225F2A
+                        11873102858EBA4C0E8F10B85E4A552DC449DA9824A4443892A5AB9708BB11F9
+                        4A956B2F7E8766B3BEAB19C90E5AFFFA6A630AEC5B7724D989077D17947697ED
+                        9D1759DE7BC129B8F15CA72B981C1F856E93A9C067B1D1A5A30D39CFA7E4B9AC
+                        D736B9B5B9811B049C1E2F33B7D9403B014BAD10A55AD48B6556B6EB1C9E39C8
+                        3B1E7C079BDB35240546DC80867784F69BD7688B65AC23B87A658EB15E402BB1
+                        94EFBD9F66AD41331750DD0751DCC32A87D103874970387CD75DACDFB842B3D1
+                        E1DAAB2FB3BE24E98431C257B8853CC34AB0BCBA4E929506BD7C1EE5B878B900
+                        6DD2E2F5E2E26D222B191E19A2D18948ACCE829CDC59922315575FFE2627DFF3
+                        414E3F72864AB99CE92B7D52B937D01A524E6F6D1A3477339C81546C0589E89F
+                        6B07836EAD413BCE0555EBD12B1782C7922499D446607D9F7CE0D3E846B8AE47
+                        75689876A743CE9138B902054722958B897BCCCCCC30BA6F3F6EA1422C1CCAC3
+                        63CCCFBD4ED8DA627CAC44A7304D6E749A834365AE2CAC72F881F770F8D4FD94
+                        2B557A6B8B44F56D4A81C7D2C21C5EB942BE586179F11623131374BB1D72B91C
+                        56C3F0F40C9589491EFCA11FC1F37D460E1CA4D30DD96EB5D1D6522C55D877EC
+                        4E2E3DF3340B6F5CA6DB6E71FCEC7D9838E2FCB79F66696D0DC7CB512E160993
+                        743B17321DA62FE186DD1E520A8EBFE3618AA562D62D9CD563F794F9764B00FD
+                        FFCB5DD6BEA35826265D49AE33D0B531C4D80B8FDE77FF6F390039A5BEA15CF7
+                        4CD4EDB1DDEA91CBF9186BE8C4096B9BDBF8AECB76D4C3869BE47207B8E7C838
+                        070F4E737DA3C37D67EF4528C5C21BCFB1B17E95D96377F28DA7BE412376A9BF
+                        F1028E847D0543873CF9D21093C74F630524619BD2D008D60D3056B075FD7516
+                        5FBD80F27C56176FD2AEB7191E9FC01A43B7DDA2DBE9D16A35F02B658627F7B3
+                        6FF60E8423D95E5FA5B5B18E8E63D65656E84411DB5B9B44DD2E71143375E020
+                        5BEB6BDC5EDB60FFC424BD24A61B2580414A85235DB031BEABD85898A7D7AA03
+                        93F4BB7F253B7E7DB75C9C429CCD096B06552A2015E4108382CA40B54C2B3A17
+                        B2B186F1BC7ACCF1FDCF4BA01745591266091C97D1A12ABEE7E2E7036A5B5BDC
+                        77788A85AD263FFF8B3F4FB3A790185E7CE24F999C9C6273738377FEC87FC31B
+                        972EE286696D336762868A055012E1B61939F80EAA078E30B6EF00F94A050B38
+                        F91249B74D67630D1D47108544618766B34DB7D384743715B4D138020C266DCD
+                        C8BA0E8C1538B98024D2745A4DD6575788B4E63D3FF441E65F7B85E7BEF92408
+                        412E1730313C44182708A508F245AA6313EC3B7A8C0327EE66F6C429AC4AD752
+                        997E244D750120950076CBC46931DD0C2864FFD03A214A0C6112A3B51958BE01
+                        62F8E807EEBFFF0B0E40DED34F210461142110E45D49374C98AD9698ABD5383A
+                        3582140926ECB2B4B5CDB17D553AAB6F30B76A59595EE4F6D2264409F9629997
+                        BEF117C8A8CED6DA06E323E398A44DE2B8BCB630CFA17D53C85BF3DCBE791DD7
+                        0F2894AA4471CCC153673878F77D0C1F3C9A828946471163611761D38D840601
+                        CC66526B56E1314613753AC4618FA8DB21EAB42917F26C6E6FF2C6C50B6C2C2F
+                        2204F8AE43B190A7327580C3274FB1EFC871C60F1EA1323E9155A87675F8DACC
+                        D233ABB622EBB5DCB5BED25A932646D97BFD65FB4288C1EE53FD9580BB97FC78
+                        8EF3D4C0E2014673EA498438A704E93A2463182D1508E30823607674181B76B9
+                        E7CC3D6CD56F73FDD6269DAE61A29267B9D661AC5CE0D0A48FEF951972A0134B
+                        FC7C11251D22A359A9B5A9F7BADC33BB3FDDC2CAA43FCC51126B138C5FA23279
+                        80A17DFB288F4E501D99C0CF05197D943BE538C058DD6FB440390EC8B4BC6C8C
+                        258923C256936EB3C1FAE24D6EBC7A9E7AA3C1FB7EEA67B8EBBE07199ADC8FEB
+                        0768AD89E20893688CD119E066C05674B66467B0C02013DB76997B7F04F6C8C8
+                        0049926E0D161A43A2355AA74B808CE0A91FBCFFFE476057B7B0417E51097B4E
+                        1B432F86E1A2472F4E18CBE5A947113756361142D07EF912870E4E13A836ABED
+                        4D6647CA74BB1D260E8E325AAE30541E250E9728E8128E1298A44722A05871D1
+                        A3453C1D51C9E729E67318ADB9B5B64114C734376A6C2EDF46BEA250AE8BEF79
+                        F8418EC81AA4F40093EE1D06681D6301E528845038BE4B902F522855288F8E33
+                        347580F2C838B9B1092A93D35C7DE169664EDDC7C4C1A33B7D305947807414D6
+                        886C65A0206167D389816C60FADCC6BCB5FEB7E7E8EF91B397B7EF9C2A8CF9EC
+                        EEBF01A842355FF26E6A63AB392F950EAC100C57AB341BDBF852315C2EE18A84
+                        B22BF180C073E8C409E57295F1912A13D5328EAB585C9B676662965A739B43E3
+                        93486B68757B8C944B5801EDC8521C1AE2B5CBAFB3DD68A0B3FD661DC7A1900F
+                        2814F2684BBAE6B517221D67205219FB761D458894315864BA1DA2D1788502A3
+                        D3331CB9FB1D048EC3BEC3473871CFFD944646332AA8D3BAAC3668AD49921863
+                        527FBC3B794A67405645B26650BCEE575CFB3C5D65C29DB59624F3ED91D6C45A
+                        67C5114322D5507F13E9C11AA81EF45C65A71C291FF4038724D6E494248962CA
+                        814B25E73356C8313654A2D6EDD0880CCAF1E9698DE3E769B4DA8C175D3086E1
+                        828FA71485D230F952058DC0F57C8ABE4B1004D442CDE6D20A22E99293A45BA5
+                        D8042561A85A6173ABCEEAE626DD28CA904E8B18D69A748AA7E80F324A913AFE
+                        C1D6B7168B8E236A6B2BCCBF769938EAB076E32AB7DE7C8DA59B37D8585DA6D5
+                        6C10777B586951D91AAAB7EAF1D9D07ED7D77DCDAC6FB9FDE0BA77C0D8D58B2F
+                        3EF3DE7BEFFD83FEF57BD6B94A6BBE80727E551B4B642C9E110812EADD185528
+                        529ED8C7FAFA32B942855EDC66AB1B321C08441C12463D8AEE043111AD487173
+                        7E8E47EEBF0FE5380855C4CB05787EAAB30449039544A8824F1C76883B2DEA18
+                        4CAE84B0E02BCB50DE27D186308ED189402A071283152AD359D224C6089B6DB7
+                        952E109059F1C26495914477098DE5BE871FA5B5BDC1DAAD9BDC7CF525A2284C
+                        5783032A57E29E77BD97CAD010FB0F1DC6CB17B1566714302B6267DB79F5B3D9
+                        FE06436F9D7930907652B1CCA40B1E129D7C7637D66F73466345FFC9B223CEB5
+                        9384C0F5E886116343458E4D8DD36975C9294BADD763AC5A62DC73191EAE72BB
+                        56E7BE43A3AC74BA3C74EA34DD4E8B7608D6F371BC22382E417588D189294C12
+                        3277F52ABAB1491286286B903AA6D76D135949D2ED609288388E52962C048915
+                        68635379579B74476CADB1A86C53B7547E95593B9E52124F29BA7142ADD3A334
+                        3CC1991FF841A68E1E434927ADDF46213A8E68D6B7987BE1DB692B6018D1E986
+                        1C39752F3FF5CBBF8254993411C7445184E3F95900DECB8276CB04695744BA9D
+                        A33669504DAC79EAA133671FD98DF3DB56761702F7373A617C4E2949A463F2BE
+                        4B3EE7B1BCB14EAC25E5B1313AAD1E58B8EBD4095EBF76834A5E7161718D5637
+                        A1D779913BA627295627710A6584F2E9F67AD4D637189B398C707DB4B184284A
+                        2313848D6D241E432363D4EA4DAC94F85802AD91684C9C1027719A94F84EEA33
+                        B5492B65B126D23A950794201704E4723EBD28A6D189E8F47A602DADED35BEFD
+                        A77F4CAE5064687494917DD39486C7F17379A490DC71FFBB50A532D60AEA1B6B
+                        8C4E4D532A163140ABB64DE079DC7AED22074F9DC5644DB33AE3E62293077607
+                        ED34C8A674520A09BB82EA5F0AFCDC46EBA9771C1A7BAAD16A9F93C29227DDB4
+                        C793022D14F5C5054E4C8EB3B8BEC173576E520D14634339B66FAD7272DF14FB
+                        8714DD28C108C1EB6F5E63BBD666646A924A21A0DBEBE27A3940D0B52E372EBF
+                        CEDDA74E52CAF9082169AD6E628C24572E52CCE5E8755B24510461888D421C25
+                        537E6D12126388A38428894127A9937115DAC2DAE6169DC4A0E374403CE1E023
+                        A0D760EB569BDB0B7358ABC0A65B978FEF9BA23A3A8E9B2B501A1AE3F443EFC6
+                        4881B496B585EB4CCC1E667B699ED9BBCFE27999D86652376813CDDADA0A43A3
+                        6319EBD949BC527723E61E3A7DF6336FC5F9BBEED014DBEE6F18AD6976125642
+                        8D230558834D1224961B6B1BC4380C9572388EC7D357E6B8E340192F1FB31DE5
+                        B132E0EACD45565736E9763A9C7FE9053AB1C1F1F248C7255FAA50AB3758595B
+                        45E6CBB8951154BE44AF179258D86C877CFBD5D7085580F572EC3F7C0793878E
+                        E2952AE0E71041012F5F62787484898909C6AA653C57D1EE8574DA0DC6028FE9
+                        4030E468CA0246028FC45ABAD62146E2280725539724B0ACDEBEC5EBE75FE46B
+                        7FFA455EFCFA9F33FFFA65A47400C1F2B52BB46A356203575E7A8EA8DD1E244A
+                        4A088CB074D69789A35EBA1E76574B0800C67CD73DCABEEB46412BB568EE5031
+                        38D7D4C92C40C9118CE67CAAC5023A0E093C0FE1B86CD41A6CD6EA443A647EB5
+                        CEDD870F31393E454FC3FCED75D6B7D66975DA28A1B8FBEC7D9446C7518E4362
+                        2C49DCA359DBE2F8A93378418E300AD3EA55BE48ADD3E2EAB56B743A3D0E1D9A
+                        A5566F101B81B6E0FA3962A1703C9776A74D1CC769B5C8F1C1F118AA5628E502
+                        3C4CBADBB6EBE3B98A244ED2B640A341A63A8AEB07E42B4354ABC3E473393ADA
+                        B2EFD009CE3CF86E46272771BC807CA1C0E6EA0ACF7CED2B2CBCF926ABB7E7B9
+                        E39EFB066E4529C9FAFC7572950AF942BA239452227B969F3975E7C97FF1DD30
+                        FE4BF7ABD1B1FEEF03579E8F1253ED6999B67FE402A230A1D5ED315C2DD0E8B6
+                        698509C7A7038E4CDFC18D950657963BFF7F71671663F775D7F1CF59FEDB5D66
+                        B933E399F178ECB11DBB89DB347644DA52A9AD0D02552A48B1501F5A406D04A8
+                        4482B67EA0280F854420219E9ABCF180842B1EE08DF000246D534F5A28094993
+                        8917E2D8A9E77A9BC5B3DDB9DB7F3DE7F0F0BF332D8836ABDB235DDD799DEFFF
+                        DCF3FF9DDFEFBB7074DF0C9B1B6B386B4ACEB8306CACAD72A456C309496B6B93
+                        C5D72F628B82767B8B4A65062304A3B387F8FEB7FE85E5EB4DB4906C6D6EF2E2
+                        CBAF30BB772F7E10822BB8FAA326B7D6D6F9C887EF27123E4AC2C49E3192B84F
+                        7FBB8FAE55716982CC73464605792F277760B5479E1584AA647D09A9186D8C33
+                        7BEF87D877F808FD4E8BC3CBCB2CDDBCC977FEF12CE79FFF1613330708EA5596
+                        2F2DE05722024FB372F52ACAD30357384B9124ACDDBAC9C2C26B7CEA33BFC1D4
+                        BE59AC1D74366DFAC44FC3F7A75A63AD24456B265251AD5A3F991A436D749C38
+                        2908C30AFD781B8787A72C595E30351211598D2B2493D3538CD52BAC2EDD22CF
+                        0DD259847344952A53FB0E90E7395AC2A517FF9DA4D3A63131C5E4814308072B
+                        4BB7695E7E9DA4D7DB95B1F7E298B5F54D56D6EE70A57993CDED0ECE148C0E0F
+                        F1A18F7E9C38CD189B9A26C90DB1B104518D2C4DA8562B787E480FC5AD8D16B9
+                        3168A509A208AD355A4AE26E87E5EBE5CC77EFC1A34C1D3ECADEC347181E9FC4
+                        DA828D5B4DAE5D7A8D1BD717C9F29CA836C466ABC5C8709DE1B131824A052904
+                        97BE7F8EEF3EFB2C81E73377ECFEB27232EE8943078FFCD4B88B9FE949762736
+                        F30F1E9E7D786DBB35D5CD1CD2D3D83CC1F7ABA42625CB0D9EA771B286175578
+                        FDF632C766C759B9719E7E2F2DBB864AA3A4E4BE071F6264661FF5B1499234C5
+                        F4FB74EEAC70E4C18F3236BD8F5EB7C3DACA12372FBD86B54559F2D9727A8F73
+                        18930FCECEB28636454EBBDDE1DEE30F1155AB743B5B6C76535EFCE10F993B74
+                        0FA3137B404AAE2FAF906739BE2EAD55768612C2B95D95DEF6FA0A6FBCF20257
+                        5F7B99F5DBB730A6A0D6186374E6009307EF61FAC021BC20A0DBDAA088FB2CFC
+                        D70F78E97BE758BA758B5E2F26DEDE646A662FEBCBAB6C6DAC71E8BE0F350FCD
+                        CD9DFE59D8BEA50B9F1F564E7FF2A18FBCDA5C5A1911DA6775A9C9CC9E49BCC2
+                        270C34375B7D9C312C2D2F539392172E2F72FFFE398A9537F1E5603050BEDD09
+                        A21A5608861B13983426AA4644232358AD19D9BB9F3849181AAAD36EB506C280
+                        320141CB817A54821BFC6DB39430F0105A619422ACD6199FD08C041ED5C61E82
+                        6A40677B1B97C68C57FCF2323568A2150C06130355889312AC23DEDEA2DB6A71
+                        FDF245A492045195A1C604A3D3B34CECDBCFECB1074148D25E9BDEE626CB572F
+                        71F5E51FD06E771899DCCBFAD26D7EFD771E69059E77EA2D607D6BC3CFCBB756
+                        5AAB2B2BE9F49EC6A7AD944C8C35688C8C22A388CAD03047F7EF254B730EED19
+                        E7D3BFF2098E7DF0018228E4CECD1BE8B2B18844B071F3061FF8D8275161C8AD
+                        CB17B8FCFCBF61B204E11C33473E88AA54514270EDE5FFC4A609C5E0CAAD0662
+                        3021245A093C597E0B011B1BEB7CE08107A954EAF47B3D9CD014FD1E7BE60EA3
+                        7C1F6C8196926AE051ABD6A88521A1EF1160F1B178C24251409EE38A0293A7F8
+                        38422590A6BCD86DDD59E5E6B5ABBC79F155AE2CFC905BD71771C6506B8CD1D8
+                        7780F199FD8C8E8E61D23E0ECBCBE79E79ECB7BFF4E567DE0AD7B76571BBDC4B
+                        9FFCB0F2E77CC15766A767B8766D91B9830778E0D8BD68A5F8F8473F0694BD96
+                        EA5083D75FFA0F3C2D104EFFAF7198350621354596E2698930D05D5BC53A8B42
+                        72E1DCBFEEF21A5D9123954233B03391A5578152A5B595063C21919E0FDAC37A
+                        3E771617C9F394EDCD0D860E1EA6EBD619DA334DEBF6F592D21D860442206960
+                        B30C93C5C4714C16C7C4FD98EDCC961B4542DCEB979253E30602338D3231C9ED
+                        6B2CAE3659783E2745501F1A65DFC17B387CDF07993874DF535F79ECEB4FBE1D
+                        4CDFB6B7F0B32F9DFFEAA3BFF96B0F8C37464F2EADAE72FCFE638CD687F0B487
+                        D472B0BB04852D8707DAF3500E84B358E1989A3B4A7BE30E71AF8F1292D00FC8
+                        930C93C6A47117AF3E0CC6A007A60C4A96C793923B44A181898F94E8C1E42918
+                        1E41578740FBD4F6EC63A4DD863C21A8943CFC4228048268B8813305C6393CAD
+                        30A6C0490F19460C0F838963E2CD3B14ED18E9FB4867F12B5E19716752E25C50
+                        F535C6412B4D7078281C15E9A0B7C9E26B2F72EDFC4B0BDFB9B6F9B63344DE91
+                        9BF6EB17AE9E3EF691F0D5CFFFD6E939A515799E8396BBD68342FB64498C300E
+                        5FEB017BCAE1ACA3BFB58E4D12EAB3875879E3FCEE4D34AA0FB3BDBA8A939A6A
+                        A3348410D652D39061D183A80B103B394D65FDEC6942DF234F526A43A3D41BE3
+                        74B73648B63608EBC3082FA036394377F93AB5C6C4AE40C0F73CD22CC5E61958
+                        4B91E538E9A17343556C51A98DA09CC1194391C46CACADB19D19B2A214E035C2
+                        B222C29774B382766AB1423687847DCB73FD5D033FDF6CB6C2A9F0D443274E9C
+                        1B0A83392115504A658ADC20654151E4740B813182B1A8F42373D661F3142705
+                        BDB88F3505DAF711D662E23ED618FCA842BAB551DA63791A671D8565D721D522
+                        41C95DE3B7D0F73179C6C65293C6D45E8ADCD05A5D41289F6EB7C79ED988C6FE
+                        51B2F63A5A79837097F2E1F9A2E4D51B6BD1088A2CA517ADA23A43A828843C27
+                        CF52545861D80942E348FBBD92B72F02D6DA7DB6BA295B99A3D1186F6EAD6C9D
+                        FA6EABF58EC21ADF7162C2332F5C6E7EE90BD1A9DC72AEB076CEA419459153AB
+                        D5B0CEB1B2B6C53317DEE0D0D830E387F7A1B51C9483057EB54EAD3181730EA5
+                        345A0BB069E92D2FCAB684561A478153827C3044164A0E38FAE56EF73D0FAD35
+                        85B364FD98C214A035CE59C27A9DA4D32A87EBBE8FAE5451D2C32BE5DB25194A
+                        965C79671DA6C851A60029F18647D17E88CD528A22C3F4BB683F204E332EB72D
+                        B7EF74F0A524074C6670D8E6E2CAF2A9662B69BE531CDF5546C8E9471F6BFEC3
+                        37FEEA549EE7E72AD5CADC4EC00A1684179015961CC7ED8D2D1402212D4A6A0A
+                        5706235AA5D141449215A489012FA432340AB6C0D31A8323570AE12C4AAA5262
+                        29355269A4565483F2851A861592B8CF6AF31AF53DD3F8951AD259C872925E8F
+                        6A6508CFAF94943DAD40EA922E2DE52E8BA0ECC8389494C47756A80E8FE24C81
+                        35163B94A082083FEEF3F1D97B79E1B96FB3B8BA8A1682B8B0CD2AE25D81FEAE
+                        8107F8DC99C79AFFF477DF3851A49C93521E2F7BD40552978DA72433FCF7F23A
+                        E343750E8C3558EB74B1C2C7E1D8EAF579A5B9CCC5F56DACF4B8EF33390E870A
+                        42541095EC5BAD30C58E6FB0A0308E382DA8791E7E1862508CCF1C20D5014596
+                        E20A43542B894848C98F2E5EE0C0033E4694340CE14A67D61D1F023510B0B901
+                        9D5A7A3DFAFD1E6341F463B76D57C56605D76EAD70E98D5759DDEE128C4E5037
+                        C93C5B6BA7175ABCEB2CD8F7940375FA9133ADCFFEE1991348F9941B98A44929
+                        71C211050133937B181DAAA37D0F2724992970D6E26B0FE569E2C14BCB0C44C0
+                        5668B6D314EBF9D4EA43E4C6B2D64E6967963737632EAE75115E80F27CA4F6B0
+                        5A53A95491418057AF21B58F5FAD91158EA4B345D1EFD06DB711529315867EA7
+                        4DBFDB252F31096F68000004D44944415472F222A7B0A5A0CD6985F443C2EA30
+                        C28FD05105E1F958A971DA6374728ADB6BEB6C743AB4B73B4FCD2FAE9D7A2FA0
+                        BF67E0771FC0EFFFF157B3223F83A5E55C2957B4027A4969276EA520CE326C51
+                        2AF8DC2E3D6E90C567CC60382C787D23A38FC649CD7A6CF9513B27C5237502E5
+                        F938A9114A2383905A630F3A08092A7582A8564A37B5C7E4FE0378510D7FA8C1
+                        ABE72FB3B1B949A7D7E3CEDA3A719ED36D77E9773AA449426FBB4DD26E933968
+                        CCCE8118E47F280F8442684DBFDDC617AEA57167AEAEB5DE97D8B9F72DEBEFF3
+                        5FFED3278DD627D22C6D3A4439F232065FFBF841855AAD5A4EE17758BAE22787
+                        C30315B6A74BE58494A830A2188803849078CAC3595B9ED75E80D03E3A88D07E
+                        50F21C95427A5EF95094C20B43A4E7E1D5AA64454903BC717B894EA74BF3C64D
+                        5E3B7F112B249BED0E77D6D60049501D422855D2EFA0ECE127292BEB5B0BD5E9
+                        C327DE6CE76FEB72F476D6FB9A6EF9B947CF34818347A7461E1FAA447F7ECFF4
+                        040E81A7CBE143566458E7CA9764D94BC099A22C379D05A5282C68CF47AA3209
+                        41A81CA94BAFB1F2C852282FC04A891FD548926420639708592A1691A2F427D3
+                        1E4561509E8F903EBE1F945C460171512084A2DBEFB1786D9193A72641C98142
+                        106CEED09ED78A1A134FFDEDB3DF7BFCFDC409EE529EEB9595D6E39F78E8970F
+                        4A2FF866148528AD981E1DA21646831DBFC303FBB1F2D9E150DAA312966340CF
+                        F7515A822BDD537D4F97BD1F2590BE5F969FA2047867BC2F060C6029253B36E5
+                        6118E2A4C41FB0C794D6D8C1AFCB88524518D56A185B5243CC8007E324F36996
+                        9EF8BD3FF9FAE37703A3BB9652FFD8DF9C6D025FFCD5E3479F3EBC7FDF37BEF7
+                        D2F9B9D95FFA14B5C97D48A5B13B52452BCB99821368DF474949E06B5410E069
+                        CD5835A05E09A8FA8A3437BB558E141AA1CA2306074ECAF298901227156E77E8
+                        0C99C991B6ACFDAD75045185746D03630C511495B76D35E8541AE62DF289DF7D
+                        F42BF3770B1BB88BC0EFACE716AE3CFDDCC295A7A7EADE178D355FB0CE9CD49E
+                        074A95746D5CC95FC4A23D8FD9469DA8524179018D4A85244931166E6EF4488D
+                        63644C95C00E4405881DAE0BBBB69B821DD180E4E8E139C25A05E5855487EA28
+                        A5C89292532384180CAFC11A3B8FE589CF3FFAE5F9BB8D09DCA5A3E6FF5B2B9D
+                        FCEC993FFB8B53CEDA53693FFEA61C34B040E0CC20F04D286E7512FA0508E5D1
+                        3696B5D8500889E76B0A6BD1BE5712554569D8EF4AB250290EDB3DA3CBAAC958
+                        B8F2E635BAED1E693F26D9DE464BC1FE99698ECCCDA23DBFE5FBE15313E313A7
+                        BEF847674E7DF6913F98FF79E171D777FCFF5DA73FFBB97960FEE193735F2DAC
+                        7958C0178C7327712094C49AA2BCBC2885B1E084C4B832DCB0BC7DEE30C9CAB6
+                        316620E9746EB725B063F00016E5FBC469426D78844C4A0A04BD6E3CBF7473E9
+                        9FC726EA671FFDDAE3EFA91E7FB7EBE70EFCCE7A7ABED902CE0267C727EA234E
+                        AA9345963D9C3BF180451C77B8B25986430D0CFA451E93260969BF8313DE40B3
+                        21C8B33E2689D99146EEA4C639204D12B02C48A59F7788F9C5F51BF34F3E79B6
+                        04FBEF7F51FFFD2F10F89F5C8F9C79BC053C3DF8F0E0B1432305FA7896E6C7A5
+                        5473D6BA03691A8FF8A2984BF37CE4C2E52B2393D3531C3286BC48B97CE19556
+                        378E5B3373475AD6D9A652FABA142C38DC821AD6CDAFFDE55FFF4276F5CF5AFF
+                        03119720EC204962240000000049454E44AE426082}
+                      FileName = 'C:\Users\evand\Downloads\Ellipse 4.png'
+                    end>
+                  Align = Left
+                  Size.Width = 94.000000000000000000
+                  Size.Height = 140.000000000000000000
+                  Size.PlatformDefault = False
+                end
+              end
+              object GosLine5: TGosLine
+                Align = Top
+                HitTest = False
+                LineType = Bottom
+                Margins.Left = 25.000000000000000000
+                Margins.Top = 12.000000000000000000
+                Margins.Right = 22.250000000000000000
+                Position.X = 25.000000000000000000
+                Position.Y = 54.000000000000000000
+                Size.Width = 892.750000000000000000
+                Size.Height = 3.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = xFFE400E4
+                Stroke.Thickness = 2.000000000000000000
+              end
+              object Rectangle8: TRectangle
+                Align = Top
+                Fill.Color = xFFE400E4
+                HitTest = False
+                Margins.Left = 200.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 200.000000000000000000
+                Position.X = 200.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 540.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 16.000000000000000000
+                YRadius = 16.000000000000000000
+                object lblTitulo: TSkLabel
+                  Align = Contents
+                  Size.Width = 540.000000000000000000
+                  Size.Height = 32.000000000000000000
+                  Size.PlatformDefault = False
+                  StyledSettings = []
+                  TextSettings.Font.Families = 'Poppins'
+                  TextSettings.Font.Size = 16.000000000000000000
+                  TextSettings.Font.Weight = Bold
+                  TextSettings.FontColor = claWhite
+                  TextSettings.HorzAlign = Center
+                  Words = <
+                    item
+                    end>
+                end
+              end
+              object Cobertura: TSkLabel
+                Align = Top
+                Margins.Left = 82.000000000000000000
+                Margins.Top = 22.000000000000000000
+                Margins.Right = 82.000000000000000000
+                Position.X = 82.000000000000000000
+                Position.Y = 237.500000000000000000
+                Size.Width = 776.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family]
+                TextSettings.Font.Size = 21.000000000000000000
+                TextSettings.Font.Weight = Bold
+                TextSettings.FontColor = xFF333075
+                Words = <
+                  item
+                    Text = 'Cobertura'
+                  end>
+              end
+              object Layout10: TLayout
+                Align = Client
+                Margins.Left = 20.000000000000000000
+                Margins.Right = 20.000000000000000000
+                Size.Width = 900.000000000000000000
+                Size.Height = 355.500000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+              end
+            end
+          end
+        end
+      end
+    end
+    object tabSegurosGeral: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 423.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabSegurosGeral'
+      ExplicitSize.cx = 415.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Rectangle9: TRectangle
+        Align = Client
+        Fill.Color = xFF333075
+        Size.Width = 1269.000000000000000000
+        Size.Height = 754.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Layout4: TLayout
+          Align = Left
+          Size.Width = 124.000000000000000000
+          Size.Height = 754.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btnSair3: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 610.000000000000000000
+            TabOrder = 31
+            OnClick = btnSair2Click
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 32.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg1: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_10' +
+                '0)">'#13#10'<path d="M43.605 26.605C37.7449 32.465 28.2469 32.465 22.3' +
+                '868 26.605C16.5268 20.7449 16.5268 11.2469 22.3868 5.38684C28.24' +
+                '69 -0.463844 37.7543 -0.463843 43.605 5.39622C49.465 11.2469 49.' +
+                '465 20.7543 43.605 26.605Z" stroke="white" stroke-width="2"/>'#13#10'<' +
+                'path d="M38.1855 10.8157L27.8156 21.1856" stroke="white" stroke-' +
+                'width="2" stroke-linecap="round"/>'#13#10'<path d="M38.1855 21.1856L27' +
+                '.8156 10.8157" stroke="white" stroke-width="2" stroke-linecap="r' +
+                'ound"/>'#13#10'</g>'#13#10'<path d="M19.4987 63.147C18.5327 63.147 17.6647 6' +
+                '2.979 16.8947 62.643C16.1387 62.293 15.5437 61.817 15.1097 61.21' +
+                '5C14.6757 60.599 14.4517 59.892 14.4377 59.094H16.4747C16.5447 5' +
+                '9.78 16.8247 60.361 17.3147 60.837C17.8187 61.299 18.5467 61.53 ' +
+                '19.4987 61.53C20.4087 61.53 21.1227 61.306 21.6407 60.858C22.172' +
+                '7 60.396 22.4387 59.808 22.4387 59.094C22.4387 58.534 22.2847 58' +
+                '.079 21.9767 57.729C21.6687 57.379 21.2837 57.113 20.8217 56.931' +
+                'C20.3597 56.749 19.7367 56.553 18.9527 56.343C17.9867 56.091 17.' +
+                '2097 55.839 16.6217 55.587C16.0477 55.335 15.5507 54.943 15.1307' +
+                ' 54.411C14.7247 53.865 14.5217 53.137 14.5217 52.227C14.5217 51.' +
+                '429 14.7247 50.722 15.1307 50.106C15.5367 49.49 16.1037 49.014 1' +
+                '6.8317 48.678C17.5737 48.342 18.4207 48.174 19.3727 48.174C20.74' +
+                '47 48.174 21.8647 48.517 22.7327 49.203C23.6147 49.889 24.1117 5' +
+                '0.799 24.2237 51.933H22.1237C22.0537 51.373 21.7597 50.883 21.24' +
+                '17 50.463C20.7237 50.029 20.0377 49.812 19.1837 49.812C18.3857 4' +
+                '9.812 17.7347 50.022 17.2307 50.442C16.7267 50.848 16.4747 51.42' +
+                '2 16.4747 52.164C16.4747 52.696 16.6217 53.13 16.9157 53.466C17.' +
+                '2237 53.802 17.5947 54.061 18.0287 54.243C18.4767 54.411 19.0997' +
+                ' 54.607 19.8977 54.831C20.8637 55.097 21.6407 55.363 22.2287 55.' +
+                '629C22.8167 55.881 23.3207 56.28 23.7407 56.826C24.1607 57.358 2' +
+                '4.3707 58.086 24.3707 59.01C24.3707 59.724 24.1817 60.396 23.803' +
+                '7 61.026C23.4257 61.656 22.8657 62.167 22.1237 62.559C21.3817 62' +
+                '.951 20.5067 63.147 19.4987 63.147ZM26.4689 57.204C26.4689 56.02' +
+                '8 26.7069 54.999 27.1829 54.117C27.6589 53.221 28.3099 52.528 29' +
+                '.1359 52.038C29.9759 51.548 30.9069 51.303 31.9289 51.303C32.936' +
+                '9 51.303 33.8119 51.52 34.5539 51.954C35.2959 52.388 35.8489 52.' +
+                '934 36.2129 53.592V51.492H38.1449V63H36.2129V60.858C35.8349 61.5' +
+                '3 35.2679 62.09 34.5119 62.538C33.7699 62.972 32.9019 63.189 31.' +
+                '9079 63.189C30.8859 63.189 29.9619 62.937 29.1359 62.433C28.3099' +
+                ' 61.929 27.6589 61.222 27.1829 60.312C26.7069 59.402 26.4689 58.' +
+                '366 26.4689 57.204ZM36.2129 57.225C36.2129 56.357 36.0379 55.601' +
+                ' 35.6879 54.957C35.3379 54.313 34.8619 53.823 34.2599 53.487C33.' +
+                '6719 53.137 33.0209 52.962 32.3069 52.962C31.5929 52.962 30.9419' +
+                ' 53.13 30.3539 53.466C29.7659 53.802 29.2969 54.292 28.9469 54.9' +
+                '36C28.5969 55.58 28.4219 56.336 28.4219 57.204C28.4219 58.086 28' +
+                '.5969 58.856 28.9469 59.514C29.2969 60.158 29.7659 60.655 30.353' +
+                '9 61.005C30.9419 61.341 31.5929 61.509 32.3069 61.509C33.0209 61' +
+                '.509 33.6719 61.341 34.2599 61.005C34.8619 60.655 35.3379 60.158' +
+                ' 35.6879 59.514C36.0379 58.856 36.2129 58.093 36.2129 57.225ZM42' +
+                '.3613 49.623C41.9973 49.623 41.6893 49.497 41.4373 49.245C41.185' +
+                '3 48.993 41.0593 48.685 41.0593 48.321C41.0593 47.957 41.1853 47' +
+                '.649 41.4373 47.397C41.6893 47.145 41.9973 47.019 42.3613 47.019' +
+                'C42.7113 47.019 43.0053 47.145 43.2433 47.397C43.4953 47.649 43.' +
+                '6213 47.957 43.6213 48.321C43.6213 48.685 43.4953 48.993 43.2433' +
+                ' 49.245C43.0053 49.497 42.7113 49.623 42.3613 49.623ZM43.2853 51' +
+                '.492V63H41.3743V51.492H43.2853ZM48.4533 53.361C48.7893 52.703 49' +
+                '.2653 52.192 49.8813 51.828C50.5113 51.464 51.2743 51.282 52.170' +
+                '3 51.282V53.256H51.6663C49.5243 53.256 48.4533 54.418 48.4533 56' +
+                '.742V63H46.5423V51.492H48.4533V53.361Z" fill="white"/>'#13#10'<defs>'#13#10 +
+                '<clipPath id="clip0_226_100">'#13#10'<rect width="32" height="32" fill' +
+                '="white" transform="translate(49) rotate(90)"/>'#13#10'</clipPath>'#13#10'</' +
+                'defs>'#13#10'</svg>'
+            end
+          end
+          object btnVoltar3: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemDefault.SVGImage.Color = xFF333075
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.ItemPressed.Accessory.Color = xFF333075
+            Background.ItemPressed.SVGImage.Color = xFF333075
+            Background.ItemSelected.SVGImage.Color = xFF333075
+            Background.ItemChecked.SVGImage.Color = xFF333075
+            Background.ItemActivated.SVGImage.Color = xFF333075
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 466.000000000000000000
+            TabOrder = 32
+            OnClick = btnVoltar3Click
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 21.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg2: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_71' +
+                ')">'#13#10'<path d="M37.8936 16.0005L28.1154 16.0005" stroke="white" s' +
+                'troke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+                #13#10'<path d="M31.7247 12.3916L28.106 16.001L31.7247 19.6104" strok' +
+                'e="white" stroke-width="2" stroke-linecap="round" stroke-linejoi' +
+                'n="round"/>'#13#10'<path d="M33 31C24.7125 31 18 24.2875 18 16C18 7.71' +
+                '25 24.7125 0.999999 33 0.999999C41.2875 1 48 7.7125 48 16C48 24.' +
+                '2875 41.2875 31 33 31Z" stroke="white" stroke-width="2" stroke-l' +
+                'inecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'<path d="M15.479' +
+                '6 48.363L9.9566 63H7.7516L2.2286 48.363H4.2656L8.8646 60.984L13.' +
+                '4636 48.363H15.4796ZM22.594 63.189C21.516 63.189 20.536 62.944 1' +
+                '9.654 62.454C18.786 61.964 18.1 61.271 17.596 60.375C17.106 59.4' +
+                '65 16.861 58.415 16.861 57.225C16.861 56.049 17.113 55.013 17.61' +
+                '7 54.117C18.135 53.207 18.835 52.514 19.717 52.038C20.599 51.548' +
+                ' 21.586 51.303 22.678 51.303C23.77 51.303 24.757 51.548 25.639 5' +
+                '2.038C26.521 52.514 27.214 53.2 27.718 54.096C28.236 54.992 28.4' +
+                '95 56.035 28.495 57.225C28.495 58.415 28.229 59.465 27.697 60.37' +
+                '5C27.179 61.271 26.472 61.964 25.576 62.454C24.68 62.944 23.686 ' +
+                '63.189 22.594 63.189ZM22.594 61.509C23.28 61.509 23.924 61.348 2' +
+                '4.526 61.026C25.128 60.704 25.611 60.221 25.975 59.577C26.353 58' +
+                '.933 26.542 58.149 26.542 57.225C26.542 56.301 26.36 55.517 25.9' +
+                '96 54.873C25.632 54.229 25.156 53.753 24.568 53.445C23.98 53.123' +
+                ' 23.343 52.962 22.657 52.962C21.957 52.962 21.313 53.123 20.725 ' +
+                '53.445C20.151 53.753 19.689 54.229 19.339 54.873C18.989 55.517 1' +
+                '8.814 56.301 18.814 57.225C18.814 58.163 18.982 58.954 19.318 59' +
+                '.598C19.668 60.242 20.13 60.725 20.704 61.047C21.278 61.355 21.9' +
+                '08 61.509 22.594 61.509ZM32.9186 47.46V63H31.0076V47.46H32.9186Z' +
+                'M38.5066 53.067V59.85C38.5066 60.41 38.6256 60.809 38.8636 61.04' +
+                '7C39.1016 61.271 39.5146 61.383 40.1026 61.383H41.5096V63H39.787' +
+                '6C38.7236 63 37.9256 62.755 37.3936 62.265C36.8616 61.775 36.595' +
+                '6 60.97 36.5956 59.85V53.067H35.1046V51.492H36.5956V48.594H38.50' +
+                '66V51.492H41.5096V53.067H38.5066ZM43.111 57.204C43.111 56.028 43' +
+                '.349 54.999 43.825 54.117C44.301 53.221 44.952 52.528 45.778 52.' +
+                '038C46.618 51.548 47.549 51.303 48.571 51.303C49.579 51.303 50.4' +
+                '54 51.52 51.196 51.954C51.938 52.388 52.491 52.934 52.855 53.592' +
+                'V51.492H54.787V63H52.855V60.858C52.477 61.53 51.91 62.09 51.154 ' +
+                '62.538C50.412 62.972 49.544 63.189 48.55 63.189C47.528 63.189 46' +
+                '.604 62.937 45.778 62.433C44.952 61.929 44.301 61.222 43.825 60.' +
+                '312C43.349 59.402 43.111 58.366 43.111 57.204ZM52.855 57.225C52.' +
+                '855 56.357 52.68 55.601 52.33 54.957C51.98 54.313 51.504 53.823 ' +
+                '50.902 53.487C50.314 53.137 49.663 52.962 48.949 52.962C48.235 5' +
+                '2.962 47.584 53.13 46.996 53.466C46.408 53.802 45.939 54.292 45.' +
+                '589 54.936C45.239 55.58 45.064 56.336 45.064 57.204C45.064 58.08' +
+                '6 45.239 58.856 45.589 59.514C45.939 60.158 46.408 60.655 46.996' +
+                ' 61.005C47.584 61.341 48.235 61.509 48.949 61.509C49.663 61.509 ' +
+                '50.314 61.341 50.902 61.005C51.504 60.655 51.98 60.158 52.33 59.' +
+                '514C52.68 58.856 52.855 58.093 52.855 57.225ZM59.9274 53.361C60.' +
+                '2634 52.703 60.7394 52.192 61.3554 51.828C61.9854 51.464 62.7484' +
+                ' 51.282 63.6444 51.282V53.256H63.1404C60.9984 53.256 59.9274 54.' +
+                '418 59.9274 56.742V63H58.0164V51.492H59.9274V53.361Z" fill="whit' +
+                'e"/>'#13#10'<defs>'#13#10'<clipPath id="clip0_226_71">'#13#10'<rect width="32" hei' +
+                'ght="32" fill="white" transform="translate(49) rotate(90)"/>'#13#10'</' +
+                'clipPath>'#13#10'</defs>'#13#10'</svg>'
+            end
+          end
+        end
+        object Layout5: TLayout
+          Align = Scale
+          Size.Width = 1269.000000000000000000
+          Size.Height = 754.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Layout22: TLayout
+            Align = Center
+            Size.Width = 736.000000000000000000
+            Size.Height = 576.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object SkLabel23: TSkLabel
+              Align = Top
+              Margins.Bottom = 91.000000000000000000
+              Size.Width = 736.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = []
+              TextSettings.Font.Families = 'poppins'
+              TextSettings.Font.Size = 32.000000000000000000
+              TextSettings.Font.Weight = Medium
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Seguros'
+                end>
+            end
+            object lblSeguros: TListBox
+              Touch.InteractiveGestures = [LongTap]
+              Align = Client
+              ClipParent = True
+              HitTest = False
+              Size.Width = 610.000000000000000000
+              Size.Height = 437.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'transparentlistboxstyle'
+              TabOrder = 3
+              Visible = False
+              Columns = 3
+              DisableFocusEffect = True
+              DefaultItemStyles.ItemStyle = ''
+              DefaultItemStyles.GroupHeaderStyle = ''
+              DefaultItemStyles.GroupFooterStyle = ''
+              Viewport.Width = 610.000000000000000000
+              Viewport.Height = 437.000000000000000000
+              object ListBoxItem1: TListBoxItem
+                Size.Width = 203.000000000000000000
+                Size.Height = 188.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object Rectangle16: TRectangle
+                  Align = Client
+                  Fill.Color = claWhite
+                  HitTest = False
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 193.000000000000000000
+                  Size.Height = 178.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 10.000000000000000000
+                  YRadius = 10.000000000000000000
+                  object Layout40: TLayout
+                    Align = Client
+                    Margins.Left = 16.000000000000000000
+                    Margins.Top = 16.000000000000000000
+                    Margins.Right = 16.000000000000000000
+                    Margins.Bottom = 16.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 146.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    object recMes: TRectangle
+                      Align = Bottom
+                      Fill.Color = xFF069999
+                      HitTest = False
+                      Margins.Left = 39.000000000000000000
+                      Margins.Right = 39.000000000000000000
+                      Margins.Bottom = 5.000000000000000000
+                      Position.X = 39.000000000000000000
+                      Position.Y = 65.000000000000000000
+                      Size.Width = 83.000000000000000000
+                      Size.Height = 26.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Kind = None
+                      XRadius = 13.000000000000000000
+                      YRadius = 13.000000000000000000
+                      object SkLabel26: TSkLabel
+                        Align = Client
+                        Size.Width = 83.000000000000000000
+                        Size.Height = 26.000000000000000000
+                        Size.PlatformDefault = False
+                        StyledSettings = []
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 12.000000000000000000
+                        TextSettings.Font.Weight = Bold
+                        TextSettings.FontColor = claWhite
+                        TextSettings.HorzAlign = Center
+                        Words = <
+                          item
+                            Text = 'SABER MAIS'
+                          end>
+                      end
+                    end
+                    object svgIcon: TSkSvg
+                      Align = Center
+                      Size.Width = 58.000000000000000000
+                      Size.Height = 58.000000000000000000
+                      Size.PlatformDefault = False
+                      Svg.Source = 
+                        '<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmln' +
+                        's="http://www.w3.org/2000/svg">'#13#10'<path d="M28.8697 11.3962C30.07' +
+                        '09 11.3962 31.0447 10.4224 31.0447 9.22115C31.0447 8.01993 30.07' +
+                        '09 7.04614 28.8697 7.04614C27.6685 7.04614 26.6947 8.01993 26.69' +
+                        '47 9.22115C26.6947 10.4224 27.6685 11.3962 28.8697 11.3962Z" str' +
+                        'oke="black" stroke-width="2" stroke-linecap="round" stroke-linej' +
+                        'oin="round"/>'#13#10'<path d="M28.8697 14.4717C31.7696 14.4717 34.1203' +
+                        ' 12.1209 34.1203 9.22106C34.1203 6.32123 31.7696 3.97046 28.8697' +
+                        ' 3.97046C25.9699 3.97046 23.6191 6.32123 23.6191 9.22106C23.6191' +
+                        ' 12.1209 25.9699 14.4717 28.8697 14.4717Z" stroke="black" stroke' +
+                        '-width="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<pa' +
+                        'th d="M33.2198 12.4838L39.5919 11.8381C41.2742 11.6342 41.2742 9' +
+                        '.20435 39.5919 9.00044L34.1034 8.35474" stroke="black" stroke-wi' +
+                        'dth="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path ' +
+                        'd="M24.3498 12.4838L17.9777 11.8381C16.2955 11.6342 16.2955 9.20' +
+                        '435 17.9777 9.00044L23.4662 8.35474" stroke="black" stroke-width' +
+                        '="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path d="' +
+                        'M19.0313 5.04102H12.4893C11.5887 5.04102 10.875 4.31036 10.875 3' +
+                        '.42676C10.875 2.52617 11.6057 1.8125 12.4893 1.8125H17.7059L19.0' +
+                        '483 5.04102H19.0313Z" stroke="black" stroke-width="2" stroke-lin' +
+                        'ecap="round" stroke-linejoin="round"/>'#13#10'<path d="M17.9778 1.8125' +
+                        'L20.5436 7.94669" stroke="black" stroke-width="2" stroke-linecap' +
+                        '="round" stroke-linejoin="round"/>'#13#10'<path d="M38.8102 5.04102H45' +
+                        '.3522C46.2528 5.04102 46.9665 4.31036 46.9665 3.42676C46.9665 2.' +
+                        '52617 46.2358 1.8125 45.3522 1.8125H40.1356L38.7932 5.04102H38.8' +
+                        '102Z" stroke="black" stroke-width="2" stroke-linecap="round" str' +
+                        'oke-linejoin="round"/>'#13#10'<path d="M39.8638 1.8125L37.3149 7.94669' +
+                        '" stroke="black" stroke-width="2" stroke-linecap="round" stroke-' +
+                        'linejoin="round"/>'#13#10'<path d="M16.4994 10.4277H11.7246" stroke="b' +
+                        'lack" stroke-width="2" stroke-linecap="round" stroke-linejoin="r' +
+                        'ound"/>'#13#10'<path d="M45.6411 10.4277H40.8663" stroke="black" strok' +
+                        'e-width="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<p' +
+                        'ath d="M22.7526 44.2929L20.3227 42.9505C18.9463 42.1858 18.0797 ' +
+                        '40.7245 18.0797 39.1612V23.4774C18.0797 18.5157 22.1069 14.4885 ' +
+                        '27.0686 14.4885H30.62C35.5817 14.4885 39.6089 18.5157 39.6089 23' +
+                        '.4774V39.1442C39.6089 40.7415 38.7422 42.2028 37.3489 42.9505L34' +
+                        '.919 44.2759" stroke="black" stroke-width="2" stroke-linecap="ro' +
+                        'und" stroke-linejoin="round"/>'#13#10'<path d="M28.8697 34.8962C31.775' +
+                        '4 34.8962 34.3412 36.7824 35.1908 39.5521C35.4797 40.5037 35.479' +
+                        '7 41.5402 35.1908 42.4918L34.2732 45.4484C33.9674 46.4679 33.032' +
+                        '8 47.1476 31.9623 47.1476H25.7601C24.7066 47.1476 23.772 46.451 ' +
+                        '23.4492 45.4484L22.5316 42.4918C22.2427 41.5402 22.2427 40.5037 ' +
+                        '22.5316 39.5521C23.3812 36.7824 25.947 34.8962 28.8527 34.8962H2' +
+                        '8.8697Z" stroke="black" stroke-width="2" stroke-linecap="round" ' +
+                        'stroke-linejoin="round"/>'#13#10'<path d="M32.3191 14.8455L31.5545 24.' +
+                        '8199C31.5035 25.4826 30.9598 25.9924 30.2971 25.9924H27.4933C26.' +
+                        '8306 25.9924 26.2869 25.4826 26.2359 24.8369L25.4203 14.8625" st' +
+                        'roke="black" stroke-width="2" stroke-linecap="round" stroke-line' +
+                        'join="round"/>'#13#10'<path d="M28.8698 15.0664V18.227" stroke="black"' +
+                        ' stroke-width="2" stroke-linecap="round" stroke-linejoin="round"' +
+                        '/>'#13#10'<path d="M31.4356 47.1646V53.6216C31.4356 55.0489 30.2801 56' +
+                        '.1874 28.8698 56.1874C27.4424 56.1874 26.304 55.0319 26.304 53.6' +
+                        '216V47.1646" stroke="black" stroke-width="2" stroke-linecap="rou' +
+                        'nd" stroke-linejoin="round"/>'#13#10'<path d="M33.4917 46.6211L34.1204' +
+                        ' 51.6848H37.6208" stroke="black" stroke-width="2" stroke-linecap' +
+                        '="round" stroke-linejoin="round"/>'#13#10'<path d="M24.2309 46.6211L23' +
+                        '.6192 51.6848H20.1018" stroke="black" stroke-width="2" stroke-li' +
+                        'necap="round" stroke-linejoin="round"/>'#13#10'</svg>'
+                    end
+                    object Layout41: TLayout
+                      Align = Bottom
+                      Position.Y = 96.000000000000000000
+                      Size.Width = 161.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 1
+                      object lblNameProduct: TSkLabel
+                        Align = Client
+                        Size.Width = 161.000000000000000000
+                        Size.Height = 50.000000000000000000
+                        Size.PlatformDefault = False
+                        StyledSettings = [FontColor]
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 16.000000000000000000
+                        TextSettings.Font.Weight = Medium
+                        TextSettings.HorzAlign = Center
+                        Words = <
+                          item
+                            Text = 'Assist'#234'ncia auto e moto'
+                          end>
+                      end
+                    end
+                  end
+                end
+              end
+              object ListBoxItem2: TListBoxItem
+                Position.X = 203.000000000000000000
+                Size.Width = 203.000000000000000000
+                Size.Height = 188.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                object Rectangle10: TRectangle
+                  Align = Client
+                  Fill.Color = claWhite
+                  HitTest = False
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 193.000000000000000000
+                  Size.Height = 178.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 10.000000000000000000
+                  YRadius = 10.000000000000000000
+                  object Layout23: TLayout
+                    Align = Client
+                    Margins.Left = 16.000000000000000000
+                    Margins.Top = 16.000000000000000000
+                    Margins.Right = 16.000000000000000000
+                    Margins.Bottom = 16.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 146.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    object Rectangle11: TRectangle
+                      Align = Bottom
+                      Fill.Color = xFF069999
+                      HitTest = False
+                      Margins.Left = 39.000000000000000000
+                      Margins.Right = 39.000000000000000000
+                      Margins.Bottom = 5.000000000000000000
+                      Position.X = 39.000000000000000000
+                      Position.Y = 65.000000000000000000
+                      Size.Width = 83.000000000000000000
+                      Size.Height = 26.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Kind = None
+                      XRadius = 13.000000000000000000
+                      YRadius = 13.000000000000000000
+                      object SkLabel27: TSkLabel
+                        Align = Client
+                        Size.Width = 83.000000000000000000
+                        Size.Height = 26.000000000000000000
+                        Size.PlatformDefault = False
+                        StyledSettings = []
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 12.000000000000000000
+                        TextSettings.Font.Weight = Bold
+                        TextSettings.FontColor = claWhite
+                        TextSettings.HorzAlign = Center
+                        Words = <
+                          item
+                            Text = 'SABER MAIS'
+                          end>
+                      end
+                    end
+                    object SkSvg5: TSkSvg
+                      Align = Center
+                      Size.Width = 58.000000000000000000
+                      Size.Height = 58.000000000000000000
+                      Size.PlatformDefault = False
+                      Svg.Source = 
+                        '<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmln' +
+                        's="http://www.w3.org/2000/svg">'#13#10'<path d="M53.2988 11.3508C55.11' +
+                        '7 13.7977 56.1875 16.8223 56.1875 20.1018C56.1875 20.1018 56.187' +
+                        '5 27.5443 51.8375 34.4092C48.0482 40.3734 45.9922 43.8229 45.873' +
+                        '2 46.2527C45.7543 48.8355 45.3295 51.1635 43.4604 52.9477C42.406' +
+                        '8 53.9502 40.8266 54.324 39.824 54.341C35.7969 54.426 33.8598 51' +
+                        '.6732 33.8598 48.3768C33.8598 48.3768 34.3016 36.5332 29 36.3123' +
+                        'C23.6984 36.5332 24.1402 48.3768 24.1402 48.3768C24.1402 51.6732' +
+                        ' 22.1861 54.443 18.176 54.341C17.1904 54.324 15.5932 53.9332 14.' +
+                        '5396 52.9477C12.6705 51.1635 12.2457 48.8355 12.1268 46.2527C12.' +
+                        '0078 43.8229 9.95176 40.3564 6.1625 34.4092C1.79551 27.5273 1.81' +
+                        '25 20.0848 1.8125 20.0848C1.8125 11.9965 8.37149 5.4375 16.4598 ' +
+                        '5.4375C21.5744 5.4375 26.3662 8.53008 29 12.5062C31.6168 8.53008' +
+                        ' 36.4256 5.4375 41.5402 5.4375C44.3949 5.4375 47.0457 6.25312 49' +
+                        '.2887 7.66348" stroke="black" stroke-width="2" stroke-linecap="r' +
+                        'ound" stroke-linejoin="round"/>'#13#10'<path d="M29 12.5061C29 12.5061' +
+                        ' 31.7527 17.3149 38.5496 14.1883" stroke="black" stroke-width="2' +
+                        '" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path d="M55' +
+                        '.253 9.27773L53.9106 10.3992C53.4178 10.807 52.942 11.2828 52.53' +
+                        '42 11.7756L51.4127 13.118L50.6821 12.1494C50.0704 11.3338 49.356' +
+                        '7 10.6201 48.5411 10.0084L47.5725 9.27773L48.8639 8.22422C49.407' +
+                        '7 7.78242 49.9174 7.27266 50.3592 6.72891L51.4127 5.4375L52.5342' +
+                        ' 6.77988C52.942 7.27266 53.4178 7.74844 53.9106 8.15625L55.253 9' +
+                        '.27773Z" stroke="black" stroke-width="2" stroke-linecap="round" ' +
+                        'stroke-linejoin="round"/>'#13#10'</svg>'
+                    end
+                    object Layout24: TLayout
+                      Align = Bottom
+                      Position.Y = 96.000000000000000000
+                      Size.Width = 161.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 1
+                      object SkLabel28: TSkLabel
+                        Align = Client
+                        Size.Width = 161.000000000000000000
+                        Size.Height = 50.000000000000000000
+                        Size.PlatformDefault = False
+                        StyledSettings = [FontColor]
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 16.000000000000000000
+                        TextSettings.Font.Weight = Medium
+                        TextSettings.HorzAlign = Center
+                        Words = <
+                          item
+                            Text = 'Plano odontol'#243'gico'
+                          end>
+                      end
+                    end
+                  end
+                end
+              end
+              object ListBoxItem3: TListBoxItem
+                Position.X = 406.000000000000000000
+                Size.Width = 203.000000000000000000
+                Size.Height = 188.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                object Rectangle12: TRectangle
+                  Align = Client
+                  Fill.Color = claWhite
+                  HitTest = False
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 193.000000000000000000
+                  Size.Height = 178.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 10.000000000000000000
+                  YRadius = 10.000000000000000000
+                  object Layout25: TLayout
+                    Align = Client
+                    Margins.Left = 16.000000000000000000
+                    Margins.Top = 16.000000000000000000
+                    Margins.Right = 16.000000000000000000
+                    Margins.Bottom = 16.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 146.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    object Rectangle13: TRectangle
+                      Align = Bottom
+                      Fill.Color = xFF069999
+                      HitTest = False
+                      Margins.Left = 39.000000000000000000
+                      Margins.Right = 39.000000000000000000
+                      Margins.Bottom = 5.000000000000000000
+                      Position.X = 39.000000000000000000
+                      Position.Y = 65.000000000000000000
+                      Size.Width = 83.000000000000000000
+                      Size.Height = 26.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Kind = None
+                      XRadius = 13.000000000000000000
+                      YRadius = 13.000000000000000000
+                      object SkLabel29: TSkLabel
+                        Align = Client
+                        Size.Width = 83.000000000000000000
+                        Size.Height = 26.000000000000000000
+                        Size.PlatformDefault = False
+                        StyledSettings = []
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 12.000000000000000000
+                        TextSettings.Font.Weight = Bold
+                        TextSettings.FontColor = claWhite
+                        TextSettings.HorzAlign = Center
+                        Words = <
+                          item
+                            Text = 'SABER MAIS'
+                          end>
+                      end
+                    end
+                    object SkSvg6: TSkSvg
+                      Align = Center
+                      Size.Width = 58.000000000000000000
+                      Size.Height = 58.000000000000000000
+                      Size.PlatformDefault = False
+                      Svg.Source = 
+                        '<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmln' +
+                        's="http://www.w3.org/2000/svg">'#13#10'<path d="M51.6506 12.8293H6.349' +
+                        '41C3.84375 12.8293 1.8125 14.8606 1.8125 17.3663V47.1706C1.8125 ' +
+                        '49.6762 3.84375 51.7075 6.34941 51.7075H51.6506C54.1563 51.7075 ' +
+                        '56.1875 49.6762 56.1875 47.1706V17.3663C56.1875 14.8606 54.1563 ' +
+                        '12.8293 51.6506 12.8293Z" stroke="black" stroke-width="2" stroke' +
+                        '-linecap="round" stroke-linejoin="round"/>'#13#10'<path d="M19.0256 12' +
+                        '.8291V8.00332C19.0256 6.59297 20.1811 5.4375 21.5915 5.4375H36.4' +
+                        '086C37.819 5.4375 38.9745 6.59297 38.9745 8.00332V12.8291" strok' +
+                        'e="black" stroke-width="2" stroke-linecap="round" stroke-linejoi' +
+                        'n="round"/>'#13#10'<path d="M39.4332 27.8162H33.0441V21.4441H24.9558V2' +
+                        '7.8162H18.5668V35.9214H24.9558V42.2935H33.0441V35.9214H39.4332V2' +
+                        '7.8162Z" stroke="black" stroke-width="2" stroke-linecap="round" ' +
+                        'stroke-linejoin="round"/>'#13#10'</svg>'
+                    end
+                    object Layout26: TLayout
+                      Align = Bottom
+                      Position.Y = 96.000000000000000000
+                      Size.Width = 161.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 1
+                      object SkLabel30: TSkLabel
+                        Align = Client
+                        Size.Width = 161.000000000000000000
+                        Size.Height = 50.000000000000000000
+                        Size.PlatformDefault = False
+                        StyledSettings = [FontColor]
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 16.000000000000000000
+                        TextSettings.Font.Weight = Medium
+                        TextSettings.HorzAlign = Center
+                        Words = <
+                          item
+                            Text = 'Assist'#234'ncia sa'#250'de'
+                          end>
+                      end
+                    end
+                  end
+                end
+              end
+              object ListBoxItem4: TListBoxItem
+                Position.Y = 188.000000000000000000
+                Size.Width = 203.000000000000000000
+                Size.Height = 188.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                object Rectangle20: TRectangle
+                  Align = Client
+                  Fill.Color = claWhite
+                  HitTest = False
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 193.000000000000000000
+                  Size.Height = 178.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 10.000000000000000000
+                  YRadius = 10.000000000000000000
+                  object Layout31: TLayout
+                    Align = Client
+                    Margins.Left = 16.000000000000000000
+                    Margins.Top = 16.000000000000000000
+                    Margins.Right = 16.000000000000000000
+                    Margins.Bottom = 16.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 146.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    object Rectangle21: TRectangle
+                      Align = Bottom
+                      Fill.Color = xFF069999
+                      HitTest = False
+                      Margins.Left = 39.000000000000000000
+                      Margins.Right = 39.000000000000000000
+                      Margins.Bottom = 5.000000000000000000
+                      Position.X = 39.000000000000000000
+                      Position.Y = 65.000000000000000000
+                      Size.Width = 83.000000000000000000
+                      Size.Height = 26.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Kind = None
+                      XRadius = 13.000000000000000000
+                      YRadius = 13.000000000000000000
+                      object SkLabel35: TSkLabel
+                        Align = Client
+                        Size.Width = 83.000000000000000000
+                        Size.Height = 26.000000000000000000
+                        Size.PlatformDefault = False
+                        StyledSettings = []
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 12.000000000000000000
+                        TextSettings.Font.Weight = Bold
+                        TextSettings.FontColor = claWhite
+                        TextSettings.HorzAlign = Center
+                        Words = <
+                          item
+                            Text = 'SABER MAIS'
+                          end>
+                      end
+                    end
+                    object SkSvg9: TSkSvg
+                      Align = Center
+                      Size.Width = 58.000000000000000000
+                      Size.Height = 58.000000000000000000
+                      Size.PlatformDefault = False
+                      Svg.Source = 
+                        '<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmln' +
+                        's="http://www.w3.org/2000/svg">'#13#10'<path d="M46.5049 34.9717L28.67' +
+                        '9 37.4357" stroke="black" stroke-width="2" stroke-linecap="round' +
+                        '" stroke-linejoin="round"/>'#13#10'<path d="M23.258 37.4359L2.90007 34' +
+                        '.7169C2.27132 34.632 1.8125 34.1052 1.8125 33.4594V14.0532C1.812' +
+                        '5 13.3564 2.37328 12.7957 3.07 12.7957H48.5949C49.2916 12.7957 4' +
+                        '9.8524 13.3564 49.8524 14.0532V33.4764C49.8524 34.1052 49.3426 3' +
+                        '4.9209 48.7139 35.0058" stroke="black" stroke-width="2" stroke-l' +
+                        'inecap="round" stroke-linejoin="round"/>'#13#10'<path d="M41.4748 48.8' +
+                        '21H4.59942C3.9027 48.821 3.34192 48.2603 3.34192 47.5635V34.9885' +
+                        '" stroke="black" stroke-width="2" stroke-linecap="round" stroke-' +
+                        'linejoin="round"/>'#13#10'<path d="M28.5768 35.9232C28.5768 34.4873 27' +
+                        '.4127 33.3232 25.9768 33.3232C24.5409 33.3232 23.3768 34.4873 23' +
+                        '.3768 35.9232V39.3219C23.3768 40.7578 24.5409 41.9218 25.9768 41' +
+                        '.9218C27.4127 41.9218 28.5768 40.7578 28.5768 39.3219V35.9232Z" ' +
+                        'stroke="black" stroke-width="2" stroke-linecap="round" stroke-li' +
+                        'nejoin="round"/>'#13#10'<path d="M18.449 12.7954V9.63463C18.449 9.1078' +
+                        '4 18.8738 8.66602 19.4176 8.66602H32.2815C32.8083 8.66602 33.250' +
+                        '1 9.09085 33.2501 9.63463V12.7954" stroke="black" stroke-width="' +
+                        '2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path d="M1' +
+                        '5.0842 12.2518V6.86493C15.0842 6.06625 15.73 5.4375 16.5117 5.43' +
+                        '75H35.1533C35.9519 5.4375 36.5807 6.08324 36.5807 6.86493V12.251' +
+                        '8" stroke="black" stroke-width="2" stroke-linecap="round" stroke' +
+                        '-linejoin="round"/>'#13#10'<path d="M47.9492 52.3729C56.2759 48.0566 5' +
+                        '6.3779 41.6841 56.123 39.458C56.072 38.9822 55.7151 38.5914 55.2' +
+                        '563 38.4554C52.0276 37.5038 49.3257 35.7195 48.1022 34.8359C47.6' +
+                        '943 34.53 47.1335 34.53 46.7087 34.8359C45.4852 35.7195 42.7663 ' +
+                        '37.5038 39.5546 38.4554C39.0957 38.5914 38.7389 38.9822 38.6879 ' +
+                        '39.458C38.433 41.6841 38.535 48.0566 46.8616 52.3729C47.2015 52.' +
+                        '5428 47.6263 52.5428 47.9662 52.3729H47.9492Z" stroke="black" st' +
+                        'roke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'#13 +
+                        #10'<path d="M43.7858 43.2305L46.4197 45.8475L51.0079 41.2593" stro' +
+                        'ke="black" stroke-width="2" stroke-linecap="round" stroke-linejo' +
+                        'in="round"/>'#13#10'</svg>'
+                    end
+                    object Layout32: TLayout
+                      Align = Bottom
+                      Position.Y = 96.000000000000000000
+                      Size.Width = 161.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 1
+                      object SkLabel36: TSkLabel
+                        Align = Client
+                        Size.Width = 161.000000000000000000
+                        Size.Height = 50.000000000000000000
+                        Size.PlatformDefault = False
+                        StyledSettings = [FontColor]
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 16.000000000000000000
+                        TextSettings.Font.Weight = Medium
+                        TextSettings.HorzAlign = Center
+                        Words = <
+                          item
+                            Text = 'Prote'#231#227'o desemprego'
+                          end>
+                      end
+                    end
+                  end
+                end
+              end
+              object ListBoxItem5: TListBoxItem
+                Position.X = 203.000000000000000000
+                Position.Y = 188.000000000000000000
+                Size.Width = 203.000000000000000000
+                Size.Height = 188.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 4
+                object Rectangle18: TRectangle
+                  Align = Client
+                  Fill.Color = claWhite
+                  HitTest = False
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 193.000000000000000000
+                  Size.Height = 178.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 10.000000000000000000
+                  YRadius = 10.000000000000000000
+                  object Layout29: TLayout
+                    Align = Client
+                    Margins.Left = 16.000000000000000000
+                    Margins.Top = 16.000000000000000000
+                    Margins.Right = 16.000000000000000000
+                    Margins.Bottom = 16.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 146.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    object Rectangle19: TRectangle
+                      Align = Bottom
+                      Fill.Color = xFF069999
+                      HitTest = False
+                      Margins.Left = 39.000000000000000000
+                      Margins.Right = 39.000000000000000000
+                      Margins.Bottom = 5.000000000000000000
+                      Position.X = 39.000000000000000000
+                      Position.Y = 65.000000000000000000
+                      Size.Width = 83.000000000000000000
+                      Size.Height = 26.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Kind = None
+                      XRadius = 13.000000000000000000
+                      YRadius = 13.000000000000000000
+                      object SkLabel33: TSkLabel
+                        Align = Client
+                        Size.Width = 83.000000000000000000
+                        Size.Height = 26.000000000000000000
+                        Size.PlatformDefault = False
+                        StyledSettings = []
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 12.000000000000000000
+                        TextSettings.Font.Weight = Bold
+                        TextSettings.FontColor = claWhite
+                        TextSettings.HorzAlign = Center
+                        Words = <
+                          item
+                            Text = 'SABER MAIS'
+                          end>
+                      end
+                    end
+                    object SkSvg8: TSkSvg
+                      Align = Center
+                      Size.Width = 58.000000000000000000
+                      Size.Height = 58.000000000000000000
+                      Size.PlatformDefault = False
+                      Svg.Source = 
+                        '<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmln' +
+                        's="http://www.w3.org/2000/svg">'#13#10'<path d="M29.0025 54.6084H52.21' +
+                        '43C54.7972 54.6084 56.6833 52.1784 56.0716 49.6805L48.9517 21.03' +
+                        '11C48.391 18.7711 46.3519 17.1738 44.0239 17.1738H29.0025H13.981' +
+                        '1C11.6531 17.1738 9.61403 18.7711 9.05327 21.0311L1.93341 49.680' +
+                        '5C1.30468 52.1784 3.20785 54.6084 5.79071 54.6084H29.0025Z" stro' +
+                        'ke="black" stroke-width="2" stroke-linecap="round" stroke-linejo' +
+                        'in="round"/>'#13#10'<path d="M49.2059 26.8254L30.803 35.7465C29.6645 3' +
+                        '6.2902 28.3561 36.2902 27.2176 35.7295L8.23694 26.2646" stroke="' +
+                        'black" stroke-width="2" stroke-linecap="round" stroke-linejoin="' +
+                        'round"/>'#13#10'<path d="M29.0019 32.2462C29.8934 32.2462 30.6162 31.5' +
+                        '234 30.6162 30.6319C30.6162 29.7403 29.8934 29.0176 29.0019 29.0' +
+                        '176C28.1103 29.0176 27.3876 29.7403 27.3876 30.6319C27.3876 31.5' +
+                        '234 28.1103 32.2462 29.0019 32.2462Z" stroke="black" stroke-widt' +
+                        'h="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path d=' +
+                        '"M41.4071 17.1737V13.0785C41.4071 11.6002 41.1182 10.1218 40.489' +
+                        '5 8.77944C39.1471 5.99266 36.0205 1.98243 29.0875 1.8125H28.9176' +
+                        'C22.3755 1.98243 19.2149 5.56785 17.7535 8.30364C16.9719 9.78199' +
+                        ' 16.598 11.4303 16.598 13.0955V17.1567" stroke="black" stroke-wi' +
+                        'dth="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'</svg>'
+                    end
+                    object Layout30: TLayout
+                      Align = Bottom
+                      Position.Y = 96.000000000000000000
+                      Size.Width = 161.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 1
+                      object SkLabel34: TSkLabel
+                        Align = Client
+                        Size.Width = 161.000000000000000000
+                        Size.Height = 50.000000000000000000
+                        Size.PlatformDefault = False
+                        StyledSettings = [FontColor]
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 16.000000000000000000
+                        TextSettings.Font.Weight = Medium
+                        TextSettings.HorzAlign = Center
+                        Words = <
+                          item
+                            Text = 'Seguro bolsa protegida'
+                          end>
+                      end
+                    end
+                  end
+                end
+              end
+              object ListBoxItem6: TListBoxItem
+                Position.X = 406.000000000000000000
+                Position.Y = 188.000000000000000000
+                Size.Width = 203.000000000000000000
+                Size.Height = 188.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 5
+                object Rectangle14: TRectangle
+                  Align = Client
+                  Fill.Color = claWhite
+                  HitTest = False
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 193.000000000000000000
+                  Size.Height = 178.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 10.000000000000000000
+                  YRadius = 10.000000000000000000
+                  object Layout27: TLayout
+                    Align = Client
+                    Margins.Left = 16.000000000000000000
+                    Margins.Top = 16.000000000000000000
+                    Margins.Right = 16.000000000000000000
+                    Margins.Bottom = 16.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 146.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    object Rectangle15: TRectangle
+                      Align = Bottom
+                      Fill.Color = xFF069999
+                      HitTest = False
+                      Margins.Left = 39.000000000000000000
+                      Margins.Right = 39.000000000000000000
+                      Margins.Bottom = 5.000000000000000000
+                      Position.X = 39.000000000000000000
+                      Position.Y = 65.000000000000000000
+                      Size.Width = 83.000000000000000000
+                      Size.Height = 26.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Kind = None
+                      XRadius = 13.000000000000000000
+                      YRadius = 13.000000000000000000
+                      object SkLabel31: TSkLabel
+                        Align = Client
+                        Size.Width = 83.000000000000000000
+                        Size.Height = 26.000000000000000000
+                        Size.PlatformDefault = False
+                        StyledSettings = []
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 12.000000000000000000
+                        TextSettings.Font.Weight = Bold
+                        TextSettings.FontColor = claWhite
+                        TextSettings.HorzAlign = Center
+                        Words = <
+                          item
+                            Text = 'SABER MAIS'
+                          end>
+                      end
+                    end
+                    object SkSvg7: TSkSvg
+                      Align = Center
+                      Size.Width = 58.000000000000000000
+                      Size.Height = 58.000000000000000000
+                      Size.PlatformDefault = False
+                      Svg.Source = 
+                        '<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmln' +
+                        's="http://www.w3.org/2000/svg">'#13#10'<path d="M26.1306 22.967V25.702' +
+                        '8C26.0796 28.1497 20.3362 29.6281 20.3362 29.6281C12.3497 32.024' +
+                        ' 12.6896 38.0733 12.6896 38.0733V50.7156" stroke="black" stroke-' +
+                        'width="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<pat' +
+                        'h d="M37.4985 29.1526C37.4985 29.1526 35.4934 34.3523 29.648 34.' +
+                        '1484C23.8026 34.3523 21.7975 29.1526 21.7975 29.1526" stroke="bl' +
+                        'ack" stroke-width="2" stroke-linecap="round" stroke-linejoin="ro' +
+                        'und"/>'#13#10'<path d="M37.9913 12.8569C39.0279 16.6463 36.3431 17.529' +
+                        '9 36.3431 17.5299C36.3431 17.5299 35.3065 22.7125 30.5826 24.173' +
+                        '9C29.9709 24.3608 29.3252 24.3608 28.7135 24.1739C23.9726 22.695' +
+                        '6 22.953 17.5299 22.953 17.5299C22.953 17.5299 20.2682 16.6293 2' +
+                        '1.3048 12.8569C21.3048 12.8569 23.2929 13.4857 24.7372 10.1891C2' +
+                        '6.1816 6.89261 24.8732 5.17638 28.3056 7.3684C28.3056 7.3684 29.' +
+                        '818 5.46525 31.6362 7.3684C33.4543 9.27155 34.6608 12.2792 38.00' +
+                        '83 12.8569H37.9913Z" stroke="black" stroke-width="2" stroke-line' +
+                        'cap="round" stroke-linejoin="round"/>'#13#10'<path d="M35.3914 23.9866' +
+                        'C35.3914 23.9866 39.9284 25.363 41.8485 23.4429C43.7687 21.5227 ' +
+                        '40.6761 15.3715 40.6761 15.3715C42.2564 9.42414 37.5155 6.80731 ' +
+                        '37.5155 6.80731C35.0346 -0.312506 30.1408 2.01545 28.7814 2.8480' +
+                        '8C28.5605 2.98402 28.3056 2.98402 28.0677 2.84808C26.9802 2.2533' +
+                        '5 23.6327 1.0129 21.7465 6.77333C21.7465 6.77333 17.0057 9.40715' +
+                        ' 18.5859 15.3375C18.5859 15.3375 15.4933 21.4887 17.4135 23.4089' +
+                        'C19.3336 25.329 23.8706 23.9526 23.8706 23.9526" stroke="black" ' +
+                        'stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/' +
+                        '>'#13#10'<path d="M30.8375 55.1848H26.9632C25.1111 55.1848 23.5988 53.' +
+                        '6725 23.5988 51.8203C23.5988 49.9681 25.1111 48.4558 26.9632 48.' +
+                        '4558" stroke="black" stroke-width="2" stroke-linecap="round" str' +
+                        'oke-linejoin="round"/>'#13#10'<path d="M33.2843 22.967V25.7028C33.3353' +
+                        ' 28.1497 39.0787 29.6281 39.0787 29.6281C47.0482 32.041 46.7083 ' +
+                        '38.0903 46.7083 38.0903V51.8371C46.7083 53.6893 45.196 55.2016 4' +
+                        '3.3438 55.2016" stroke="black" stroke-width="2" stroke-linecap="' +
+                        'round" stroke-linejoin="round"/>'#13#10'<path d="M17.9572 31.2595L31.7' +
+                        '04 56.1874H44.0745L17.9572 31.2595Z" stroke="black" stroke-width' +
+                        '="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path d="' +
+                        'M39.5885 40.5544V48.4559H36.241" stroke="black" stroke-width="2"' +
+                        ' stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path d="M19.' +
+                        '1128 40.5544V50.7329" stroke="black" stroke-width="2" stroke-lin' +
+                        'ecap="round" stroke-linejoin="round"/>'#13#10'</svg>'
+                    end
+                    object Layout28: TLayout
+                      Align = Bottom
+                      Position.Y = 96.000000000000000000
+                      Size.Width = 161.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 1
+                      object SkLabel32: TSkLabel
+                        Align = Client
+                        Size.Width = 161.000000000000000000
+                        Size.Height = 50.000000000000000000
+                        Size.PlatformDefault = False
+                        StyledSettings = [FontColor]
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 16.000000000000000000
+                        TextSettings.Font.Weight = Medium
+                        TextSettings.HorzAlign = Center
+                        Words = <
+                          item
+                            Text = 'Prote'#231#227'o acidentes pessoais'
+                          end>
+                      end
+                    end
+                  end
+                end
+              end
+              object Memo2: TMemo
+                Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+                DataDetectorTypes = []
+                Position.X = 853.000000000000000000
+                Position.Y = 368.000000000000000000
+                Size.Width = 97.000000000000000000
+                Size.Height = 89.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Visible = False
+                Viewport.Width = 89.000000000000000000
+                Viewport.Height = 81.000000000000000000
+              end
+            end
+            object Layout7: TLayout
+              Align = Client
+              Size.Width = 736.000000000000000000
+              Size.Height = 437.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 27
+            end
+          end
+        end
+      end
+    end
+  end
+  object Layout48: TLayout
+    Align = Contents
+    Locked = True
+    Size.Width = 1269.000000000000000000
+    Size.Height = 803.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 1
+    object SkLabel25: TSkLabel
+      Align = Top
+      Locked = True
+      Margins.Right = 20.000000000000000000
+      Size.Width = 1249.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = []
+      TextSettings.Font.Families = 'Poppins'
+      TextSettings.Font.Size = 30.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Trailing
+      Words = <
+        item
+          Text = 'Sistema de Teste'
+        end>
+    end
+  end
+  object recLoading: TRectangle
+    Align = Contents
+    Fill.Color = claBlack
+    Opacity = 0.899999976158142100
+    Size.Width = 1269.000000000000000000
+    Size.Height = 803.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Visible = False
+  end
+  object lylLoading: TLayout
+    Align = Contents
+    Size.Width = 1269.000000000000000000
+    Size.Height = 803.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 2
+    object Layout13: TLayout
+      Align = Center
+      Size.Width = 480.000000000000000000
+      Size.Height = 576.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object lblTituloLoading: TSkLabel
+        Align = Top
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = []
+        TextSettings.Font.Families = 'Poppins'
+        TextSettings.Font.Size = 32.000000000000000000
+        TextSettings.Font.Weight = Medium
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Words = <
+          item
+            Text = 'Aguarde'
+          end>
+      end
+      object lblSubtituloLoading: TSkLabel
+        Align = Top
+        Margins.Top = 22.000000000000000000
+        Margins.Bottom = 40.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 480.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Style]
+        TextSettings.Font.Families = 'Poppins'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Words = <
+          item
+            Text = 'Estamos processando as informa'#231#245'es'
+          end>
+      end
+      object SkAnimatedImage1: TSkAnimatedImage
+        Align = Center
+        Size.Width = 481.000000000000000000
+        Size.Height = 365.000000000000000000
+        Size.PlatformDefault = False
+        Data = {
+          7B226E6D223A22436F6D702031222C22646464223A302C2268223A323030302C
+          2277223A323030302C226D657461223A7B2267223A22406C6F7474696566696C
+          65732F746F6F6C6B69742D6A7320302E33332E32227D2C226C6179657273223A
+          5B7B227479223A342C226E6D223A225368617065204C617965722034222C2273
+          72223A312C227374223A302C226F70223A3930302E3030303033363635373735
+          312C226970223A302C226864223A66616C73652C22646464223A302C22626D22
+          3A302C226861734D61736B223A66616C73652C22616F223A302C226B73223A7B
+          2261223A7B2261223A302C226B223A5B2D32342C2D32302C305D2C226978223A
+          317D2C2273223A7B2261223A302C226B223A5B3230382C3230382C3130305D2C
+          226978223A367D2C22736B223A7B2261223A302C226B223A307D2C2270223A7B
+          2261223A302C226B223A5B313030302C3938302C305D2C226978223A327D2C22
+          72223A7B2261223A312C226B223A5B7B226F223A7B2278223A302E3136372C22
+          79223A302E3136377D2C2269223A7B2278223A302E3833332C2279223A302E38
+          33337D2C2273223A5B2D31312E3038335D2C2274223A307D2C7B2273223A5B33
+          31362E3931375D2C2274223A34322E303030303031373130363935317D5D2C22
+          6978223A31307D2C227361223A7B2261223A302C226B223A307D2C226F223A7B
+          2261223A302C226B223A3130302C226978223A31317D7D2C226566223A5B5D2C
+          22736861706573223A5B7B227479223A226772222C22626D223A302C22686422
+          3A66616C73652C226D6E223A224144424520566563746F722047726F7570222C
+          226E6D223A22456C6C697073652031222C226978223A312C22636978223A322C
+          226E70223A332C226974223A5B7B227479223A227368222C22626D223A302C22
+          6864223A66616C73652C226D6E223A224144424520566563746F722053686170
+          65202D2047726F7570222C226E6D223A22506174682031222C226978223A312C
+          2264223A312C226B73223A7B2261223A302C226B223A7B2263223A747275652C
+          2269223A5B5B3137352E3632372C305D2C5B302C2D3137352E3632375D2C5B2D
+          3137352E3632372C305D2C5B302C3137352E3632375D5D2C226F223A5B5B2D31
+          37352E3632372C305D2C5B302C3137352E3632375D2C5B3137352E3632372C30
+          5D2C5B302C2D3137352E3632375D5D2C2276223A5B5B3330302C2D325D2C5B2D
+          31382C3331365D2C5B3330302C3633345D2C5B3631382C3331365D5D7D2C2269
+          78223A327D7D2C7B227479223A226773222C22626D223A302C226864223A6661
+          6C73652C226D6E223A224144424520566563746F722047726170686963202D20
+          472D5374726F6B65222C226E6D223A224772616469656E74205374726F6B6520
+          31222C2265223A7B2261223A302C226B223A5B3437392C305D2C226978223A35
+          7D2C2267223A7B2270223A332C226B223A7B2261223A302C226B223A5B302C30
+          2E322C302E31383832333532393431313736343730362C302E34353838323335
+          3239343131373634372C302E352C302E322C302E313838323335323934313137
+          36343730362C302E343538383233353239343131373634372C312C302E383934
+          313137363437303538383233362C302C302E3839343131373634373035383832
+          33365D2C226978223A387D7D2C2274223A312C2261223A7B2261223A302C226B
+          223A307D2C2268223A7B2261223A302C226B223A307D2C2273223A7B2261223A
+          302C226B223A5B302C305D2C226978223A347D2C226C63223A322C226C6A223A
+          312C226D6C223A342C226F223A7B2261223A302C226B223A3130302C22697822
+          3A397D2C2277223A7B2261223A302C226B223A38312C226978223A31307D7D2C
+          7B227479223A227472222C2261223A7B2261223A302C226B223A5B302C305D2C
+          226978223A317D2C2273223A7B2261223A302C226B223A5B3130302C3130305D
+          2C226978223A337D2C22736B223A7B2261223A302C226B223A302C226978223A
+          347D2C2270223A7B2261223A302C226B223A5B2D3333302C2D3333345D2C2269
+          78223A327D2C2272223A7B2261223A302C226B223A302C226978223A367D2C22
+          7361223A7B2261223A302C226B223A302C226978223A357D2C226F223A7B2261
+          223A302C226B223A3130302C226978223A377D7D5D7D2C7B227479223A22746D
+          222C22626D223A302C226864223A66616C73652C226D6E223A22414442452056
+          6563746F722046696C746572202D205472696D222C226E6D223A225472696D20
+          50617468732031222C226978223A322C2265223A7B2261223A302C226B223A30
+          2C226978223A327D2C226F223A7B2261223A302C226B223A302C226978223A33
+          7D2C2273223A7B2261223A302C226B223A3130302C226978223A317D2C226D22
+          3A317D5D2C22696E64223A317D2C7B227479223A342C226E6D223A2253686170
+          65204C617965722032222C227372223A312C227374223A302C226F70223A3930
+          302E3030303033363635373735312C226970223A302C226864223A66616C7365
+          2C22646464223A302C22626D223A302C226861734D61736B223A66616C73652C
+          22616F223A302C226B73223A7B2261223A7B2261223A302C226B223A5B2D3234
+          2C2D32302C305D2C226978223A317D2C2273223A7B2261223A302C226B223A5B
+          3230382C3230382C3130305D2C226978223A367D2C22736B223A7B2261223A30
+          2C226B223A307D2C2270223A7B2261223A302C226B223A5B313030302C393830
+          2C305D2C226978223A327D2C2272223A7B2261223A312C226B223A5B7B226F22
+          3A7B2278223A302E3136372C2279223A302E3136377D2C2269223A7B2278223A
+          302E3833332C2279223A302E3833337D2C2273223A5B2D31312E3038335D2C22
+          74223A307D2C7B2273223A5B3331362E3931375D2C2274223A34322E30303030
+          3031373130363935317D5D2C226978223A31307D2C227361223A7B2261223A30
+          2C226B223A307D2C226F223A7B2261223A302C226B223A3130302C226978223A
+          31317D7D2C226566223A5B5D2C22736861706573223A5B7B227479223A226772
+          222C22626D223A302C226864223A66616C73652C226D6E223A22414442452056
+          6563746F722047726F7570222C226E6D223A22456C6C697073652031222C2269
+          78223A312C22636978223A322C226E70223A332C226974223A5B7B227479223A
+          227368222C22626D223A302C226864223A66616C73652C226D6E223A22414442
+          4520566563746F72205368617065202D2047726F7570222C226E6D223A225061
+          74682031222C226978223A312C2264223A312C226B73223A7B2261223A302C22
+          6B223A7B2263223A747275652C2269223A5B5B3137352E3632372C305D2C5B30
+          2C2D3137352E3632375D2C5B2D3137352E3632372C305D2C5B302C3137352E36
+          32375D5D2C226F223A5B5B2D3137352E3632372C305D2C5B302C3137352E3632
+          375D2C5B3137352E3632372C305D2C5B302C2D3137352E3632375D5D2C227622
+          3A5B5B3330302C2D325D2C5B2D31382C3331365D2C5B3330302C3633345D2C5B
+          3631382C3331365D5D7D2C226978223A327D7D2C7B227479223A226773222C22
+          626D223A302C226864223A66616C73652C226D6E223A22414442452056656374
+          6F722047726170686963202D20472D5374726F6B65222C226E6D223A22477261
+          6469656E74205374726F6B652031222C2265223A7B2261223A302C226B223A5B
+          3437392C305D2C226978223A357D2C2267223A7B2270223A332C226B223A7B22
+          61223A302C226B223A5B302C302E322C302E3138383233353239343131373634
+          3730362C302E343538383233353239343131373634372C302E352C302E353031
+          393630373834333133373235352C302E38373035383832333532393431313737
+          2C302E393137363437303538383233353239342C312C312C312C315D2C226978
+          223A387D7D2C2274223A312C2261223A7B2261223A302C226B223A307D2C2268
+          223A7B2261223A302C226B223A307D2C2273223A7B2261223A302C226B223A5B
+          302C305D2C226978223A347D2C226C63223A322C226C6A223A312C226D6C223A
+          342C226F223A7B2261223A302C226B223A3130302C226978223A397D2C227722
+          3A7B2261223A302C226B223A38312C226978223A31307D7D2C7B227479223A22
+          7472222C2261223A7B2261223A302C226B223A5B302C305D2C226978223A317D
+          2C2273223A7B2261223A302C226B223A5B3130302C3130305D2C226978223A33
+          7D2C22736B223A7B2261223A302C226B223A302C226978223A347D2C2270223A
+          7B2261223A302C226B223A5B2D3333302C2D3333345D2C226978223A327D2C22
+          72223A7B2261223A302C226B223A302C226978223A367D2C227361223A7B2261
+          223A302C226B223A302C226978223A357D2C226F223A7B2261223A302C226B22
+          3A3130302C226978223A377D7D5D7D2C7B227479223A22746D222C22626D223A
+          302C226864223A66616C73652C226D6E223A224144424520566563746F722046
+          696C746572202D205472696D222C226E6D223A225472696D2050617468732031
+          222C226978223A322C2265223A7B2261223A302C226B223A302C226978223A32
+          7D2C226F223A7B2261223A302C226B223A302C226978223A337D2C2273223A7B
+          2261223A302C226B223A3130302C226978223A317D2C226D223A317D5D2C2269
+          6E64223A327D5D2C2276223A22352E342E34222C226672223A32392E39373030
+          3031323230373033312C226F70223A34332E303030303031373531343235392C
+          226970223A302C22617373657473223A5B5D7D}
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 1144
+    Top = 24
+    object actTabSegurosAtivos: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabSegurosContratados
+    end
+    object actTabSeguroDetalhe: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabDetalheSeguro
+    end
+    object actTabSeguros: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabSegurosGeral
+    end
+  end
+end

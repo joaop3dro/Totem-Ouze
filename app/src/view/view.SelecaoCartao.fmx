@@ -1,0 +1,344 @@
+object frmSelecaoCartao: TfrmSelecaoCartao
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  Caption = 'Form1'
+  ClientHeight = 741
+  ClientWidth = 1370
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object ALRectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFF333075
+    Size.Width = 1370.000000000000000000
+    Size.Height = 741.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Layout1: TLayout
+      Align = Left
+      Size.Width = 124.000000000000000000
+      Size.Height = 741.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object btnSair: TGosButtonView
+        Align = Bottom
+        Background.XRadius = 10.000000000000000000
+        Background.YRadius = 10.000000000000000000
+        Background.ItemDefault.Color = claNull
+        Background.ItemPressed.Color = xFFDDDCE1
+        Background.Border.Color.Default = xAFFFFFFF
+        Background.Border.Color.Pressed = claNull
+        Background.Border.Color.Focused = claNull
+        Background.Border.Color.Selected = claNull
+        Background.Border.Color.Checked = claNull
+        Background.Border.Color.Enabled = claNull
+        Background.Border.Width = 3.000000000000000000
+        Margins.Left = -10.000000000000000000
+        Margins.Bottom = 40.000000000000000000
+        Size.Width = 134.000000000000000000
+        Size.Height = 104.000000000000000000
+        Size.PlatformDefault = False
+        Position.X = -10.000000000000000000
+        Position.Y = 597.000000000000000000
+        TabOrder = 31
+        OnClick = btnSairClick
+        TextSettings.Color.Default = claWhite
+        TextSettings.Color.Focused = claNull
+        TextSettings.Color.Selected = claNull
+        TextSettings.Color.Enabled = claNull
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.Size = 32.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.Gravity = Center
+        object SkSvg2: TSkSvg
+          Align = Client
+          Margins.Left = 16.000000000000000000
+          Margins.Top = 16.000000000000000000
+          Margins.Right = 16.000000000000000000
+          Margins.Bottom = 16.000000000000000000
+          Size.Width = 94.000000000000000000
+          Size.Height = 64.000000000000000000
+          Size.PlatformDefault = False
+          Svg.Source = 
+            '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+            's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_10' +
+            '0)">'#13#10'<path d="M43.605 26.605C37.7449 32.465 28.2469 32.465 22.3' +
+            '868 26.605C16.5268 20.7449 16.5268 11.2469 22.3868 5.38684C28.24' +
+            '69 -0.463844 37.7543 -0.463843 43.605 5.39622C49.465 11.2469 49.' +
+            '465 20.7543 43.605 26.605Z" stroke="white" stroke-width="2"/>'#13#10'<' +
+            'path d="M38.1855 10.8157L27.8156 21.1856" stroke="white" stroke-' +
+            'width="2" stroke-linecap="round"/>'#13#10'<path d="M38.1855 21.1856L27' +
+            '.8156 10.8157" stroke="white" stroke-width="2" stroke-linecap="r' +
+            'ound"/>'#13#10'</g>'#13#10'<path d="M19.4987 63.147C18.5327 63.147 17.6647 6' +
+            '2.979 16.8947 62.643C16.1387 62.293 15.5437 61.817 15.1097 61.21' +
+            '5C14.6757 60.599 14.4517 59.892 14.4377 59.094H16.4747C16.5447 5' +
+            '9.78 16.8247 60.361 17.3147 60.837C17.8187 61.299 18.5467 61.53 ' +
+            '19.4987 61.53C20.4087 61.53 21.1227 61.306 21.6407 60.858C22.172' +
+            '7 60.396 22.4387 59.808 22.4387 59.094C22.4387 58.534 22.2847 58' +
+            '.079 21.9767 57.729C21.6687 57.379 21.2837 57.113 20.8217 56.931' +
+            'C20.3597 56.749 19.7367 56.553 18.9527 56.343C17.9867 56.091 17.' +
+            '2097 55.839 16.6217 55.587C16.0477 55.335 15.5507 54.943 15.1307' +
+            ' 54.411C14.7247 53.865 14.5217 53.137 14.5217 52.227C14.5217 51.' +
+            '429 14.7247 50.722 15.1307 50.106C15.5367 49.49 16.1037 49.014 1' +
+            '6.8317 48.678C17.5737 48.342 18.4207 48.174 19.3727 48.174C20.74' +
+            '47 48.174 21.8647 48.517 22.7327 49.203C23.6147 49.889 24.1117 5' +
+            '0.799 24.2237 51.933H22.1237C22.0537 51.373 21.7597 50.883 21.24' +
+            '17 50.463C20.7237 50.029 20.0377 49.812 19.1837 49.812C18.3857 4' +
+            '9.812 17.7347 50.022 17.2307 50.442C16.7267 50.848 16.4747 51.42' +
+            '2 16.4747 52.164C16.4747 52.696 16.6217 53.13 16.9157 53.466C17.' +
+            '2237 53.802 17.5947 54.061 18.0287 54.243C18.4767 54.411 19.0997' +
+            ' 54.607 19.8977 54.831C20.8637 55.097 21.6407 55.363 22.2287 55.' +
+            '629C22.8167 55.881 23.3207 56.28 23.7407 56.826C24.1607 57.358 2' +
+            '4.3707 58.086 24.3707 59.01C24.3707 59.724 24.1817 60.396 23.803' +
+            '7 61.026C23.4257 61.656 22.8657 62.167 22.1237 62.559C21.3817 62' +
+            '.951 20.5067 63.147 19.4987 63.147ZM26.4689 57.204C26.4689 56.02' +
+            '8 26.7069 54.999 27.1829 54.117C27.6589 53.221 28.3099 52.528 29' +
+            '.1359 52.038C29.9759 51.548 30.9069 51.303 31.9289 51.303C32.936' +
+            '9 51.303 33.8119 51.52 34.5539 51.954C35.2959 52.388 35.8489 52.' +
+            '934 36.2129 53.592V51.492H38.1449V63H36.2129V60.858C35.8349 61.5' +
+            '3 35.2679 62.09 34.5119 62.538C33.7699 62.972 32.9019 63.189 31.' +
+            '9079 63.189C30.8859 63.189 29.9619 62.937 29.1359 62.433C28.3099' +
+            ' 61.929 27.6589 61.222 27.1829 60.312C26.7069 59.402 26.4689 58.' +
+            '366 26.4689 57.204ZM36.2129 57.225C36.2129 56.357 36.0379 55.601' +
+            ' 35.6879 54.957C35.3379 54.313 34.8619 53.823 34.2599 53.487C33.' +
+            '6719 53.137 33.0209 52.962 32.3069 52.962C31.5929 52.962 30.9419' +
+            ' 53.13 30.3539 53.466C29.7659 53.802 29.2969 54.292 28.9469 54.9' +
+            '36C28.5969 55.58 28.4219 56.336 28.4219 57.204C28.4219 58.086 28' +
+            '.5969 58.856 28.9469 59.514C29.2969 60.158 29.7659 60.655 30.353' +
+            '9 61.005C30.9419 61.341 31.5929 61.509 32.3069 61.509C33.0209 61' +
+            '.509 33.6719 61.341 34.2599 61.005C34.8619 60.655 35.3379 60.158' +
+            ' 35.6879 59.514C36.0379 58.856 36.2129 58.093 36.2129 57.225ZM42' +
+            '.3613 49.623C41.9973 49.623 41.6893 49.497 41.4373 49.245C41.185' +
+            '3 48.993 41.0593 48.685 41.0593 48.321C41.0593 47.957 41.1853 47' +
+            '.649 41.4373 47.397C41.6893 47.145 41.9973 47.019 42.3613 47.019' +
+            'C42.7113 47.019 43.0053 47.145 43.2433 47.397C43.4953 47.649 43.' +
+            '6213 47.957 43.6213 48.321C43.6213 48.685 43.4953 48.993 43.2433' +
+            ' 49.245C43.0053 49.497 42.7113 49.623 42.3613 49.623ZM43.2853 51' +
+            '.492V63H41.3743V51.492H43.2853ZM48.4533 53.361C48.7893 52.703 49' +
+            '.2653 52.192 49.8813 51.828C50.5113 51.464 51.2743 51.282 52.170' +
+            '3 51.282V53.256H51.6663C49.5243 53.256 48.4533 54.418 48.4533 56' +
+            '.742V63H46.5423V51.492H48.4533V53.361Z" fill="white"/>'#13#10'<defs>'#13#10 +
+            '<clipPath id="clip0_226_100">'#13#10'<rect width="32" height="32" fill' +
+            '="white" transform="translate(49) rotate(90)"/>'#13#10'</clipPath>'#13#10'</' +
+            'defs>'#13#10'</svg>'
+        end
+        object ShadowEffect14: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.600000023841857900
+          ShadowColor = claBlack
+        end
+      end
+      object btnVoltar: TGosButtonView
+        Align = Bottom
+        Background.XRadius = 10.000000000000000000
+        Background.YRadius = 10.000000000000000000
+        Background.ItemDefault.Color = claNull
+        Background.ItemDefault.SVGImage.Color = xFF333075
+        Background.ItemPressed.Color = xFFDDDCE1
+        Background.ItemPressed.Accessory.Color = xFF333075
+        Background.ItemPressed.SVGImage.Color = xFF333075
+        Background.ItemSelected.SVGImage.Color = xFF333075
+        Background.ItemChecked.SVGImage.Color = xFF333075
+        Background.ItemActivated.SVGImage.Color = xFF333075
+        Background.Border.Color.Default = xAFFFFFFF
+        Background.Border.Color.Pressed = claNull
+        Background.Border.Color.Focused = claNull
+        Background.Border.Color.Selected = claNull
+        Background.Border.Color.Checked = claNull
+        Background.Border.Color.Enabled = claNull
+        Background.Border.Width = 3.000000000000000000
+        Margins.Left = -10.000000000000000000
+        Margins.Bottom = 40.000000000000000000
+        Size.Width = 134.000000000000000000
+        Size.Height = 104.000000000000000000
+        Size.PlatformDefault = False
+        Position.X = -10.000000000000000000
+        Position.Y = 453.000000000000000000
+        TabOrder = 32
+        OnClick = btnVoltarClick
+        TextSettings.Color.Default = claWhite
+        TextSettings.Color.Focused = claNull
+        TextSettings.Color.Selected = claNull
+        TextSettings.Color.Enabled = claNull
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.Size = 21.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.Gravity = Center
+        object ShadowEffect13: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.600000023841857900
+          ShadowColor = claBlack
+        end
+        object SkSvg1: TSkSvg
+          Align = Client
+          Margins.Left = 16.000000000000000000
+          Margins.Top = 16.000000000000000000
+          Margins.Right = 16.000000000000000000
+          Margins.Bottom = 16.000000000000000000
+          Size.Width = 94.000000000000000000
+          Size.Height = 64.000000000000000000
+          Size.PlatformDefault = False
+          Svg.Source = 
+            '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+            's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_71' +
+            ')">'#13#10'<path d="M37.8936 16.0005L28.1154 16.0005" stroke="white" s' +
+            'troke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+            #13#10'<path d="M31.7247 12.3916L28.106 16.001L31.7247 19.6104" strok' +
+            'e="white" stroke-width="2" stroke-linecap="round" stroke-linejoi' +
+            'n="round"/>'#13#10'<path d="M33 31C24.7125 31 18 24.2875 18 16C18 7.71' +
+            '25 24.7125 0.999999 33 0.999999C41.2875 1 48 7.7125 48 16C48 24.' +
+            '2875 41.2875 31 33 31Z" stroke="white" stroke-width="2" stroke-l' +
+            'inecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'<path d="M15.479' +
+            '6 48.363L9.9566 63H7.7516L2.2286 48.363H4.2656L8.8646 60.984L13.' +
+            '4636 48.363H15.4796ZM22.594 63.189C21.516 63.189 20.536 62.944 1' +
+            '9.654 62.454C18.786 61.964 18.1 61.271 17.596 60.375C17.106 59.4' +
+            '65 16.861 58.415 16.861 57.225C16.861 56.049 17.113 55.013 17.61' +
+            '7 54.117C18.135 53.207 18.835 52.514 19.717 52.038C20.599 51.548' +
+            ' 21.586 51.303 22.678 51.303C23.77 51.303 24.757 51.548 25.639 5' +
+            '2.038C26.521 52.514 27.214 53.2 27.718 54.096C28.236 54.992 28.4' +
+            '95 56.035 28.495 57.225C28.495 58.415 28.229 59.465 27.697 60.37' +
+            '5C27.179 61.271 26.472 61.964 25.576 62.454C24.68 62.944 23.686 ' +
+            '63.189 22.594 63.189ZM22.594 61.509C23.28 61.509 23.924 61.348 2' +
+            '4.526 61.026C25.128 60.704 25.611 60.221 25.975 59.577C26.353 58' +
+            '.933 26.542 58.149 26.542 57.225C26.542 56.301 26.36 55.517 25.9' +
+            '96 54.873C25.632 54.229 25.156 53.753 24.568 53.445C23.98 53.123' +
+            ' 23.343 52.962 22.657 52.962C21.957 52.962 21.313 53.123 20.725 ' +
+            '53.445C20.151 53.753 19.689 54.229 19.339 54.873C18.989 55.517 1' +
+            '8.814 56.301 18.814 57.225C18.814 58.163 18.982 58.954 19.318 59' +
+            '.598C19.668 60.242 20.13 60.725 20.704 61.047C21.278 61.355 21.9' +
+            '08 61.509 22.594 61.509ZM32.9186 47.46V63H31.0076V47.46H32.9186Z' +
+            'M38.5066 53.067V59.85C38.5066 60.41 38.6256 60.809 38.8636 61.04' +
+            '7C39.1016 61.271 39.5146 61.383 40.1026 61.383H41.5096V63H39.787' +
+            '6C38.7236 63 37.9256 62.755 37.3936 62.265C36.8616 61.775 36.595' +
+            '6 60.97 36.5956 59.85V53.067H35.1046V51.492H36.5956V48.594H38.50' +
+            '66V51.492H41.5096V53.067H38.5066ZM43.111 57.204C43.111 56.028 43' +
+            '.349 54.999 43.825 54.117C44.301 53.221 44.952 52.528 45.778 52.' +
+            '038C46.618 51.548 47.549 51.303 48.571 51.303C49.579 51.303 50.4' +
+            '54 51.52 51.196 51.954C51.938 52.388 52.491 52.934 52.855 53.592' +
+            'V51.492H54.787V63H52.855V60.858C52.477 61.53 51.91 62.09 51.154 ' +
+            '62.538C50.412 62.972 49.544 63.189 48.55 63.189C47.528 63.189 46' +
+            '.604 62.937 45.778 62.433C44.952 61.929 44.301 61.222 43.825 60.' +
+            '312C43.349 59.402 43.111 58.366 43.111 57.204ZM52.855 57.225C52.' +
+            '855 56.357 52.68 55.601 52.33 54.957C51.98 54.313 51.504 53.823 ' +
+            '50.902 53.487C50.314 53.137 49.663 52.962 48.949 52.962C48.235 5' +
+            '2.962 47.584 53.13 46.996 53.466C46.408 53.802 45.939 54.292 45.' +
+            '589 54.936C45.239 55.58 45.064 56.336 45.064 57.204C45.064 58.08' +
+            '6 45.239 58.856 45.589 59.514C45.939 60.158 46.408 60.655 46.996' +
+            ' 61.005C47.584 61.341 48.235 61.509 48.949 61.509C49.663 61.509 ' +
+            '50.314 61.341 50.902 61.005C51.504 60.655 51.98 60.158 52.33 59.' +
+            '514C52.68 58.856 52.855 58.093 52.855 57.225ZM59.9274 53.361C60.' +
+            '2634 52.703 60.7394 52.192 61.3554 51.828C61.9854 51.464 62.7484' +
+            ' 51.282 63.6444 51.282V53.256H63.1404C60.9984 53.256 59.9274 54.' +
+            '418 59.9274 56.742V63H58.0164V51.492H59.9274V53.361Z" fill="whit' +
+            'e"/>'#13#10'<defs>'#13#10'<clipPath id="clip0_226_71">'#13#10'<rect width="32" hei' +
+            'ght="32" fill="white" transform="translate(49) rotate(90)"/>'#13#10'</' +
+            'clipPath>'#13#10'</defs>'#13#10'</svg>'
+        end
+      end
+    end
+    object Layout3: TLayout
+      Align = Contents
+      Size.Width = 1370.000000000000000000
+      Size.Height = 741.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Layout2: TLayout
+        Align = Center
+        Size.Width = 980.000000000000000000
+        Size.Height = 576.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object SkLabel1: TSkLabel
+          Align = Top
+          Margins.Bottom = 8.000000000000000000
+          Size.Width = 980.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+          TextSettings.Font.Families = 'poppins'
+          TextSettings.Font.Size = 32.000000000000000000
+          TextSettings.Font.Weight = Medium
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Words = <
+            item
+              Text = 'Escolha a conta'
+            end>
+        end
+        object SkLabel2: TSkLabel
+          Align = Top
+          Margins.Bottom = 47.000000000000000000
+          Position.Y = 56.000000000000000000
+          Size.Width = 980.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Style]
+          TextSettings.Font.Families = 'poppins'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Words = <
+            item
+              Text = 'Selecione abaixo a conta que deseja acessar'
+            end>
+        end
+        object HorzScrollBox1: THorzScrollBox
+          Align = Center
+          Size.Width = 957.000000000000000000
+          Size.Height = 250.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 27
+          Visible = False
+          ShowScrollBars = False
+          Viewport.Width = 957.000000000000000000
+          Viewport.Height = 250.000000000000000000
+        end
+        object lylScroll: TLayout
+          Align = Client
+          Margins.Top = 76.000000000000000000
+          Margins.Bottom = 76.000000000000000000
+          Size.Width = 980.000000000000000000
+          Size.Height = 291.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 29
+          OnPainting = lylScrollPainting
+        end
+      end
+    end
+  end
+  object Layout5: TLayout
+    Align = Contents
+    Locked = True
+    Size.Width = 1370.000000000000000000
+    Size.Height = 741.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 1
+    object SkLabel5: TSkLabel
+      Align = Top
+      Margins.Right = 20.000000000000000000
+      Size.Width = 1350.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = []
+      TextSettings.Font.Families = 'Poppins'
+      TextSettings.Font.Size = 30.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Trailing
+      Words = <
+        item
+          Text = 'Sistema de Teste'
+        end>
+    end
+  end
+end

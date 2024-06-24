@@ -1,0 +1,73 @@
+inherited FilHorz1: TFilHorz1
+  Size.Width = 336.000000000000000000
+  Size.Height = 297.000000000000000000
+  inherited Rectangle2: TRectangle
+    Size.Width = 326.000000000000000000
+    Size.Height = 287.000000000000000000
+    inherited Layout1: TLayout
+      Size.Width = 278.750000000000000000
+      inherited recMes: TRectangle
+        Position.X = 195.750000000000000000
+      end
+    end
+    inherited Layout5: TLayout
+      Size.Width = 278.750000000000000000
+    end
+    inherited GosLine1: TGosLine
+      Size.Width = 278.750000000000000000
+    end
+    inherited Layout3: TLayout
+      Size.Width = 278.750000000000000000
+      inherited SkLabel2: TSkLabel
+        Size.Width = 278.750000000000000000
+      end
+      inherited lbldataPagamento: TSkLabel
+        Size.Width = 278.750000000000000000
+      end
+    end
+    inherited Layout45: TLayout
+      Position.Y = 236.000000000000000000
+      Size.Width = 278.750000000000000000
+      inherited SkSvg15: TSkSvg
+        Position.X = 248.750000000000000000
+      end
+      inherited SkLabel41: TSkLabel
+        Size.Width = 248.750000000000000000
+      end
+    end
+  end
+  inherited Rectangle1: TRectangle
+    Size.Width = 326.000000000000000000
+    Size.Height = 287.000000000000000000
+    Visible = False
+    inherited Layout4: TLayout
+      Size.Width = 272.000000000000000000
+      Size.Height = 239.000000000000000000
+      inherited SkLabel1: TSkLabel
+        Size.Width = 272.000000000000000000
+      end
+      inherited lblPortador: TSkLabel
+        Size.Width = 272.000000000000000000
+      end
+      inherited Layout6: TLayout
+        Size.Width = 272.000000000000000000
+        inherited lblNumCartao: TSkLabel
+          Size.Width = 145.160003662109400000
+        end
+      end
+      inherited Layout7: TLayout
+        Position.Y = 209.000000000000000000
+        Size.Width = 272.000000000000000000
+        inherited SkSvg1: TSkSvg
+          Position.X = 242.000000000000000000
+        end
+      end
+    end
+    inherited ImgVisa: TImage
+      MultiResBitmap.Height = 186
+    end
+    inherited imgStz: TImage
+      MultiResBitmap.Height = 186
+    end
+  end
+end

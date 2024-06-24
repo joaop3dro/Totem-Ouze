@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/02/02 20:50:08.000.375,=C:\Desenvolvimento\Ouze\app\Unit1.pas</Transaction>
+    <Transaction>2024/02/02 20:50:26.000.398,C:\Desenvolvimento\Ouze\app\Unit1.pas=C:\Desenvolvimento\Ouze\app\src\features\telnet.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,96 @@
+object frameCobertura: TframeCobertura
+  Margins.Top = 10.000000000000000000
+  Margins.Bottom = 10.000000000000000000
+  Size.Width = 167.000000000000000000
+  Size.Height = 173.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle4: TRectangle
+    Align = Client
+    Fill.Kind = None
+    Margins.Left = 1.000000000000000000
+    Margins.Top = 1.000000000000000000
+    Margins.Right = 1.000000000000000000
+    Margins.Bottom = 1.000000000000000000
+    Size.Width = 165.000000000000000000
+    Size.Height = 171.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFF8BFF8
+    Stroke.Dash = Dash
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+    object Layout16: TLayout
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 155.000000000000000000
+      Size.Height = 161.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object SkSvg6: TSkSvg
+        Align = Center
+        Size.Width = 58.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        Svg.Source = 
+          '<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmln' +
+          's="http://www.w3.org/2000/svg">'#13#10'<g id="Camada_1">'#13#10'<rect width=' +
+          '"56" height="56" rx="28" fill="white"/>'#13#10'<g id="Group 543">'#13#10'<pa' +
+          'th id="Vector" d="M39.6392 14.2624L47.7529 15.8221L49.3127 7.693' +
+          '36" stroke="#E400E4" stroke-width="1.5" stroke-linecap="round" s' +
+          'troke-linejoin="round"/>'#13#10'<path id="Vector_2" d="M3.5393 29.5905' +
+          'C3.22434 21.5817 6.92879 13.5879 14.0527 8.75863C25.0161 1.31975' +
+          ' 39.9388 4.18432 47.3777 15.1477" stroke="#E400E4" stroke-width=' +
+          '"1.5" stroke-miterlimit="10" stroke-linecap="round"/>'#13#10'<path id=' +
+          '"Vector_3" d="M15.2676 42.3081L7.13887 40.7483L5.5791 48.8621" s' +
+          'troke="#E400E4" stroke-width="1.5" stroke-linecap="round" stroke' +
+          '-linejoin="round"/>'#13#10'<path id="Vector_4" d="M51.5022 27.071C51.8' +
+          '172 35.0798 48.1127 43.0736 40.9888 47.9029C30.0254 55.3418 15.1' +
+          '027 52.4772 7.66382 41.5139" stroke="#E400E4" stroke-width="1.5"' +
+          ' stroke-miterlimit="10" stroke-linecap="round"/>'#13#10'<path id="Vect' +
+          'or_5" d="M14.3229 32.0648C15.4177 31.1499 16.2876 30.4 16.9325 2' +
+          '9.7851C17.5774 29.1852 18.1173 28.5403 18.5522 27.8804C18.9872 2' +
+          '7.2205 19.1971 26.5756 19.1971 25.9457C19.1971 25.3608 19.0621 2' +
+          '4.9109 18.7922 24.5809C18.5222 24.2509 18.1023 24.086 17.5324 24' +
+          '.086C16.9625 24.086 16.5275 24.2809 16.2276 24.6559C15.9276 25.0' +
+          '308 15.7626 25.5558 15.7476 26.2157H13.438C13.483 24.8509 13.887' +
+          '9 23.816 14.6528 23.1111C15.4177 22.4062 16.3925 22.0613 17.5774' +
+          ' 22.0613C18.8672 22.0613 19.872 22.4062 20.5619 23.0961C21.2518 ' +
+          '23.786 21.5968 24.6859 21.5968 25.8107C21.5968 26.6956 21.3568 2' +
+          '7.5355 20.8769 28.3453C20.3969 29.1552 19.857 29.8601 19.2421 30' +
+          '.445C18.6272 31.0449 17.8323 31.7648 16.8425 32.6047H21.8667V34.' +
+          '5844H13.453V32.8147L14.3379 32.0648H14.3229Z" fill="#E400E4"/>'#13#10 +
+          '<path id="Vector_6" d="M22.9615 32.1694V30.2947L28.5257 22.3159H' +
+          '31.3003V30.0847H32.8001V32.1694H31.3003V34.5841H28.9156V32.1694H' +
+          '22.9465H22.9615ZM29.0806 24.8805L25.5861 30.0997H29.0806V24.8805' +
+          'Z" fill="#E400E4"/>'#13#10'<path id="Vector_7" d="M41.6186 26.0051V34.' +
+          '5988H39.8938V30.9394H36.2194V34.5988H34.4946V26.0051H36.2194V29.' +
+          '5296H39.8938V26.0051H41.6186Z" fill="#E400E4"/>'#13#10'</g>'#13#10'</g>'#13#10'</s' +
+          'vg>'
+      end
+      object Layout17: TLayout
+        Align = Bottom
+        Position.Y = 111.000000000000000000
+        Size.Width = 155.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object SkLabel4: TSkLabel
+          Align = Client
+          Size.Width = 155.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [FontColor]
+          TextSettings.Font.Families = 'Poppins'
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.HorzAlign = Center
+          Words = <
+            item
+              Text = 'Assist'#234'ncia 24h Residencial'
+            end>
+        end
+      end
+    end
+  end
+end

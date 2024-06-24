@@ -1,0 +1,748 @@
+unit view.Emprestimo;
+
+interface
+
+uses IdeaL.Lib.View.Fmx.FrameListModel,
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, System.Skia, System.JSON,
+  System.Actions, FMX.ActnList, FMX.TabControl, FMX.Layouts, uGosObjects,
+  FMX.Objects, FMX.Ani, uGosEdit, FMX.Skia, FMX.Effects,
+  uGosBase, uGosStandard,
+  frame.parcelas,
+  System.Generics.Collections,  DBXJSON,
+  frame.Fatura,  uFancyDialog;
+
+type
+  TfrmEmprestimo = class(TForm)
+    TabControl1: TTabControl;
+    tabEmprestimo: TTabItem;
+    tabSimulaEmprest: TTabItem;
+    Rectangle15: TRectangle;
+    Layout31: TLayout;
+    Layout32: TLayout;
+    Layout33: TLayout;
+    lblTitutlo: TSkLabel;
+    lblSubtitulo: TSkLabel;
+    Layout34: TLayout;
+    Layout35: TLayout;
+    recSimula: TRectangle;
+    SkSvg9: TSkSvg;
+    SkLabel26: TSkLabel;
+    recExtrato: TRectangle;
+    SkSvg10: TSkSvg;
+    SkLabel27: TSkLabel;
+    Rectangle1: TRectangle;
+    Layout1: TLayout;
+    Layout2: TLayout;
+    Layout3: TLayout;
+    SkLabel1: TSkLabel;
+    SkLabel2: TSkLabel;
+    Layout45: TLayout;
+    SkSvg15: TSkSvg;
+    Layout6: TLayout;
+    SkSvg5: TSkSvg;
+    Layout24: TLayout;
+    Layout25: TLayout;
+    Rectangle10: TRectangle;
+    SkLabel24: TSkLabel;
+    Rectangle11: TRectangle;
+    SkLabel25: TSkLabel;
+    Layout22: TLayout;
+    Layout30: TLayout;
+    edtValor: TGosEditView;
+    tabSimulaParcelas: TTabItem;
+    Rectangle2: TRectangle;
+    Layout4: TLayout;
+    Layout5: TLayout;
+    Layout7: TLayout;
+    SkLabel3: TSkLabel;
+    SkLabel4: TSkLabel;
+    Layout8: TLayout;
+    Layout9: TLayout;
+    Rectangle5: TRectangle;
+    SkLabel5: TSkLabel;
+    Rectangle6: TRectangle;
+    SkLabel6: TSkLabel;
+    Rectangle23: TRectangle;
+    SkLabel19: TSkLabel;
+    Rectangle24: TRectangle;
+    SkLabel20: TSkLabel;
+    GosLine2: TGosLine;
+    Layout17: TLayout;
+    SkSvg6: TSkSvg;
+    SkLabel21: TSkLabel;
+    Rectangle17: TRectangle;
+    Layout39: TLayout;
+    Rectangle18: TRectangle;
+    lblMesFatura: TSkLabel;
+    GosLine5: TGosLine;
+    Layout42: TLayout;
+    SkLabel7: TSkLabel;
+    Rectangle7: TRectangle;
+    SkLabel8: TSkLabel;
+    Rectangle16: TRectangle;
+    SkLabel9: TSkLabel;
+    VertScrollBox1: TVertScrollBox;
+    Layout10: TLayout;
+    Layout11: TLayout;
+    SkSvg11: TSkSvg;
+    SkLabel12: TSkLabel;
+    ActionList1: TActionList;
+    acttabEmprestimo: TChangeTabAction;
+    actTabSimulaEmprest: TChangeTabAction;
+    actTabSimulaParcelas: TChangeTabAction;
+    tabExtratoEmprest: TTabItem;
+    ALRectangle1: TRectangle;
+    Layout12: TLayout;
+    Layout13: TLayout;
+    Layout14: TLayout;
+    SkLabel10: TSkLabel;
+    SkLabel11: TSkLabel;
+    HorzScrollBox1: THorzScrollBox;
+    actTabExtratoEmprest: TChangeTabAction;
+    btnRegredir: TSkSvg;
+    btnAvancar: TSkSvg;
+    lylTecladoNumerico: TLayout;
+    FloatAnimation2: TFloatAnimation;
+    Layout15: TLayout;
+    btn4: TGosButtonView;
+    btn5: TGosButtonView;
+    btn6: TGosButtonView;
+    Layout16: TLayout;
+    btn0: TGosButtonView;
+    btnEnviar: TGosButtonView;
+    btnCorrigir: TGosButtonView;
+    Line1: TLine;
+    Layout18: TLayout;
+    btn7: TGosButtonView;
+    btn8: TGosButtonView;
+    btn9: TGosButtonView;
+    Layout19: TLayout;
+    btn3: TGosButtonView;
+    btn2: TGosButtonView;
+    btnSair: TGosButtonView;
+    SkSvg7: TSkSvg;
+    btnVoltar: TGosButtonView;
+    SkSvg8: TSkSvg;
+    btnSairS: TGosButtonView;
+    SkSvg14: TSkSvg;
+    btnVoltarS: TGosButtonView;
+    SkSvg16: TSkSvg;
+    recSairP: TGosButtonView;
+    SkSvg2: TSkSvg;
+    recVoltarP: TGosButtonView;
+    SkSvg1: TSkSvg;
+    recSairE: TGosButtonView;
+    SkSvg3: TSkSvg;
+    recVoltarE: TGosButtonView;
+    SkSvg4: TSkSvg;
+    lylScroll: TLayout;
+    btn1: TGosButtonView;
+    Layout20: TLayout;
+    SkLabel13: TSkLabel;
+    procedure btnEnviarClick(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
+    procedure Rectangle14Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure recSimulaClick(Sender: TObject);
+    procedure Rectangle23Click(Sender: TObject);
+    procedure recSairPClick(Sender: TObject);
+    procedure btnSairSClick(Sender: TObject);
+    procedure btnVoltarSClick(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
+    procedure btnVoltarClick(Sender: TObject);
+    procedure recVoltarEClick(Sender: TObject);
+    procedure recSairEClick(Sender: TObject);
+    procedure recExtratoClick(Sender: TObject);
+    procedure HorzScrollBox1ViewportPositionChange(Sender: TObject;
+      const OldViewportPosition, NewViewportPosition: TPointF;
+      const ContentSizeChanged: Boolean);
+    procedure btnRegredirClick(Sender: TObject);
+    procedure btnAvancarClick(Sender: TObject);
+    procedure recVoltarPClick(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure lylScrollPainting(Sender: TObject; Canvas: TCanvas;
+      const ARect: TRectF);
+  private
+    FCPF   : string;
+    FMSG   : TFancyDialog;
+    FListaFrame: TList<TframeParcelas>;
+    FListaFrameFatura: TList<TframeFatura>;
+    FListaParcelas: TList<TFrameItemListModel>;
+    FFrmLstVert: TFrameListModel;
+    FFrmLstHorz1: TFrameListModel;
+    procedure ListaParcelasEmprestimo;
+    function TeclaNumero(ATecla, AlblValor: string): string;
+    procedure SairConta;
+    procedure ListaFaturaEmprestimo(AjsonParcelasEP: TJSONObject);
+    function ConsultaEmprestimo(ACPF: string): boolean;
+    function ConsultaContrato(ACPF: string; out AJsonRetorno: TJSONObject): Boolean;
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure carregaTela(ACpf: string);
+  end;
+
+var
+  frmEmprestimo: TfrmEmprestimo;
+
+implementation
+
+{$R *.fmx}
+
+uses Notificacao, view.Principal, view.menu, uAguarde, uToken, uConnection,
+  view.SelecaoCartao,
+  IdeaL.Lib.View.Utils,
+  IdeaL.Demo.ScrollBox.FrameItemList.Horz1,
+  IdeaL.Demo.ScrollBox.FrameItemList.Horz2,
+  IdeaL.Demo.ScrollBox.FrameItemList.Vert1, LogSQLite.Config, controller.log;
+
+
+procedure TfrmEmprestimo.carregaTela(ACpf: string);
+begin
+  FCPF := ACpf;
+  if frmPrincipal.FSmEmprestimoSimular then
+    recSimula.Visible := true
+  else
+    recSimula.Visible := false;
+
+  if frmPrincipal.FSmEmprestimoExtrato then
+    recExtrato.Visible := true
+  else
+    recExtrato.Visible := false;
+end;
+
+procedure TfrmEmprestimo.btn1Click(Sender: TObject);
+begin
+  edtValor.Text := TeclaNumero(TGosButtonView(Sender).Text,edtValor.Text);
+end;
+
+procedure TfrmEmprestimo.btnAvancarClick(Sender: TObject);
+var
+  LPosicaoAtual: single;
+begin
+  LPosicaoAtual := HorzScrollBox1.ViewportPosition.X;
+  HorzScrollBox1.ViewportPosition := PointF(LPosicaoAtual+400,0);
+  btnRegredir.enabled := true;
+end;
+
+procedure TfrmEmprestimo.btnEnviarClick(Sender: TObject);
+var
+  LvalorSolicitado,LvalorTotal: double;
+begin
+  LvalorSolicitado := 0;
+  LvalorTotal := 0;
+
+  LvalorSolicitado := strtofloat(edtValor.text.Replace('.',''));
+  LvalorTotal := strtofloat(SkLabel24.text.replace('R$ ','').Replace('.',''));
+  if LvalorSolicitado>LvalorTotal then
+  begin
+    TLoading.ToastMessage(frmEmprestimo,'Valor Acima do Disponível!',5,TAlignLayout.MostRight);
+    exit;
+  end;
+
+  if LvalorSolicitado=0 then
+  begin
+    TLoading.ToastMessage(frmEmprestimo,'Digite o valor desejado!',5,TAlignLayout.MostRight);
+    exit;
+  end;
+
+  SkLabel19.text := FormatFloat('R$ #,##0.00',LvalorSolicitado);
+  SkLabel5.text :=  SkLabel24.text;
+  ListaParcelasEmprestimo;
+  actTabSimulaParcelas.execute;
+
+end;
+
+procedure TfrmEmprestimo.btnSairClick(Sender: TObject);
+begin
+  SairConta;
+end;
+
+procedure TfrmEmprestimo.btnSairSClick(Sender: TObject);
+begin
+  SairConta;
+end;
+
+procedure TfrmEmprestimo.btnVoltarClick(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TfrmEmprestimo.btnVoltarSClick(Sender: TObject);
+begin
+  edtValor.Text := '';
+  acttabEmprestimo.Execute;
+end;
+
+procedure TfrmEmprestimo.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := TCloseAction.caFree;
+  frmEmprestimo := nil;
+end;
+
+procedure TfrmEmprestimo.FormCreate(Sender: TObject);
+begin
+  FMSG := TFancyDialog.Create(Self);
+  TabControl1.ActiveTab := tabEmprestimo;
+  TabControl1.TabPosition:= TTabPosition.None;
+  FListaParcelas := TList<TFrameItemListModel>.create;
+
+  SkLabel13.text := 'Sistema de Teste - Versão '+frmPrincipal.FVersion;
+end;
+
+procedure TfrmEmprestimo.FormDestroy(Sender: TObject);
+begin
+  FreeAndNil(FMSG);
+  FreeAndNil(FListaParcelas);
+end;
+
+procedure TfrmEmprestimo.HorzScrollBox1ViewportPositionChange(Sender: TObject;
+  const OldViewportPosition, NewViewportPosition: TPointF;
+  const ContentSizeChanged: Boolean);
+var
+ LposicionX,LScrollTot: single;
+begin
+  LposicionX := HorzScrollBox1.ViewportPosition.X;
+  if LposicionX = 0 then
+  begin
+    btnRegredir.enabled := false;
+  end;
+  LScrollTot :=  ((FListaFrameFatura.Count) * (300)) /2;
+
+  if (LposicionX >= LScrollTot) then
+  begin
+    btnAvancar.enabled := false;
+  end;
+end;
+
+function TfrmEmprestimo.TeclaNumero(ATecla,AlblValor: string): string;
+var
+  LNumero: string;
+begin
+  LNumero := AlblValor;
+  LNumero := LNumero.Replace('.', '');
+  LNumero := LNumero.Replace(',', '');
+  LNumero := LNumero + ATecla;
+
+  result := FormatFloat('#,##0.00', LNumero.ToDouble / 100);
+end;
+
+procedure TfrmEmprestimo.ListaParcelasEmprestimo;
+var
+  LFrame: TframeParcelas;
+begin
+  try
+    TThread.Synchronize(nil,
+    procedure
+    begin
+      VertScrollBox1.BeginUpdate;
+    end);
+
+    TThread.Synchronize(TThread.CurrentThread,
+    procedure
+    begin
+      if Assigned(FListaFrame) then
+      begin
+        for var i := 0 to Pred(FListaFrame.Count) do
+          FListaFrame.Items[i].Free;
+        FListaFrame.Free;
+      end;
+      FListaFrame := TList<TframeParcelas>.create;
+    end);
+
+    for var i := 1 to 3 do
+    begin
+      LFrame:= TframeParcelas.Create(self);
+      LFrame.align := TalignLayout.top;
+      LFrame.Name := 'Frame' + FListaFrame.Count.ToString + FormatDateTime('ddmmyyyyhhmmsszzz', now);
+
+      LFrame.lblNumParcela.Text := '0'+i.ToString;
+      LFrame.lblValor.Text := FormatFloat('R$ #,##0.00',0);
+      LFrame.lblvalorcjuros.Text := FormatFloat('R$ #,##0.00',0);
+
+      LFrame.Rectangle2.Fill.Color := $FFFDEBFD;
+      LFrame.Rectangle3.Fill.Color := $FFFDEBFD;
+      FListaFrame.Add(LFrame);
+      VertScrollBox1.addObject(LFrame);
+    end;
+  finally
+    TThread.Synchronize(TThread.CurrentThread,
+    procedure
+    begin
+      VertScrollBox1.EndUpdate;
+    end);
+  end;
+end;
+
+procedure TfrmEmprestimo.lylScrollPainting(Sender: TObject; Canvas: TCanvas;
+  const ARect: TRectF);
+var
+  LFil: TFrameItemListModel;
+  LYPos: Single;
+  LmesVenc: integer;
+  Lmes: string;
+begin
+  FListaParcelas.Clear;
+
+  TUtils.TextMessageColorOpacity := 'Black';
+  if lylScroll.Tag <> 0 then
+    Exit;
+  lylScroll.Tag := 1;
+  FFrmLstVert := TFrameListModel.Create(Self);
+  try
+    FFrmLstVert.BeginUpdate;
+    FFrmLstVert.Parent := lylScroll;
+    FFrmLstVert.Align := TAlignLayout.Client;
+    FFrmLstVert.IsGradientTransparency := True;
+    FFrmLstHorz1 := TFrameListModel.Create(Self);
+    FFrmLstHorz1.Align := TAlignLayout.client;
+    FFrmLstHorz1.Height := 400;
+    FFrmLstVert.Width;
+    FFrmLstHorz1.Margins.Right := 10;
+    FFrmLstHorz1.IsGradientTransparency := True;
+    TFrameListModel(FFrmLstHorz1).ItemAlign := TAlignLayout.Left;
+    LYPos := FFrmLstVert.ContentHeight;
+    FFrmLstVert.VtsList.AddObject(FFrmLstHorz1);
+    FFrmLstHorz1.Position.Y := LYPos;
+//
+//    dmfatura.memFatura.IndexFieldNames := 'DATAVENCIMENTOFATURA:D';
+//    dmfatura.memFatura.Open;
+//    if dmfatura.memFatura.RecordCount = 1 then
+//    begin
+//      FFrmLstHorz1.Align := TAlignLayout.center;
+//      FFrmLstHorz1.Height := 400;
+//      FFrmLstHorz1.Width := 400;
+//    end;
+//
+//    dmfatura.memFatura.Refresh;
+//    dmfatura.memFatura.First;
+//    while not dmfatura.memFatura.Eof do
+//    begin
+//      LmesVenc  := StrToInt(FormatDateTime('MM',dmfatura.memFatura.fieldByName('DATAVENCIMENTOFATURA').AsDateTime));
+//      case LmesVenc of
+//        01: Lmes := 'JAN';
+//        02: Lmes := 'FEV';
+//        03: Lmes := 'MAR';
+//        04: Lmes := 'ABR';
+//        05: Lmes := 'MAI';
+//        06: Lmes := 'JUN';
+//        07: Lmes := 'JUL';
+//        08: Lmes := 'AGO';
+//        09: Lmes := 'SET';
+//        10: Lmes := 'OUT';
+//        11: Lmes := 'NOV';
+//        12: Lmes := 'DEZ';
+//      end;
+//
+//      LFil := FFrmLstHorz1.AddItem(TFilHorz1,strtoint(FID),//dmfatura.memFatura.fieldByName('IDCONTA').AsInteger,
+//                                             Lmes,
+//                                             dmfatura.memFatura.fieldByName('SITUACAOPROCESSAMENTO').AsString,
+//                                             dmfatura.memFatura.fieldByName('DATAVENCIMENTOFATURA').AsDateTime,
+//                                             dmfatura.memFatura.fieldByName('VALORPAGAMENTOMINIMO').AsFloat,
+//                                             dmfatura.memFatura.fieldByName('VALORTOTAL').AsFloat,
+//                                             TTela.ExtratoFatura);
+//       dmfatura.memFatura.Next;
+//    end;
+  finally
+    FFrmLstVert.EndUpdate;
+  end;
+end;
+
+procedure TfrmEmprestimo.ListaFaturaEmprestimo(AjsonParcelasEP: TJSONObject);
+var
+  LFrame: TframeFatura;
+  LJson,LjsonP: TJSONValue;
+  LJsonParcelas : TJSONArray;
+  LdataString : string;
+begin
+   try
+    TThread.Synchronize(nil,
+    procedure
+    begin
+      HorzScrollBox1.BeginUpdate;
+    end);
+
+    TThread.Synchronize(TThread.CurrentThread,
+    procedure
+    begin
+      if Assigned(FListaFrameFatura) then
+      begin
+        for var i := 0 to Pred(FListaFrameFatura.Count) do
+          FListaFrameFatura.Items[i].Free;
+        FListaFrameFatura.Free;
+      end;
+      FListaFrameFatura := TList<TframeFatura>.create;
+    end);
+
+    if AjsonParcelasEP = nil then
+      FMSG.Show(TIconDialog.Warning, 'Atenção','Sem contrato ativo!','OK')
+    else
+    begin
+        LJsonParcelas := AjsonParcelasEP.GetValue<TJSONArray>('parcelas');
+        for LjsonP in LJsonParcelas do
+        begin
+          LdataString :=  copy(LjsonP.GetValue<string>('dataVencimentoParcela'),9,2)+'/'+
+                          copy(LjsonP.GetValue<string>('dataVencimentoParcela'),6,2)+'/'+
+                          copy(LjsonP.GetValue<string>('dataVencimentoParcela'),1,4);
+
+          LFrame:= TframeFatura.Create(self);
+          LFrame.align := TalignLayout.left;
+          LFrame.Margins.Right := 40;
+          LFrame.Name := 'Frame' + FListaFrameFatura.Count.ToString + FormatDateTime('ddmmyyyyhhmmsszzz', now);
+          LFrame.margins.top:= 8;
+          LFrame.margins.bottom:= 8;
+          LFrame.margins.right:= 40;
+
+          LFrame.lblValor.Text := FormatFloat( 'R$ #,##0.00', LjsonP.GetValue<double>('saldoAtual',0));
+          LFrame.lblDataVencimento.Text := LdataString;
+          LFrame.lblmes.Text := StringOfChar('0',length(LjsonP.GetValue<String>('numeroParcela')))+LjsonP.GetValue<String>('numeroParcela')+'/'+
+                                StringOfChar('0',length(AjsonParcelasEP.GetValue<String>('quantidadeParcelas')))+AjsonParcelasEP.GetValue<String>('quantidadeParcelas');
+          LFrame.lbldataPagamento.text := FormatFloat( 'R$ #,##0.00',LjsonP.GetValue<double>('valorPago'));
+          Layout45.visible := false;
+
+          if LjsonP.GetValue<String>('situacao') = 'ATRASADO' then
+          begin
+            LFrame.lbltitulo.text := 'Parcela ATRASADA';
+//            LFrame.SkSvg15.svg.overrideColor := $FFE400E4;
+            Lframe.recMes.fill.color := $FFE400E4;
+            Lframe.GosLine1.stroke.color := $FFE400E4;
+          end
+          else if LjsonP.GetValue<String>('situacao') = 'PENDENTE' then
+          begin
+            LFrame.lbltitulo.text := 'Parcela A VENCER';
+//            LFrame.SkSvg15.svg.overrideColor := $FF069999;
+            Lframe.recMes.fill.color := $FF069999;
+            Lframe.GosLine1.stroke.color := $FF069999;
+          end
+          else
+          begin
+//            LFrame.SkSvg15.svg.overrideColor := $FF38C31B;
+            LFrame.lbltitulo.text := 'Parcela PAGA';
+            Lframe.recMes.fill.color := $FF38C31B;
+            Lframe.GosLine1.stroke.color := $FF38C31B;
+          end;
+
+          FListaFrameFatura.Add(LFrame);
+          HorzScrollBox1.addObject(LFrame);
+        end;
+
+        if LJsonParcelas.count = 1 then
+        begin
+          HorzScrollBox1.width := 310;
+          Layout14.width := HorzScrollBox1.width +64
+        end
+        else if LJsonParcelas.count = 2 then
+        begin
+          HorzScrollBox1.width := 620;
+          Layout14.width := HorzScrollBox1.width +64
+        end
+        else
+        begin
+          HorzScrollBox1.width := 1200;
+          Layout14.width := (HorzScrollBox1.width+40) +64
+        end;
+    end;
+  finally
+    TThread.Synchronize(TThread.CurrentThread,
+    procedure
+    begin
+      HorzScrollBox1.EndUpdate;
+      actTabExtratoEmprest.Execute;
+    end);
+  end;
+end;
+
+procedure TfrmEmprestimo.recExtratoClick(Sender: TObject);
+var
+  LJsonRetorno: TJSONObject;
+begin
+  TLoading.show(frmEmprestimo, 'Aguarde...');
+  TThread.CreateAnonymousThread(
+  procedure
+  begin
+    try
+      if not ConsultaToken(FURL+'/v1/authentication', FToken) then
+      begin
+        exit;
+      end;
+
+      if not ConsultaContrato(FCPF,LJsonRetorno) then
+      begin
+        if LJsonRetorno = nil then
+          TLoading.ToastMessage(frmEmprestimo,'Sem contratos ativos!' ,5,TAlignLayout.MostRight)
+        else
+          TLoading.ToastMessage(frmEmprestimo,'Erro ao consultar emprestimos!' ,5,TAlignLayout.MostRight);
+        exit;
+      end;
+
+      ListaFaturaEmprestimo(LJsonRetorno);
+      TThread.Synchronize(nil,
+      procedure
+      begin
+        actTabExtratoEmprest.Execute;
+      end);
+
+    finally
+       TThread.Synchronize(nil,
+      procedure
+      begin
+        TLoading.Hide;
+        Log('Finalizou tthread');
+      end);
+    end;
+  end).Start;
+end;
+
+procedure TfrmEmprestimo.recSairEClick(Sender: TObject);
+begin
+  SairConta;
+end;
+
+procedure TfrmEmprestimo.recSairPClick(Sender: TObject);
+begin
+  SairConta;
+end;
+
+procedure TfrmEmprestimo.recSimulaClick(Sender: TObject);
+begin
+//  TLoading.ToastMessage(frmEmprestimo,'Em fase de desenvolvimento',5,TAlignLayout.MostRight);
+
+//  TAguarde.Start(self, 'Aguarde...', 'Consultando informações...', TModo.Aguarde);
+//  TThread.CreateAnonymousThread(
+//  procedure
+//  begin
+//    try
+//      if not ConsultaToken('https://qa-totem.calcard.com.br/api/totem-app/v1/authentication', FToken) then
+//      begin
+//        TLoading.ToastMessage(frmEmprestimo,'Erro ao buscar Token',5,TAlignLayout.MostRight);
+//        exit;
+//      end;
+//
+//      if not ConsultaEmprestimo(FCPF) then
+//      begin
+//        FMSG.Show(TIconDialog.Warning, 'Atenção','Não há empréstimo disponível para você!','OK');
+//        exit;
+//      end
+//      else
+//      begin
+//        actTabSimulaEmprest.Execute;
+//      end;
+//
+//    finally
+//      TThread.Synchronize(nil,
+//      procedure
+//      begin
+//        TAguarde.Hide;
+//      end);
+//    end;
+//  end).start;
+end;
+
+procedure TfrmEmprestimo.Rectangle14Click(Sender: TObject);
+begin
+  edtValor.Text := '';
+end;
+
+procedure TfrmEmprestimo.Rectangle23Click(Sender: TObject);
+begin
+  edtValor.Text := '';
+  actTabSimulaEmprest.Execute;
+end;
+
+procedure TfrmEmprestimo.recVoltarEClick(Sender: TObject);
+begin
+  acttabEmprestimo.Execute;
+end;
+
+procedure TfrmEmprestimo.recVoltarPClick(Sender: TObject);
+begin
+  actTabSimulaEmprest.Execute;
+end;
+
+procedure TfrmEmprestimo.SairConta;
+begin
+  FMsg.Show(TIconDialog.Warning,'Atenção','Confirma fechar seu acesso?','SIM',
+  procedure
+  begin
+    TThread.CreateAnonymousThread(
+    procedure
+    begin
+      try
+        TThread.Synchronize(nil,
+        procedure
+        begin
+          if not Assigned(frmPrincipal) then
+            Application.CreateForm(TfrmPrincipal, frmPrincipal);
+          frmPrincipal.Show;
+        end);
+      finally
+        TThread.Synchronize(nil,
+        procedure
+        begin
+          frmEmprestimo.close;
+          frmMenu.close;
+          frmSelecaoCartao.Close;
+        end);
+      end;
+    end).Start;
+  end,'NÃO');
+end;
+procedure TfrmEmprestimo.btnRegredirClick(Sender: TObject);
+var
+  LPosicaoAtual:single;
+begin
+   LPosicaoAtual := HorzScrollBox1.ViewportPosition.X;
+   HorzScrollBox1.ViewportPosition := PointF(LPosicaoAtual-400,0);
+   btnAvancar.enabled := true;
+end;
+
+function TfrmEmprestimo.ConsultaEmprestimo(ACPF:string): boolean;
+var
+  LConnection: TConnection;
+  LResult: string;
+  LJson : TJSONObject;
+begin
+  try
+    LConnection:= TConnection.Create;
+    try
+      LConnection.Get(FURL+'/v1/loan/eligibility?cpf='+ACPF,[], LResult, FToken);
+      LJson := TJSONObject.ParseJSONValue(TEncoding.ASCII.GetBytes(LResult), 0) as TJSONObject;
+      result := LJson.GetValue<Boolean>('elegivel');
+    finally
+      FreeAndNil(LConnection);
+    end;
+  except
+    on E:Exception do
+    begin
+      TLoading.ToastMessage(frmEmprestimo,'Erro ao consultar emprestimo ' +e.Message,5,TAlignLayout.MostRight);
+    end;
+  end;
+end;
+
+function TfrmEmprestimo.ConsultaContrato(ACPF:string; out AJsonRetorno: TJSONObject): Boolean;
+var
+  LConnection: TConnection;
+  LResult: string;
+begin
+  LConnection:= TConnection.Create;
+  try
+    if LConnection.Get(FURL+'/v1/loan/contract/active/'+ACPF,[], LResult, FToken) then
+    begin
+      result := true;
+      if LResult = '' then
+        result := false
+      else
+        AJsonRetorno:=  TJSONObject.ParseJSONValue(TEncoding.ASCII.GetBytes(LResult), 0) as TJSONObject;
+    end
+    else
+    begin
+      result := false;
+    end;
+
+  finally
+    FreeAndNil(LConnection);
+  end;
+end;
+end.

@@ -1,0 +1,350 @@
+object frmCarramento: TfrmCarramento
+  Left = 0
+  Top = 0
+  BorderIcons = []
+  BorderStyle = None
+  Caption = 'Form1'
+  ClientHeight = 739
+  ClientWidth = 1366
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object ALRectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFF333075
+    Size.Width = 1366.000000000000000000
+    Size.Height = 739.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Layout3: TLayout
+      Align = Contents
+      Size.Width = 1366.000000000000000000
+      Size.Height = 739.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Layout2: TLayout
+        Align = Center
+        Size.Width = 480.000000000000000000
+        Size.Height = 576.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object lblTitulo: TSkLabel
+          Align = Top
+          Size.Width = 480.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+          TextSettings.Font.Families = 'Poppins'
+          TextSettings.Font.Size = 32.000000000000000000
+          TextSettings.Font.Weight = Medium
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Words = <
+            item
+              Text = 'Aguarde'
+            end>
+        end
+        object lblSubtitulo: TSkLabel
+          Align = Top
+          Margins.Top = 22.000000000000000000
+          Margins.Bottom = 40.000000000000000000
+          Position.Y = 70.000000000000000000
+          Size.Width = 480.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Style]
+          TextSettings.Font.Families = 'Poppins'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Words = <
+            item
+              Text = 'Estamos processando as informa'#231#245'es'
+            end>
+        end
+        object RoundRect1: TRoundRect
+          Align = Center
+          Fill.Color = claWhite
+          Size.Width = 244.000000000000000000
+          Size.Height = 244.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object IconCarregando: TSkSvg
+            Align = Center
+            Size.Width = 136.000000000000000000
+            Size.Height = 136.000000000000000000
+            Size.PlatformDefault = False
+            Svg.Source = 
+              '<svg width="91" height="130" viewBox="0 0 91 130" fill="none" xm' +
+              'lns="http://www.w3.org/2000/svg">'#13#10'<g id="Group 201">'#13#10'<path id=' +
+              '"Vector" d="M83.6575 10.0154C83.6575 10.0154 90.7098 44.9981 52.' +
+              '3802 62.9676C48.1568 64.9598 43.1763 64.9598 38.9529 62.9676C0.6' +
+              '63093 45.038 7.71542 10.0154 7.71542 10.0154" stroke="#E400E4" s' +
+              'troke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+              #13#10'<path id="Vector_2" d="M7.71562 118.908C7.71562 118.908 0.6632' +
+              '91 83.9256 38.9929 65.9561C43.2164 63.9639 48.1968 63.9639 52.42' +
+              '02 65.9561C90.7499 83.8857 83.6975 118.908 83.6975 118.908" stro' +
+              'ke="#E400E4" stroke-width="2" stroke-linecap="round" stroke-line' +
+              'join="round"/>'#13#10'<path id="Vector_3" d="M12.7759 39.3009C12.7759 ' +
+              '39.3009 26.1634 41.2134 41.9813 35.5954C65.0906 27.3876 79.5937 ' +
+              '35.5954 79.5937 35.5954" stroke="#E400E4" stroke-width="2" strok' +
+              'e-linecap="round" stroke-linejoin="round"/>'#13#10'<path id="Vector_4"' +
+              ' d="M89.8733 119.984H1.5V128.75H89.8733V119.984Z" stroke="#E400E' +
+              '4" stroke-width="2" stroke-linecap="round" stroke-linejoin="roun' +
+              'd"/>'#13#10'<path id="Vector_5" d="M89.8733 1.25H1.5V10.0156H89.8733V1' +
+              '.25Z" stroke="#E400E4" stroke-width="2" stroke-linecap="round" s' +
+              'troke-linejoin="round"/>'#13#10'<path id="Vector_6" d="M16.9194 119.98' +
+              '4C16.9194 113.49 29.7889 105.76 45.6866 105.76C61.5842 105.76 74' +
+              '.4537 113.49 74.4537 119.984" stroke="#E400E4" stroke-width="2" ' +
+              'stroke-linecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'</svg>'
+          end
+          object IconImprimindo: TSkSvg
+            Align = Center
+            Size.Width = 136.000000000000000000
+            Size.Height = 136.000000000000000000
+            Size.PlatformDefault = False
+            Svg.Source = 
+              '<svg width="91" height="130" viewBox="0 0 91 130" fill="none" xm' +
+              'lns="http://www.w3.org/2000/svg">'#13#10'<g id="Group 201">'#13#10'<path id=' +
+              '"Vector" d="M83.6575 10.0154C83.6575 10.0154 90.7098 44.9981 52.' +
+              '3802 62.9676C48.1568 64.9598 43.1763 64.9598 38.9529 62.9676C0.6' +
+              '63093 45.038 7.71542 10.0154 7.71542 10.0154" stroke="#E400E4" s' +
+              'troke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+              #13#10'<path id="Vector_2" d="M7.71562 118.908C7.71562 118.908 0.6632' +
+              '91 83.9256 38.9929 65.9561C43.2164 63.9639 48.1968 63.9639 52.42' +
+              '02 65.9561C90.7499 83.8857 83.6975 118.908 83.6975 118.908" stro' +
+              'ke="#E400E4" stroke-width="2" stroke-linecap="round" stroke-line' +
+              'join="round"/>'#13#10'<path id="Vector_3" d="M12.7759 39.3009C12.7759 ' +
+              '39.3009 26.1634 41.2134 41.9813 35.5954C65.0906 27.3876 79.5937 ' +
+              '35.5954 79.5937 35.5954" stroke="#E400E4" stroke-width="2" strok' +
+              'e-linecap="round" stroke-linejoin="round"/>'#13#10'<path id="Vector_4"' +
+              ' d="M89.8733 119.984H1.5V128.75H89.8733V119.984Z" stroke="#E400E' +
+              '4" stroke-width="2" stroke-linecap="round" stroke-linejoin="roun' +
+              'd"/>'#13#10'<path id="Vector_5" d="M89.8733 1.25H1.5V10.0156H89.8733V1' +
+              '.25Z" stroke="#E400E4" stroke-width="2" stroke-linecap="round" s' +
+              'troke-linejoin="round"/>'#13#10'<path id="Vector_6" d="M16.9194 119.98' +
+              '4C16.9194 113.49 29.7889 105.76 45.6866 105.76C61.5842 105.76 74' +
+              '.4537 113.49 74.4537 119.984" stroke="#E400E4" stroke-width="2" ' +
+              'stroke-linecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'</svg>'
+          end
+          object IconFinalizado: TSkSvg
+            Align = Center
+            Size.Width = 136.000000000000000000
+            Size.Height = 136.000000000000000000
+            Size.PlatformDefault = False
+            Visible = False
+            Svg.Source = 
+              '<svg width="159" height="159" viewBox="0 0 159 159" fill="none" ' +
+              'xmlns="http://www.w3.org/2000/svg">'#13#10'<g id="Group 78">'#13#10'<path id' +
+              '="Vector" d="M79.5 3.09375C121.714 3.09375 155.906 37.2855 155.9' +
+              '06 79.5C155.906 121.714 121.714 155.906 79.5 155.906C37.2855 155' +
+              '.906 3.09375 121.714 3.09375 79.5C3.09375 37.2855 37.2855 3.0937' +
+              '5 79.5 3.09375Z" stroke="white" stroke-width="5"/>'#13#10'<path id="Ve' +
+              'ctor_2" d="M45.2141 76.3963L70.1417 101.324L113.789 57.6767" str' +
+              'oke="white" stroke-width="5" stroke-linecap="round" stroke-linej' +
+              'oin="round"/>'#13#10'</g>'#13#10'</svg>'
+          end
+          object IconDinheiro: TSkSvg
+            Align = Center
+            Size.Width = 136.000000000000000000
+            Size.Height = 136.000000000000000000
+            Size.PlatformDefault = False
+            Visible = False
+            Svg.Source = 
+              '<svg width="130" height="87" viewBox="0 0 130 87" fill="none" xm' +
+              'lns="http://www.w3.org/2000/svg">'#13#10'<g id="Group 209">'#13#10'<path id=' +
+              '"Vector" d="M108.796 21.574H5.87219C3.31943 21.574 1.25 23.6434 ' +
+              '1.25 26.1962V73.0556C1.25 75.6084 3.31943 77.6778 5.87219 77.677' +
+              '8H108.796C111.348 77.6778 113.418 75.6084 113.418 73.0556V26.196' +
+              '2C113.418 23.6434 111.348 21.574 108.796 21.574Z" stroke="#E400E' +
+              '4" stroke-width="2" stroke-linecap="round" stroke-linejoin="roun' +
+              'd"/>'#13#10'<path id="Vector_2" d="M51.8153 78.0763L27.1104 85.7666C24' +
+              '.7994 86.4839 22.3687 85.2088 21.6515 82.8977L20.0576 77.7177" s' +
+              'troke="#E400E4" stroke-width="2" stroke-linecap="round" stroke-l' +
+              'inejoin="round"/>'#13#10'<path id="Vector_3" d="M45.001 21.4544L108.51' +
+              '6 1.73036C111.226 0.893583 114.095 2.40775 114.932 5.11731L128.5' +
+              '19 48.8688C129.356 51.5783 127.842 54.4473 125.132 55.284L113.41' +
+              '7 58.9101" stroke="#E400E4" stroke-width="2" stroke-linecap="rou' +
+              'nd" stroke-linejoin="round"/>'#13#10'<path id="Vector_4" d="M58.549 41' +
+              '.5769C60.5413 42.1348 61.7765 43.37 62.4938 45.2428C62.8524 46.2' +
+              '389 62.6531 46.9163 61.8961 47.1953C61.1788 47.4742 60.5811 47.1' +
+              '554 60.2225 46.1593C59.306 43.4895 56.3972 43.4895 55.162 44.844' +
+              '3C54.8432 45.2029 54.5643 45.6412 54.4049 46.0796C54.0065 47.394' +
+              '5 54.4049 47.9922 55.68 48.2711C56.8754 48.5102 58.0708 48.5899 ' +
+              '59.2662 48.829C62.3344 49.4267 63.6095 51.8972 62.3742 54.8059C6' +
+              '1.7367 56.2803 60.6608 57.3163 59.1467 57.8343C58.6685 57.9937 5' +
+              '8.5091 58.1929 58.5091 58.7109C58.5091 59.7071 58.0708 60.2649 5' +
+              '7.2739 60.2649C56.4769 60.2649 56.0386 59.7071 56.0386 58.7109C5' +
+              '6.0386 58.2327 55.9191 57.9937 55.4409 57.8343C53.7275 57.2366 5' +
+              '2.6517 55.9216 52.054 54.2481C51.7352 53.3715 52.054 52.7339 52.' +
+              '7712 52.455C53.4884 52.2159 54.0065 52.4948 54.3651 53.3715C55.1' +
+              '62 55.2443 56.4371 56.0412 58.0708 55.6427C58.9076 55.4435 59.58' +
+              '5 54.9653 59.9436 54.1684C60.5413 52.8933 60.6608 51.6182 58.668' +
+              '5 51.3393C57.5129 51.1799 56.3176 51.0604 55.162 50.8213C52.2931' +
+              ' 50.2236 51.0578 47.9125 52.0938 45.0834C52.6915 43.4497 53.8471' +
+              ' 42.334 55.4808 41.7761C55.9589 41.6168 56.0785 41.3777 56.0386 ' +
+              '40.9394C56.0386 40.7003 56.0386 40.4214 56.0386 40.1424C56.1183 ' +
+              '39.465 56.5168 39.0666 57.1942 39.0267C57.8716 38.9869 58.3896 3' +
+              '9.465 58.4693 40.1424C58.5091 40.6206 58.4693 41.0589 58.4693 41' +
+              '.5769H58.549Z" fill="#E400E4"/>'#13#10'<path id="Vector_5" d="M74.1289' +
+              ' 49.6258C74.1289 58.9101 66.5979 66.4012 57.3535 66.4012C48.1091' +
+              ' 66.4012 40.5781 58.8702 40.5781 49.6258C40.5781 40.3815 48.1091' +
+              ' 32.8505 57.3535 32.8505C66.5979 32.8505 74.1289 40.3815 74.1289' +
+              ' 49.6258Z" stroke="#E400E4" stroke-width="2" stroke-linecap="rou' +
+              'nd" stroke-linejoin="round"/>'#13#10'<path id="Vector_6" d="M101.504 2' +
+              '1.574C101.504 28.1486 106.843 33.4881 113.418 33.4881" stroke="#' +
+              'E400E4" stroke-width="2" stroke-miterlimit="10"/>'#13#10'<path id="Vec' +
+              'tor_7" d="M113.418 65.7637C106.843 65.7637 101.504 71.1031 101.5' +
+              '04 77.6778" stroke="#E400E4" stroke-width="2" stroke-miterlimit=' +
+              '"10"/>'#13#10'<path id="Vector_8" d="M13.1641 77.6778C13.1641 71.1031 ' +
+              '7.82467 65.7637 1.25 65.7637" stroke="#E400E4" stroke-width="2" ' +
+              'stroke-miterlimit="10"/>'#13#10'<path id="Vector_9" d="M1.25 33.4881C7' +
+              '.82467 33.4881 13.1641 28.1486 13.1641 21.574" stroke="#E400E4" ' +
+              'stroke-width="2" stroke-miterlimit="10"/>'#13#10'<path id="Vector_10" ' +
+              'd="M15.3955 49.6256H27.3495" stroke="#E400E4" stroke-width="2" s' +
+              'troke-linecap="round" stroke-linejoin="round"/>'#13#10'<path id="Vecto' +
+              'r_11" d="M87.3584 49.6256H99.2725" stroke="#E400E4" stroke-width' +
+              '="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'</s' +
+              'vg>'
+          end
+          object IconComprovante: TSkSvg
+            Align = Center
+            Size.Width = 136.000000000000000000
+            Size.Height = 136.000000000000000000
+            Size.PlatformDefault = False
+            Visible = False
+            Svg.Source = 
+              '<svg width="114" height="130" viewBox="0 0 114 130" fill="none" ' +
+              'xmlns="http://www.w3.org/2000/svg">'#13#10'<g id="Group 438">'#13#10'<path i' +
+              'd="Vector" d="M1.82324 28.1392V123.69C1.82324 126.479 4.09446 12' +
+              '8.75 6.88367 128.75H87.0934C89.8826 128.75 92.1538 126.479 92.15' +
+              '38 123.69V108.19" stroke="#E400E4" stroke-width="2" stroke-linec' +
+              'ap="round" stroke-linejoin="round"/>'#13#10'<path id="Vector_2" d="M23' +
+              '.1807 16.5843L83.3082 1.40304C86.0177 0.725663 88.7671 2.35934 8' +
+              '9.4444 5.06886L112.834 97.7105C113.511 100.42 111.878 103.169 10' +
+              '9.168 103.847L31.4288 123.491C28.7193 124.168 25.97 122.535 25.2' +
+              '926 119.825L1.90304 27.1435C1.22566 24.434 2.85934 21.6846 5.568' +
+              '86 21.0072L10.9481 19.6525" stroke="#E400E4" stroke-width="2" st' +
+              'roke-linecap="round" stroke-linejoin="round"/>'#13#10'<path id="Vector' +
+              '_3" d="M50.2363 28.3382C52.7068 28.4178 54.4998 29.4937 55.8546 ' +
+              '31.4063C56.5718 32.4423 56.532 33.279 55.6952 33.8369C54.9381 34' +
+              '.3549 54.1412 34.1557 53.4639 33.1595C51.6309 30.3703 48.2839 31' +
+              '.2071 47.2479 33.1197C46.969 33.6377 46.7697 34.2353 46.7697 34.' +
+              '7932C46.6901 36.4269 47.2877 37.0246 48.8816 36.9449C50.316 36.8' +
+              '652 51.7505 36.6261 53.1849 36.5464C56.8906 36.3472 59.0821 38.8' +
+              '176 58.5243 42.5233C58.2454 44.4359 57.2492 45.95 55.6952 46.986' +
+              'C55.2171 47.3048 55.0577 47.5837 55.2171 48.1814C55.5358 49.3369' +
+              ' 55.1772 50.094 54.2608 50.3331C53.3443 50.5722 52.6669 50.0542 ' +
+              '52.388 48.8986C52.2685 48.3408 52.0294 48.1017 51.4317 48.0619C4' +
+              '9.28 47.8626 47.6464 46.6673 46.451 44.8742C45.8533 43.9577 45.9' +
+              '728 43.121 46.7299 42.603C47.487 42.085 48.2042 42.2842 48.8417 ' +
+              '43.1608C50.2762 45.1133 52.0294 45.6313 53.7826 44.675C54.6991 4' +
+              '4.1968 55.3366 43.4397 55.5358 42.4037C55.8546 40.7302 55.6155 3' +
+              '9.2559 53.2248 39.495C51.8302 39.6544 50.4356 39.8935 49.0011 39' +
+              '.9333C45.4947 40.0528 43.4227 37.7418 43.7813 34.2353C43.9805 32' +
+              '.1634 45.0165 30.5695 46.7299 29.4538C47.2479 29.1351 47.3276 28' +
+              '.8562 47.1284 28.3382C47.0088 28.0592 46.9291 27.7405 46.9291 27' +
+              '.4217C46.8494 26.5849 47.1682 26.0271 47.9651 25.788C48.7222 25.' +
+              '5489 49.4793 25.9076 49.7582 26.7045C49.9574 27.2225 50.0371 27.' +
+              '7803 50.1965 28.378L50.2363 28.3382Z" fill="#E400E4"/>'#13#10'<path id' +
+              '="Vector_4" d="M25.8906 71.8499L89.5245 55.792" stroke="#E400E4"' +
+              ' stroke-width="2" stroke-linecap="round" stroke-linejoin="round"' +
+              '/>'#13#10'<path id="Vector_5" d="M29.3174 85.398L92.9512 69.3401" stro' +
+              'ke="#E400E4" stroke-width="2" stroke-linecap="round" stroke-line' +
+              'join="round"/>'#13#10'<path id="Vector_6" d="M32.7441 98.9851L96.378 8' +
+              '2.8873" stroke="#E400E4" stroke-width="2" stroke-linecap="round"' +
+              ' stroke-linejoin="round"/>'#13#10'<path id="Vector_7" d="M16.9646 24.6' +
+              '327V13.197C16.9646 11.8422 18.0404 10.2085 20.0327 10.2085C22.02' +
+              '5 10.2085 22.7821 11.882 22.7821 13.197V29.215C22.7821 32.3628 2' +
+              '0.2319 34.8731 17.1239 34.8731C13.9761 34.8731 11.4658 32.323 11' +
+              '.4658 29.215V12.8782C11.4658 8.13653 15.3309 4.27148 20.0725 4.2' +
+              '7148C24.8142 4.27148 28.6792 8.13653 28.6792 12.8782" stroke="#E' +
+              '400E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="' +
+              'round"/>'#13#10'</g>'#13#10'</svg>'
+          end
+          object IconErro: TSkSvg
+            Align = Center
+            Size.Width = 136.000000000000000000
+            Size.Height = 136.000000000000000000
+            Size.PlatformDefault = False
+            Visible = False
+            Svg.OverrideColor = claWhite
+            Svg.Source = 
+              '<?xml version="1.0" standalone="no"?>'#13#10'<!DOCTYPE svg PUBLIC "-//' +
+              'W3C//DTD SVG 20010904//EN"'#13#10' "http://www.w3.org/TR/2001/REC-SVG-' +
+              '20010904/DTD/svg10.dtd">'#13#10'<svg version="1.0" xmlns="http://www.w' +
+              '3.org/2000/svg"'#13#10' width="512.000000pt" height="512.000000pt" vie' +
+              'wBox="0 0 512.000000 512.000000"'#13#10' preserveAspectRatio="xMidYMid' +
+              ' meet">'#13#10#13#10'<g transform="translate(0.000000,512.000000) scale(0.' +
+              '100000,-0.100000)"'#13#10'fill="#000000" stroke="none">'#13#10'<path d="M233' +
+              '0 5110 c-322 -31 -646 -125 -928 -269 -259 -133 -429 -258 -647'#13#10'-' +
+              '476 -230 -229 -352 -399 -490 -680 -121 -246 -192 -469 -237 -745 ' +
+              '-31 -195'#13#10'-31 -565 0 -760 45 -276 116 -499 237 -745 138 -281 260' +
+              ' -451 490 -680 229'#13#10'-230 399 -352 680 -490 246 -121 469 -192 745' +
+              ' -237 195 -31 565 -31 760 0 276'#13#10'45 499 116 745 237 281 138 451 ' +
+              '260 680 490 230 229 352 399 490 680 88 179'#13#10'132 296 180 476 63 2' +
+              '40 78 371 78 649 0 278 -15 409 -78 649 -48 180 -92 297'#13#10'-180 476' +
+              ' -138 281 -260 451 -490 680 -229 230 -399 352 -680 490 -246 121'#13 +
+              #10'-473 193 -740 235 -147 23 -475 34 -615 20z m456 -261 c434 -42 8' +
+              '66 -219 1214'#13#10'-497 540 -432 860 -1100 860 -1792 0 -606 -245 -119' +
+              '5 -675 -1625 -430 -430'#13#10'-1019 -675 -1625 -675 -606 0 -1195 245 -' +
+              '1625 675 -430 430 -675 1019 -675'#13#10'1625 0 692 320 1360 860 1792 3' +
+              '42 273 781 455 1200 497 125 12 341 13 466 0z"/>'#13#10'<path d="M1665 ' +
+              '3526 c-37 -16 -53 -35 -65 -77 -21 -72 -16 -79 395 -489 l385'#13#10'-38' +
+              '5 -385 -385 c-411 -411 -415 -416 -395 -490 17 -63 74 -96 145 -84' +
+              ' 37 6 73'#13#10'39 428 392 l387 386 388 -386 c354 -353 390 -386 427 -3' +
+              '92 71 -12 128 21 145'#13#10'84 20 74 16 79 -395 490 l-385 385 385 385 ' +
+              'c412 411 415 416 395 491 -17 62'#13#10'-74 95 -145 83 -37 -6 -73 -39 -' +
+              '427 -392 l-388 -386 -387 385 c-318 317 -394'#13#10'387 -422 393 -44 8 ' +
+              '-51 7 -86 -8z"/>'#13#10'</g>'#13#10'</svg>'
+          end
+        end
+        object Arc1: TArc
+          Align = Center
+          Size.Width = 270.000000000000000000
+          Size.Height = 270.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFE400E4
+          Stroke.Thickness = 13.000000000000000000
+          EndAngle = 270.000000000000000000
+          object FloatAnimation1: TFloatAnimation
+            AnimationType = InOut
+            Duration = 0.800000011920929000
+            Loop = True
+            PropertyName = 'RotationAngle'
+            StartValue = 0.000000000000000000
+            StopValue = 360.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object Layout5: TLayout
+    Align = Contents
+    Locked = True
+    Size.Width = 1366.000000000000000000
+    Size.Height = 739.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object SkLabel5: TSkLabel
+      Align = Top
+      Margins.Right = 20.000000000000000000
+      Size.Width = 1346.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = []
+      TextSettings.Font.Families = 'Poppins'
+      TextSettings.Font.Size = 30.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Trailing
+      Words = <
+        item
+          Text = 'Sistema de Teste'
+        end>
+    end
+  end
+end

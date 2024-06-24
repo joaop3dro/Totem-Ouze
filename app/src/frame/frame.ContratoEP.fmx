@@ -1,0 +1,140 @@
+object frameContratoEP: TframeContratoEP
+  Size.Width = 827.000000000000000000
+  Size.Height = 42.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 827.000000000000000000
+    Size.Height = 42.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lblData: TSkLabel
+      Align = Left
+      Margins.Left = 8.000000000000000000
+      Position.X = 228.000000000000000000
+      Size.Width = 220.000000000000000000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      AutoSize = False
+      StyledSettings = [Style, FontColor]
+      TextSettings.Font.Families = 'Roboto'
+      TextSettings.Font.Size = 18.000000000000000000
+      Words = <
+        item
+          Text = '18/01/2023'
+        end>
+    end
+    object Rectangle2: TRectangle
+      Align = MostLeft
+      Fill.Color = xFFF9E5F7
+      HitTest = False
+      Margins.Top = -2.000000000000000000
+      Margins.Bottom = -2.000000000000000000
+      Position.Y = -2.000000000000000000
+      Size.Width = 220.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object lblIDContrato: TSkLabel
+        Align = Client
+        Margins.Left = 8.000000000000000000
+        Margins.Right = 17.000000000000000000
+        Size.Width = 195.000000000000000000
+        Size.Height = 46.000000000000000000
+        Size.PlatformDefault = False
+        AutoSize = False
+        StyledSettings = [Style, FontColor]
+        TextSettings.Font.Families = 'Roboto'
+        TextSettings.Font.Size = 18.000000000000000000
+        Words = <
+          item
+            Text = 'EP 01'
+          end>
+      end
+    end
+    object Rectangle3: TRectangle
+      Align = Left
+      Fill.Color = xFFF9E5F7
+      HitTest = False
+      Margins.Top = -2.000000000000000000
+      Margins.Bottom = -2.000000000000000000
+      Position.X = 448.000000000000000000
+      Position.Y = -2.000000000000000000
+      Size.Width = 220.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object lblValor: TSkLabel
+        Align = Client
+        Margins.Left = 8.000000000000000000
+        Margins.Right = 17.000000000000000000
+        Size.Width = 195.000000000000000000
+        Size.Height = 46.000000000000000000
+        Size.PlatformDefault = False
+        AutoSize = False
+        StyledSettings = [Style, FontColor]
+        TextSettings.Font.Families = 'Roboto'
+        TextSettings.Font.Size = 18.000000000000000000
+        Words = <
+          item
+            Text = 'R$ 3.100,99'
+          end>
+      end
+    end
+    object Rectangle1: TRectangle
+      Align = Left
+      Fill.Color = claWhite
+      HitTest = False
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Bottom = 6.000000000000000000
+      Position.X = 673.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Width = 134.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 12.000000000000000000
+      YRadius = 12.000000000000000000
+      object lblStatus: TSkLabel
+        Align = Client
+        Margins.Left = 6.000000000000000000
+        Size.Width = 92.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        AutoSize = False
+        StyledSettings = [Style, FontColor]
+        TextSettings.Font.Families = 'Roboto'
+        TextSettings.Font.Size = 18.000000000000000000
+        Words = <
+          item
+            Text = 'ABERTO'
+          end>
+      end
+      object SkSvg15: TSkSvg
+        Align = MostRight
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.X = 101.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        Svg.OverrideColor = claWhite
+        Svg.Source = 
+          '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmln' +
+          's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.1064 15.9995L20.88' +
+          '46 15.9995" stroke="black" stroke-width="2" stroke-linecap="roun' +
+          'd" stroke-linejoin="round"/>'#13#10'<path d="M17.2753 19.6084L20.894 1' +
+          '5.999L17.2753 12.3896" stroke="black" stroke-width="2" stroke-li' +
+          'necap="round" stroke-linejoin="round"/>'#13#10'<path d="M16 0.999999C2' +
+          '4.2875 0.999999 31 7.7125 31 16C31 24.2875 24.2875 31 16 31C7.71' +
+          '25 31 1 24.2875 0.999999 16C0.999999 7.7125 7.7125 1 16 0.999999' +
+          'Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke' +
+          '-linejoin="round"/>'#13#10'</svg>'
+      end
+    end
+  end
+end

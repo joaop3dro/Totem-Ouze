@@ -1,0 +1,3186 @@
+object frmEmprestimo: TfrmEmprestimo
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  Caption = 'Form1'
+  ClientHeight = 741
+  ClientWidth = 1370
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 3
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 1370.000000000000000000
+    Size.Height = 741.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 3
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      1370s
+      692s
+      1370s
+      692s
+      1370s
+      692s
+      1370s
+      692s
+      1370s
+      692s)
+    object tabEmprestimo: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 456.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabEmprestimo'
+      ExplicitSize.cx = 456.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Rectangle15: TRectangle
+        Align = Client
+        Fill.Color = xFF333075
+        Size.Width = 1370.000000000000000000
+        Size.Height = 692.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Layout31: TLayout
+          Align = Left
+          Size.Width = 124.000000000000000000
+          Size.Height = 692.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btnSair: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 548.000000000000000000
+            TabOrder = 31
+            OnClick = btnSairClick
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 32.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg7: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_10' +
+                '0)">'#13#10'<path d="M43.605 26.605C37.7449 32.465 28.2469 32.465 22.3' +
+                '868 26.605C16.5268 20.7449 16.5268 11.2469 22.3868 5.38684C28.24' +
+                '69 -0.463844 37.7543 -0.463843 43.605 5.39622C49.465 11.2469 49.' +
+                '465 20.7543 43.605 26.605Z" stroke="white" stroke-width="2"/>'#13#10'<' +
+                'path d="M38.1855 10.8157L27.8156 21.1856" stroke="white" stroke-' +
+                'width="2" stroke-linecap="round"/>'#13#10'<path d="M38.1855 21.1856L27' +
+                '.8156 10.8157" stroke="white" stroke-width="2" stroke-linecap="r' +
+                'ound"/>'#13#10'</g>'#13#10'<path d="M19.4987 63.147C18.5327 63.147 17.6647 6' +
+                '2.979 16.8947 62.643C16.1387 62.293 15.5437 61.817 15.1097 61.21' +
+                '5C14.6757 60.599 14.4517 59.892 14.4377 59.094H16.4747C16.5447 5' +
+                '9.78 16.8247 60.361 17.3147 60.837C17.8187 61.299 18.5467 61.53 ' +
+                '19.4987 61.53C20.4087 61.53 21.1227 61.306 21.6407 60.858C22.172' +
+                '7 60.396 22.4387 59.808 22.4387 59.094C22.4387 58.534 22.2847 58' +
+                '.079 21.9767 57.729C21.6687 57.379 21.2837 57.113 20.8217 56.931' +
+                'C20.3597 56.749 19.7367 56.553 18.9527 56.343C17.9867 56.091 17.' +
+                '2097 55.839 16.6217 55.587C16.0477 55.335 15.5507 54.943 15.1307' +
+                ' 54.411C14.7247 53.865 14.5217 53.137 14.5217 52.227C14.5217 51.' +
+                '429 14.7247 50.722 15.1307 50.106C15.5367 49.49 16.1037 49.014 1' +
+                '6.8317 48.678C17.5737 48.342 18.4207 48.174 19.3727 48.174C20.74' +
+                '47 48.174 21.8647 48.517 22.7327 49.203C23.6147 49.889 24.1117 5' +
+                '0.799 24.2237 51.933H22.1237C22.0537 51.373 21.7597 50.883 21.24' +
+                '17 50.463C20.7237 50.029 20.0377 49.812 19.1837 49.812C18.3857 4' +
+                '9.812 17.7347 50.022 17.2307 50.442C16.7267 50.848 16.4747 51.42' +
+                '2 16.4747 52.164C16.4747 52.696 16.6217 53.13 16.9157 53.466C17.' +
+                '2237 53.802 17.5947 54.061 18.0287 54.243C18.4767 54.411 19.0997' +
+                ' 54.607 19.8977 54.831C20.8637 55.097 21.6407 55.363 22.2287 55.' +
+                '629C22.8167 55.881 23.3207 56.28 23.7407 56.826C24.1607 57.358 2' +
+                '4.3707 58.086 24.3707 59.01C24.3707 59.724 24.1817 60.396 23.803' +
+                '7 61.026C23.4257 61.656 22.8657 62.167 22.1237 62.559C21.3817 62' +
+                '.951 20.5067 63.147 19.4987 63.147ZM26.4689 57.204C26.4689 56.02' +
+                '8 26.7069 54.999 27.1829 54.117C27.6589 53.221 28.3099 52.528 29' +
+                '.1359 52.038C29.9759 51.548 30.9069 51.303 31.9289 51.303C32.936' +
+                '9 51.303 33.8119 51.52 34.5539 51.954C35.2959 52.388 35.8489 52.' +
+                '934 36.2129 53.592V51.492H38.1449V63H36.2129V60.858C35.8349 61.5' +
+                '3 35.2679 62.09 34.5119 62.538C33.7699 62.972 32.9019 63.189 31.' +
+                '9079 63.189C30.8859 63.189 29.9619 62.937 29.1359 62.433C28.3099' +
+                ' 61.929 27.6589 61.222 27.1829 60.312C26.7069 59.402 26.4689 58.' +
+                '366 26.4689 57.204ZM36.2129 57.225C36.2129 56.357 36.0379 55.601' +
+                ' 35.6879 54.957C35.3379 54.313 34.8619 53.823 34.2599 53.487C33.' +
+                '6719 53.137 33.0209 52.962 32.3069 52.962C31.5929 52.962 30.9419' +
+                ' 53.13 30.3539 53.466C29.7659 53.802 29.2969 54.292 28.9469 54.9' +
+                '36C28.5969 55.58 28.4219 56.336 28.4219 57.204C28.4219 58.086 28' +
+                '.5969 58.856 28.9469 59.514C29.2969 60.158 29.7659 60.655 30.353' +
+                '9 61.005C30.9419 61.341 31.5929 61.509 32.3069 61.509C33.0209 61' +
+                '.509 33.6719 61.341 34.2599 61.005C34.8619 60.655 35.3379 60.158' +
+                ' 35.6879 59.514C36.0379 58.856 36.2129 58.093 36.2129 57.225ZM42' +
+                '.3613 49.623C41.9973 49.623 41.6893 49.497 41.4373 49.245C41.185' +
+                '3 48.993 41.0593 48.685 41.0593 48.321C41.0593 47.957 41.1853 47' +
+                '.649 41.4373 47.397C41.6893 47.145 41.9973 47.019 42.3613 47.019' +
+                'C42.7113 47.019 43.0053 47.145 43.2433 47.397C43.4953 47.649 43.' +
+                '6213 47.957 43.6213 48.321C43.6213 48.685 43.4953 48.993 43.2433' +
+                ' 49.245C43.0053 49.497 42.7113 49.623 42.3613 49.623ZM43.2853 51' +
+                '.492V63H41.3743V51.492H43.2853ZM48.4533 53.361C48.7893 52.703 49' +
+                '.2653 52.192 49.8813 51.828C50.5113 51.464 51.2743 51.282 52.170' +
+                '3 51.282V53.256H51.6663C49.5243 53.256 48.4533 54.418 48.4533 56' +
+                '.742V63H46.5423V51.492H48.4533V53.361Z" fill="white"/>'#13#10'<defs>'#13#10 +
+                '<clipPath id="clip0_226_100">'#13#10'<rect width="32" height="32" fill' +
+                '="white" transform="translate(49) rotate(90)"/>'#13#10'</clipPath>'#13#10'</' +
+                'defs>'#13#10'</svg>'
+            end
+          end
+          object btnVoltar: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemDefault.SVGImage.Color = xFF333075
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.ItemPressed.Accessory.Color = xFF333075
+            Background.ItemPressed.SVGImage.Color = xFF333075
+            Background.ItemSelected.SVGImage.Color = xFF333075
+            Background.ItemChecked.SVGImage.Color = xFF333075
+            Background.ItemActivated.SVGImage.Color = xFF333075
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 404.000000000000000000
+            TabOrder = 32
+            OnClick = btnVoltarClick
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 21.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg8: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_71' +
+                ')">'#13#10'<path d="M37.8936 16.0005L28.1154 16.0005" stroke="white" s' +
+                'troke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+                #13#10'<path d="M31.7247 12.3916L28.106 16.001L31.7247 19.6104" strok' +
+                'e="white" stroke-width="2" stroke-linecap="round" stroke-linejoi' +
+                'n="round"/>'#13#10'<path d="M33 31C24.7125 31 18 24.2875 18 16C18 7.71' +
+                '25 24.7125 0.999999 33 0.999999C41.2875 1 48 7.7125 48 16C48 24.' +
+                '2875 41.2875 31 33 31Z" stroke="white" stroke-width="2" stroke-l' +
+                'inecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'<path d="M15.479' +
+                '6 48.363L9.9566 63H7.7516L2.2286 48.363H4.2656L8.8646 60.984L13.' +
+                '4636 48.363H15.4796ZM22.594 63.189C21.516 63.189 20.536 62.944 1' +
+                '9.654 62.454C18.786 61.964 18.1 61.271 17.596 60.375C17.106 59.4' +
+                '65 16.861 58.415 16.861 57.225C16.861 56.049 17.113 55.013 17.61' +
+                '7 54.117C18.135 53.207 18.835 52.514 19.717 52.038C20.599 51.548' +
+                ' 21.586 51.303 22.678 51.303C23.77 51.303 24.757 51.548 25.639 5' +
+                '2.038C26.521 52.514 27.214 53.2 27.718 54.096C28.236 54.992 28.4' +
+                '95 56.035 28.495 57.225C28.495 58.415 28.229 59.465 27.697 60.37' +
+                '5C27.179 61.271 26.472 61.964 25.576 62.454C24.68 62.944 23.686 ' +
+                '63.189 22.594 63.189ZM22.594 61.509C23.28 61.509 23.924 61.348 2' +
+                '4.526 61.026C25.128 60.704 25.611 60.221 25.975 59.577C26.353 58' +
+                '.933 26.542 58.149 26.542 57.225C26.542 56.301 26.36 55.517 25.9' +
+                '96 54.873C25.632 54.229 25.156 53.753 24.568 53.445C23.98 53.123' +
+                ' 23.343 52.962 22.657 52.962C21.957 52.962 21.313 53.123 20.725 ' +
+                '53.445C20.151 53.753 19.689 54.229 19.339 54.873C18.989 55.517 1' +
+                '8.814 56.301 18.814 57.225C18.814 58.163 18.982 58.954 19.318 59' +
+                '.598C19.668 60.242 20.13 60.725 20.704 61.047C21.278 61.355 21.9' +
+                '08 61.509 22.594 61.509ZM32.9186 47.46V63H31.0076V47.46H32.9186Z' +
+                'M38.5066 53.067V59.85C38.5066 60.41 38.6256 60.809 38.8636 61.04' +
+                '7C39.1016 61.271 39.5146 61.383 40.1026 61.383H41.5096V63H39.787' +
+                '6C38.7236 63 37.9256 62.755 37.3936 62.265C36.8616 61.775 36.595' +
+                '6 60.97 36.5956 59.85V53.067H35.1046V51.492H36.5956V48.594H38.50' +
+                '66V51.492H41.5096V53.067H38.5066ZM43.111 57.204C43.111 56.028 43' +
+                '.349 54.999 43.825 54.117C44.301 53.221 44.952 52.528 45.778 52.' +
+                '038C46.618 51.548 47.549 51.303 48.571 51.303C49.579 51.303 50.4' +
+                '54 51.52 51.196 51.954C51.938 52.388 52.491 52.934 52.855 53.592' +
+                'V51.492H54.787V63H52.855V60.858C52.477 61.53 51.91 62.09 51.154 ' +
+                '62.538C50.412 62.972 49.544 63.189 48.55 63.189C47.528 63.189 46' +
+                '.604 62.937 45.778 62.433C44.952 61.929 44.301 61.222 43.825 60.' +
+                '312C43.349 59.402 43.111 58.366 43.111 57.204ZM52.855 57.225C52.' +
+                '855 56.357 52.68 55.601 52.33 54.957C51.98 54.313 51.504 53.823 ' +
+                '50.902 53.487C50.314 53.137 49.663 52.962 48.949 52.962C48.235 5' +
+                '2.962 47.584 53.13 46.996 53.466C46.408 53.802 45.939 54.292 45.' +
+                '589 54.936C45.239 55.58 45.064 56.336 45.064 57.204C45.064 58.08' +
+                '6 45.239 58.856 45.589 59.514C45.939 60.158 46.408 60.655 46.996' +
+                ' 61.005C47.584 61.341 48.235 61.509 48.949 61.509C49.663 61.509 ' +
+                '50.314 61.341 50.902 61.005C51.504 60.655 51.98 60.158 52.33 59.' +
+                '514C52.68 58.856 52.855 58.093 52.855 57.225ZM59.9274 53.361C60.' +
+                '2634 52.703 60.7394 52.192 61.3554 51.828C61.9854 51.464 62.7484' +
+                ' 51.282 63.6444 51.282V53.256H63.1404C60.9984 53.256 59.9274 54.' +
+                '418 59.9274 56.742V63H58.0164V51.492H59.9274V53.361Z" fill="whit' +
+                'e"/>'#13#10'<defs>'#13#10'<clipPath id="clip0_226_71">'#13#10'<rect width="32" hei' +
+                'ght="32" fill="white" transform="translate(49) rotate(90)"/>'#13#10'</' +
+                'clipPath>'#13#10'</defs>'#13#10'</svg>'
+            end
+          end
+        end
+        object Layout32: TLayout
+          Align = Contents
+          Size.Width = 1370.000000000000000000
+          Size.Height = 692.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Layout33: TLayout
+            Align = Center
+            Size.Width = 795.000000000000000000
+            Size.Height = 588.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object lblTitutlo: TSkLabel
+              Align = Top
+              Margins.Bottom = 8.000000000000000000
+              Size.Width = 795.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = []
+              TextSettings.Font.Families = 'Poppins'
+              TextSettings.Font.Size = 32.000000000000000000
+              TextSettings.Font.Weight = Medium
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Empr'#233'stimo pessoal'
+                end>
+            end
+            object lblSubtitulo: TSkLabel
+              Align = Top
+              Margins.Bottom = 10.000000000000000000
+              Position.Y = 56.000000000000000000
+              Size.Width = 795.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Style]
+              TextSettings.Font.Families = 'Poppins'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Saiba mais sobre o empr'#233'stimo pessoal da Ouze'
+                end>
+            end
+            object Layout34: TLayout
+              Align = Center
+              Size.Width = 795.000000000000000000
+              Size.Height = 394.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 27
+              object Layout35: TLayout
+                Align = Center
+                Margins.Bottom = 24.000000000000000000
+                Size.Width = 527.000000000000000000
+                Size.Height = 244.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 27
+                object recSimula: TRectangle
+                  Align = Left
+                  Fill.Color = claWhite
+                  Size.Width = 244.000000000000000000
+                  Size.Height = 244.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 10.000000000000000000
+                  YRadius = 10.000000000000000000
+                  OnClick = recSimulaClick
+                  object SkSvg9: TSkSvg
+                    Align = Top
+                    Margins.Left = 86.000000000000000000
+                    Margins.Top = 35.000000000000000000
+                    Margins.Right = 86.000000000000000000
+                    Position.X = 86.000000000000000000
+                    Position.Y = 35.000000000000000000
+                    Size.Width = 72.000000000000000000
+                    Size.Height = 72.000000000000000000
+                    Size.PlatformDefault = False
+                    Svg.Source = 
+                      '<svg width="69" height="70" viewBox="0 0 69 70" fill="none" xmln' +
+                      's="http://www.w3.org/2000/svg">'#13#10'<g id="Group 458">'#13#10'<g id="Grou' +
+                      'p">'#13#10'<path id="Vector" d="M55.9439 10.0026H11.7081C11.056 10.002' +
+                      '6 10.5273 10.5312 10.5273 11.1833V32.1205C10.5273 32.7726 11.056' +
+                      ' 33.3012 11.7081 33.3012H55.9439C56.596 33.3012 57.1247 32.7726 ' +
+                      '57.1247 32.1205V11.1833C57.1247 10.5312 56.596 10.0026 55.9439 1' +
+                      '0.0026Z" stroke="black" stroke-width="2" stroke-linecap="round" ' +
+                      'stroke-linejoin="round"/>'#13#10'<path id="Vector_2" d="M31.5278 33.47' +
+                      'L19.7414 37.1387C19.636 37.1809 19.5095 37.1176 19.4884 37.0122L' +
+                      '18.3499 33.3224" stroke="black" stroke-width="2" stroke-linecap=' +
+                      '"round" stroke-linejoin="round"/>'#13#10'<path id="Vector_3" d="M28.70' +
+                      '24 9.93951L56.5975 1.27368C56.8716 1.18934 57.1668 1.33693 57.25' +
+                      '12 1.61103L63.8507 22.8645C63.935 23.1386 63.7874 23.4338 63.513' +
+                      '3 23.5181L57.1036 25.5001" stroke="black" stroke-width="2" strok' +
+                      'e-linecap="round" stroke-linejoin="round"/>'#13#10'<g id="Group_2">'#13#10'<' +
+                      'path id="Vector_4" d="M34.3319 18.3101C35.1542 18.5421 35.6814 1' +
+                      '9.0692 35.9766 19.8282C36.1241 20.2288 36.0398 20.524 35.7235 20' +
+                      '.6295C35.4283 20.7349 35.1753 20.6084 35.0277 20.2078C34.6482 19' +
+                      '.1114 33.4464 19.1114 32.9403 19.6596C32.8138 19.8071 32.6873 19' +
+                      '.9969 32.6241 20.1867C32.4554 20.7349 32.6241 20.9879 33.1512 21' +
+                      '.0933C33.6361 21.1987 34.1422 21.2198 34.6482 21.3253C35.9133 21' +
+                      '.5783 36.4615 22.5903 35.9555 23.8133C35.7024 24.4247 35.2386 24' +
+                      '.8675 34.606 25.0783C34.4163 25.1416 34.3319 25.2259 34.353 25.4' +
+                      '368C34.353 25.8585 34.1633 26.0904 33.847 26.0904C33.5307 26.090' +
+                      '4 33.3199 25.8585 33.341 25.4368C33.341 25.2259 33.2777 25.1416 ' +
+                      '33.0879 25.0783C32.3711 24.8253 31.9283 24.2771 31.6753 23.5813C' +
+                      '31.5488 23.2229 31.6753 22.9488 31.9704 22.8434C32.2656 22.7379 ' +
+                      '32.4976 22.8434 32.6452 23.2229C32.9614 24.003 33.5096 24.3193 3' +
+                      '4.1843 24.1506C34.5428 24.0663 34.8169 23.8554 34.9645 23.5392C3' +
+                      '5.2175 22.9909 35.2597 22.4849 34.4374 22.3584C33.9524 22.2952 3' +
+                      '3.4675 22.253 32.9825 22.1476C31.7807 21.8945 31.2746 20.9457 31' +
+                      '.7174 19.765C31.9704 19.0903 32.4343 18.6264 33.1301 18.3945C33.' +
+                      '3199 18.3312 33.3831 18.2469 33.362 18.0571C33.362 17.9517 33.36' +
+                      '2 17.8463 33.362 17.7408C33.4042 17.4667 33.5729 17.2981 33.847 ' +
+                      '17.277C34.1211 17.277 34.353 17.4457 34.3741 17.7408C34.3741 17.' +
+                      '9306 34.3741 18.1204 34.3741 18.3523L34.3319 18.3101Z" fill="bla' +
+                      'ck"/>'#13#10'<path id="Vector_5" d="M40.7839 21.6629C40.7839 25.5214 3' +
+                      '7.6634 28.6419 33.8049 28.6419C29.9463 28.6419 26.8258 25.5214 2' +
+                      '6.8258 21.6629C26.8258 17.8044 29.9463 14.6838 33.8049 14.6838C3' +
+                      '7.6634 14.6838 40.7839 17.8044 40.7839 21.6629Z" stroke="black" ' +
+                      'stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/' +
+                      '>'#13#10'</g>'#13#10'<path id="Vector_6" d="M52.1698 10.0026C52.1698 12.7436' +
+                      ' 54.3837 14.9575 57.1247 14.9575" stroke="black" stroke-width="2' +
+                      '" stroke-miterlimit="10"/>'#13#10'<path id="Vector_7" d="M57.1247 28.3' +
+                      '678C54.3837 28.3678 52.1698 30.5817 52.1698 33.3227" stroke="bla' +
+                      'ck" stroke-width="2" stroke-miterlimit="10"/>'#13#10'<path id="Vector_' +
+                      '8" d="M15.4823 33.3016C15.4823 30.5606 13.2684 28.3467 10.5273 2' +
+                      '8.3467" stroke="black" stroke-width="2" stroke-miterlimit="10"/>' +
+                      #13#10'<path id="Vector_9" d="M10.5273 14.9575C13.2684 14.9575 15.482' +
+                      '3 12.7436 15.4823 10.0026" stroke="black" stroke-width="2" strok' +
+                      'e-miterlimit="10"/>'#13#10'<g id="Group_3">'#13#10'<path id="Vector_10" d="M' +
+                      '16.4099 21.6624H21.3648" stroke="black" stroke-width="2" stroke-' +
+                      'linecap="round" stroke-linejoin="round"/>'#13#10'<path id="Vector_11" ' +
+                      'd="M46.287 21.6624H51.2419" stroke="black" stroke-width="2" stro' +
+                      'ke-linecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'</g>'#13#10'<g id=' +
+                      '"Group_4">'#13#10'<path id="Vector_12" d="M1.25 50.9281L8.5875 48.2714' +
+                      'C9.36763 47.9973 10.1267 47.6389 10.8225 47.1961C13.1207 45.7623' +
+                      ' 19.9944 42.3888 27.6059 47.2383L29.6512 48.3136C30.6422 48.8196' +
+                      ' 31.6964 49.1991 32.7928 49.3889L41.4797 50.9492C43.1032 51.2444' +
+                      ' 44.6635 51.9823 45.8021 53.1842C46.772 54.1962 47.5732 55.6089 ' +
+                      '47.4889 57.5276C47.4889 57.9282 46.8985 58.5397 46.4979 58.4764C' +
+                      '43.6304 58.0126 33.2356 56.0517 33.2356 56.0517" stroke="black" ' +
+                      'stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>' +
+                      #13#10'<path id="Vector_13" d="M41.058 50.7597C41.058 50.7597 48.6907' +
+                      ' 44.9403 52.8865 51.076" stroke="black" stroke-width="2" stroke-' +
+                      'miterlimit="10" stroke-linecap="round"/>'#13#10'<path id="Vector_14" d' +
+                      '="M45.9918 53.3949L54.6577 50.5063C55.4378 50.2532 56.2812 50.16' +
+                      '89 57.0613 50.3798C58.0312 50.6328 59.1487 51.3075 59.8023 52.97' +
+                      '32" stroke="black" stroke-width="2" stroke-miterlimit="10" strok' +
+                      'e-linecap="round"/>'#13#10'<path id="Vector_15" d="M47.5099 57.3592L61' +
+                      '.2993 52.573C61.6578 52.4465 62.0373 52.3621 62.4168 52.341C63.7' +
+                      '03 52.2778 66.444 52.5308 67.6669 55.7146C67.7513 55.9465 67.645' +
+                      '9 56.1996 67.435 56.305L43.061 67.754L41.4586 68.26C39.3712 68.9' +
+                      '137 37.1151 68.9137 35.0277 68.26L19.91 63.5371C18.3497 63.0521 ' +
+                      '16.6629 63.0943 15.1237 63.6636L7.15369 66.5733" stroke="black" ' +
+                      'stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>' +
+                      #13#10'</g>'#13#10'</g>'#13#10'</svg>'
+                  end
+                  object SkLabel26: TSkLabel
+                    Align = Center
+                    Margins.Top = 30.000000000000000000
+                    Size.Width = 180.000000000000000000
+                    Size.Height = 62.000000000000000000
+                    Size.PlatformDefault = False
+                    AutoSize = False
+                    StyledSettings = [FontColor]
+                    TextSettings.Font.Families = 'Poppins'
+                    TextSettings.Font.Size = 21.000000000000000000
+                    TextSettings.Font.Weight = Medium
+                    TextSettings.HorzAlign = Center
+                    Words = <
+                      item
+                        Text = 'Simular empr'#233'stimo'
+                      end>
+                  end
+                  object Layout45: TLayout
+                    Align = Bottom
+                    Margins.Left = 22.250000000000000000
+                    Margins.Right = 25.000000000000000000
+                    Margins.Bottom = 21.000000000000000000
+                    Position.X = 22.250000000000000000
+                    Position.Y = 193.000000000000000000
+                    Size.Width = 196.750000000000000000
+                    Size.Height = 30.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 2
+                    object SkSvg15: TSkSvg
+                      Align = MostRight
+                      Position.X = 166.750000000000000000
+                      Size.Width = 30.000000000000000000
+                      Size.Height = 30.000000000000000000
+                      Size.PlatformDefault = False
+                      Svg.OverrideColor = xFFE400E4
+                      Svg.Source = 
+                        '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmln' +
+                        's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.1064 15.9995L20.88' +
+                        '46 15.9995" stroke="black" stroke-width="2" stroke-linecap="roun' +
+                        'd" stroke-linejoin="round"/>'#13#10'<path d="M17.2753 19.6084L20.894 1' +
+                        '5.999L17.2753 12.3896" stroke="black" stroke-width="2" stroke-li' +
+                        'necap="round" stroke-linejoin="round"/>'#13#10'<path d="M16 0.999999C2' +
+                        '4.2875 0.999999 31 7.7125 31 16C31 24.2875 24.2875 31 16 31C7.71' +
+                        '25 31 1 24.2875 0.999999 16C0.999999 7.7125 7.7125 1 16 0.999999' +
+                        'Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke' +
+                        '-linejoin="round"/>'#13#10'</svg>'
+                    end
+                  end
+                end
+                object recExtrato: TRectangle
+                  Align = Right
+                  Fill.Color = claWhite
+                  Position.X = 283.000000000000000000
+                  Size.Width = 244.000000000000000000
+                  Size.Height = 244.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 10.000000000000000000
+                  YRadius = 10.000000000000000000
+                  OnClick = recExtratoClick
+                  object SkSvg10: TSkSvg
+                    Align = Top
+                    Margins.Left = 86.000000000000000000
+                    Margins.Top = 35.000000000000000000
+                    Margins.Right = 86.000000000000000000
+                    Position.X = 86.000000000000000000
+                    Position.Y = 35.000000000000000000
+                    Size.Width = 72.000000000000000000
+                    Size.Height = 72.000000000000000000
+                    Size.PlatformDefault = False
+                    Svg.Source = 
+                      '<svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmln' +
+                      's="http://www.w3.org/2000/svg">'#13#10'<g id="Group 410">'#13#10'<path id="V' +
+                      'ector" d="M53.2038 16.1846L14.228 37.4967C13.1719 38.0742 12.783' +
+                      '8 39.3986 13.3614 40.4547L24.9038 61.5636C25.4813 62.6198 26.805' +
+                      '6 63.0078 27.8618 62.4303L66.8376 41.1181C67.8938 40.5406 68.281' +
+                      '8 39.2163 67.7043 38.1601L56.1619 17.0512C55.5844 15.9951 54.26 ' +
+                      '15.607 53.2038 16.1846Z" stroke="black" stroke-width="2" stroke-' +
+                      'miterlimit="10"/>'#13#10'<path id="Vector_2" d="M26.5333 56.9439L32.09' +
+                      '65 53.9132" stroke="black" stroke-width="2" stroke-miterlimit="1' +
+                      '0" stroke-linecap="round"/>'#13#10'<path id="Vector_3" d="M35.9573 51.' +
+                      '7954L41.5204 48.744" stroke="black" stroke-width="2" stroke-mite' +
+                      'rlimit="10" stroke-linecap="round"/>'#13#10'<path id="Vector_4" d="M15' +
+                      '.5939 44.489L58.4798 21.0325" stroke="black" stroke-width="2" st' +
+                      'roke-miterlimit="10"/>'#13#10'<path id="Vector_5" d="M46.0457 53.913V6' +
+                      '7.4264H1.25V1.25H46.0457V20.119" stroke="black" stroke-width="2"' +
+                      ' stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path id="Vec' +
+                      'tor_6" d="M2.55774 55.3246H20.3681" stroke="black" stroke-width=' +
+                      '"2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path id="' +
+                      'Vector_7" d="M27.1144 10.8197H37.8047" stroke="black" stroke-wid' +
+                      'th="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path i' +
+                      'd="Vector_8" d="M27.1144 17.566H37.8047" stroke="black" stroke-w' +
+                      'idth="2" stroke-linecap="round" stroke-linejoin="round"/>'#13#10'<path' +
+                      ' id="Vector_9" d="M14.5144 8.28684C16.2581 8.78503 17.379 9.8644' +
+                      '4 17.981 11.5043C18.3131 12.3762 18.1263 12.9574 17.4413 13.2272' +
+                      'C16.7978 13.4763 16.2788 13.1857 15.9675 12.3346C15.1371 10.0098' +
+                      ' 12.6047 9.98899 11.5253 11.1722C11.2346 11.4836 10.9856 11.878 ' +
+                      '10.8818 12.2724C10.5289 13.4141 10.8402 13.9745 12.0027 14.2029C' +
+                      '13.0406 14.4104 14.12 14.4727 15.1579 14.6803C17.8564 15.1992 18' +
+                      '.9774 17.3788 17.898 19.9321C17.3583 21.2398 16.3826 22.1532 15.' +
+                      '0541 22.6098C14.639 22.7551 14.4936 22.9212 14.4936 23.3571C14.4' +
+                      '936 24.2497 14.12 24.7272 13.4142 24.7272C12.7292 24.7272 12.314' +
+                      '1 24.2497 12.3348 23.3571C12.3348 22.9212 12.2103 22.7344 11.795' +
+                      '1 22.5683C10.2798 22.0286 9.34567 20.8869 8.80596 19.3924C8.5361' +
+                      '1 18.6243 8.78521 18.0431 9.4287 17.8147C10.0514 17.5864 10.5289' +
+                      ' 17.8563 10.8402 18.6035C11.5253 20.2434 12.6669 20.9492 14.0992' +
+                      ' 20.5963C14.8465 20.4095 15.4278 19.9943 15.7599 19.2886C16.2996' +
+                      ' 18.1469 16.3826 17.0467 14.639 16.7976C13.6011 16.6523 12.5632 ' +
+                      '16.5693 11.546 16.3409C9.01354 15.8012 7.95489 13.7669 8.84748 1' +
+                      '1.3175C9.38719 9.8852 10.3836 8.90958 11.8159 8.43214C12.231 8.2' +
+                      '8684 12.3556 8.10002 12.3141 7.70561C12.2933 7.47728 12.2933 7.2' +
+                      '4894 12.3141 7.0206C12.3971 6.41862 12.75 6.06573 13.352 6.02422' +
+                      'C13.9332 5.9827 14.4106 6.39786 14.4521 6.99984C14.4936 7.415 14' +
+                      '.4521 7.8094 14.4521 8.28684H14.5144Z" fill="black"/>'#13#10'</g>'#13#10'</s' +
+                      'vg>'
+                  end
+                  object SkLabel27: TSkLabel
+                    Align = Center
+                    Size.Width = 222.000000000000000000
+                    Size.Height = 60.000000000000000000
+                    Size.PlatformDefault = False
+                    AutoSize = False
+                    StyledSettings = [FontColor]
+                    TextSettings.Font.Families = 'Poppins'
+                    TextSettings.Font.Size = 21.000000000000000000
+                    TextSettings.Font.Weight = Medium
+                    TextSettings.HorzAlign = Center
+                    Words = <
+                      item
+                        Text = 'Extrato'
+                      end>
+                  end
+                  object Layout6: TLayout
+                    Align = Bottom
+                    Margins.Left = 22.250000000000000000
+                    Margins.Right = 25.000000000000000000
+                    Margins.Bottom = 21.000000000000000000
+                    Position.X = 22.250000000000000000
+                    Position.Y = 193.000000000000000000
+                    Size.Width = 196.750000000000000000
+                    Size.Height = 30.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 2
+                    object SkSvg5: TSkSvg
+                      Align = MostRight
+                      Position.X = 166.750000000000000000
+                      Size.Width = 30.000000000000000000
+                      Size.Height = 30.000000000000000000
+                      Size.PlatformDefault = False
+                      Svg.OverrideColor = xFFE400E4
+                      Svg.Source = 
+                        '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmln' +
+                        's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.1064 15.9995L20.88' +
+                        '46 15.9995" stroke="black" stroke-width="2" stroke-linecap="roun' +
+                        'd" stroke-linejoin="round"/>'#13#10'<path d="M17.2753 19.6084L20.894 1' +
+                        '5.999L17.2753 12.3896" stroke="black" stroke-width="2" stroke-li' +
+                        'necap="round" stroke-linejoin="round"/>'#13#10'<path d="M16 0.999999C2' +
+                        '4.2875 0.999999 31 7.7125 31 16C31 24.2875 24.2875 31 16 31C7.71' +
+                        '25 31 1 24.2875 0.999999 16C0.999999 7.7125 7.7125 1 16 0.999999' +
+                        'Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke' +
+                        '-linejoin="round"/>'#13#10'</svg>'
+                    end
+                  end
+                end
+              end
+            end
+            object Layout37: TLayout
+              Align = MostBottom
+              Position.Y = 481.000000000000000000
+              Size.Width = 795.000000000000000000
+              Size.Height = 107.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object lylElegivel: TLayout
+                Align = Center
+                Size.Width = 545.000000000000000000
+                Size.Height = 107.000000000000000000
+                Size.PlatformDefault = False
+                Visible = False
+                TabOrder = 0
+                object Rectangle8: TRectangle
+                  Align = Client
+                  Fill.Color = xFF38C31B
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 540.000000000000000000
+                  Size.Height = 107.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 10.000000000000000000
+                  YRadius = 10.000000000000000000
+                  object SkLabel22: TSkLabel
+                    Align = Client
+                    Margins.Left = 29.000000000000000000
+                    Size.Width = 511.000000000000000000
+                    Size.Height = 107.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = []
+                    TextSettings.Font.Families = 'Poppins'
+                    TextSettings.Font.Size = 16.000000000000000000
+                    TextSettings.Font.Weight = Semibold
+                    TextSettings.FontColor = claWhite
+                    Words = <
+                      item
+                        Text = 
+                          'Voc'#234' '#233' eleg'#237'vel para empr'#233'stimo pessoal, consulte a disponibilid' +
+                          'ade com um de nossos atendentes'
+                      end>
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    object tabSimulaEmprest: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 274.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabSimulaEmprest'
+      Visible = False
+      ExplicitSize.cx = 456.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Rectangle1: TRectangle
+        Align = Client
+        Fill.Color = xFF333075
+        Size.Width = 1370.000000000000000000
+        Size.Height = 692.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Layout1: TLayout
+          Align = Left
+          Size.Width = 124.000000000000000000
+          Size.Height = 692.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btnSairS: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 548.000000000000000000
+            TabOrder = 31
+            OnClick = btnSairSClick
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 32.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg14: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_10' +
+                '0)">'#13#10'<path d="M43.605 26.605C37.7449 32.465 28.2469 32.465 22.3' +
+                '868 26.605C16.5268 20.7449 16.5268 11.2469 22.3868 5.38684C28.24' +
+                '69 -0.463844 37.7543 -0.463843 43.605 5.39622C49.465 11.2469 49.' +
+                '465 20.7543 43.605 26.605Z" stroke="white" stroke-width="2"/>'#13#10'<' +
+                'path d="M38.1855 10.8157L27.8156 21.1856" stroke="white" stroke-' +
+                'width="2" stroke-linecap="round"/>'#13#10'<path d="M38.1855 21.1856L27' +
+                '.8156 10.8157" stroke="white" stroke-width="2" stroke-linecap="r' +
+                'ound"/>'#13#10'</g>'#13#10'<path d="M19.4987 63.147C18.5327 63.147 17.6647 6' +
+                '2.979 16.8947 62.643C16.1387 62.293 15.5437 61.817 15.1097 61.21' +
+                '5C14.6757 60.599 14.4517 59.892 14.4377 59.094H16.4747C16.5447 5' +
+                '9.78 16.8247 60.361 17.3147 60.837C17.8187 61.299 18.5467 61.53 ' +
+                '19.4987 61.53C20.4087 61.53 21.1227 61.306 21.6407 60.858C22.172' +
+                '7 60.396 22.4387 59.808 22.4387 59.094C22.4387 58.534 22.2847 58' +
+                '.079 21.9767 57.729C21.6687 57.379 21.2837 57.113 20.8217 56.931' +
+                'C20.3597 56.749 19.7367 56.553 18.9527 56.343C17.9867 56.091 17.' +
+                '2097 55.839 16.6217 55.587C16.0477 55.335 15.5507 54.943 15.1307' +
+                ' 54.411C14.7247 53.865 14.5217 53.137 14.5217 52.227C14.5217 51.' +
+                '429 14.7247 50.722 15.1307 50.106C15.5367 49.49 16.1037 49.014 1' +
+                '6.8317 48.678C17.5737 48.342 18.4207 48.174 19.3727 48.174C20.74' +
+                '47 48.174 21.8647 48.517 22.7327 49.203C23.6147 49.889 24.1117 5' +
+                '0.799 24.2237 51.933H22.1237C22.0537 51.373 21.7597 50.883 21.24' +
+                '17 50.463C20.7237 50.029 20.0377 49.812 19.1837 49.812C18.3857 4' +
+                '9.812 17.7347 50.022 17.2307 50.442C16.7267 50.848 16.4747 51.42' +
+                '2 16.4747 52.164C16.4747 52.696 16.6217 53.13 16.9157 53.466C17.' +
+                '2237 53.802 17.5947 54.061 18.0287 54.243C18.4767 54.411 19.0997' +
+                ' 54.607 19.8977 54.831C20.8637 55.097 21.6407 55.363 22.2287 55.' +
+                '629C22.8167 55.881 23.3207 56.28 23.7407 56.826C24.1607 57.358 2' +
+                '4.3707 58.086 24.3707 59.01C24.3707 59.724 24.1817 60.396 23.803' +
+                '7 61.026C23.4257 61.656 22.8657 62.167 22.1237 62.559C21.3817 62' +
+                '.951 20.5067 63.147 19.4987 63.147ZM26.4689 57.204C26.4689 56.02' +
+                '8 26.7069 54.999 27.1829 54.117C27.6589 53.221 28.3099 52.528 29' +
+                '.1359 52.038C29.9759 51.548 30.9069 51.303 31.9289 51.303C32.936' +
+                '9 51.303 33.8119 51.52 34.5539 51.954C35.2959 52.388 35.8489 52.' +
+                '934 36.2129 53.592V51.492H38.1449V63H36.2129V60.858C35.8349 61.5' +
+                '3 35.2679 62.09 34.5119 62.538C33.7699 62.972 32.9019 63.189 31.' +
+                '9079 63.189C30.8859 63.189 29.9619 62.937 29.1359 62.433C28.3099' +
+                ' 61.929 27.6589 61.222 27.1829 60.312C26.7069 59.402 26.4689 58.' +
+                '366 26.4689 57.204ZM36.2129 57.225C36.2129 56.357 36.0379 55.601' +
+                ' 35.6879 54.957C35.3379 54.313 34.8619 53.823 34.2599 53.487C33.' +
+                '6719 53.137 33.0209 52.962 32.3069 52.962C31.5929 52.962 30.9419' +
+                ' 53.13 30.3539 53.466C29.7659 53.802 29.2969 54.292 28.9469 54.9' +
+                '36C28.5969 55.58 28.4219 56.336 28.4219 57.204C28.4219 58.086 28' +
+                '.5969 58.856 28.9469 59.514C29.2969 60.158 29.7659 60.655 30.353' +
+                '9 61.005C30.9419 61.341 31.5929 61.509 32.3069 61.509C33.0209 61' +
+                '.509 33.6719 61.341 34.2599 61.005C34.8619 60.655 35.3379 60.158' +
+                ' 35.6879 59.514C36.0379 58.856 36.2129 58.093 36.2129 57.225ZM42' +
+                '.3613 49.623C41.9973 49.623 41.6893 49.497 41.4373 49.245C41.185' +
+                '3 48.993 41.0593 48.685 41.0593 48.321C41.0593 47.957 41.1853 47' +
+                '.649 41.4373 47.397C41.6893 47.145 41.9973 47.019 42.3613 47.019' +
+                'C42.7113 47.019 43.0053 47.145 43.2433 47.397C43.4953 47.649 43.' +
+                '6213 47.957 43.6213 48.321C43.6213 48.685 43.4953 48.993 43.2433' +
+                ' 49.245C43.0053 49.497 42.7113 49.623 42.3613 49.623ZM43.2853 51' +
+                '.492V63H41.3743V51.492H43.2853ZM48.4533 53.361C48.7893 52.703 49' +
+                '.2653 52.192 49.8813 51.828C50.5113 51.464 51.2743 51.282 52.170' +
+                '3 51.282V53.256H51.6663C49.5243 53.256 48.4533 54.418 48.4533 56' +
+                '.742V63H46.5423V51.492H48.4533V53.361Z" fill="white"/>'#13#10'<defs>'#13#10 +
+                '<clipPath id="clip0_226_100">'#13#10'<rect width="32" height="32" fill' +
+                '="white" transform="translate(49) rotate(90)"/>'#13#10'</clipPath>'#13#10'</' +
+                'defs>'#13#10'</svg>'
+            end
+          end
+          object btnVoltarS: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemDefault.SVGImage.Color = xFF333075
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.ItemPressed.Accessory.Color = xFF333075
+            Background.ItemPressed.SVGImage.Color = xFF333075
+            Background.ItemSelected.SVGImage.Color = xFF333075
+            Background.ItemChecked.SVGImage.Color = xFF333075
+            Background.ItemActivated.SVGImage.Color = xFF333075
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 404.000000000000000000
+            TabOrder = 32
+            OnClick = btnVoltarSClick
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 21.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg16: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_71' +
+                ')">'#13#10'<path d="M37.8936 16.0005L28.1154 16.0005" stroke="white" s' +
+                'troke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+                #13#10'<path d="M31.7247 12.3916L28.106 16.001L31.7247 19.6104" strok' +
+                'e="white" stroke-width="2" stroke-linecap="round" stroke-linejoi' +
+                'n="round"/>'#13#10'<path d="M33 31C24.7125 31 18 24.2875 18 16C18 7.71' +
+                '25 24.7125 0.999999 33 0.999999C41.2875 1 48 7.7125 48 16C48 24.' +
+                '2875 41.2875 31 33 31Z" stroke="white" stroke-width="2" stroke-l' +
+                'inecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'<path d="M15.479' +
+                '6 48.363L9.9566 63H7.7516L2.2286 48.363H4.2656L8.8646 60.984L13.' +
+                '4636 48.363H15.4796ZM22.594 63.189C21.516 63.189 20.536 62.944 1' +
+                '9.654 62.454C18.786 61.964 18.1 61.271 17.596 60.375C17.106 59.4' +
+                '65 16.861 58.415 16.861 57.225C16.861 56.049 17.113 55.013 17.61' +
+                '7 54.117C18.135 53.207 18.835 52.514 19.717 52.038C20.599 51.548' +
+                ' 21.586 51.303 22.678 51.303C23.77 51.303 24.757 51.548 25.639 5' +
+                '2.038C26.521 52.514 27.214 53.2 27.718 54.096C28.236 54.992 28.4' +
+                '95 56.035 28.495 57.225C28.495 58.415 28.229 59.465 27.697 60.37' +
+                '5C27.179 61.271 26.472 61.964 25.576 62.454C24.68 62.944 23.686 ' +
+                '63.189 22.594 63.189ZM22.594 61.509C23.28 61.509 23.924 61.348 2' +
+                '4.526 61.026C25.128 60.704 25.611 60.221 25.975 59.577C26.353 58' +
+                '.933 26.542 58.149 26.542 57.225C26.542 56.301 26.36 55.517 25.9' +
+                '96 54.873C25.632 54.229 25.156 53.753 24.568 53.445C23.98 53.123' +
+                ' 23.343 52.962 22.657 52.962C21.957 52.962 21.313 53.123 20.725 ' +
+                '53.445C20.151 53.753 19.689 54.229 19.339 54.873C18.989 55.517 1' +
+                '8.814 56.301 18.814 57.225C18.814 58.163 18.982 58.954 19.318 59' +
+                '.598C19.668 60.242 20.13 60.725 20.704 61.047C21.278 61.355 21.9' +
+                '08 61.509 22.594 61.509ZM32.9186 47.46V63H31.0076V47.46H32.9186Z' +
+                'M38.5066 53.067V59.85C38.5066 60.41 38.6256 60.809 38.8636 61.04' +
+                '7C39.1016 61.271 39.5146 61.383 40.1026 61.383H41.5096V63H39.787' +
+                '6C38.7236 63 37.9256 62.755 37.3936 62.265C36.8616 61.775 36.595' +
+                '6 60.97 36.5956 59.85V53.067H35.1046V51.492H36.5956V48.594H38.50' +
+                '66V51.492H41.5096V53.067H38.5066ZM43.111 57.204C43.111 56.028 43' +
+                '.349 54.999 43.825 54.117C44.301 53.221 44.952 52.528 45.778 52.' +
+                '038C46.618 51.548 47.549 51.303 48.571 51.303C49.579 51.303 50.4' +
+                '54 51.52 51.196 51.954C51.938 52.388 52.491 52.934 52.855 53.592' +
+                'V51.492H54.787V63H52.855V60.858C52.477 61.53 51.91 62.09 51.154 ' +
+                '62.538C50.412 62.972 49.544 63.189 48.55 63.189C47.528 63.189 46' +
+                '.604 62.937 45.778 62.433C44.952 61.929 44.301 61.222 43.825 60.' +
+                '312C43.349 59.402 43.111 58.366 43.111 57.204ZM52.855 57.225C52.' +
+                '855 56.357 52.68 55.601 52.33 54.957C51.98 54.313 51.504 53.823 ' +
+                '50.902 53.487C50.314 53.137 49.663 52.962 48.949 52.962C48.235 5' +
+                '2.962 47.584 53.13 46.996 53.466C46.408 53.802 45.939 54.292 45.' +
+                '589 54.936C45.239 55.58 45.064 56.336 45.064 57.204C45.064 58.08' +
+                '6 45.239 58.856 45.589 59.514C45.939 60.158 46.408 60.655 46.996' +
+                ' 61.005C47.584 61.341 48.235 61.509 48.949 61.509C49.663 61.509 ' +
+                '50.314 61.341 50.902 61.005C51.504 60.655 51.98 60.158 52.33 59.' +
+                '514C52.68 58.856 52.855 58.093 52.855 57.225ZM59.9274 53.361C60.' +
+                '2634 52.703 60.7394 52.192 61.3554 51.828C61.9854 51.464 62.7484' +
+                ' 51.282 63.6444 51.282V53.256H63.1404C60.9984 53.256 59.9274 54.' +
+                '418 59.9274 56.742V63H58.0164V51.492H59.9274V53.361Z" fill="whit' +
+                'e"/>'#13#10'<defs>'#13#10'<clipPath id="clip0_226_71">'#13#10'<rect width="32" hei' +
+                'ght="32" fill="white" transform="translate(49) rotate(90)"/>'#13#10'</' +
+                'clipPath>'#13#10'</defs>'#13#10'</svg>'
+            end
+          end
+        end
+        object Layout2: TLayout
+          Align = Contents
+          Size.Width = 1370.000000000000000000
+          Size.Height = 692.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Layout3: TLayout
+            Align = Center
+            Size.Width = 795.000000000000000000
+            Size.Height = 603.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object SkLabel1: TSkLabel
+              Align = Top
+              Margins.Bottom = 8.000000000000000000
+              Size.Width = 795.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = []
+              TextSettings.Font.Families = 'Poppins'
+              TextSettings.Font.Size = 32.000000000000000000
+              TextSettings.Font.Weight = Medium
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Simular empr'#233'stimo'
+                end>
+            end
+            object SkLabel2: TSkLabel
+              Align = Top
+              Margins.Bottom = 10.000000000000000000
+              Position.Y = 56.000000000000000000
+              Size.Width = 795.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Style]
+              TextSettings.Font.Families = 'Poppins'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Digite o valor do empr'#233'stimo com base no valor total dispon'#237'vel'
+                end>
+            end
+            object Layout24: TLayout
+              Align = Center
+              Size.Width = 790.000000000000000000
+              Size.Height = 473.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 27
+              object Layout25: TLayout
+                Align = Left
+                Size.Width = 288.000000000000000000
+                Size.Height = 473.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object Rectangle10: TRectangle
+                  Align = Top
+                  Fill.Color = claWhite
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Position.X = 5.000000000000000000
+                  Position.Y = 5.000000000000000000
+                  Size.Width = 278.000000000000000000
+                  Size.Height = 103.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 8.000000000000000000
+                  YRadius = 8.000000000000000000
+                  object SkLabel24: TSkLabel
+                    Align = Top
+                    Margins.Top = 10.000000000000000000
+                    Position.Y = 60.000000000000000000
+                    Size.Width = 278.000000000000000000
+                    Size.Height = 31.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    TextSettings.Font.Families = 'Poppins'
+                    TextSettings.Font.Size = 21.000000000000000000
+                    TextSettings.HorzAlign = Center
+                    Words = <
+                      item
+                        Text = 'R$ 2000,00'
+                      end>
+                  end
+                  object Rectangle11: TRectangle
+                    Align = Top
+                    Fill.Color = xFFE400E4
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Margins.Bottom = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 10.000000000000000000
+                    Size.Width = 258.000000000000000000
+                    Size.Height = 30.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    XRadius = 15.000000000000000000
+                    YRadius = 15.000000000000000000
+                    object SkLabel25: TSkLabel
+                      Align = Center
+                      Size.Width = 205.279998779296900000
+                      Size.Height = 480.000000000000000000
+                      Size.PlatformDefault = False
+                      StyledSettings = []
+                      TextSettings.Font.Families = 'Poppins'
+                      TextSettings.Font.Size = 16.000000000000000000
+                      TextSettings.Font.Weight = Bold
+                      TextSettings.FontColor = claWhite
+                      Words = <
+                        item
+                          Text = 'VALOR TOTAL DISPON'#205'VEL'
+                        end>
+                    end
+                  end
+                end
+              end
+              object Layout22: TLayout
+                Align = Right
+                Position.X = 326.000000000000000000
+                Size.Width = 464.000000000000000000
+                Size.Height = 473.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                object Layout30: TLayout
+                  Align = Top
+                  Margins.Bottom = 45.000000000000000000
+                  Size.Width = 464.000000000000000000
+                  Size.Height = 56.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 28
+                  object edtValor: TGosEditView
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Top
+                    Background.XRadius = 8.000000000000000000
+                    Background.YRadius = 8.000000000000000000
+                    Background.Border.Color.Default = xBFC0C0C0
+                    Background.Border.Color.Pressed = claNull
+                    Background.Border.Color.Focused = xFF0066CC
+                    Background.Border.Color.Hovered = claSilver
+                    Background.Border.Color.Selected = claNull
+                    Background.Border.Color.Checked = claNull
+                    Background.Border.Color.Enabled = claNull
+                    Clickable = False
+                    ClipChildren = True
+                    Gravity = CenterVRight
+                    Padding.Left = 25.000000000000000000
+                    Padding.Top = 2.000000000000000000
+                    Padding.Right = 6.000000000000000000
+                    Padding.Bottom = 2.000000000000000000
+                    HitTest = False
+                    Size.Width = 464.000000000000000000
+                    Size.Height = 56.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    Text = '0,00'
+                    TextSettings.Font.Size = 30.000000000000000000
+                    TextSettings.Gravity = CenterVRight
+                    DisableFocusEffect = True
+                  end
+                end
+                object lylTecladoNumerico: TLayout
+                  Align = Top
+                  Position.Y = 101.000000000000000000
+                  Size.Width = 464.000000000000000000
+                  Size.Height = 360.000000000000000000
+                  Size.PlatformDefault = False
+                  ParentShowHint = False
+                  ShowHint = False
+                  TabOrder = 27
+                  object FloatAnimation2: TFloatAnimation
+                    Duration = 0.400000005960464500
+                    PropertyName = 'Margins.Bottom'
+                    StartValue = 0.000000000000000000
+                    StopValue = 0.000000000000000000
+                  end
+                  object Layout15: TLayout
+                    Align = Top
+                    Margins.Bottom = 24.000000000000000000
+                    Position.Y = 96.000000000000000000
+                    Size.Width = 464.000000000000000000
+                    Size.Height = 72.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    object btn4: TGosButtonView
+                      Align = Left
+                      Background.XRadius = 10.000000000000000000
+                      Background.YRadius = 10.000000000000000000
+                      Background.ItemDefault.Color = claNull
+                      Background.ItemPressed.Color = xFF1B194E
+                      Background.Border.Color.Default = xAFFFFFFF
+                      Background.Border.Color.Pressed = claNull
+                      Background.Border.Color.Focused = claNull
+                      Background.Border.Color.Selected = claNull
+                      Background.Border.Color.Checked = claNull
+                      Background.Border.Color.Enabled = claNull
+                      Background.Border.Width = 3.000000000000000000
+                      Size.Width = 144.000000000000000000
+                      Size.Height = 72.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 31
+                      OnClick = btn1Click
+                      Text = '4'
+                      TextSettings.Color.Default = claWhite
+                      TextSettings.Color.Focused = claNull
+                      TextSettings.Color.Selected = claNull
+                      TextSettings.Color.Enabled = claNull
+                      TextSettings.Font.Family = 'Poppins'
+                      TextSettings.Font.Size = 32.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.Gravity = Center
+                    end
+                    object btn5: TGosButtonView
+                      Align = Center
+                      Background.XRadius = 10.000000000000000000
+                      Background.YRadius = 10.000000000000000000
+                      Background.ItemDefault.Color = claNull
+                      Background.ItemPressed.Color = xFF1B194E
+                      Background.Border.Color.Default = xAFFFFFFF
+                      Background.Border.Color.Pressed = claNull
+                      Background.Border.Color.Focused = claNull
+                      Background.Border.Color.Selected = claNull
+                      Background.Border.Color.Checked = claNull
+                      Background.Border.Color.Enabled = claNull
+                      Background.Border.Width = 3.000000000000000000
+                      Size.Width = 144.000000000000000000
+                      Size.Height = 72.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 29
+                      OnClick = btn1Click
+                      Text = '5'
+                      TextSettings.Color.Default = claWhite
+                      TextSettings.Color.Focused = claNull
+                      TextSettings.Color.Selected = claNull
+                      TextSettings.Color.Enabled = claNull
+                      TextSettings.Font.Family = 'Poppins'
+                      TextSettings.Font.Size = 32.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.Gravity = Center
+                    end
+                    object btn6: TGosButtonView
+                      Align = Right
+                      Background.XRadius = 10.000000000000000000
+                      Background.YRadius = 10.000000000000000000
+                      Background.ItemDefault.Color = claNull
+                      Background.ItemPressed.Color = xFF1B194E
+                      Background.Border.Color.Default = xAFFFFFFF
+                      Background.Border.Color.Pressed = claNull
+                      Background.Border.Color.Focused = claNull
+                      Background.Border.Color.Selected = claNull
+                      Background.Border.Color.Checked = claNull
+                      Background.Border.Color.Enabled = claNull
+                      Background.Border.Width = 3.000000000000000000
+                      Size.Width = 144.000000000000000000
+                      Size.Height = 72.000000000000000000
+                      Size.PlatformDefault = False
+                      Position.X = 320.000000000000000000
+                      TabOrder = 30
+                      OnClick = btn1Click
+                      Text = '6'
+                      TextSettings.Color.Default = claWhite
+                      TextSettings.Color.Focused = claNull
+                      TextSettings.Color.Selected = claNull
+                      TextSettings.Color.Enabled = claNull
+                      TextSettings.Font.Family = 'Poppins'
+                      TextSettings.Font.Size = 32.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.Gravity = Center
+                    end
+                  end
+                  object Layout16: TLayout
+                    Align = Top
+                    Margins.Bottom = 10.000000000000000000
+                    Position.Y = 288.000000000000000000
+                    Size.Width = 464.000000000000000000
+                    Size.Height = 72.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 1
+                    object btn0: TGosButtonView
+                      Align = Center
+                      Background.XRadius = 10.000000000000000000
+                      Background.YRadius = 10.000000000000000000
+                      Background.ItemDefault.Color = claNull
+                      Background.ItemPressed.Color = xFF1B194E
+                      Background.Border.Color.Default = xAFFFFFFF
+                      Background.Border.Color.Pressed = claNull
+                      Background.Border.Color.Focused = claNull
+                      Background.Border.Color.Selected = claNull
+                      Background.Border.Color.Checked = claNull
+                      Background.Border.Color.Enabled = claNull
+                      Background.Border.Width = 3.000000000000000000
+                      Size.Width = 144.000000000000000000
+                      Size.Height = 72.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 29
+                      OnClick = btn1Click
+                      Text = '0'
+                      TextSettings.Color.Default = claWhite
+                      TextSettings.Color.Focused = claNull
+                      TextSettings.Color.Selected = claNull
+                      TextSettings.Color.Enabled = claNull
+                      TextSettings.Font.Family = 'Poppins'
+                      TextSettings.Font.Size = 32.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.Gravity = Center
+                    end
+                    object btnEnviar: TGosButtonView
+                      Align = Right
+                      Background.XRadius = 10.000000000000000000
+                      Background.YRadius = 10.000000000000000000
+                      Background.ItemDefault.Color = xFF38C31B
+                      Background.ItemPressed.Color = xFF1B8F02
+                      Background.Border.Color.Default = xAFFFFFFF
+                      Background.Border.Color.Pressed = claNull
+                      Background.Border.Color.Focused = claNull
+                      Background.Border.Color.Selected = claNull
+                      Background.Border.Color.Checked = claNull
+                      Background.Border.Color.Enabled = claNull
+                      Background.Border.Width = 3.000000000000000000
+                      Background.Border.Kind = None
+                      Size.Width = 144.000000000000000000
+                      Size.Height = 72.000000000000000000
+                      Size.PlatformDefault = False
+                      Position.X = 320.000000000000000000
+                      TabOrder = 30
+                      OnClick = btnEnviarClick
+                      Text = 'Enviar'
+                      TextSettings.Color.Default = claWhite
+                      TextSettings.Color.Focused = claNull
+                      TextSettings.Color.Selected = claNull
+                      TextSettings.Color.Enabled = claNull
+                      TextSettings.Font.Family = 'Poppins'
+                      TextSettings.Font.Size = 21.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.Gravity = Center
+                    end
+                    object btnCorrigir: TGosButtonView
+                      Align = Left
+                      Background.XRadius = 10.000000000000000000
+                      Background.YRadius = 10.000000000000000000
+                      Background.ItemDefault.Color = claNull
+                      Background.ItemPressed.Color = xFF1B194E
+                      Background.Border.Color.Default = xAFFFFFFF
+                      Background.Border.Color.Pressed = claNull
+                      Background.Border.Color.Focused = claNull
+                      Background.Border.Color.Selected = claNull
+                      Background.Border.Color.Checked = claNull
+                      Background.Border.Color.Enabled = claNull
+                      Background.Border.Width = 3.000000000000000000
+                      Background.Border.Kind = None
+                      Size.Width = 144.000000000000000000
+                      Size.Height = 72.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 31
+                      OnClick = Rectangle14Click
+                      Text = 'Corrigir'
+                      TextSettings.Color.Default = claWhite
+                      TextSettings.Color.Focused = claNull
+                      TextSettings.Color.Selected = claNull
+                      TextSettings.Color.Enabled = claNull
+                      TextSettings.Font.Family = 'Poppins'
+                      TextSettings.Font.Size = 21.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.Gravity = Center
+                      object Line1: TLine
+                        Align = Bottom
+                        LineType = Bottom
+                        Position.X = 4.000000000000000000
+                        Position.Y = 66.000000000000000000
+                        Size.Width = 136.000000000000000000
+                        Size.Height = 2.000000000000000000
+                        Size.PlatformDefault = False
+                        Stroke.Color = xFFFFDB00
+                      end
+                    end
+                  end
+                  object Layout18: TLayout
+                    Align = Top
+                    Margins.Bottom = 24.000000000000000000
+                    Position.Y = 192.000000000000000000
+                    Size.Width = 464.000000000000000000
+                    Size.Height = 72.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 3
+                    object btn7: TGosButtonView
+                      Align = Left
+                      Background.XRadius = 10.000000000000000000
+                      Background.YRadius = 10.000000000000000000
+                      Background.ItemDefault.Color = claNull
+                      Background.ItemPressed.Color = xFF1B194E
+                      Background.Border.Color.Default = xAFFFFFFF
+                      Background.Border.Color.Pressed = claNull
+                      Background.Border.Color.Focused = claNull
+                      Background.Border.Color.Selected = claNull
+                      Background.Border.Color.Checked = claNull
+                      Background.Border.Color.Enabled = claNull
+                      Background.Border.Width = 3.000000000000000000
+                      Size.Width = 144.000000000000000000
+                      Size.Height = 72.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 31
+                      OnClick = btn1Click
+                      Text = '7'
+                      TextSettings.Color.Default = claWhite
+                      TextSettings.Color.Focused = claNull
+                      TextSettings.Color.Selected = claNull
+                      TextSettings.Color.Enabled = claNull
+                      TextSettings.Font.Family = 'Poppins'
+                      TextSettings.Font.Size = 32.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.Gravity = Center
+                    end
+                    object btn8: TGosButtonView
+                      Align = Center
+                      Background.XRadius = 10.000000000000000000
+                      Background.YRadius = 10.000000000000000000
+                      Background.ItemDefault.Color = claNull
+                      Background.ItemPressed.Color = xFF1B194E
+                      Background.Border.Color.Default = xAFFFFFFF
+                      Background.Border.Color.Pressed = claNull
+                      Background.Border.Color.Focused = claNull
+                      Background.Border.Color.Selected = claNull
+                      Background.Border.Color.Checked = claNull
+                      Background.Border.Color.Enabled = claNull
+                      Background.Border.Width = 3.000000000000000000
+                      Size.Width = 144.000000000000000000
+                      Size.Height = 72.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 29
+                      OnClick = btn1Click
+                      Text = '8'
+                      TextSettings.Color.Default = claWhite
+                      TextSettings.Color.Focused = claNull
+                      TextSettings.Color.Selected = claNull
+                      TextSettings.Color.Enabled = claNull
+                      TextSettings.Font.Family = 'Poppins'
+                      TextSettings.Font.Size = 32.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.Gravity = Center
+                    end
+                    object btn9: TGosButtonView
+                      Align = Right
+                      Background.XRadius = 10.000000000000000000
+                      Background.YRadius = 10.000000000000000000
+                      Background.ItemDefault.Color = claNull
+                      Background.ItemPressed.Color = xFF1B194E
+                      Background.Border.Color.Default = xAFFFFFFF
+                      Background.Border.Color.Pressed = claNull
+                      Background.Border.Color.Focused = claNull
+                      Background.Border.Color.Selected = claNull
+                      Background.Border.Color.Checked = claNull
+                      Background.Border.Color.Enabled = claNull
+                      Background.Border.Width = 3.000000000000000000
+                      Size.Width = 144.000000000000000000
+                      Size.Height = 72.000000000000000000
+                      Size.PlatformDefault = False
+                      Position.X = 320.000000000000000000
+                      TabOrder = 30
+                      OnClick = btn1Click
+                      Text = '9'
+                      TextSettings.Color.Default = claWhite
+                      TextSettings.Color.Focused = claNull
+                      TextSettings.Color.Selected = claNull
+                      TextSettings.Color.Enabled = claNull
+                      TextSettings.Font.Family = 'Poppins'
+                      TextSettings.Font.Size = 32.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.Gravity = Center
+                    end
+                  end
+                  object Layout19: TLayout
+                    Align = Top
+                    Margins.Bottom = 24.000000000000000000
+                    Size.Width = 464.000000000000000000
+                    Size.Height = 72.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 2
+                    object btn3: TGosButtonView
+                      Align = Right
+                      Background.XRadius = 10.000000000000000000
+                      Background.YRadius = 10.000000000000000000
+                      Background.ItemDefault.Color = claNull
+                      Background.Border.Color.Default = xAFFFFFFF
+                      Background.Border.Color.Pressed = claNull
+                      Background.Border.Color.Focused = claNull
+                      Background.Border.Color.Selected = claNull
+                      Background.Border.Color.Checked = claNull
+                      Background.Border.Color.Enabled = claNull
+                      Background.Border.Width = 3.000000000000000000
+                      Size.Width = 144.000000000000000000
+                      Size.Height = 72.000000000000000000
+                      Size.PlatformDefault = False
+                      Position.X = 320.000000000000000000
+                      TabOrder = 30
+                      OnClick = btn1Click
+                      Text = '3'
+                      TextSettings.Color.Default = claWhite
+                      TextSettings.Color.Focused = claNull
+                      TextSettings.Color.Selected = claNull
+                      TextSettings.Color.Enabled = claNull
+                      TextSettings.Font.Family = 'Poppins'
+                      TextSettings.Font.Size = 32.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.Gravity = Center
+                    end
+                    object btn2: TGosButtonView
+                      Align = Center
+                      Background.XRadius = 10.000000000000000000
+                      Background.YRadius = 10.000000000000000000
+                      Background.ItemDefault.Color = claNull
+                      Background.ItemPressed.Color = xFF1B194E
+                      Background.Border.Color.Default = xAFFFFFFF
+                      Background.Border.Color.Pressed = claNull
+                      Background.Border.Color.Focused = claNull
+                      Background.Border.Color.Selected = claNull
+                      Background.Border.Color.Checked = claNull
+                      Background.Border.Color.Enabled = claNull
+                      Background.Border.Width = 3.000000000000000000
+                      Size.Width = 144.000000000000000000
+                      Size.Height = 72.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 29
+                      OnClick = btn1Click
+                      Text = '2'
+                      TextSettings.Color.Default = claWhite
+                      TextSettings.Color.Focused = claNull
+                      TextSettings.Color.Selected = claNull
+                      TextSettings.Color.Enabled = claNull
+                      TextSettings.Font.Family = 'Poppins'
+                      TextSettings.Font.Size = 32.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.Gravity = Center
+                    end
+                    object btn1: TGosButtonView
+                      Align = Left
+                      Background.XRadius = 10.000000000000000000
+                      Background.YRadius = 10.000000000000000000
+                      Background.ItemDefault.Color = claNull
+                      Background.ItemPressed.Color = xFF1B194E
+                      Background.Border.Color.Default = xAFFFFFFF
+                      Background.Border.Color.Pressed = claNull
+                      Background.Border.Color.Focused = claNull
+                      Background.Border.Color.Selected = claNull
+                      Background.Border.Color.Checked = claNull
+                      Background.Border.Color.Enabled = claNull
+                      Background.Border.Width = 3.000000000000000000
+                      Size.Width = 144.000000000000000000
+                      Size.Height = 72.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 31
+                      OnClick = btn1Click
+                      Text = '1'
+                      TextSettings.Color.Default = claWhite
+                      TextSettings.Color.Focused = claNull
+                      TextSettings.Color.Selected = claNull
+                      TextSettings.Color.Enabled = claNull
+                      TextSettings.Font.Family = 'Poppins'
+                      TextSettings.Font.Size = 32.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.Gravity = Center
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    object tabSimulaParcelas: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 342.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabSimulaParcelas'
+      Visible = False
+      ExplicitSize.cx = 458.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Rectangle2: TRectangle
+        Align = Client
+        Fill.Color = xFF333075
+        Size.Width = 1370.000000000000000000
+        Size.Height = 692.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Layout4: TLayout
+          Align = Left
+          Size.Width = 124.000000000000000000
+          Size.Height = 692.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object recSairP: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 548.000000000000000000
+            TabOrder = 31
+            OnClick = recSairPClick
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 32.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg2: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_10' +
+                '0)">'#13#10'<path d="M43.605 26.605C37.7449 32.465 28.2469 32.465 22.3' +
+                '868 26.605C16.5268 20.7449 16.5268 11.2469 22.3868 5.38684C28.24' +
+                '69 -0.463844 37.7543 -0.463843 43.605 5.39622C49.465 11.2469 49.' +
+                '465 20.7543 43.605 26.605Z" stroke="white" stroke-width="2"/>'#13#10'<' +
+                'path d="M38.1855 10.8157L27.8156 21.1856" stroke="white" stroke-' +
+                'width="2" stroke-linecap="round"/>'#13#10'<path d="M38.1855 21.1856L27' +
+                '.8156 10.8157" stroke="white" stroke-width="2" stroke-linecap="r' +
+                'ound"/>'#13#10'</g>'#13#10'<path d="M19.4987 63.147C18.5327 63.147 17.6647 6' +
+                '2.979 16.8947 62.643C16.1387 62.293 15.5437 61.817 15.1097 61.21' +
+                '5C14.6757 60.599 14.4517 59.892 14.4377 59.094H16.4747C16.5447 5' +
+                '9.78 16.8247 60.361 17.3147 60.837C17.8187 61.299 18.5467 61.53 ' +
+                '19.4987 61.53C20.4087 61.53 21.1227 61.306 21.6407 60.858C22.172' +
+                '7 60.396 22.4387 59.808 22.4387 59.094C22.4387 58.534 22.2847 58' +
+                '.079 21.9767 57.729C21.6687 57.379 21.2837 57.113 20.8217 56.931' +
+                'C20.3597 56.749 19.7367 56.553 18.9527 56.343C17.9867 56.091 17.' +
+                '2097 55.839 16.6217 55.587C16.0477 55.335 15.5507 54.943 15.1307' +
+                ' 54.411C14.7247 53.865 14.5217 53.137 14.5217 52.227C14.5217 51.' +
+                '429 14.7247 50.722 15.1307 50.106C15.5367 49.49 16.1037 49.014 1' +
+                '6.8317 48.678C17.5737 48.342 18.4207 48.174 19.3727 48.174C20.74' +
+                '47 48.174 21.8647 48.517 22.7327 49.203C23.6147 49.889 24.1117 5' +
+                '0.799 24.2237 51.933H22.1237C22.0537 51.373 21.7597 50.883 21.24' +
+                '17 50.463C20.7237 50.029 20.0377 49.812 19.1837 49.812C18.3857 4' +
+                '9.812 17.7347 50.022 17.2307 50.442C16.7267 50.848 16.4747 51.42' +
+                '2 16.4747 52.164C16.4747 52.696 16.6217 53.13 16.9157 53.466C17.' +
+                '2237 53.802 17.5947 54.061 18.0287 54.243C18.4767 54.411 19.0997' +
+                ' 54.607 19.8977 54.831C20.8637 55.097 21.6407 55.363 22.2287 55.' +
+                '629C22.8167 55.881 23.3207 56.28 23.7407 56.826C24.1607 57.358 2' +
+                '4.3707 58.086 24.3707 59.01C24.3707 59.724 24.1817 60.396 23.803' +
+                '7 61.026C23.4257 61.656 22.8657 62.167 22.1237 62.559C21.3817 62' +
+                '.951 20.5067 63.147 19.4987 63.147ZM26.4689 57.204C26.4689 56.02' +
+                '8 26.7069 54.999 27.1829 54.117C27.6589 53.221 28.3099 52.528 29' +
+                '.1359 52.038C29.9759 51.548 30.9069 51.303 31.9289 51.303C32.936' +
+                '9 51.303 33.8119 51.52 34.5539 51.954C35.2959 52.388 35.8489 52.' +
+                '934 36.2129 53.592V51.492H38.1449V63H36.2129V60.858C35.8349 61.5' +
+                '3 35.2679 62.09 34.5119 62.538C33.7699 62.972 32.9019 63.189 31.' +
+                '9079 63.189C30.8859 63.189 29.9619 62.937 29.1359 62.433C28.3099' +
+                ' 61.929 27.6589 61.222 27.1829 60.312C26.7069 59.402 26.4689 58.' +
+                '366 26.4689 57.204ZM36.2129 57.225C36.2129 56.357 36.0379 55.601' +
+                ' 35.6879 54.957C35.3379 54.313 34.8619 53.823 34.2599 53.487C33.' +
+                '6719 53.137 33.0209 52.962 32.3069 52.962C31.5929 52.962 30.9419' +
+                ' 53.13 30.3539 53.466C29.7659 53.802 29.2969 54.292 28.9469 54.9' +
+                '36C28.5969 55.58 28.4219 56.336 28.4219 57.204C28.4219 58.086 28' +
+                '.5969 58.856 28.9469 59.514C29.2969 60.158 29.7659 60.655 30.353' +
+                '9 61.005C30.9419 61.341 31.5929 61.509 32.3069 61.509C33.0209 61' +
+                '.509 33.6719 61.341 34.2599 61.005C34.8619 60.655 35.3379 60.158' +
+                ' 35.6879 59.514C36.0379 58.856 36.2129 58.093 36.2129 57.225ZM42' +
+                '.3613 49.623C41.9973 49.623 41.6893 49.497 41.4373 49.245C41.185' +
+                '3 48.993 41.0593 48.685 41.0593 48.321C41.0593 47.957 41.1853 47' +
+                '.649 41.4373 47.397C41.6893 47.145 41.9973 47.019 42.3613 47.019' +
+                'C42.7113 47.019 43.0053 47.145 43.2433 47.397C43.4953 47.649 43.' +
+                '6213 47.957 43.6213 48.321C43.6213 48.685 43.4953 48.993 43.2433' +
+                ' 49.245C43.0053 49.497 42.7113 49.623 42.3613 49.623ZM43.2853 51' +
+                '.492V63H41.3743V51.492H43.2853ZM48.4533 53.361C48.7893 52.703 49' +
+                '.2653 52.192 49.8813 51.828C50.5113 51.464 51.2743 51.282 52.170' +
+                '3 51.282V53.256H51.6663C49.5243 53.256 48.4533 54.418 48.4533 56' +
+                '.742V63H46.5423V51.492H48.4533V53.361Z" fill="white"/>'#13#10'<defs>'#13#10 +
+                '<clipPath id="clip0_226_100">'#13#10'<rect width="32" height="32" fill' +
+                '="white" transform="translate(49) rotate(90)"/>'#13#10'</clipPath>'#13#10'</' +
+                'defs>'#13#10'</svg>'
+            end
+          end
+          object recVoltarP: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemDefault.SVGImage.Color = xFF333075
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.ItemPressed.Accessory.Color = xFF333075
+            Background.ItemPressed.SVGImage.Color = xFF333075
+            Background.ItemSelected.SVGImage.Color = xFF333075
+            Background.ItemChecked.SVGImage.Color = xFF333075
+            Background.ItemActivated.SVGImage.Color = xFF333075
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 404.000000000000000000
+            TabOrder = 32
+            OnClick = recVoltarPClick
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 21.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg1: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_71' +
+                ')">'#13#10'<path d="M37.8936 16.0005L28.1154 16.0005" stroke="white" s' +
+                'troke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+                #13#10'<path d="M31.7247 12.3916L28.106 16.001L31.7247 19.6104" strok' +
+                'e="white" stroke-width="2" stroke-linecap="round" stroke-linejoi' +
+                'n="round"/>'#13#10'<path d="M33 31C24.7125 31 18 24.2875 18 16C18 7.71' +
+                '25 24.7125 0.999999 33 0.999999C41.2875 1 48 7.7125 48 16C48 24.' +
+                '2875 41.2875 31 33 31Z" stroke="white" stroke-width="2" stroke-l' +
+                'inecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'<path d="M15.479' +
+                '6 48.363L9.9566 63H7.7516L2.2286 48.363H4.2656L8.8646 60.984L13.' +
+                '4636 48.363H15.4796ZM22.594 63.189C21.516 63.189 20.536 62.944 1' +
+                '9.654 62.454C18.786 61.964 18.1 61.271 17.596 60.375C17.106 59.4' +
+                '65 16.861 58.415 16.861 57.225C16.861 56.049 17.113 55.013 17.61' +
+                '7 54.117C18.135 53.207 18.835 52.514 19.717 52.038C20.599 51.548' +
+                ' 21.586 51.303 22.678 51.303C23.77 51.303 24.757 51.548 25.639 5' +
+                '2.038C26.521 52.514 27.214 53.2 27.718 54.096C28.236 54.992 28.4' +
+                '95 56.035 28.495 57.225C28.495 58.415 28.229 59.465 27.697 60.37' +
+                '5C27.179 61.271 26.472 61.964 25.576 62.454C24.68 62.944 23.686 ' +
+                '63.189 22.594 63.189ZM22.594 61.509C23.28 61.509 23.924 61.348 2' +
+                '4.526 61.026C25.128 60.704 25.611 60.221 25.975 59.577C26.353 58' +
+                '.933 26.542 58.149 26.542 57.225C26.542 56.301 26.36 55.517 25.9' +
+                '96 54.873C25.632 54.229 25.156 53.753 24.568 53.445C23.98 53.123' +
+                ' 23.343 52.962 22.657 52.962C21.957 52.962 21.313 53.123 20.725 ' +
+                '53.445C20.151 53.753 19.689 54.229 19.339 54.873C18.989 55.517 1' +
+                '8.814 56.301 18.814 57.225C18.814 58.163 18.982 58.954 19.318 59' +
+                '.598C19.668 60.242 20.13 60.725 20.704 61.047C21.278 61.355 21.9' +
+                '08 61.509 22.594 61.509ZM32.9186 47.46V63H31.0076V47.46H32.9186Z' +
+                'M38.5066 53.067V59.85C38.5066 60.41 38.6256 60.809 38.8636 61.04' +
+                '7C39.1016 61.271 39.5146 61.383 40.1026 61.383H41.5096V63H39.787' +
+                '6C38.7236 63 37.9256 62.755 37.3936 62.265C36.8616 61.775 36.595' +
+                '6 60.97 36.5956 59.85V53.067H35.1046V51.492H36.5956V48.594H38.50' +
+                '66V51.492H41.5096V53.067H38.5066ZM43.111 57.204C43.111 56.028 43' +
+                '.349 54.999 43.825 54.117C44.301 53.221 44.952 52.528 45.778 52.' +
+                '038C46.618 51.548 47.549 51.303 48.571 51.303C49.579 51.303 50.4' +
+                '54 51.52 51.196 51.954C51.938 52.388 52.491 52.934 52.855 53.592' +
+                'V51.492H54.787V63H52.855V60.858C52.477 61.53 51.91 62.09 51.154 ' +
+                '62.538C50.412 62.972 49.544 63.189 48.55 63.189C47.528 63.189 46' +
+                '.604 62.937 45.778 62.433C44.952 61.929 44.301 61.222 43.825 60.' +
+                '312C43.349 59.402 43.111 58.366 43.111 57.204ZM52.855 57.225C52.' +
+                '855 56.357 52.68 55.601 52.33 54.957C51.98 54.313 51.504 53.823 ' +
+                '50.902 53.487C50.314 53.137 49.663 52.962 48.949 52.962C48.235 5' +
+                '2.962 47.584 53.13 46.996 53.466C46.408 53.802 45.939 54.292 45.' +
+                '589 54.936C45.239 55.58 45.064 56.336 45.064 57.204C45.064 58.08' +
+                '6 45.239 58.856 45.589 59.514C45.939 60.158 46.408 60.655 46.996' +
+                ' 61.005C47.584 61.341 48.235 61.509 48.949 61.509C49.663 61.509 ' +
+                '50.314 61.341 50.902 61.005C51.504 60.655 51.98 60.158 52.33 59.' +
+                '514C52.68 58.856 52.855 58.093 52.855 57.225ZM59.9274 53.361C60.' +
+                '2634 52.703 60.7394 52.192 61.3554 51.828C61.9854 51.464 62.7484' +
+                ' 51.282 63.6444 51.282V53.256H63.1404C60.9984 53.256 59.9274 54.' +
+                '418 59.9274 56.742V63H58.0164V51.492H59.9274V53.361Z" fill="whit' +
+                'e"/>'#13#10'<defs>'#13#10'<clipPath id="clip0_226_71">'#13#10'<rect width="32" hei' +
+                'ght="32" fill="white" transform="translate(49) rotate(90)"/>'#13#10'</' +
+                'clipPath>'#13#10'</defs>'#13#10'</svg>'
+            end
+          end
+        end
+        object Layout5: TLayout
+          Align = Contents
+          Size.Width = 1370.000000000000000000
+          Size.Height = 692.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Layout7: TLayout
+            Align = Center
+            Size.Width = 995.000000000000000000
+            Size.Height = 603.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object SkLabel3: TSkLabel
+              Align = Top
+              Margins.Bottom = 8.000000000000000000
+              Size.Width = 995.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = []
+              TextSettings.Font.Families = 'Poppins'
+              TextSettings.Font.Size = 32.000000000000000000
+              TextSettings.Font.Weight = Medium
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Simular empr'#233'stimo'
+                end>
+            end
+            object SkLabel4: TSkLabel
+              Align = Top
+              Margins.Bottom = 10.000000000000000000
+              Position.Y = 56.000000000000000000
+              Size.Width = 995.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Style]
+              TextSettings.Font.Families = 'Poppins'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Veja as parcelas dispon'#237'veis para o valor solicitado'
+                end>
+            end
+            object Layout8: TLayout
+              Align = Center
+              Size.Width = 995.000000000000000000
+              Size.Height = 473.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 26
+              object Layout9: TLayout
+                Align = Left
+                Size.Width = 288.000000000000000000
+                Size.Height = 473.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object Rectangle5: TRectangle
+                  Align = Top
+                  Fill.Color = claWhite
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Position.X = 5.000000000000000000
+                  Position.Y = 5.000000000000000000
+                  Size.Width = 278.000000000000000000
+                  Size.Height = 103.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 8.000000000000000000
+                  YRadius = 8.000000000000000000
+                  object SkLabel5: TSkLabel
+                    Align = Top
+                    Margins.Top = 10.000000000000000000
+                    Position.Y = 60.000000000000000000
+                    Size.Width = 278.000000000000000000
+                    Size.Height = 31.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    TextSettings.Font.Families = 'Poppins'
+                    TextSettings.Font.Size = 21.000000000000000000
+                    TextSettings.HorzAlign = Center
+                    Words = <
+                      item
+                        Text = 'R$ 2000,00'
+                      end>
+                  end
+                  object Rectangle6: TRectangle
+                    Align = Top
+                    Fill.Color = xFFE400E4
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Margins.Bottom = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 10.000000000000000000
+                    Size.Width = 258.000000000000000000
+                    Size.Height = 30.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    XRadius = 15.000000000000000000
+                    YRadius = 15.000000000000000000
+                    object SkLabel6: TSkLabel
+                      Align = Center
+                      Size.Width = 205.279998779296900000
+                      Size.Height = 480.000000000000000000
+                      Size.PlatformDefault = False
+                      StyledSettings = []
+                      TextSettings.Font.Families = 'Poppins'
+                      TextSettings.Font.Size = 16.000000000000000000
+                      TextSettings.Font.Weight = Bold
+                      TextSettings.FontColor = claWhite
+                      Words = <
+                        item
+                          Text = 'VALOR TOTAL DISPON'#205'VEL'
+                        end>
+                    end
+                  end
+                end
+                object Rectangle23: TRectangle
+                  Align = Bottom
+                  Fill.Color = claWhite
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Position.X = 5.000000000000000000
+                  Position.Y = 198.000000000000000000
+                  Size.Width = 278.000000000000000000
+                  Size.Height = 270.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 8.000000000000000000
+                  YRadius = 8.000000000000000000
+                  OnClick = Rectangle23Click
+                  object SkLabel19: TSkLabel
+                    Align = Top
+                    Margins.Top = 10.000000000000000000
+                    Position.Y = 60.000000000000000000
+                    Size.Width = 278.000000000000000000
+                    Size.Height = 31.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    TextSettings.Font.Families = 'Poppins'
+                    TextSettings.Font.Size = 21.000000000000000000
+                    TextSettings.HorzAlign = Center
+                    Words = <
+                      item
+                        Text = 'R$ 1500,00'
+                      end>
+                  end
+                  object Rectangle24: TRectangle
+                    Align = Top
+                    Fill.Color = xFFE400E4
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Margins.Bottom = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 10.000000000000000000
+                    Size.Width = 258.000000000000000000
+                    Size.Height = 30.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    XRadius = 15.000000000000000000
+                    YRadius = 15.000000000000000000
+                    object SkLabel20: TSkLabel
+                      Align = Center
+                      Size.Width = 154.639999389648400000
+                      Size.Height = 360.000000000000000000
+                      Size.PlatformDefault = False
+                      StyledSettings = []
+                      TextSettings.Font.Families = 'Poppins'
+                      TextSettings.Font.Size = 16.000000000000000000
+                      TextSettings.Font.Weight = Bold
+                      TextSettings.FontColor = claWhite
+                      Words = <
+                        item
+                          Text = 'VALOR SOLICITADO'
+                        end>
+                    end
+                  end
+                  object GosLine2: TGosLine
+                    Align = Top
+                    HitTest = False
+                    LineType = Bottom
+                    Margins.Left = 25.000000000000000000
+                    Margins.Top = 12.000000000000000000
+                    Margins.Right = 22.250000000000000000
+                    Position.X = 25.000000000000000000
+                    Position.Y = 103.000000000000000000
+                    Size.Width = 230.750000000000000000
+                    Size.Height = 4.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = xFFE400E4
+                  end
+                  object Layout17: TLayout
+                    Align = Top
+                    Margins.Left = 22.250000000000000000
+                    Margins.Top = 24.000000000000000000
+                    Margins.Right = 25.000000000000000000
+                    Margins.Bottom = 21.000000000000000000
+                    Position.X = 22.250000000000000000
+                    Position.Y = 131.000000000000000000
+                    Size.Width = 230.750000000000000000
+                    Size.Height = 45.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 2
+                    object SkSvg6: TSkSvg
+                      Align = Center
+                      Size.Width = 46.000000000000000000
+                      Size.Height = 45.000000000000000000
+                      Size.PlatformDefault = False
+                      Svg.OverrideColor = xFFE400E4
+                      Svg.Source = 
+                        '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmln' +
+                        's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.1064 15.9995L20.88' +
+                        '46 15.9995" stroke="black" stroke-width="2" stroke-linecap="roun' +
+                        'd" stroke-linejoin="round"/>'#13#10'<path d="M17.2753 19.6084L20.894 1' +
+                        '5.999L17.2753 12.3896" stroke="black" stroke-width="2" stroke-li' +
+                        'necap="round" stroke-linejoin="round"/>'#13#10'<path d="M16 0.999999C2' +
+                        '4.2875 0.999999 31 7.7125 31 16C31 24.2875 24.2875 31 16 31C7.71' +
+                        '25 31 1 24.2875 0.999999 16C0.999999 7.7125 7.7125 1 16 0.999999' +
+                        'Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke' +
+                        '-linejoin="round"/>'#13#10'</svg>'
+                    end
+                  end
+                  object SkLabel21: TSkLabel
+                    Align = Top
+                    Margins.Top = 10.000000000000000000
+                    Position.Y = 207.000000000000000000
+                    Size.Width = 278.000000000000000000
+                    Size.Height = 31.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    TextSettings.Font.Families = 'Poppins'
+                    TextSettings.Font.Size = 21.000000000000000000
+                    TextSettings.HorzAlign = Center
+                    Words = <
+                      item
+                        Text = 'Simular outro valor'
+                      end>
+                  end
+                end
+              end
+              object Rectangle17: TRectangle
+                Align = Right
+                Fill.Color = claWhite
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 315.000000000000000000
+                Position.Y = 5.000000000000000000
+                Size.Width = 675.000000000000000000
+                Size.Height = 463.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 10.000000000000000000
+                YRadius = 10.000000000000000000
+                object Layout39: TLayout
+                  Align = Top
+                  Margins.Left = 20.000000000000000000
+                  Margins.Top = 18.500000000000000000
+                  Margins.Right = 20.000000000000000000
+                  Position.X = 20.000000000000000000
+                  Position.Y = 18.500000000000000000
+                  Size.Width = 635.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 1
+                  object Rectangle18: TRectangle
+                    Align = MostLeft
+                    Fill.Color = xFFE400E4
+                    HitTest = False
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Margins.Bottom = 10.000000000000000000
+                    Position.Y = 10.000000000000000000
+                    Size.Width = 234.000000000000000000
+                    Size.Height = 30.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    XRadius = 15.000000000000000000
+                    YRadius = 15.000000000000000000
+                    object lblMesFatura: TSkLabel
+                      Align = Center
+                      Size.Width = 186.110000610351600000
+                      Size.Height = 456.000000000000000000
+                      Size.PlatformDefault = False
+                      StyledSettings = []
+                      TextSettings.Font.Families = 'Poppins'
+                      TextSettings.Font.Size = 16.000000000000000000
+                      TextSettings.Font.Weight = Bold
+                      TextSettings.FontColor = claWhite
+                      Words = <
+                        item
+                          Text = 'PARCELAS DISPON'#205'VEIS'
+                        end>
+                    end
+                  end
+                end
+                object GosLine5: TGosLine
+                  Align = Top
+                  HitTest = False
+                  LineType = Bottom
+                  Margins.Left = 20.000000000000000000
+                  Margins.Top = 12.000000000000000000
+                  Margins.Right = 20.000000000000000000
+                  Position.X = 20.000000000000000000
+                  Position.Y = 80.500000000000000000
+                  Size.Width = 635.000000000000000000
+                  Size.Height = 3.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = xFFE400E4
+                end
+                object Layout42: TLayout
+                  Align = Top
+                  Margins.Left = 20.000000000000000000
+                  Margins.Right = 20.000000000000000000
+                  Position.X = 20.000000000000000000
+                  Position.Y = 83.500000000000000000
+                  Size.Width = 635.000000000000000000
+                  Size.Height = 42.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  object SkLabel7: TSkLabel
+                    Align = Right
+                    Margins.Left = 17.000000000000000000
+                    Margins.Right = 17.000000000000000000
+                    Position.X = 223.000000000000000000
+                    Size.Width = 183.000000000000000000
+                    Size.Height = 42.000000000000000000
+                    Size.PlatformDefault = False
+                    AutoSize = False
+                    StyledSettings = [FontColor]
+                    TextSettings.Font.Families = 'Poppins'
+                    TextSettings.Font.Size = 18.000000000000000000
+                    TextSettings.Font.Weight = Bold
+                    Words = <
+                      item
+                        Text = 'Valor'
+                      end>
+                  end
+                  object Rectangle7: TRectangle
+                    Align = Left
+                    Fill.Color = xFFFDEBFD
+                    Size.Width = 212.000000000000000000
+                    Size.Height = 42.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    object SkLabel8: TSkLabel
+                      Align = Client
+                      Margins.Left = 17.000000000000000000
+                      Margins.Right = 17.000000000000000000
+                      Size.Width = 178.000000000000000000
+                      Size.Height = 42.000000000000000000
+                      Size.PlatformDefault = False
+                      AutoSize = False
+                      StyledSettings = [FontColor]
+                      TextSettings.Font.Families = 'Poppins'
+                      TextSettings.Font.Size = 18.000000000000000000
+                      TextSettings.Font.Weight = Bold
+                      Words = <
+                        item
+                          Text = 'Parcelas'
+                        end>
+                    end
+                  end
+                  object Rectangle16: TRectangle
+                    Align = Right
+                    Fill.Color = xFFFDEBFD
+                    Position.X = 423.000000000000000000
+                    Size.Width = 212.000000000000000000
+                    Size.Height = 42.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    object SkLabel9: TSkLabel
+                      Align = Client
+                      Margins.Left = 17.000000000000000000
+                      Margins.Right = 17.000000000000000000
+                      Size.Width = 178.000000000000000000
+                      Size.Height = 42.000000000000000000
+                      Size.PlatformDefault = False
+                      AutoSize = False
+                      StyledSettings = [FontColor]
+                      TextSettings.Font.Families = 'Poppins'
+                      TextSettings.Font.Size = 18.000000000000000000
+                      TextSettings.Font.Weight = Bold
+                      Words = <
+                        item
+                          Text = 'Valor total c/ juros'
+                        end>
+                    end
+                  end
+                end
+                object VertScrollBox1: TVertScrollBox
+                  Align = Client
+                  Margins.Left = 20.000000000000000000
+                  Margins.Right = 20.000000000000000000
+                  Margins.Bottom = 10.000000000000000000
+                  Size.Width = 635.000000000000000000
+                  Size.Height = 327.500000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 2
+                  Viewport.Width = 635.000000000000000000
+                  Viewport.Height = 327.500000000000000000
+                end
+              end
+            end
+            object Layout10: TLayout
+              Align = MostBottom
+              Position.Y = 570.000000000000000000
+              Size.Width = 995.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Layout11: TLayout
+                Align = Center
+                Size.Width = 583.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object SkSvg11: TSkSvg
+                  Align = Right
+                  Margins.Right = 15.000000000000000000
+                  Position.X = -59.739990234375000000
+                  Size.Width = 50.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  Svg.Source = 
+                    '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmln' +
+                    's="http://www.w3.org/2000/svg">'#13#10'<g id="Group 261">'#13#10'<path id="V' +
+                    'ector" d="M16 1C24.2875 1 31 7.7125 31 16C31 24.2875 24.2875 31 ' +
+                    '16 31C7.7125 31 1 24.2875 1 16C1 7.7125 7.7125 1 16 1Z" stroke="' +
+                    'white" stroke-width="2"/>'#13#10'<g id="Group">'#13#10'<path id="Vector_2" d' +
+                    '="M16 13.4595V23.4532" stroke="white" stroke-width="2" stroke-li' +
+                    'necap="round" stroke-linejoin="round"/>'#13#10'<path id="Vector_3" d="' +
+                    'M16.0003 10.9469C16.663 10.9469 17.2003 10.4096 17.2003 9.74687C' +
+                    '17.2003 9.08413 16.663 8.54688 16.0003 8.54688C15.3376 8.54688 1' +
+                    '4.8003 9.08413 14.8003 9.74687C14.8003 10.4096 15.3376 10.9469 1' +
+                    '6.0003 10.9469Z" fill="white"/>'#13#10'</g>'#13#10'</g>'#13#10'</svg>'
+                end
+                object SkLabel12: TSkLabel
+                  Align = MostRight
+                  Position.X = 5.260009765625000000
+                  Size.Width = 577.739990234375000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  StyledSettings = [Style]
+                  TextSettings.Font.Families = 'Poppins'
+                  TextSettings.Font.Size = 16.000000000000000000
+                  TextSettings.FontColor = claWhite
+                  Words = <
+                    item
+                      Text = 
+                        'Para solicitar o empr'#233'stimo pessoal fale com um de nossos atende' +
+                        'ntes.'
+                    end>
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    object tabExtratoEmprest: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 456.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabExtratoEmprest'
+      ExplicitSize.cx = 344.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object ALRectangle1: TRectangle
+        Align = Client
+        Fill.Color = xFF333075
+        Size.Width = 1370.000000000000000000
+        Size.Height = 692.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Layout12: TLayout
+          Align = Left
+          Size.Width = 124.000000000000000000
+          Size.Height = 692.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object recSairE: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 548.000000000000000000
+            TabOrder = 31
+            OnClick = recSairEClick
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 32.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg3: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_10' +
+                '0)">'#13#10'<path d="M43.605 26.605C37.7449 32.465 28.2469 32.465 22.3' +
+                '868 26.605C16.5268 20.7449 16.5268 11.2469 22.3868 5.38684C28.24' +
+                '69 -0.463844 37.7543 -0.463843 43.605 5.39622C49.465 11.2469 49.' +
+                '465 20.7543 43.605 26.605Z" stroke="white" stroke-width="2"/>'#13#10'<' +
+                'path d="M38.1855 10.8157L27.8156 21.1856" stroke="white" stroke-' +
+                'width="2" stroke-linecap="round"/>'#13#10'<path d="M38.1855 21.1856L27' +
+                '.8156 10.8157" stroke="white" stroke-width="2" stroke-linecap="r' +
+                'ound"/>'#13#10'</g>'#13#10'<path d="M19.4987 63.147C18.5327 63.147 17.6647 6' +
+                '2.979 16.8947 62.643C16.1387 62.293 15.5437 61.817 15.1097 61.21' +
+                '5C14.6757 60.599 14.4517 59.892 14.4377 59.094H16.4747C16.5447 5' +
+                '9.78 16.8247 60.361 17.3147 60.837C17.8187 61.299 18.5467 61.53 ' +
+                '19.4987 61.53C20.4087 61.53 21.1227 61.306 21.6407 60.858C22.172' +
+                '7 60.396 22.4387 59.808 22.4387 59.094C22.4387 58.534 22.2847 58' +
+                '.079 21.9767 57.729C21.6687 57.379 21.2837 57.113 20.8217 56.931' +
+                'C20.3597 56.749 19.7367 56.553 18.9527 56.343C17.9867 56.091 17.' +
+                '2097 55.839 16.6217 55.587C16.0477 55.335 15.5507 54.943 15.1307' +
+                ' 54.411C14.7247 53.865 14.5217 53.137 14.5217 52.227C14.5217 51.' +
+                '429 14.7247 50.722 15.1307 50.106C15.5367 49.49 16.1037 49.014 1' +
+                '6.8317 48.678C17.5737 48.342 18.4207 48.174 19.3727 48.174C20.74' +
+                '47 48.174 21.8647 48.517 22.7327 49.203C23.6147 49.889 24.1117 5' +
+                '0.799 24.2237 51.933H22.1237C22.0537 51.373 21.7597 50.883 21.24' +
+                '17 50.463C20.7237 50.029 20.0377 49.812 19.1837 49.812C18.3857 4' +
+                '9.812 17.7347 50.022 17.2307 50.442C16.7267 50.848 16.4747 51.42' +
+                '2 16.4747 52.164C16.4747 52.696 16.6217 53.13 16.9157 53.466C17.' +
+                '2237 53.802 17.5947 54.061 18.0287 54.243C18.4767 54.411 19.0997' +
+                ' 54.607 19.8977 54.831C20.8637 55.097 21.6407 55.363 22.2287 55.' +
+                '629C22.8167 55.881 23.3207 56.28 23.7407 56.826C24.1607 57.358 2' +
+                '4.3707 58.086 24.3707 59.01C24.3707 59.724 24.1817 60.396 23.803' +
+                '7 61.026C23.4257 61.656 22.8657 62.167 22.1237 62.559C21.3817 62' +
+                '.951 20.5067 63.147 19.4987 63.147ZM26.4689 57.204C26.4689 56.02' +
+                '8 26.7069 54.999 27.1829 54.117C27.6589 53.221 28.3099 52.528 29' +
+                '.1359 52.038C29.9759 51.548 30.9069 51.303 31.9289 51.303C32.936' +
+                '9 51.303 33.8119 51.52 34.5539 51.954C35.2959 52.388 35.8489 52.' +
+                '934 36.2129 53.592V51.492H38.1449V63H36.2129V60.858C35.8349 61.5' +
+                '3 35.2679 62.09 34.5119 62.538C33.7699 62.972 32.9019 63.189 31.' +
+                '9079 63.189C30.8859 63.189 29.9619 62.937 29.1359 62.433C28.3099' +
+                ' 61.929 27.6589 61.222 27.1829 60.312C26.7069 59.402 26.4689 58.' +
+                '366 26.4689 57.204ZM36.2129 57.225C36.2129 56.357 36.0379 55.601' +
+                ' 35.6879 54.957C35.3379 54.313 34.8619 53.823 34.2599 53.487C33.' +
+                '6719 53.137 33.0209 52.962 32.3069 52.962C31.5929 52.962 30.9419' +
+                ' 53.13 30.3539 53.466C29.7659 53.802 29.2969 54.292 28.9469 54.9' +
+                '36C28.5969 55.58 28.4219 56.336 28.4219 57.204C28.4219 58.086 28' +
+                '.5969 58.856 28.9469 59.514C29.2969 60.158 29.7659 60.655 30.353' +
+                '9 61.005C30.9419 61.341 31.5929 61.509 32.3069 61.509C33.0209 61' +
+                '.509 33.6719 61.341 34.2599 61.005C34.8619 60.655 35.3379 60.158' +
+                ' 35.6879 59.514C36.0379 58.856 36.2129 58.093 36.2129 57.225ZM42' +
+                '.3613 49.623C41.9973 49.623 41.6893 49.497 41.4373 49.245C41.185' +
+                '3 48.993 41.0593 48.685 41.0593 48.321C41.0593 47.957 41.1853 47' +
+                '.649 41.4373 47.397C41.6893 47.145 41.9973 47.019 42.3613 47.019' +
+                'C42.7113 47.019 43.0053 47.145 43.2433 47.397C43.4953 47.649 43.' +
+                '6213 47.957 43.6213 48.321C43.6213 48.685 43.4953 48.993 43.2433' +
+                ' 49.245C43.0053 49.497 42.7113 49.623 42.3613 49.623ZM43.2853 51' +
+                '.492V63H41.3743V51.492H43.2853ZM48.4533 53.361C48.7893 52.703 49' +
+                '.2653 52.192 49.8813 51.828C50.5113 51.464 51.2743 51.282 52.170' +
+                '3 51.282V53.256H51.6663C49.5243 53.256 48.4533 54.418 48.4533 56' +
+                '.742V63H46.5423V51.492H48.4533V53.361Z" fill="white"/>'#13#10'<defs>'#13#10 +
+                '<clipPath id="clip0_226_100">'#13#10'<rect width="32" height="32" fill' +
+                '="white" transform="translate(49) rotate(90)"/>'#13#10'</clipPath>'#13#10'</' +
+                'defs>'#13#10'</svg>'
+            end
+          end
+          object recVoltarE: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemDefault.SVGImage.Color = xFF333075
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.ItemPressed.Accessory.Color = xFF333075
+            Background.ItemPressed.SVGImage.Color = xFF333075
+            Background.ItemSelected.SVGImage.Color = xFF333075
+            Background.ItemChecked.SVGImage.Color = xFF333075
+            Background.ItemActivated.SVGImage.Color = xFF333075
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 404.000000000000000000
+            TabOrder = 32
+            OnClick = recVoltarEClick
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 21.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg4: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_71' +
+                ')">'#13#10'<path d="M37.8936 16.0005L28.1154 16.0005" stroke="white" s' +
+                'troke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+                #13#10'<path d="M31.7247 12.3916L28.106 16.001L31.7247 19.6104" strok' +
+                'e="white" stroke-width="2" stroke-linecap="round" stroke-linejoi' +
+                'n="round"/>'#13#10'<path d="M33 31C24.7125 31 18 24.2875 18 16C18 7.71' +
+                '25 24.7125 0.999999 33 0.999999C41.2875 1 48 7.7125 48 16C48 24.' +
+                '2875 41.2875 31 33 31Z" stroke="white" stroke-width="2" stroke-l' +
+                'inecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'<path d="M15.479' +
+                '6 48.363L9.9566 63H7.7516L2.2286 48.363H4.2656L8.8646 60.984L13.' +
+                '4636 48.363H15.4796ZM22.594 63.189C21.516 63.189 20.536 62.944 1' +
+                '9.654 62.454C18.786 61.964 18.1 61.271 17.596 60.375C17.106 59.4' +
+                '65 16.861 58.415 16.861 57.225C16.861 56.049 17.113 55.013 17.61' +
+                '7 54.117C18.135 53.207 18.835 52.514 19.717 52.038C20.599 51.548' +
+                ' 21.586 51.303 22.678 51.303C23.77 51.303 24.757 51.548 25.639 5' +
+                '2.038C26.521 52.514 27.214 53.2 27.718 54.096C28.236 54.992 28.4' +
+                '95 56.035 28.495 57.225C28.495 58.415 28.229 59.465 27.697 60.37' +
+                '5C27.179 61.271 26.472 61.964 25.576 62.454C24.68 62.944 23.686 ' +
+                '63.189 22.594 63.189ZM22.594 61.509C23.28 61.509 23.924 61.348 2' +
+                '4.526 61.026C25.128 60.704 25.611 60.221 25.975 59.577C26.353 58' +
+                '.933 26.542 58.149 26.542 57.225C26.542 56.301 26.36 55.517 25.9' +
+                '96 54.873C25.632 54.229 25.156 53.753 24.568 53.445C23.98 53.123' +
+                ' 23.343 52.962 22.657 52.962C21.957 52.962 21.313 53.123 20.725 ' +
+                '53.445C20.151 53.753 19.689 54.229 19.339 54.873C18.989 55.517 1' +
+                '8.814 56.301 18.814 57.225C18.814 58.163 18.982 58.954 19.318 59' +
+                '.598C19.668 60.242 20.13 60.725 20.704 61.047C21.278 61.355 21.9' +
+                '08 61.509 22.594 61.509ZM32.9186 47.46V63H31.0076V47.46H32.9186Z' +
+                'M38.5066 53.067V59.85C38.5066 60.41 38.6256 60.809 38.8636 61.04' +
+                '7C39.1016 61.271 39.5146 61.383 40.1026 61.383H41.5096V63H39.787' +
+                '6C38.7236 63 37.9256 62.755 37.3936 62.265C36.8616 61.775 36.595' +
+                '6 60.97 36.5956 59.85V53.067H35.1046V51.492H36.5956V48.594H38.50' +
+                '66V51.492H41.5096V53.067H38.5066ZM43.111 57.204C43.111 56.028 43' +
+                '.349 54.999 43.825 54.117C44.301 53.221 44.952 52.528 45.778 52.' +
+                '038C46.618 51.548 47.549 51.303 48.571 51.303C49.579 51.303 50.4' +
+                '54 51.52 51.196 51.954C51.938 52.388 52.491 52.934 52.855 53.592' +
+                'V51.492H54.787V63H52.855V60.858C52.477 61.53 51.91 62.09 51.154 ' +
+                '62.538C50.412 62.972 49.544 63.189 48.55 63.189C47.528 63.189 46' +
+                '.604 62.937 45.778 62.433C44.952 61.929 44.301 61.222 43.825 60.' +
+                '312C43.349 59.402 43.111 58.366 43.111 57.204ZM52.855 57.225C52.' +
+                '855 56.357 52.68 55.601 52.33 54.957C51.98 54.313 51.504 53.823 ' +
+                '50.902 53.487C50.314 53.137 49.663 52.962 48.949 52.962C48.235 5' +
+                '2.962 47.584 53.13 46.996 53.466C46.408 53.802 45.939 54.292 45.' +
+                '589 54.936C45.239 55.58 45.064 56.336 45.064 57.204C45.064 58.08' +
+                '6 45.239 58.856 45.589 59.514C45.939 60.158 46.408 60.655 46.996' +
+                ' 61.005C47.584 61.341 48.235 61.509 48.949 61.509C49.663 61.509 ' +
+                '50.314 61.341 50.902 61.005C51.504 60.655 51.98 60.158 52.33 59.' +
+                '514C52.68 58.856 52.855 58.093 52.855 57.225ZM59.9274 53.361C60.' +
+                '2634 52.703 60.7394 52.192 61.3554 51.828C61.9854 51.464 62.7484' +
+                ' 51.282 63.6444 51.282V53.256H63.1404C60.9984 53.256 59.9274 54.' +
+                '418 59.9274 56.742V63H58.0164V51.492H59.9274V53.361Z" fill="whit' +
+                'e"/>'#13#10'<defs>'#13#10'<clipPath id="clip0_226_71">'#13#10'<rect width="32" hei' +
+                'ght="32" fill="white" transform="translate(49) rotate(90)"/>'#13#10'</' +
+                'clipPath>'#13#10'</defs>'#13#10'</svg>'
+            end
+          end
+        end
+        object Layout13: TLayout
+          Align = Contents
+          Size.Width = 1370.000000000000000000
+          Size.Height = 692.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Layout14: TLayout
+            Align = Center
+            Size.Width = 928.000000000000000000
+            Size.Height = 524.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object SkLabel10: TSkLabel
+              Align = Top
+              Margins.Bottom = 8.000000000000000000
+              Size.Width = 928.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = []
+              TextSettings.Font.Families = 'poppins'
+              TextSettings.Font.Size = 32.000000000000000000
+              TextSettings.Font.Weight = Medium
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Extrato empr'#233'stimo pessoal'
+                end>
+            end
+            object SkLabel11: TSkLabel
+              Align = Top
+              Margins.Bottom = 47.000000000000000000
+              Position.Y = 56.000000000000000000
+              Size.Width = 928.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Style]
+              TextSettings.Font.Families = 'poppins'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Veja as pr'#243'ximas parcelas e realize o pagamento '
+                end>
+            end
+            object HorzScrollBox1: THorzScrollBox
+              Align = Center
+              Size.Width = 845.000000000000000000
+              Size.Height = 328.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 27
+              Visible = False
+              ShowScrollBars = False
+              Viewport.Width = 845.000000000000000000
+              Viewport.Height = 328.000000000000000000
+            end
+            object lylScroll: TLayout
+              Align = Client
+              Size.Width = 928.000000000000000000
+              Size.Height = 391.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 29
+            end
+          end
+        end
+      end
+    end
+    object tabContratos: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 458.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabContratos'
+      ExplicitSize.cx = 274.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Rectangle3: TRectangle
+        Align = Client
+        Fill.Color = xFF333075
+        Size.Width = 1370.000000000000000000
+        Size.Height = 692.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Layout23: TLayout
+          Align = Left
+          Size.Width = 124.000000000000000000
+          Size.Height = 692.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object GosButtonView1: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 548.000000000000000000
+            TabOrder = 31
+            OnClick = recSairEClick
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 32.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg12: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_10' +
+                '0)">'#13#10'<path d="M43.605 26.605C37.7449 32.465 28.2469 32.465 22.3' +
+                '868 26.605C16.5268 20.7449 16.5268 11.2469 22.3868 5.38684C28.24' +
+                '69 -0.463844 37.7543 -0.463843 43.605 5.39622C49.465 11.2469 49.' +
+                '465 20.7543 43.605 26.605Z" stroke="white" stroke-width="2"/>'#13#10'<' +
+                'path d="M38.1855 10.8157L27.8156 21.1856" stroke="white" stroke-' +
+                'width="2" stroke-linecap="round"/>'#13#10'<path d="M38.1855 21.1856L27' +
+                '.8156 10.8157" stroke="white" stroke-width="2" stroke-linecap="r' +
+                'ound"/>'#13#10'</g>'#13#10'<path d="M19.4987 63.147C18.5327 63.147 17.6647 6' +
+                '2.979 16.8947 62.643C16.1387 62.293 15.5437 61.817 15.1097 61.21' +
+                '5C14.6757 60.599 14.4517 59.892 14.4377 59.094H16.4747C16.5447 5' +
+                '9.78 16.8247 60.361 17.3147 60.837C17.8187 61.299 18.5467 61.53 ' +
+                '19.4987 61.53C20.4087 61.53 21.1227 61.306 21.6407 60.858C22.172' +
+                '7 60.396 22.4387 59.808 22.4387 59.094C22.4387 58.534 22.2847 58' +
+                '.079 21.9767 57.729C21.6687 57.379 21.2837 57.113 20.8217 56.931' +
+                'C20.3597 56.749 19.7367 56.553 18.9527 56.343C17.9867 56.091 17.' +
+                '2097 55.839 16.6217 55.587C16.0477 55.335 15.5507 54.943 15.1307' +
+                ' 54.411C14.7247 53.865 14.5217 53.137 14.5217 52.227C14.5217 51.' +
+                '429 14.7247 50.722 15.1307 50.106C15.5367 49.49 16.1037 49.014 1' +
+                '6.8317 48.678C17.5737 48.342 18.4207 48.174 19.3727 48.174C20.74' +
+                '47 48.174 21.8647 48.517 22.7327 49.203C23.6147 49.889 24.1117 5' +
+                '0.799 24.2237 51.933H22.1237C22.0537 51.373 21.7597 50.883 21.24' +
+                '17 50.463C20.7237 50.029 20.0377 49.812 19.1837 49.812C18.3857 4' +
+                '9.812 17.7347 50.022 17.2307 50.442C16.7267 50.848 16.4747 51.42' +
+                '2 16.4747 52.164C16.4747 52.696 16.6217 53.13 16.9157 53.466C17.' +
+                '2237 53.802 17.5947 54.061 18.0287 54.243C18.4767 54.411 19.0997' +
+                ' 54.607 19.8977 54.831C20.8637 55.097 21.6407 55.363 22.2287 55.' +
+                '629C22.8167 55.881 23.3207 56.28 23.7407 56.826C24.1607 57.358 2' +
+                '4.3707 58.086 24.3707 59.01C24.3707 59.724 24.1817 60.396 23.803' +
+                '7 61.026C23.4257 61.656 22.8657 62.167 22.1237 62.559C21.3817 62' +
+                '.951 20.5067 63.147 19.4987 63.147ZM26.4689 57.204C26.4689 56.02' +
+                '8 26.7069 54.999 27.1829 54.117C27.6589 53.221 28.3099 52.528 29' +
+                '.1359 52.038C29.9759 51.548 30.9069 51.303 31.9289 51.303C32.936' +
+                '9 51.303 33.8119 51.52 34.5539 51.954C35.2959 52.388 35.8489 52.' +
+                '934 36.2129 53.592V51.492H38.1449V63H36.2129V60.858C35.8349 61.5' +
+                '3 35.2679 62.09 34.5119 62.538C33.7699 62.972 32.9019 63.189 31.' +
+                '9079 63.189C30.8859 63.189 29.9619 62.937 29.1359 62.433C28.3099' +
+                ' 61.929 27.6589 61.222 27.1829 60.312C26.7069 59.402 26.4689 58.' +
+                '366 26.4689 57.204ZM36.2129 57.225C36.2129 56.357 36.0379 55.601' +
+                ' 35.6879 54.957C35.3379 54.313 34.8619 53.823 34.2599 53.487C33.' +
+                '6719 53.137 33.0209 52.962 32.3069 52.962C31.5929 52.962 30.9419' +
+                ' 53.13 30.3539 53.466C29.7659 53.802 29.2969 54.292 28.9469 54.9' +
+                '36C28.5969 55.58 28.4219 56.336 28.4219 57.204C28.4219 58.086 28' +
+                '.5969 58.856 28.9469 59.514C29.2969 60.158 29.7659 60.655 30.353' +
+                '9 61.005C30.9419 61.341 31.5929 61.509 32.3069 61.509C33.0209 61' +
+                '.509 33.6719 61.341 34.2599 61.005C34.8619 60.655 35.3379 60.158' +
+                ' 35.6879 59.514C36.0379 58.856 36.2129 58.093 36.2129 57.225ZM42' +
+                '.3613 49.623C41.9973 49.623 41.6893 49.497 41.4373 49.245C41.185' +
+                '3 48.993 41.0593 48.685 41.0593 48.321C41.0593 47.957 41.1853 47' +
+                '.649 41.4373 47.397C41.6893 47.145 41.9973 47.019 42.3613 47.019' +
+                'C42.7113 47.019 43.0053 47.145 43.2433 47.397C43.4953 47.649 43.' +
+                '6213 47.957 43.6213 48.321C43.6213 48.685 43.4953 48.993 43.2433' +
+                ' 49.245C43.0053 49.497 42.7113 49.623 42.3613 49.623ZM43.2853 51' +
+                '.492V63H41.3743V51.492H43.2853ZM48.4533 53.361C48.7893 52.703 49' +
+                '.2653 52.192 49.8813 51.828C50.5113 51.464 51.2743 51.282 52.170' +
+                '3 51.282V53.256H51.6663C49.5243 53.256 48.4533 54.418 48.4533 56' +
+                '.742V63H46.5423V51.492H48.4533V53.361Z" fill="white"/>'#13#10'<defs>'#13#10 +
+                '<clipPath id="clip0_226_100">'#13#10'<rect width="32" height="32" fill' +
+                '="white" transform="translate(49) rotate(90)"/>'#13#10'</clipPath>'#13#10'</' +
+                'defs>'#13#10'</svg>'
+            end
+          end
+          object GosButtonView2: TGosButtonView
+            Align = Bottom
+            Background.XRadius = 10.000000000000000000
+            Background.YRadius = 10.000000000000000000
+            Background.ItemDefault.Color = claNull
+            Background.ItemDefault.SVGImage.Color = xFF333075
+            Background.ItemPressed.Color = xFFDDDCE1
+            Background.ItemPressed.Accessory.Color = xFF333075
+            Background.ItemPressed.SVGImage.Color = xFF333075
+            Background.ItemSelected.SVGImage.Color = xFF333075
+            Background.ItemChecked.SVGImage.Color = xFF333075
+            Background.ItemActivated.SVGImage.Color = xFF333075
+            Background.Border.Color.Default = xAFFFFFFF
+            Background.Border.Color.Pressed = claNull
+            Background.Border.Color.Focused = claNull
+            Background.Border.Color.Selected = claNull
+            Background.Border.Color.Checked = claNull
+            Background.Border.Color.Enabled = claNull
+            Background.Border.Width = 3.000000000000000000
+            Margins.Left = -10.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = -10.000000000000000000
+            Position.Y = 404.000000000000000000
+            TabOrder = 32
+            OnClick = recVoltarEClick
+            TextSettings.Color.Default = claWhite
+            TextSettings.Color.Focused = claNull
+            TextSettings.Color.Selected = claNull
+            TextSettings.Color.Enabled = claNull
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.Size = 21.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Gravity = Center
+            object SkSvg13: TSkSvg
+              Align = Client
+              Margins.Left = 16.000000000000000000
+              Margins.Top = 16.000000000000000000
+              Margins.Right = 16.000000000000000000
+              Margins.Bottom = 16.000000000000000000
+              Size.Width = 94.000000000000000000
+              Size.Height = 64.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_226_71' +
+                ')">'#13#10'<path d="M37.8936 16.0005L28.1154 16.0005" stroke="white" s' +
+                'troke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+                #13#10'<path d="M31.7247 12.3916L28.106 16.001L31.7247 19.6104" strok' +
+                'e="white" stroke-width="2" stroke-linecap="round" stroke-linejoi' +
+                'n="round"/>'#13#10'<path d="M33 31C24.7125 31 18 24.2875 18 16C18 7.71' +
+                '25 24.7125 0.999999 33 0.999999C41.2875 1 48 7.7125 48 16C48 24.' +
+                '2875 41.2875 31 33 31Z" stroke="white" stroke-width="2" stroke-l' +
+                'inecap="round" stroke-linejoin="round"/>'#13#10'</g>'#13#10'<path d="M15.479' +
+                '6 48.363L9.9566 63H7.7516L2.2286 48.363H4.2656L8.8646 60.984L13.' +
+                '4636 48.363H15.4796ZM22.594 63.189C21.516 63.189 20.536 62.944 1' +
+                '9.654 62.454C18.786 61.964 18.1 61.271 17.596 60.375C17.106 59.4' +
+                '65 16.861 58.415 16.861 57.225C16.861 56.049 17.113 55.013 17.61' +
+                '7 54.117C18.135 53.207 18.835 52.514 19.717 52.038C20.599 51.548' +
+                ' 21.586 51.303 22.678 51.303C23.77 51.303 24.757 51.548 25.639 5' +
+                '2.038C26.521 52.514 27.214 53.2 27.718 54.096C28.236 54.992 28.4' +
+                '95 56.035 28.495 57.225C28.495 58.415 28.229 59.465 27.697 60.37' +
+                '5C27.179 61.271 26.472 61.964 25.576 62.454C24.68 62.944 23.686 ' +
+                '63.189 22.594 63.189ZM22.594 61.509C23.28 61.509 23.924 61.348 2' +
+                '4.526 61.026C25.128 60.704 25.611 60.221 25.975 59.577C26.353 58' +
+                '.933 26.542 58.149 26.542 57.225C26.542 56.301 26.36 55.517 25.9' +
+                '96 54.873C25.632 54.229 25.156 53.753 24.568 53.445C23.98 53.123' +
+                ' 23.343 52.962 22.657 52.962C21.957 52.962 21.313 53.123 20.725 ' +
+                '53.445C20.151 53.753 19.689 54.229 19.339 54.873C18.989 55.517 1' +
+                '8.814 56.301 18.814 57.225C18.814 58.163 18.982 58.954 19.318 59' +
+                '.598C19.668 60.242 20.13 60.725 20.704 61.047C21.278 61.355 21.9' +
+                '08 61.509 22.594 61.509ZM32.9186 47.46V63H31.0076V47.46H32.9186Z' +
+                'M38.5066 53.067V59.85C38.5066 60.41 38.6256 60.809 38.8636 61.04' +
+                '7C39.1016 61.271 39.5146 61.383 40.1026 61.383H41.5096V63H39.787' +
+                '6C38.7236 63 37.9256 62.755 37.3936 62.265C36.8616 61.775 36.595' +
+                '6 60.97 36.5956 59.85V53.067H35.1046V51.492H36.5956V48.594H38.50' +
+                '66V51.492H41.5096V53.067H38.5066ZM43.111 57.204C43.111 56.028 43' +
+                '.349 54.999 43.825 54.117C44.301 53.221 44.952 52.528 45.778 52.' +
+                '038C46.618 51.548 47.549 51.303 48.571 51.303C49.579 51.303 50.4' +
+                '54 51.52 51.196 51.954C51.938 52.388 52.491 52.934 52.855 53.592' +
+                'V51.492H54.787V63H52.855V60.858C52.477 61.53 51.91 62.09 51.154 ' +
+                '62.538C50.412 62.972 49.544 63.189 48.55 63.189C47.528 63.189 46' +
+                '.604 62.937 45.778 62.433C44.952 61.929 44.301 61.222 43.825 60.' +
+                '312C43.349 59.402 43.111 58.366 43.111 57.204ZM52.855 57.225C52.' +
+                '855 56.357 52.68 55.601 52.33 54.957C51.98 54.313 51.504 53.823 ' +
+                '50.902 53.487C50.314 53.137 49.663 52.962 48.949 52.962C48.235 5' +
+                '2.962 47.584 53.13 46.996 53.466C46.408 53.802 45.939 54.292 45.' +
+                '589 54.936C45.239 55.58 45.064 56.336 45.064 57.204C45.064 58.08' +
+                '6 45.239 58.856 45.589 59.514C45.939 60.158 46.408 60.655 46.996' +
+                ' 61.005C47.584 61.341 48.235 61.509 48.949 61.509C49.663 61.509 ' +
+                '50.314 61.341 50.902 61.005C51.504 60.655 51.98 60.158 52.33 59.' +
+                '514C52.68 58.856 52.855 58.093 52.855 57.225ZM59.9274 53.361C60.' +
+                '2634 52.703 60.7394 52.192 61.3554 51.828C61.9854 51.464 62.7484' +
+                ' 51.282 63.6444 51.282V53.256H63.1404C60.9984 53.256 59.9274 54.' +
+                '418 59.9274 56.742V63H58.0164V51.492H59.9274V53.361Z" fill="whit' +
+                'e"/>'#13#10'<defs>'#13#10'<clipPath id="clip0_226_71">'#13#10'<rect width="32" hei' +
+                'ght="32" fill="white" transform="translate(49) rotate(90)"/>'#13#10'</' +
+                'clipPath>'#13#10'</defs>'#13#10'</svg>'
+            end
+          end
+        end
+        object Layout26: TLayout
+          Align = Contents
+          Size.Width = 1370.000000000000000000
+          Size.Height = 692.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Layout27: TLayout
+            Align = Center
+            Size.Width = 928.000000000000000000
+            Size.Height = 531.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object SkLabel15: TSkLabel
+              Align = Top
+              Margins.Bottom = 8.000000000000000000
+              Size.Width = 928.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = []
+              TextSettings.Font.Families = 'poppins'
+              TextSettings.Font.Size = 32.000000000000000000
+              TextSettings.Font.Weight = Medium
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Contratos'
+                end>
+            end
+            object SkLabel16: TSkLabel
+              Align = Top
+              Margins.Bottom = 47.000000000000000000
+              Position.Y = 56.000000000000000000
+              Size.Width = 928.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Style]
+              TextSettings.Font.Families = 'poppins'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'Veja os contratos de sua conta'
+                end>
+            end
+            object Layout28: TLayout
+              Align = Center
+              Size.Width = 928.000000000000000000
+              Size.Height = 398.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 28
+              object Rectangle4: TRectangle
+                Align = Client
+                Fill.Color = claWhite
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 918.000000000000000000
+                Size.Height = 388.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 10.000000000000000000
+                YRadius = 10.000000000000000000
+                object lylContratos: TLayout
+                  Align = Client
+                  Margins.Left = 25.000000000000000000
+                  Margins.Right = 25.000000000000000000
+                  Size.Width = 868.000000000000000000
+                  Size.Height = 291.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 2
+                end
+                object Layout36: TLayout
+                  Align = Top
+                  Margins.Left = 25.000000000000000000
+                  Margins.Right = 22.250000000000000000
+                  Position.X = 25.000000000000000000
+                  Position.Y = 55.000000000000000000
+                  Size.Width = 870.750000000000000000
+                  Size.Height = 42.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  object SkLabel40: TSkLabel
+                    Align = Left
+                    Margins.Left = 8.000000000000000000
+                    Position.X = 228.000000000000000000
+                    Size.Width = 220.000000000000000000
+                    Size.Height = 42.000000000000000000
+                    Size.PlatformDefault = False
+                    AutoSize = False
+                    StyledSettings = [FontColor]
+                    TextSettings.Font.Families = 'Poppins'
+                    TextSettings.Font.Size = 18.000000000000000000
+                    TextSettings.Font.Weight = Bold
+                    Words = <
+                      item
+                        Text = 'Data Solicita'#231#227'o'
+                      end>
+                  end
+                  object SkLabel28: TSkLabel
+                    Align = Left
+                    Margins.Left = 8.000000000000000000
+                    Margins.Right = 17.000000000000000000
+                    Position.X = 676.000000000000000000
+                    Size.Width = 172.000000000000000000
+                    Size.Height = 42.000000000000000000
+                    Size.PlatformDefault = False
+                    AutoSize = False
+                    StyledSettings = [FontColor]
+                    TextSettings.Font.Families = 'Poppins'
+                    TextSettings.Font.Size = 18.000000000000000000
+                    TextSettings.Font.Weight = Bold
+                    Words = <
+                      item
+                        Text = 'Situa'#231#227'o'
+                      end>
+                  end
+                  object Layout50: TLayout
+                    Align = MostLeft
+                    Size.Width = 220.000000000000000000
+                    Size.Height = 42.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    object Rectangle9: TRectangle
+                      Align = Client
+                      Fill.Color = xFFF9E5F7
+                      Locked = True
+                      HitTest = False
+                      Size.Width = 220.000000000000000000
+                      Size.Height = 42.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Kind = None
+                      object SkLabel18: TSkLabel
+                        Align = Client
+                        Locked = True
+                        Margins.Left = 8.000000000000000000
+                        Size.Width = 212.000000000000000000
+                        Size.Height = 42.000000000000000000
+                        Size.PlatformDefault = False
+                        AutoSize = False
+                        StyledSettings = [FontColor]
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 18.000000000000000000
+                        TextSettings.Font.Weight = Bold
+                        Words = <
+                          item
+                            Text = 'Contratos'
+                          end>
+                      end
+                    end
+                  end
+                  object Layout51: TLayout
+                    Align = Left
+                    Position.X = 448.000000000000000000
+                    Size.Width = 220.000000000000000000
+                    Size.Height = 42.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 1
+                    object Rectangle12: TRectangle
+                      Align = Client
+                      Fill.Color = xFFF9E5F7
+                      Size.Width = 220.000000000000000000
+                      Size.Height = 42.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Kind = None
+                      object SkLabel29: TSkLabel
+                        Align = Client
+                        Margins.Left = 8.000000000000000000
+                        Size.Width = 212.000000000000000000
+                        Size.Height = 42.000000000000000000
+                        Size.PlatformDefault = False
+                        AutoSize = False
+                        StyledSettings = [FontColor]
+                        TextSettings.Font.Families = 'Poppins'
+                        TextSettings.Font.Size = 18.000000000000000000
+                        TextSettings.Font.Weight = Bold
+                        Words = <
+                          item
+                            Text = 'Valor'
+                          end>
+                      end
+                    end
+                  end
+                end
+                object GosLine1: TGosLine
+                  Align = Top
+                  HitTest = False
+                  LineType = Bottom
+                  Margins.Left = 25.000000000000000000
+                  Margins.Right = 22.250000000000000000
+                  Position.X = 25.000000000000000000
+                  Position.Y = 50.000000000000000000
+                  Size.Width = 870.750000000000000000
+                  Size.Height = 5.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = xFFE400E4
+                end
+                object Layout29: TLayout
+                  Align = Top
+                  Margins.Left = 25.000000000000000000
+                  Margins.Right = 25.000000000000000000
+                  Position.X = 25.000000000000000000
+                  Size.Width = 868.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 4
+                  object recMes: TRectangle
+                    Align = Left
+                    Fill.Color = xFFE400E4
+                    HitTest = False
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Margins.Bottom = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 10.000000000000000000
+                    Size.Width = 303.000000000000000000
+                    Size.Height = 30.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    XRadius = 15.000000000000000000
+                    YRadius = 15.000000000000000000
+                    object lblTItuloContratos: TSkLabel
+                      Align = Client
+                      Margins.Left = 10.000000000000000000
+                      Size.Width = 293.000000000000000000
+                      Size.Height = 30.000000000000000000
+                      Size.PlatformDefault = False
+                      StyledSettings = []
+                      TextSettings.Font.Families = 'Poppins'
+                      TextSettings.Font.Size = 16.000000000000000000
+                      TextSettings.Font.Weight = Bold
+                      TextSettings.FontColor = claWhite
+                      Words = <
+                        item
+                          Text = 'Contratos de Empr'#233'stimo Pessoal'
+                        end>
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  object Layout20: TLayout
+    Align = Contents
+    Locked = True
+    Size.Width = 1370.000000000000000000
+    Size.Height = 741.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 3
+    object SkLabel13: TSkLabel
+      Align = Top
+      Margins.Right = 20.000000000000000000
+      Size.Width = 1350.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = []
+      TextSettings.Font.Families = 'Poppins'
+      TextSettings.Font.Size = 30.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Trailing
+      Words = <
+        item
+          Text = 'Sistema de Teste'
+        end>
+    end
+  end
+  object recLoading: TRectangle
+    Align = Contents
+    Fill.Color = claBlack
+    HitTest = False
+    Opacity = 0.899999976158142100
+    Size.Width = 1370.000000000000000000
+    Size.Height = 741.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Visible = False
+  end
+  object lylLoading: TLayout
+    Align = Contents
+    Size.Width = 1370.000000000000000000
+    Size.Height = 741.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 2
+    object Layout21: TLayout
+      Align = Center
+      Size.Width = 480.000000000000000000
+      Size.Height = 576.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object lblTitulo: TSkLabel
+        Align = Top
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = []
+        TextSettings.Font.Families = 'Poppins'
+        TextSettings.Font.Size = 32.000000000000000000
+        TextSettings.Font.Weight = Medium
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Words = <
+          item
+            Text = 'Aguarde'
+          end>
+      end
+      object SkLabel14: TSkLabel
+        Align = Top
+        Margins.Top = 22.000000000000000000
+        Margins.Bottom = 40.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 480.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Style]
+        TextSettings.Font.Families = 'Poppins'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Words = <
+          item
+            Text = 'Estamos processando as informa'#231#245'es'
+          end>
+      end
+      object SkAnimatedImage1: TSkAnimatedImage
+        Align = Center
+        Size.Width = 481.000000000000000000
+        Size.Height = 365.000000000000000000
+        Size.PlatformDefault = False
+        Data = {
+          7B226E6D223A22436F6D702031222C22646464223A302C2268223A323030302C
+          2277223A323030302C226D657461223A7B2267223A22406C6F7474696566696C
+          65732F746F6F6C6B69742D6A7320302E33332E32227D2C226C6179657273223A
+          5B7B227479223A342C226E6D223A225368617065204C617965722034222C2273
+          72223A312C227374223A302C226F70223A3930302E3030303033363635373735
+          312C226970223A302C226864223A66616C73652C22646464223A302C22626D22
+          3A302C226861734D61736B223A66616C73652C22616F223A302C226B73223A7B
+          2261223A7B2261223A302C226B223A5B2D32342C2D32302C305D2C226978223A
+          317D2C2273223A7B2261223A302C226B223A5B3230382C3230382C3130305D2C
+          226978223A367D2C22736B223A7B2261223A302C226B223A307D2C2270223A7B
+          2261223A302C226B223A5B313030302C3938302C305D2C226978223A327D2C22
+          72223A7B2261223A312C226B223A5B7B226F223A7B2278223A302E3136372C22
+          79223A302E3136377D2C2269223A7B2278223A302E3833332C2279223A302E38
+          33337D2C2273223A5B2D31312E3038335D2C2274223A307D2C7B2273223A5B33
+          31362E3931375D2C2274223A34322E303030303031373130363935317D5D2C22
+          6978223A31307D2C227361223A7B2261223A302C226B223A307D2C226F223A7B
+          2261223A302C226B223A3130302C226978223A31317D7D2C226566223A5B5D2C
+          22736861706573223A5B7B227479223A226772222C22626D223A302C22686422
+          3A66616C73652C226D6E223A224144424520566563746F722047726F7570222C
+          226E6D223A22456C6C697073652031222C226978223A312C22636978223A322C
+          226E70223A332C226974223A5B7B227479223A227368222C22626D223A302C22
+          6864223A66616C73652C226D6E223A224144424520566563746F722053686170
+          65202D2047726F7570222C226E6D223A22506174682031222C226978223A312C
+          2264223A312C226B73223A7B2261223A302C226B223A7B2263223A747275652C
+          2269223A5B5B3137352E3632372C305D2C5B302C2D3137352E3632375D2C5B2D
+          3137352E3632372C305D2C5B302C3137352E3632375D5D2C226F223A5B5B2D31
+          37352E3632372C305D2C5B302C3137352E3632375D2C5B3137352E3632372C30
+          5D2C5B302C2D3137352E3632375D5D2C2276223A5B5B3330302C2D325D2C5B2D
+          31382C3331365D2C5B3330302C3633345D2C5B3631382C3331365D5D7D2C2269
+          78223A327D7D2C7B227479223A226773222C22626D223A302C226864223A6661
+          6C73652C226D6E223A224144424520566563746F722047726170686963202D20
+          472D5374726F6B65222C226E6D223A224772616469656E74205374726F6B6520
+          31222C2265223A7B2261223A302C226B223A5B3437392C305D2C226978223A35
+          7D2C2267223A7B2270223A332C226B223A7B2261223A302C226B223A5B302C30
+          2E322C302E31383832333532393431313736343730362C302E34353838323335
+          3239343131373634372C302E352C302E322C302E313838323335323934313137
+          36343730362C302E343538383233353239343131373634372C312C302E383934
+          313137363437303538383233362C302C302E3839343131373634373035383832
+          33365D2C226978223A387D7D2C2274223A312C2261223A7B2261223A302C226B
+          223A307D2C2268223A7B2261223A302C226B223A307D2C2273223A7B2261223A
+          302C226B223A5B302C305D2C226978223A347D2C226C63223A322C226C6A223A
+          312C226D6C223A342C226F223A7B2261223A302C226B223A3130302C22697822
+          3A397D2C2277223A7B2261223A302C226B223A38312C226978223A31307D7D2C
+          7B227479223A227472222C2261223A7B2261223A302C226B223A5B302C305D2C
+          226978223A317D2C2273223A7B2261223A302C226B223A5B3130302C3130305D
+          2C226978223A337D2C22736B223A7B2261223A302C226B223A302C226978223A
+          347D2C2270223A7B2261223A302C226B223A5B2D3333302C2D3333345D2C2269
+          78223A327D2C2272223A7B2261223A302C226B223A302C226978223A367D2C22
+          7361223A7B2261223A302C226B223A302C226978223A357D2C226F223A7B2261
+          223A302C226B223A3130302C226978223A377D7D5D7D2C7B227479223A22746D
+          222C22626D223A302C226864223A66616C73652C226D6E223A22414442452056
+          6563746F722046696C746572202D205472696D222C226E6D223A225472696D20
+          50617468732031222C226978223A322C2265223A7B2261223A302C226B223A30
+          2C226978223A327D2C226F223A7B2261223A302C226B223A302C226978223A33
+          7D2C2273223A7B2261223A302C226B223A3130302C226978223A317D2C226D22
+          3A317D5D2C22696E64223A317D2C7B227479223A342C226E6D223A2253686170
+          65204C617965722032222C227372223A312C227374223A302C226F70223A3930
+          302E3030303033363635373735312C226970223A302C226864223A66616C7365
+          2C22646464223A302C22626D223A302C226861734D61736B223A66616C73652C
+          22616F223A302C226B73223A7B2261223A7B2261223A302C226B223A5B2D3234
+          2C2D32302C305D2C226978223A317D2C2273223A7B2261223A302C226B223A5B
+          3230382C3230382C3130305D2C226978223A367D2C22736B223A7B2261223A30
+          2C226B223A307D2C2270223A7B2261223A302C226B223A5B313030302C393830
+          2C305D2C226978223A327D2C2272223A7B2261223A312C226B223A5B7B226F22
+          3A7B2278223A302E3136372C2279223A302E3136377D2C2269223A7B2278223A
+          302E3833332C2279223A302E3833337D2C2273223A5B2D31312E3038335D2C22
+          74223A307D2C7B2273223A5B3331362E3931375D2C2274223A34322E30303030
+          3031373130363935317D5D2C226978223A31307D2C227361223A7B2261223A30
+          2C226B223A307D2C226F223A7B2261223A302C226B223A3130302C226978223A
+          31317D7D2C226566223A5B5D2C22736861706573223A5B7B227479223A226772
+          222C22626D223A302C226864223A66616C73652C226D6E223A22414442452056
+          6563746F722047726F7570222C226E6D223A22456C6C697073652031222C2269
+          78223A312C22636978223A322C226E70223A332C226974223A5B7B227479223A
+          227368222C22626D223A302C226864223A66616C73652C226D6E223A22414442
+          4520566563746F72205368617065202D2047726F7570222C226E6D223A225061
+          74682031222C226978223A312C2264223A312C226B73223A7B2261223A302C22
+          6B223A7B2263223A747275652C2269223A5B5B3137352E3632372C305D2C5B30
+          2C2D3137352E3632375D2C5B2D3137352E3632372C305D2C5B302C3137352E36
+          32375D5D2C226F223A5B5B2D3137352E3632372C305D2C5B302C3137352E3632
+          375D2C5B3137352E3632372C305D2C5B302C2D3137352E3632375D5D2C227622
+          3A5B5B3330302C2D325D2C5B2D31382C3331365D2C5B3330302C3633345D2C5B
+          3631382C3331365D5D7D2C226978223A327D7D2C7B227479223A226773222C22
+          626D223A302C226864223A66616C73652C226D6E223A22414442452056656374
+          6F722047726170686963202D20472D5374726F6B65222C226E6D223A22477261
+          6469656E74205374726F6B652031222C2265223A7B2261223A302C226B223A5B
+          3437392C305D2C226978223A357D2C2267223A7B2270223A332C226B223A7B22
+          61223A302C226B223A5B302C302E322C302E3138383233353239343131373634
+          3730362C302E343538383233353239343131373634372C302E352C302E353031
+          393630373834333133373235352C302E38373035383832333532393431313737
+          2C302E393137363437303538383233353239342C312C312C312C315D2C226978
+          223A387D7D2C2274223A312C2261223A7B2261223A302C226B223A307D2C2268
+          223A7B2261223A302C226B223A307D2C2273223A7B2261223A302C226B223A5B
+          302C305D2C226978223A347D2C226C63223A322C226C6A223A312C226D6C223A
+          342C226F223A7B2261223A302C226B223A3130302C226978223A397D2C227722
+          3A7B2261223A302C226B223A38312C226978223A31307D7D2C7B227479223A22
+          7472222C2261223A7B2261223A302C226B223A5B302C305D2C226978223A317D
+          2C2273223A7B2261223A302C226B223A5B3130302C3130305D2C226978223A33
+          7D2C22736B223A7B2261223A302C226B223A302C226978223A347D2C2270223A
+          7B2261223A302C226B223A5B2D3333302C2D3333345D2C226978223A327D2C22
+          72223A7B2261223A302C226B223A302C226978223A367D2C227361223A7B2261
+          223A302C226B223A302C226978223A357D2C226F223A7B2261223A302C226B22
+          3A3130302C226978223A377D7D5D7D2C7B227479223A22746D222C22626D223A
+          302C226864223A66616C73652C226D6E223A224144424520566563746F722046
+          696C746572202D205472696D222C226E6D223A225472696D2050617468732031
+          222C226978223A322C2265223A7B2261223A302C226B223A302C226978223A32
+          7D2C226F223A7B2261223A302C226B223A302C226978223A337D2C2273223A7B
+          2261223A302C226B223A3130302C226978223A317D2C226D223A317D5D2C2269
+          6E64223A327D5D2C2276223A22352E342E34222C226672223A32392E39373030
+          3031323230373033312C226F70223A34332E303030303031373531343235392C
+          226970223A302C22617373657473223A5B5D7D}
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 1160
+    Top = 81
+    object acttabEmprestimo: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabEmprestimo
+    end
+    object actTabSimulaEmprest: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabSimulaEmprest
+    end
+    object actTabSimulaParcelas: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabSimulaParcelas
+    end
+    object actTabExtratoEmprest: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabExtratoEmprest
+    end
+    object actTabContratos: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabContratos
+    end
+  end
+  object ACBrBoleto1: TACBrBoleto
+    Banco.Numero = 33
+    Banco.TamanhoMaximoNossoNum = 12
+    Banco.TipoCobranca = cobSantander
+    Banco.LayoutVersaoArquivo = 40
+    Banco.LayoutVersaoLote = 30
+    Banco.CasasDecimaisMoraJuros = 2
+    Banco.DensidadeGravacao = '0'
+    Cedente.Nome = 'CALCRED SA'
+    Cedente.Agencia = '1227'
+    Cedente.AgenciaDigito = '1'
+    Cedente.Conta = '00000031803'
+    Cedente.ContaDigito = '1'
+    Cedente.TipoInscricao = pJuridica
+    Cedente.PIX.TipoChavePIX = tchNenhuma
+    NumeroArquivo = 0
+    ACBrBoletoFC = ACBrBoletoFCFortes1
+    Configuracoes.Arquivos.LogRegistro = False
+    Configuracoes.WebService.SSLHttpLib = httpOpenSSL
+    Configuracoes.WebService.StoreName = 'My'
+    Configuracoes.WebService.Ambiente = taHomologacao
+    Configuracoes.WebService.Operacao = tpInclui
+    Configuracoes.WebService.VersaoDF = '1.2'
+    Left = 1208
+    Top = 312
+  end
+  object ACBrBoletoFCFortes1: TACBrBoletoFCFortes
+    Left = 1207
+    Top = 365
+  end
+end
